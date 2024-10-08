@@ -60,7 +60,6 @@ yang mana hal ini mencegah Slowdown (pelambatan) & Outage (Pemadaman) pada Syste
 
 #### {3] Improved Scalabilty :
 
-DDN di-desain untuk menangani Traffic dalam jumlah besar.
-
-DDN memastikan Performance yang lancar untuk Website & Service yang mengalami lonjakkan Traffic.
+- DDN di-desain untuk menangani Traffic dalam jumlah besar.
+- DDN memastikan Performance yang lancar untuk Website & Service yang mengalami lonjakkan Traffic.
 
