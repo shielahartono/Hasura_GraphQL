@@ -85,3 +85,25 @@ DDN mengurangi Latency (waktu pengiriman data) dan meingkatkan responsiveness da
 #### (4) Software Downloads :
 Company mendistribusikan File Besar menggunakan DDN,
 untuk memastikkan Download yang lebih cepat dan megurangi beban server.
+
+
+### C. Jenis Content yang dikirim oleh DDN (Data Delivery Network) :
+
+#### [1] Static Content :
+
+Static Content merupakan tipe media yang tidak sering berubah.
+Contoh Static Content adalah : Images, CSS Files, JavaScript File, Videos, dan lain lain
+
+#### [2] Dynamic Content :
+
+-> merupakan Content yang di-generate secara Real-Time.
+-> "Dynamic Content" merupakan Data yang dibuat secara Real-Time berdasarkan interaksi pengguna, preferensi pengguna, atau Variabel lainnya.
+yang mana, Dynamic Content seringkali dipersonalisasi dan dapat berubah secara berkala.
+
+-> Real-Time Generation :
+Dynamic Content dibuat atau dimodifikasi pada saat Request,
+yang mana hal ini berarti bahwa Content tersebut dapat mencerminkan informasi up-to-date yang tersedia.
+
+-> Personalization :
+Dynamic Content seringkali disesuaikan untuk masing-masing User berdasarkan behavior, Preferences, Location, dan faktor lainnya.
+Penyesuaian ini meningkatkan keterlibatan dan kepuasan User.
