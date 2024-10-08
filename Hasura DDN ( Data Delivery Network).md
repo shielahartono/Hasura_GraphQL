@@ -50,6 +50,7 @@ Fungsi utama "Edge Server" adalah menyimpan Data yang sering diakses agar Data t
 -> "Edge Server" merupakan Komponen Inti (Core Component) dari "Edge Computing" & "Content Delivery Network".
 Arsitektur "Edge-Server" melibatkan multiple layers & component yang bekerja sama untuk mengurangi Latency, mendistribusikan Workloads (beban kerja), dan memungkinkan Real-time Data Processing.
 
+-> Data Delivery Network (DDN) mempercepat distribusi data di seluruh jaringan internet dengan menggunakan "Edge Server" yang di-distribusikan secara geografis.
 
 #### (2) Load Balancing : 
 
