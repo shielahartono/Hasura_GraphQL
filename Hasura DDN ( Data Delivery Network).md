@@ -49,3 +49,10 @@ Fungsi utama "Edge Server" adalah menyimpan Data yang sering diakses agar Data t
 
 -> "Edge Server" merupakan Komponen Inti (Core Component) dari "Edge Computing" & "Content Delivery Network".
 Arsitektur "Edge-Server" melibatkan multiple layers & component yang bekerja sama untuk mengurangi Latency, mendistribusikan Workloads (beban kerja), dan memungkinkan Real-time Data Processing.
+
+
+#### (2) Load Balancing : 
+
+-> "Load Balancing" berperan untuk mendistribusikan Traffic ke beberapa Server,
+karena "Data Delivery Network" (DDN) mencegah adanya Server yang kelelahan oleh Traffic yang tinggi.
+yang mana hal ini mencegah Slowdown (pelambatan) & Outage (Pemadaman) pada System, bahkan selama lonjakan Traffic (Traffic Spikes). 
