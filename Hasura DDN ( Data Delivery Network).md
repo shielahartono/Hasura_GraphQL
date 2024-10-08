@@ -17,3 +17,10 @@ Edge Server menyimpan sementara Salinan Content (seperti Image, Videos, dan Web 
 Saat User melakukan "Request Content", DDN menyajikan "Request Content" tersebut dari "Edge Server" terdekat, untuk mengurangi jarak yang harus ditempuh untuk pengiriman Data, yang mana hal ini bertujuan untuk mengurangi Latency (waktu yang dibutuhkan untuk mengirimkan Data).
 
 (yang dilakukan Edge Server ini merupakan Caching Strategy)
+
+
+-> "Edge Server" berfungsi sebagai "Temporary Storage" (tempat penyimpanan sementara),
+tetapi peran dari "Edge Server" lebih dari sekedar tempat penyimpanan sementara.
+Fungsi utama "Edge Server" adalah menyimpan Data yang sering diakses agar Data tersebut dekat ke pengguna akhir untuk mengurangi Latency & meningkatkan performance.
+(Data yang sering diakses tersebut seperti Web Pages, images, Videos, atau Content lainnya)
+
