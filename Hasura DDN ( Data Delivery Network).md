@@ -63,3 +63,9 @@ yang mana hal ini mencegah Slowdown (pelambatan) & Outage (Pemadaman) pada Syste
 - DDN di-desain untuk menangani Traffic dalam jumlah besar.
 - DDN memastikan Performance yang lancar untuk Website & Service yang mengalami lonjakkan Traffic.
 
+#### [4] Reduce Bandwith Costs :
+
+	(Mengurangi Biaya Bandwith)
+-> Dengan menggunakan Strategi "Caching Content", yakni menyimpan konten di "Temporary Storage" agar lebih dekat ke User,
+dengan cara ini, DDN mengurangi workload "Server Origin" untuk menangani Request berulang untuk mengenai konten yang sama.
+yang mana, ini dapat membantu organisasi untuk mengurangi konsumsi Bandwith, dan membantu menurunkan biaya.
