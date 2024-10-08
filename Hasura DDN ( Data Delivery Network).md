@@ -70,3 +70,18 @@ yang mana hal ini mencegah Slowdown (pelambatan) & Outage (Pemadaman) pada Syste
 -> Dengan menggunakan Strategi "Caching Content", yakni menyimpan konten di "Temporary Storage" agar lebih dekat ke User,
 dengan cara ini, DDN mengurangi workload "Server Origin" untuk menangani Request berulang untuk mengenai konten yang sama.
 yang mana, ini dapat membantu organisasi untuk mengurangi konsumsi Bandwith, dan membantu menurunkan biaya.
+
+### B. Contoh penggunaan Data Delivery Network (DDN) :
+
+#### (1) Video Streaming :
+DDN mengirim High-Quality Video Content (seperti Youtube & Netflix) dengan mengurangi waktu buffering dan memastikkan pemutaran video yang lancar.
+
+#### (2) E-Commerce :
+Website seperti Amazon & E-bay menggunakan DDN untuk memastikkan Loading halaman yang cepat dan Performance yang konsisten, bahkan dengan Global Traffic
+
+#### (3) Online Gaming :
+DDN mengurangi Latency (waktu pengiriman data) dan meingkatkan responsiveness dalam Online Multiplayer Gaming, yang memastikkan Data permainan secara capat dikrimkan ke User di seluruh dunia
+
+#### (4) Software Downloads :
+Company mendistribusikan File Besar menggunakan DDN,
+untuk memastikkan Download yang lebih cepat dan megurangi beban server.
