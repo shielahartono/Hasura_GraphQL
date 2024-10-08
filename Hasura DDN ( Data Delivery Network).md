@@ -56,3 +56,10 @@ Arsitektur "Edge-Server" melibatkan multiple layers & component yang bekerja sam
 -> "Load Balancing" berperan untuk mendistribusikan Traffic ke beberapa Server,
 karena "Data Delivery Network" (DDN) mencegah adanya Server yang kelelahan oleh Traffic yang tinggi.
 yang mana hal ini mencegah Slowdown (pelambatan) & Outage (Pemadaman) pada System, bahkan selama lonjakan Traffic (Traffic Spikes). 
+
+
+#### {3] Improved Scalabilty :
+
+DDN di-desain untuk menangani Traffic dalam jumlah besar.
+DDN memastikan Performance yang lancar untuk Website & Service yang mengalami lonjakkan Traffic.
+
