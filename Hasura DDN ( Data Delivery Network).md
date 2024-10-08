@@ -7,7 +7,8 @@ DDN adalah system yang dirancang untuk meningkatkan pengiriman Digital Content m
 System ini mengurangi Latency (waktu yang dibutuhkan untuk mengirimkan Data), mempercepat Loading Times (waktu pemuatan), dan meningkatkan User Experience untuk aplikasi/website, terutama yang melayani Large Volume of Data (Volume Data yang besar).
 
 ### A. Fungsi Utama DDN (atau CDN) : 
-(1) Caching Content at Edge Servers :
+#### (1) Caching Content at Edge Servers :
+
 -> DDN menggunakan Distributed Server Network yang terletak di berbagai Geographical Locations, server dinamakan "Edge Server".
 Edge Server menyimpan sementara Salinan Content (seperti Image, Videos, dan Web Page).
 
