@@ -6,6 +6,27 @@
 DDN adalah system yang dirancang untuk meningkatkan pengiriman Digital Content melalui internet.
 System ini mengurangi Latency (waktu yang dibutuhkan untuk mengirimkan Data), mempercepat Loading Times (waktu pemuatan), dan meningkatkan User Experience untuk aplikasi/website, terutama yang melayani Large Volume of Data (Volume Data yang besar).
 
+- Data Delivery Network (DDN) dirancang khusus untuk pengiriman "Large Volumes of Data" (jumlah data secara besar).
+DDN dibangun untuk mendukung :
+
+  [1] High-Speed Data Transfer (Transfer Data berkecepatan Tinggi)
+  
+  [2] Large-Scale Content Distribution (Distribusi Konten berskala besar)
+  
+  [3] High Availability
+
+Sehingga DDN sangat bermanfaat untuk Aplikasi yang mempunyai Jumlah Data yang besar.
+
+- "Large-Scale Content Distribution" : 
+merupakan pengiriman Digital Content dalam jumlah besar (Digital Content tersebut seperti Web Pages, Video, images, Software, dan Data lainnya).
+Pengiriman Digital Content ini didistribusikan ke sejumlah besar User ke berbagai wilayah Geografis.
+
+- High Availability (HA) :
+merupakan Desain & Implementasi System, Network, dan Services, 
+untuk memastikan Komponen-komponen tersebut tetap bisa beroperasi & bisa diakses dengan minimal Downtime.
+"High Availability" bertujuan untuk memastikan bahwa Applications & Services tersedia setiap saat, atau dengan Downtime yang sangat minimal,
+yang mana seringkali diukur dengan Uptime Percentage (persentase Waktu Aktif), seperi 99.99% 
+
 ### A. Fungsi Utama DDN (atau CDN) : 
 #### (1) Caching Content at Edge Servers :
 
