@@ -21,6 +21,6 @@ Saat User melakukan "Request Content", DDN menyajikan "Request Content" tersebut
 
 -> "Edge Server" berfungsi sebagai "Temporary Storage" (tempat penyimpanan sementara),
 tetapi peran dari "Edge Server" lebih dari sekedar tempat penyimpanan sementara.
-Fungsi utama "Edge Server" adalah menyimpan Data yang sering diakses agar Data tersebut dekat ke pengguna akhir untuk mengurangi Latency & meningkatkan performance.
+Fungsi utama "Edge Server" adalah menyimpan Data yang sering diakses agar Data tersebut dekat ke End-User untuk mengurangi Latency & meningkatkan performance.
 (Data yang sering diakses tersebut seperti Web Pages, images, Videos, atau Content lainnya)
 
