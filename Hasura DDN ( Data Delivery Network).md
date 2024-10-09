@@ -200,7 +200,12 @@ yang mana hal ini membuat System menjadi lebih Efficient, dan mencegah adanya pe
 Hasura DDN dapat dengan cepat meng-update data di "Edge Server",
 memastikkan User selalu mendapatkan Informasi paling up-to-date.
 
+-> Real-Time Updates pada Hasura DDN (Data Delivery Network) 
+memungkinkan applications untuk menerima "Live Data" secara instan tanpa harus melakukan refresh atau secara berulang melakukan Request untuk Update.
 
+yang mana hal ini sangat bermanfaat untuk Aplikasi dimana User dapat melihat langsung perubahan pada aplikasi, sesegera mungkin setelah terdapat perubaha pada Data.
+Aplikasi tersebut seperti Live Dashboards, Stock Updates, Gaming Apps, dan sebagainya.
+ 
 
 ====
 
