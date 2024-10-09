@@ -267,6 +267,7 @@ Dan kita mempunyai Customer di Japan, daripada kita mengirim data dari "Origin S
 
 
 ===
+
 to do :
 
 1) Security in Hasura DDN
