@@ -118,7 +118,19 @@ Penyesuaian ini meningkatkan keterlibatan dan kepuasan User.
 
 - Hasura DDN di-desain untuk membuat pengiriman Data dalam jumlah besar (large amount of data) menjadi cepat, efficient, dan secure.
 Dengan menggunakan "Edge Server" untuk "Cache Data", sehingga Data lebih dekat dengan Users.
-"Cache Data" merupakan menyimpan data yang sering diakses ke Temporary Storage, agar jika butuh Request Data tersebut lagi, System hanya perlu melakukan Request ke Temporary Storage, dan tidak perlu Request ke Server utama, sehinga ini dapat mengurangi Traffic & mengurangi beban kerja dari Server Utama.
+"Cache Data" merupakan menyimpan data yang sering diakses ke Temporary Storage, agar jika butuh Request Data tersebut lagi, System hanya perlu melakukan Request ke Temporary Storage, dan tidak perlu Request ke Server utama (Origin Server), sehinga ini dapat mengurangi Traffic & mengurangi beban kerja dari Server Utama (Origin Server).
+
+### B. Komponen Utama & Cara kerja Hasura DDN : 
+
+#### [1] Origin Server :
+(Starting Point / Titik awal)
+
+-> Pada Origin Server, data utama disimpan.
+
+-> Origin Server merupakan Server Utama yang menyimpan versi asli Data.
+Origin Server bertugas menghasilkan Response terhadao Request Client mengenai Dataa/Content.
+
+
 
 ====
 
