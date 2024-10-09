@@ -155,6 +155,16 @@ yang mana hal ini dapat membantu mengurangi beban kerja "Origin Server", karena 
 Selain itu, hal ini dapat membantu mengurangi Latency (waktu yang dibutuhkan untuk mengirim data) & mempercepat pengiriman data, karena "Edge Server" biasanya merupakan Server yang jarak geografis nya lebih dekat dengan User dibandingkan dengan "Origin Server",
 karena jarak "Edge Server" yang lebih dekat, sehingga dapat membantu mempercepat pengiriman data.
 
+
+### [4] GraphQL API 
+(Bagaimana data di-query)
+
+-> Hasura menggunakan "GraphQL", yakni cara modern untuk melakukan Request Data,
+membuatnya super-efficient, dibandingkan Request terlalu banyak data atau Request terlalu sedikit data.
+GraphQL memungkinkan User untuk melakukan Request Data seperti apa yang mereka butuhkan,
+yang mana hal ini mengurangi pengiriman Data yang tidak dibutuhkan,
+membuat semuanya lebih cepat dan lebih ringan dalam penggunaan bandwith.
+
 ====
 
 to do :
