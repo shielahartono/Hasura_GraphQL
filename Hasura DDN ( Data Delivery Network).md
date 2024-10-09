@@ -173,7 +173,7 @@ Misalnya, daripada mengambil keseluruhan User Data,
 Client dapat hanya melakukan untuk data user_name dan user_email.
 yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan Performance.
 
--> yang mana pada langkah ini, User melakukan Request Data, yang mana Request Data ini dibantu dengan teknologi GraphQL, sehingga Data yang diambil hanya data yang dibutuhkan oleh User, dan tidak perlu mengambil keseluruhan data, tetapi tidak dibutuhkan.
+-> yang mana pada langkah ini, User melakukan Request Data, yang mana Request Data ini dibantu dengan teknologi GraphQL, sehingga Data yang diambil hanya data yang dibutuhkan oleh User, dan tidak perlu mengambil keseluruhan data, tetapi data tersebut tidak dibutuhkan.
 
 ====
 
