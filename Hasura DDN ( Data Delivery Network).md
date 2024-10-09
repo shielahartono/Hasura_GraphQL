@@ -130,7 +130,8 @@ Dengan menggunakan "Edge Server" untuk "Cache Data", sehingga Data lebih dekat d
 -> Origin Server merupakan Server Utama yang menyimpan versi asli Data.
 Origin Server bertugas menghasilkan Response terhadao Request Client mengenai Dataa/Content.
 
-
+### [2] Edge Servers :
+(menyimpan data agar lebih dekat ke pengguna)
 
 ====
 
