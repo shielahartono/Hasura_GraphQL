@@ -110,6 +110,10 @@ Dynamic Content seringkali disesuaikan untuk masing-masing User berdasarkan beha
 Penyesuaian ini meningkatkan keterlibatan dan kepuasan User.
 
 
-
-
 ## 2. Understanding Hasura DDN (Data Delivery Network)
+
+
+
+====
+to do :
+Security in Hasura DDN
