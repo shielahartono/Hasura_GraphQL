@@ -312,6 +312,15 @@ Mendistribusikan "User Request" ke beberapa Servers, agar tidak ada Satu Server 
 -> Benefit menggunakan "Load Balancing" : 
 Meningkatkan Performance & menghindari Server Crash saat High-Traffic
 
+#### [6] Security Layer (Protecting the Data) :
+
+-> Security pada Hasura DDN (Data Delivery Network) sangatlah penting,
+karena berkaitan dengan Data Sensitive yang dikirim dan disimpan di berbagai lokasi.
+
+-> Hasura DDN memilki beberapa Fitur keamanan untuk menjaga Data & User,
+beberapa diantaranya adalah :
+
+
 
 ## >>>>>For your information : <<<<<
 
