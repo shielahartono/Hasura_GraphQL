@@ -165,6 +165,15 @@ GraphQL memungkinkan User untuk melakukan Request Data seperti apa yang mereka b
 yang mana hal ini mengurangi pengiriman Data yang tidak dibutuhkan,
 membuat semuanya lebih cepat dan lebih ringan dalam penggunaan bandwith.
 
+-> GraphQL adalah Query Language untuk API yang memungkinkan Client untuk meminta bagian data tertentu yang mereka butuhkan, 
+daripada harus mengambil seluruh kumpulan Dataset seperti Tradional API.
+yang mana teknologi GraphQL ini memberikan pengambila Data yang lebih efisien.
+
+Misalnya, daripada mengambil keseluruhan User Data,
+Client dapat hanya melakukan untuk data user_name dan user_email.
+yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan Performance.
+
+
 ====
 
 to do :
