@@ -214,6 +214,11 @@ Aplikasi tersebut seperti Live Dashboards, Stock Updates, Gaming Apps, dan sebag
 
 ### D. Architecture of Hasura DDN (Data Delivery Network)
 
+- Architecture dari Hasura DDN itu seperti sebuah System yang terancang dengan baik untuk memastikkan Data dapat dikirim ke User dengan cepat, efficient, dan aman.
+
+- berikut ini merupakan penjelasan mengenai Cara kerja Arsitektur Hasura DDN :
+
+
 
 
 ====
