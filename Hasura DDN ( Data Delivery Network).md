@@ -293,7 +293,13 @@ sehingga data tersebut tidak perlu diambil lagi dari "Origin Server".
 (2) "Cache Miss" :
 merupakan kondisi saat Data yang di-request oleh Customer tidak ada pada "Edge Server",
 sehingga data tersebut perlu diambil dari "Origin Server".
-	
+
+#### [4] GraphQL API Layer (Data Request) :
+
+-> GraphQL adalah Query Language untuk API yang memungkinkan Client untuk meminta bagian data tertentu yang mereka butuhkan, daripada harus mengambil seluruh kumpulan Dataset seperti Tradional API. yang mana teknologi GraphQL ini memberikan pengambila Data yang lebih efisien.
+
+Misalnya, daripada mengambil keseluruhan User Data, Client dapat hanya melakukan request untuk data user_name dan user_email. yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan Performance.
+
 
 ## >>>>>For your information : <<<<<
 
