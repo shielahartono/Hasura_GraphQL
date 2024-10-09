@@ -334,6 +334,17 @@ merupakan serangan dimana Hacker mencoba membanjiri System dengan Traffic yang s
 yang mana ini merupakan cara untuk mengunci Pesan (Data) sehingga tidak ada orang lain yang dapat membacanya Pesan (Data) tersebut berpindah antara Komputer dan Server.
 
 
+(3) Web Application Firewall (WAF) :
+
+>> Memblokir Request yang berbahaya, seperti upaya peretasan atau virus, sebelum mencapai Server
+
+>> "Web Application Firewall" (WAF) :
+adalah sebuah System keamanan yang melakukan Filter, Monitor, dan Block HTTP Traffic Ke- dan Dari Web Application.
+WAF itu seperti Penjaga Keamanan untuk Web Application kita yang mengawasi semua data yang masuk dan keluar.
+WAF memastikkan Data yang berbahaya tidak masuk ke Web Application kita, dan hanya membiarkan masuk Data yang aman & telah disetujui.
+
+
+
 ## >>>>>For your information : <<<<<
 
 ### 1. Edge Server's Cache : 
