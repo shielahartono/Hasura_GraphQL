@@ -218,7 +218,19 @@ Aplikasi tersebut seperti Live Dashboards, Stock Updates, Gaming Apps, dan sebag
 
 - berikut ini merupakan penjelasan mengenai Cara kerja Arsitektur Hasura DDN :
 
+#### [1] Origin Server :
+(Sumber Data yang utama)
 
+-> "Origin Server" itu seperti Gudang besar yang menyimpan data penting.
+
+-> Pada "Origin Server", terdapat Original Data dari Aplikasi, Website, Business, dan sebagainya.
+yang dimaksud "Original Data" adalah Data Utama, bukan Data Salinan, 
+karena kalau Data Salinan berada di "Edge Server".
+
+-> Peran dari Origin Server : Menyimpan Data Utama
+(menyimpan Data Original, bukan Data Salinan)
+
+-> Location : biasanya berada pada Lokasi Pusat (Central Location) atau di sebuah Cloud			
 
 
 ====
