@@ -185,6 +185,14 @@ yang mana Lokasi "Edge Server" tersebut mempunyai jarak yang lebih dekat dengan 
 (dibandingkan dengan jarak "Origin Server" dengan User), 
 sehingga waktu Pengiriman Data ke User menjadi lebih cepat, karena data dikrim dari "Edge Server" terdekat, daripada harus dikrim dari "Origin Server" dengan jarak yang melintasi dunia.
 
+#### [2] Reduced Server Load : 
+(Beban Server Berkurang)
+
+-> "Beban Server Berkurang" karena Beban di-distribusikan juga dengan "Edge Server"
+
+-> Karena bayak data yang dikirm dari "Edge Servers", maka "Origin Server" tidak kelelahan dengan Request yang teralalu banyak.
+yang mana hal ini membuat System menjadi lebih Efficient, dan mencegah adanya perlambatan (slowing down) saat Peak Traffic (Traffic Puncak)
+
 
 ====
 
