@@ -142,6 +142,19 @@ yang mana hal ini dapat mengurangi beban dari "Origin Server"
 
 -> Salinan Data yang disimpan pada "Edge Server", pada Step selanjutnya akan dipakai untuk proses "Data Caching"
 
+
+### [3] Data Caching :
+
+-> "Data Caching" berarti menyimpan salinan data yang sering dipakai,
+data yang sering dipakai itu seperti data yang sering di-request oleh User.
+Salinan Data ini sudah sebelumnya disimpan di "Edge Server".
+
+-> Pada Proses "Data Catching", jika User melakukan Request Data, dan data tersebut kita sudah punya salinan nya pada "Edge Server", maka System akan mengambil data dari "Edge Server", daripada harus mengambil data ke "Origin Server".
+yang mana hal ini dapat membantu mengurangi beban kerja "Origin Server", karena beban kerja dapat di-distribusikan ke "Edge Server".
+
+Selain itu, hal ini dapat membantu mengurangi Latency (waktu yang dibutuhkan untuk mengirim data) & mempercepat pengiriman data, karena "Edge Server" biasanya merupakan Server yang jarak geografis nya lebih dekat dengan User dibandingkan dengan "Origin Server",
+karena jarak "Edge Server" yang lebih dekat, sehingga dapat membantu mempercepat pengiriman data.
+
 ====
 
 to do :
