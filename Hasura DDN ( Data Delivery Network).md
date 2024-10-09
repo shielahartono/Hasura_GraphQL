@@ -175,6 +175,8 @@ yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan
 
 -> yang mana pada langkah ini, User melakukan Request Data, yang mana Request Data ini dibantu dengan teknologi GraphQL, sehingga Data yang diambil hanya data yang dibutuhkan oleh User, dan tidak perlu mengambil keseluruhan data, tetapi data tersebut tidak dibutuhkan.
 
+### C. Bagaimana Hasura DDN meningkatkan Pengiriman Data : 
+
 ====
 
 to do :
