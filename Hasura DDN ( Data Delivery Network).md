@@ -249,11 +249,13 @@ maka System dapat mengirimkan Data dari "Edge Server" yang berada pada Lokasi te
 yang mana hal ini dapat membantu :
 
 (1) Mengurangi Latency (Waktu Pengiriman Data):
+
 karena Data dikrimkan dari Server yang lokasi nya lebih dekat dengan User,
 sehingga Jarak pengiriman Datanya lebih dekat,
-yang mana jarak yang lebih dekat ini dapat mengurangi waktu pengiriman data 		(Latency)
+yang mana jarak yang lebih dekat ini dapat mengurangi waktu pengiriman data (Latency)
 	
 (2) Mengurangi beban kerja "Origin Server" :
+
 Karena Pengiriman Data juga dilakukan dari "Edge Server" dan tidak hanya dari "Origin Server", maka hal ini dapat mengurangi beban kerja "Origin Server". 
 
 (karena beban kerja di-distribusikan juga ke "Edge Server")
