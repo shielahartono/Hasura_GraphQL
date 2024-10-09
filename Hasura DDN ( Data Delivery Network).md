@@ -233,6 +233,32 @@ karena kalau Data Salinan berada di "Edge Server".
 -> Location : biasanya berada pada Lokasi Pusat (Central Location) atau di sebuah Cloud			
 
 
+#### [2] Edge Servers (Local Data Cache) : 
+
+-> "Edge Server" merupakan Server-Server yang tersebar di berbagai Geographical Location yang memiliki jarak lebih dekat ke User.
+("Edge Server" memiliki jarak yang lebih dekat ke User, dibandingkan dengan jarak antara "Origin Server" ke User)
+
+-> "Edge Server" merupakan "Temporary Storage" yang menyimpan data sementara.
+Data sementara yang disimpan merupakan Data yang sering diakses atau Data yang sering di-request oleh User.
+
+-> Data yang sering diakses tersebut akan disalin dari Data Utama yang ada di "Origin Server", dan hasil Salinan Data tersebut akan disimpan di "Edge Servers".
+
+
+-> Sehingga jika nanti User melakukan Request untuk Data yang sering diakses,
+maka System dapat mengirimkan Data dari "Edge Server" yang berada pada Lokasi terdekat dengan User.
+yang mana hal ini dapat membantu :
+
+(1) Mengurangi Latency (Waktu Pengiriman Data):
+karena Data dikrimkan dari Server yang lokasi nya lebih dekat dengan User,
+sehingga Jarak pengiriman Datanya lebih dekat,
+yang mana jarak yang lebih dekat ini dapat mengurangi waktu pengiriman data 		(Latency)
+	
+(2) Mengurangi beban kerja "Origin Server" :
+Karena Pengiriman Data juga dilakukan dari "Edge Server" dan tidak hanya dari "Origin Server", maka hal ini dapat mengurangi beban kerja "Origin Server". 
+
+(karena beban kerja di-distribusikan juga ke "Edge Server")
+
+
 ====
 
 to do :
