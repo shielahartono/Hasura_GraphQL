@@ -327,6 +327,12 @@ beberapa diantaranya adalah :
 merupakan serangan dimana Hacker mencoba membanjiri System dengan Traffic yang sangat banyak, dengan harapan System tidak dapat menahan beban kerja, dan System akan Crash.
 
 
+(2) SSL/TLS Encryption :
+>> Memastikkan Data di-enkripsi dengan baik sata di-transfer, agar Hacker tidak dapat melakukan Intercept (mencegat) atau merusak datanya.
+
+>> SSL dan TLS merupakan Protokol yang digunakan untuk mengamankan komunikasi antara Komputer dan Server,
+yang mana ini merupakan cara untuk mengunci Pesan (Data) sehingga tidak ada orang lain yang dapat membacanya Pesan (Data) tersebut berpindah antara Komputer dan Server.
+
 
 ## >>>>>For your information : <<<<<
 
