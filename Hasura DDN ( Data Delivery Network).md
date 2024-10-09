@@ -265,6 +265,11 @@ yang mana "Origin Server" di Indonesia.
 Dan kita mempunyai Customer di Japan, daripada kita mengirim data dari "Origin Server" di Indonesia, sebaiknya kita mengirim data dari "Edge Server" di Japan, agar kita bisa mengirim data dengan lebih cepat
 
 
+#### [3] Caching Layer (Quick Access Storage) : 
+
+-> "Caching Layer" bukan merupakan System yang mengelola "Edge Server",
+tapi "Caching Layer" merupakan teknologi yang diandalkan "Edge Server" untuk mengirim dan menyimpan data secara efficient.
+
 
 ===
 
