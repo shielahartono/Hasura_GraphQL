@@ -286,11 +286,11 @@ Proses "Cache Hit" & "Cache Miss" tersebut disebut "Caching Mechanism", yang man
 -> Saat Data di-request oleh User, DDN akan melakukan pengecekkan apakah Data tersebut sudah pada "Edger Server", maka setelah itu akan terdapat salah satu kondisi, yaitu apakah kondisi "Cache Hit" atau kondisi "Cache Miss".
 berikut penjelasannya : 
 
-**(1) "Cache Hit"** :
+(1) "Cache Hit" :
 merupakan kondisi saat Data yang di-request oleh Customer sudah ada pada "Edge Server",
 sehingga data tersebut tidak perlu diambil lagi dari "Origin Server".
 
-**(2) "Cache Miss"** :
+(2) "Cache Miss" :
 merupakan kondisi saat Data yang di-request oleh Customer tidak ada pada "Edge Server",
 sehingga data tersebut perlu diambil dari "Origin Server".
 	
