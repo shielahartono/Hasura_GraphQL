@@ -140,6 +140,8 @@ yang mana hal ini dapat mengurangi beban dari "Origin Server"
 
 -> Data yang sering diakses tersebut, aslinya berasal dari "Origin Server".
 
+-> Salinan Data yang disimpan pada "Edge Server", pada Step selanjutnya akan dipakai untuk proses "Data Caching"
+
 ====
 
 to do :
