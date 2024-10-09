@@ -281,6 +281,7 @@ DDN pertama-tama memeriksa "Edge Server's Cache" untuk melihat apakah data sudah
 tetapi jika Data yang di-request oleh User tidak ada pada "Edge Server" (Cache Miss), 
 maka DDN akan mengambil data dari "Origin Server", dan menyimpan data tersebut di "Edge Server" untuk Request di masa depan.
 
+Proses "Cache Hit" & "Cache Miss" tersebut disebut "Caching Mechanism", yang mana hal ini mempercepat proses pengiriman data dan mengurangi beban pada "Origin Server".
 
 ## >>>>>For your information : <<<<<
 
