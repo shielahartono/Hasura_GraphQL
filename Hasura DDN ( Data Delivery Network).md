@@ -112,8 +112,15 @@ Penyesuaian ini meningkatkan keterlibatan dan kepuasan User.
 
 ## 2. Understanding Hasura DDN (Data Delivery Network)
 
+### A. What is Hasura DDN (Data Delivery Network) ?
 
+- Hasura DDN merupakan sistem pengiriman data yang di-desain untuk mempercepat proses pengiriman data.
+
+- Hasura DDN di-desain untuk membuat pengiriman Data dalam jumlah besar (large amount of data) menjadi cepat, efficient, dan secure.
+Dengan menggunakan "Edge Server" untuk "Cache Data", sehingga Data lebih dekat dengan Users.
+"Cache Data" merupakan menyimpan data yang sering diakses ke Temporary Storage, agar jika butuh Request Data tersebut lagi, System hanya perlu melakukan Request ke Temporary Storage, dan tidak perlu Request ke Server utama, sehinga ini dapat mengurangi Traffic & mengurangi beban kerja dari Server Utama.
 
 ====
+
 to do :
 Security in Hasura DDN
