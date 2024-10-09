@@ -133,6 +133,10 @@ Origin Server bertugas menghasilkan Response terhadao Request Client mengenai Da
 ### [2] Edge Servers :
 (menyimpan data agar lebih dekat ke pengguna)
 
+-> "Edge Server" merupakan Temporary Storage yang digunakan untuk menyimpan Data yang sering diakses, sehingga data tersebut di-Request, System hanya perlu mengambil dari "Edge Server" dan tidak perlu mengambil langsung dari "Origin Server",
+yang mana hal ini dapat mengurangi beban dari "Origin Server"
+
+
 ====
 
 to do :
