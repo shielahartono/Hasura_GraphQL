@@ -177,6 +177,15 @@ yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan
 
 ### C. Bagaimana Hasura DDN meningkatkan Pengiriman Data : 
 
+#### [1] Faster Data Access :
+(Akses Data yang lebih cepat)
+
+-> dengan menempatkan "Edge Server" di Lokasi yang berbeda-beda,
+yang mana Lokasi "Edge Server" tersebut mempunyai jarak yang lebih dekat dengan User 
+(dibandingkan dengan jarak "Origin Server" dengan User), 
+sehingga waktu Pengiriman Data ke User menjadi lebih cepat, karena data dikrim dari "Edge Server" terdekat, daripada harus dikrim dari "Origin Server" dengan jarak yang melintasi dunia.
+
+
 ====
 
 to do :
