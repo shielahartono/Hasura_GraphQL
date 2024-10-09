@@ -249,20 +249,24 @@ maka System dapat mengirimkan Data dari "Edge Server" yang berada pada Lokasi te
 yang mana hal ini dapat membantu :
 
 (1) Mengurangi Latency (Waktu Pengiriman Data):
-
 karena Data dikrimkan dari Server yang lokasi nya lebih dekat dengan User,
 sehingga Jarak pengiriman Datanya lebih dekat,
 yang mana jarak yang lebih dekat ini dapat mengurangi waktu pengiriman data (Latency)
 	
 (2) Mengurangi beban kerja "Origin Server" :
-
 Karena Pengiriman Data juga dilakukan dari "Edge Server" dan tidak hanya dari "Origin Server", maka hal ini dapat mengurangi beban kerja "Origin Server". 
 
 (karena beban kerja di-distribusikan juga ke "Edge Server")
 
+-> Kenapa menggunakan "Edge Server" ?
 
-====
+Misalnya kita adalah Cloud Company asal Indonesia,
+yang mana "Origin Server" di Indonesia.
+Dan kita mempunyai Customer di Japan, daripada kita mengirim data dari "Origin Server" di Indonesia, sebaiknya kita mengirim data dari "Edge Server" di Japan, agar kita bisa mengirim data dengan lebih cepat
 
+
+
+===
 to do :
 
 1) Security in Hasura DDN
