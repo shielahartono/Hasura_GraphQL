@@ -320,6 +320,12 @@ karena berkaitan dengan Data Sensitive yang dikirim dan disimpan di berbagai lok
 -> Hasura DDN memilki beberapa Fitur keamanan untuk menjaga Data & User,
 beberapa diantaranya adalah :
 
+(1) DDoS Protection :
+>> menghentikan Malicious Attacks (Serangan jahat) yang mencoba membanjiri Server dengan Traffic yang terlalu tinggi, dengan harapan Server akan Crash.
+
+>> "DDoS" (Distributed Denial of Service) attack :
+merupakan serangan dimana Hacker mencoba membanjiri System dengan Traffic yang sangat banyak, dengan harapan System tidak dapat menahan beban kerja, dan System akan Crash.
+
 
 
 ## >>>>>For your information : <<<<<
