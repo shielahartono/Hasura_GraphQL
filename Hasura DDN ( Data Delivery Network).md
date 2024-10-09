@@ -206,6 +206,11 @@ memungkinkan applications untuk menerima "Live Data" secara instan tanpa harus m
 yang mana hal ini sangat bermanfaat untuk Aplikasi dimana User dapat melihat langsung perubahan pada aplikasi, sesegera mungkin setelah terdapat perubaha pada Data.
 Aplikasi tersebut seperti Live Dashboards, Stock Updates, Gaming Apps, dan sebagainya.
  
+#### [4] Security & Privacy :
+
+-> Hasura DDN menyediakan Security Features seperti "Encryption" untuk menjaga data tetap aman saat Data di-transfer antar Server & User.
+
+-> Hasura DDN juga melindungi dari serangan DDoS (yang menyerang dengan cara mengirim terlalu banyak Traffic ke Server, sehingga Server bisa Crash) 
 
 ====
 
