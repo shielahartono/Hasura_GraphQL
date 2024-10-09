@@ -108,3 +108,8 @@ yang mana hal ini berarti bahwa Content tersebut dapat mencerminkan informasi up
 -> Personalization :
 Dynamic Content seringkali disesuaikan untuk masing-masing User berdasarkan behavior, Preferences, Location, dan faktor lainnya.
 Penyesuaian ini meningkatkan keterlibatan dan kepuasan User.
+
+
+
+
+## 2. Understanding Hasura DDN (Data Delivery Network)
