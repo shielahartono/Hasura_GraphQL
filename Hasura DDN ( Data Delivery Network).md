@@ -270,6 +270,22 @@ Dan kita mempunyai Customer di Japan, daripada kita mengirim data dari "Origin S
 -> "Caching Layer" bukan merupakan System yang mengelola "Edge Server",
 tapi "Caching Layer" merupakan teknologi yang diandalkan "Edge Server" untuk mengirim dan menyimpan data secara efficient.
 
+-> Caching Layer itu seperti "Temporary Storage System" (Sistem Penyimpanan Sementara),
+yakni setiap kali User melakukan Request Data,
+DDN pertama-tama memeriksa "Edge Server's Cache" untuk melihat apakah data sudah pernah disimpan di "Edge Server"
+
+(Saat User melakukan Request Data, DDN memeriksa apakah Data yang di-request tersebut sudah pernah disimpan di Edge Server)
+
+-> Kemudian, jika Data yang di-request oleh User sudah ada pada "Edge Server" (Cache Hit), maka Data tersebut akan langsung dikirim dari "Edge Server" ke User.
+
+tetapi jika Data yang di-request oleh User tidak ada pada "Edge Server" (Cache Miss), 
+maka DDN akan mengambil data dari "Origin Server", dan menyimpan data tersebut di "Edge Server" untuk Request di masa depan.
+
+
+## >>>>>For your information : <<<<<
+
+### 1. Edge Server's Cache : 
+
 
 ===
 
