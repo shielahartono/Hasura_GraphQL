@@ -130,7 +130,7 @@ Dengan menggunakan "Edge Server" untuk "Cache Data", sehingga Data lebih dekat d
 -> Origin Server merupakan Server Utama yang menyimpan versi asli Data.
 Origin Server bertugas menghasilkan Response terhadao Request Client mengenai Dataa/Content.
 
-### [2] Edge Servers :
+#### [2] Edge Servers :
 (menyimpan data agar lebih dekat ke pengguna)
 
 -> "Edge Server" merupakan Temporary Storage yang digunakan untuk menyimpan Data yang sering diakses, sehingga data tersebut di-Request, System hanya perlu mengambil dari "Edge Server" dan tidak perlu mengambil langsung dari "Origin Server",
@@ -143,7 +143,7 @@ yang mana hal ini dapat mengurangi beban dari "Origin Server"
 -> Salinan Data yang disimpan pada "Edge Server", pada Step selanjutnya akan dipakai untuk proses "Data Caching"
 
 
-### [3] Data Caching :
+#### [3] Data Caching :
 
 -> "Data Caching" berarti menyimpan salinan data yang sering dipakai,
 data yang sering dipakai itu seperti data yang sering di-request oleh User.
@@ -156,7 +156,7 @@ Selain itu, hal ini dapat membantu mengurangi Latency (waktu yang dibutuhkan unt
 karena jarak "Edge Server" yang lebih dekat, sehingga dapat membantu mempercepat pengiriman data.
 
 
-### [4] GraphQL API 
+#### [4] GraphQL API 
 (Bagaimana data di-query)
 
 -> Hasura menggunakan "GraphQL", yakni cara modern untuk melakukan Request Data,
