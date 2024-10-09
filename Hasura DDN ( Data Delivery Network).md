@@ -194,6 +194,14 @@ sehingga waktu Pengiriman Data ke User menjadi lebih cepat, karena data dikrim d
 yang mana hal ini membuat System menjadi lebih Efficient, dan mencegah adanya perlambatan (slowing down) saat Peak Traffic (Traffic Puncak)
 
 
+#### [3] Real-Time Updates :
+
+-> Saat Data baru atau Perubahan baru terjadi,
+Hasura DDN dapat dengan cepat meng-update data di "Edge Server",
+memastikkan User selalu mendapatkan Informasi paling up-to-date.
+
+
+
 ====
 
 to do :
