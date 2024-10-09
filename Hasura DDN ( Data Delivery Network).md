@@ -300,6 +300,18 @@ sehingga data tersebut perlu diambil dari "Origin Server".
 
 Misalnya, daripada mengambil keseluruhan User Data, Client dapat hanya melakukan request untuk data user_name dan user_email. yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan Performance.
 
+#### [5] Load Balancing (Traffic Management) :
+
+-> DDN menggunakan Load Balancing untuk memastikkan System tidak kelelahan dengan banyak orang yang melakukan Request Data pada waktu yang sama.
+
+-> "Load Balancing" berperan untuk mendistribusikan Traffic ke beberapa Server, karena "Data Delivery Network" (DDN) mencegah adanya Server yang kelelahan oleh Traffic yang tinggi. yang mana hal ini mencegah Slowdown (pelambatan) & Outage (Pemadaman) pada System, bahkan selama lonjakan Traffic (Traffic Spikes).
+
+-> Peran "Load Balancing" : 
+Mendistribusikan "User Request" ke beberapa Servers, agar tidak ada Satu Server pun yang kelebihan beban.
+
+-> Benefit menggunakan "Load Balancing" : 
+Meningkatkan Performance & menghindari Server Crash saat High-Traffic
+
 
 ## >>>>>For your information : <<<<<
 
