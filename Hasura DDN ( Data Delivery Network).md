@@ -212,6 +212,10 @@ Aplikasi tersebut seperti Live Dashboards, Stock Updates, Gaming Apps, dan sebag
 
 -> Hasura DDN juga melindungi dari serangan DDoS (yang menyerang dengan cara mengirim terlalu banyak Traffic ke Server, sehingga Server bisa Crash) 
 
+### D. Architecture of Hasura DDN (Data Delivery Network)
+
+
+
 ====
 
 to do :
