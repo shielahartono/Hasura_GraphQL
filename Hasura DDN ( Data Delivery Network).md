@@ -216,7 +216,7 @@ Aplikasi tersebut seperti Live Dashboards, Stock Updates, Gaming Apps, dan sebag
 
 - Architecture dari Hasura DDN itu seperti sebuah System yang terancang dengan baik untuk memastikkan Data dapat dikirim ke User dengan cepat, efficient, dan aman.
 
-- berikut ini merupakan penjelasan mengenai Cara kerja Arsitektur Hasura DDN :
+- berikut ini merupakan penjelasan mengenai **Cara kerja Arsitektur Hasura DDN** :
 
 #### [1] Origin Server :
 (Sumber Data yang utama)
@@ -342,6 +342,54 @@ yang mana ini merupakan cara untuk mengunci Pesan (Data) sehingga tidak ada oran
 adalah sebuah System keamanan yang melakukan Filter, Monitor, dan Block HTTP Traffic Ke- dan Dari Web Application.
 WAF itu seperti Penjaga Keamanan untuk Web Application kita yang mengawasi semua data yang masuk dan keluar.
 WAF memastikkan Data yang berbahaya tidak masuk ke Web Application kita, dan hanya membiarkan masuk Data yang aman & telah disetujui.
+
+
+### E. Component of Hasura Architecture : 
+
+
+### F.  Gambar : "Architecture of Hasura Data Delivery Network"
++-------------------+                  +----------------------------+
+|   Client Apps     |                  |   Authentication &         |
+| (Web, Mobile)     | <--------------- |   Authorization Services   |
++-------------------+                  | (OAuth, JWT)               |
+        |                              +----------------------------+
+        |  
+        v
++-----------------------+
+|     CDN/Load Balancer |
++-----------------------+
+        |
+        |
+        v
++-----------------------+
+|  Hasura GraphQL Engine|
++-----------------------+
+        |
+        |
+        v
++-----------------------+
+|      Database         |
+|     (PostgreSQL)      |
++-----------------------+
+        |
+        |
+        v
++-----------------------+
+|     CDN/Edge Servers  |
+|   (Caching Layer)     |
++-----------------------+
+        |
+        |
+        v
++-----------------------+
+|   Response Delivered |
+|     to Client Apps   |
++-----------------------+
+
+
+### G. Workflow Explanation of "Hasura Data Delivery Network (DDN)" :
+
+
 
 
 
