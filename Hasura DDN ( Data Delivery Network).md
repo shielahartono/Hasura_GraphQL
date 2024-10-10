@@ -355,6 +355,23 @@ jika terdapat perubahan data pada Product's Price,
 maka "Edge Server" akan menyinkronisasi informasi tersebut untuk memastikkan harga terbaru ditampilkan ke Customer tanpa Delay.
 
 
+#### [8] Analytics and Monitoring (Keeping Track of Performance) :
+
+-> System ini untuk melacak seberapa baik kinerja Network,
+dan untuk memastikkan semuanya berjalan lancar, dan jika ada issue dapat dideteksi dan diperbaiki dengan cepat.
+
+-> Hasura DDN terus memantau :
+
+(1) Traffic : 
+seberapa banyak orang meng-akses data
+
+(2) Speed : 
+Seberapa cepat data dikirim
+
+(3) Security :
+apakah ada aktifitas yang tidak biasa atau jahat terjadi.
+
+
 ### E. Component of Hasura Architecture : 
 
 
