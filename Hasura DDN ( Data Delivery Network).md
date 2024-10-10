@@ -395,9 +395,13 @@ WAF memastikkan Data yang berbahaya tidak masuk ke Web Application kita, dan han
 
 ### I. Supergraph in Hasura :
 
-#### J. Data Plane & Control Plane in Hasura :
+### J. Data Plane & Control Plane in Hasura :
 
+### K. GraphQL API in Hasura
 
+### L. Federation Layer in Hasura
+
+(urutannya mulai dari G perbaiki lagi)
 
 ## >>>>>For your information : <<<<<
 
@@ -411,3 +415,5 @@ WAF memastikkan Data yang berbahaya tidak masuk ke Web Application kita, dan han
 to do :
 
 1) Security in Hasura DDN
+2) Networking in Hasura
+3) Architecture of Hasura
