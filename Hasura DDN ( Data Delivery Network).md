@@ -175,6 +175,29 @@ yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan
 
 -> yang mana pada langkah ini, User melakukan Request Data, yang mana Request Data ini dibantu dengan teknologi GraphQL, sehingga Data yang diambil hanya data yang dibutuhkan oleh User, dan tidak perlu mengambil keseluruhan data, tetapi data tersebut tidak dibutuhkan.
 
+
+-> "GraphQL API" itu seperti 'Pintu' yang Clients pakai untuk berkomunikasi dengan Engine.
+
+-> "GraphQL API" merupakan 'Entry Point' (titik masuk) yang Clients gunakan untuk meminta Data (ask for Data)
+
+(Clients itu seperti Aplikasi atau Website)
+
+-> Apa yang dilakukan oleh "GraphQL API" :
+
+(1) Sends Requests :
+Clients 'mengirim Request' melalui GraphQL API untuk meminta Data.
+
+(2) Single Access Point : 
+GraphQL API memiliki "Single Access Point", yaitu hanya mempunyai satu pintu untuk membuat lebih Simple.
+Dibandingkan dengan REST API yang mempunyai banyak pintu.
+
+-> pada GraphQL API, "Single Access Point" berarti semua Request pada API melewati satu URL atau Endpoint.
+Pada GraphQL, Endpoint ini adalah "/graphql".
+
+Daripada kita harus mempunyai URL yang berbeda-beda untuk Resources yang berbeda seperti "/users", "/posts", dan sebagainya,
+pada Single Access Point, kita hanya mempunyai satu endpoint,
+yang mana Clients mengirimkan Request nya ke Single Location.
+
 ### C. Bagaimana Hasura DDN meningkatkan Pengiriman Data : 
 
 #### [1] Faster Data Access :
@@ -428,6 +451,7 @@ yang mana merupakan tempat untuk membuat "GraphQL Queries" dan "Mutations" untuk
 >> - GraphQL Engine berperan dalam "Memproses Request Query yang masuk",
 "Mengambil Data dari Database, data yang diambil merupakan Data yang di-request oleh Query",
 "Kemudian data yang diambil dari Database tersebut, dikirim oleh GraphQL Engine ke User"
+
 
 
 
