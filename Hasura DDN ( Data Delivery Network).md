@@ -401,6 +401,11 @@ Misalnya, daripada mengambil keseluruhan User Data, Client dapat hanya melakukan
 -> Hasura DDN memilki beberapa Fitur keamanan untuk menjaga Data & User, beberapa diantaranya adalah "DDoS Protection", "SSL/TLS Encryption", dan"Web Application Firewall"
 
 ### E. Component of Hasura Architecture : 
+- Core Component (Komponen Inti) dari Arsitektur Hasura adalah :
+
+#### [1] Client Applications :
+merupakan Frontend applications seperti Web atau Mobile, 
+yang mana merupakan tempat untuk membuat "GraphQL Queries" dan "Mutations" untuk mengambil atau meng-update data
 
 
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
