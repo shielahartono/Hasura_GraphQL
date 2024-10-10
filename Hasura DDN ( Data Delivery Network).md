@@ -373,6 +373,32 @@ apakah ada aktifitas yang tidak biasa atau jahat terjadi.
 
 ### E. Apa yang terjadi saat User melakukan Request Data :
 
+Saat User melakukan Request Data, inilah yang terjadi : 
+
+#### [1] Request :
+User melakukan Request Data,
+seperti melakukan Request untuk menampilkan Webpage, Product Info melalui Aplikasi atau Browser.
+
+#### [2] Routing :
+Pada proses ini, Request User diarahkan ke "Edge Server" terdekat dengan User.
+
+-> Jika Data yang di-request oleh User, sudah ada di "Edge Server", maka data tersebut akan langsung dikrimkan ke User 
+
+-> tetapi jika Data yang di-request oleh User, tidak ada di "Edge Server", maka Data tersebut perlu diambil terlebih dahulu dari "Origin Server", kemudian salinan datanya disimpan pada "Edge Server", dan kemudian Data tersebut dikirim ke User.
+
+#### [3] GraphQL : 
+Permintaan diproses secara effiecient oleh GraphQL, 
+yang mana GraphQL memastikkan agar hanya data yang diperlukan yang dikirim.
+
+
+-> GraphQL API memungkinkan Client untuk meminta bagian data tertentu yang mereka butuhkan, daripada harus mengambil seluruh kumpulan Dataset seperti Tradional API. yang mana teknologi GraphQL ini memberikan pengambila Data yang lebih efisien.
+
+Misalnya, daripada mengambil keseluruhan User Data, Client dapat hanya melakukan request untuk data user_name dan user_email. yang mana hal ini mengurangi jumlah data yang di-transfer, sehingga meningkatkan Performance.
+
+#### [4] Security :
+-> Security pada Hasura DDN (Data Delivery Network) sangatlah penting, karena berkaitan dengan Data Sensitive yang dikirim dan disimpan di berbagai lokasi.
+
+-> Hasura DDN memilki beberapa Fitur keamanan untuk menjaga Data & User, beberapa diantaranya adalah "DDoS Protection", "SSL/TLS Encryption", dan"Web Application Firewall"
 
 ### E. Component of Hasura Architecture : 
 
