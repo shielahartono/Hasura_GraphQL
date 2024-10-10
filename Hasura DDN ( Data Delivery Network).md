@@ -408,6 +408,26 @@ merupakan Frontend applications seperti Web atau Mobile,
 yang mana merupakan tempat untuk membuat "GraphQL Queries" dan "Mutations" untuk mengambil atau meng-update data
 
 
+
+#### [2] Hasura GraphQL Engine :
+"GraphQL Engine" berperan dalam :
+(1) Memproses Query : 
+-> Saat Request masuk, GraphQL Engine akan membaca dan memahaminya
+
+(2) Fetches Data (Mengambil Data) :
+"GraphQL Engine" menarik informasi dari Database atau Services lainnya
+
+(3) Return Results : 
+"GraphQL Engine" mengirim data yang diminta User
+
+
+>> Summary :
+GraphQL Engine berperan dalam "Memproses Request Query yang masuk",
+"Mengambil Data dari Database, data yang diambil merupakan Data yang di-request oleh Query",
+"Kemudian data yang diambil dari Database tersebut, dikirim oleh GraphQL Engine ke User"
+
+
+
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
 
