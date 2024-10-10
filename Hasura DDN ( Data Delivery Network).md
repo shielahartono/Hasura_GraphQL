@@ -404,13 +404,15 @@ maka "Edge Server" akan menyinkronisasi informasi tersebut untuk memastikkan har
 ### H. Hasura Strategy to Decide which Data will be sent to "Edge Server" vs which Data that remain in "Origin Server" :
 
 
-### I. Supergraph in Hasura :
+### I. Supergraph in Hasura : -> sepertinya di artikel terpisah
 
-### J. Data Plane & Control Plane in Hasura :
+### J. Data Plane & Control Plane in Hasura : -> sepertinya di artikel terpisah
 
-### K. GraphQL API in Hasura
+### K. GraphQL API in Hasura  -> sepertinya di artikel terpisah
 
-### L. Federation Layer in Hasura
+### L. Federation Layer in Hasura  -> sepertinya di artikel terpisah
+
+### M. Hasura Architecture  -> sepertinya di artikel terpisah
 
 (urutannya mulai dari G perbaiki lagi)
 
