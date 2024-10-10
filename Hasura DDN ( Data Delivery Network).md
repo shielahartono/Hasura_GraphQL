@@ -406,43 +406,9 @@ Misalnya, daripada mengambil keseluruhan User Data, Client dapat hanya melakukan
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
 
-+-------------------+                  +----------------------------+
-|   Client Apps     |                  |   Authentication &         |
-| (Web, Mobile)     | <--------------- |   Authorization Services   |
-+-------------------+                  | (OAuth, JWT)               |
-        |                              +----------------------------+
-        |  
-        v
-+-----------------------+
-|     CDN/Load Balancer |
-+-----------------------+
-        |
-        |
-        v
-+-----------------------+
-|  Hasura GraphQL Engine|
-+-----------------------+
-        |
-        |
-        v
-+-----------------------+
-|      Database         |
-|     (PostgreSQL)      |
-+-----------------------+
-        |
-        |
-        v
-+-----------------------+
-|     CDN/Edge Servers  |
-|   (Caching Layer)     |
-+-----------------------+
-        |
-        |
-        v
-+-----------------------+
-|   Response Delivered |
-|     to Client Apps   |
-+-----------------------+
+
+
+
 
 
 ### G. Workflow Explanation of "Hasura Data Delivery Network (DDN)" :
