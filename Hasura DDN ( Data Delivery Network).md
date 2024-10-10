@@ -427,6 +427,7 @@ maka "Edge Server" akan menyinkronisasi informasi tersebut untuk memastikkan har
 
 to do :
 
-1) Security in Hasura DDN
-2) Networking in Hasura
-3) Architecture of Hasura
+1) Analytic & Monitoring in Hasura
+2) Security in Hasura DDN
+3) Networking in Hasura
+4) Architecture of Hasura
