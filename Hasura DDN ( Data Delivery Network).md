@@ -371,6 +371,8 @@ Seberapa cepat data dikirim
 (3) Security :
 apakah ada aktifitas yang tidak biasa atau jahat terjadi.
 
+### E. Apa yang terjadi saat User melakukan Request Data :
+
 
 ### E. Component of Hasura Architecture : 
 
