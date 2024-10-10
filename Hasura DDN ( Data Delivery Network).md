@@ -344,6 +344,17 @@ WAF itu seperti Penjaga Keamanan untuk Web Application kita yang mengawasi semua
 WAF memastikkan Data yang berbahaya tidak masuk ke Web Application kita, dan hanya membiarkan masuk Data yang aman & telah disetujui.
 
 
+#### [7] Real-Time Data Syncing (Staying Updated) :
+
+-> Hasura DDN di-desain untuk menjaga Data tetap ter-update secara Real-Time.
+
+-> Jika terdapat perubahan data pada "Origin Server", perubahan data tersebut secara cepat dikirim salinannya ke "Edge Server", agar User selalu mendapatkan Informasi yang up-to-date.
+
+-> Contoh :
+jika terdapat perubahan data pada Product's Price,
+maka "Edge Server" akan menyinkronisasi informasi tersebut untuk memastikkan harga terbaru ditampilkan ke Customer tanpa Delay.
+
+
 ### E. Component of Hasura Architecture : 
 
 
