@@ -453,6 +453,13 @@ yang mana merupakan tempat untuk membuat "GraphQL Queries" dan "Mutations" untuk
 "Kemudian data yang diambil dari Database tersebut, dikirim oleh GraphQL Engine ke User"
 
 
+### [3] Database :
+merupakan Database yang menyimpan data, seperti PostgreSQL
+
+
+#### [4] CDN / Edge Servers :
+"Edge Server" merupakan Tempat penyimpanan sementara untuk menyimpan Data yang sering diakses agar Data tersebut dekat ke End-User untuk mengurangi Latency & meningkatkan performance. 
+
 
 
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
