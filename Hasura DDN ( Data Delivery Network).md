@@ -423,7 +423,9 @@ yang mana merupakan tempat untuk membuat "GraphQL Queries" dan "Mutations" untuk
 
 >> Summary :
 >> 
->> GraphQL Engine berperan dalam "Memproses Request Query yang masuk",
+>> - GraphQL Engine berperan dalam "Memproses & Menyediakan Data"
+>>   
+>> - GraphQL Engine berperan dalam "Memproses Request Query yang masuk",
 "Mengambil Data dari Database, data yang diambil merupakan Data yang di-request oleh Query",
 "Kemudian data yang diambil dari Database tersebut, dikirim oleh GraphQL Engine ke User"
 
