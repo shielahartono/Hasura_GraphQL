@@ -390,6 +390,12 @@ WAF memastikkan Data yang berbahaya tidak masuk ke Web Application kita, dan han
 ### G. Workflow Explanation of "Hasura Data Delivery Network (DDN)" :
 
 
+### H. Hasura Strategy to Decide which Data will be sent to "Edge Server" vs which Data that remain in "Origin Server" :
+
+
+### I. Supergraph in Hasura :
+
+#### J. Data Plane & Control Plane in Hasura :
 
 
 
