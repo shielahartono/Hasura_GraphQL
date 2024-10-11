@@ -502,6 +502,19 @@ Hasura mengecek apakah Token tersebut Valid,
 Jika Valid, maka Hasura mengetahui bahwa anda adalah orang yang sama dengan Identitas yang anda Claim.
 
 
+>> **Authorization** : 
+
+-> Authorization merupakan Proses untuk menetukkan "apa yang boleh anda lakukan",
+yang mana hal ini menjawab pertanyaan "Apa yang boleh kamu akses, setelah anda di-autentikasi ?"
+
+-> bayangkan saat kita memasuki Gedung, kita memiliki Akses untuk lantai yang berbeda-beda.
+Misalnya Rudi hanya memiliki akses untuk ke lantai 10 & 7,
+sementara Jane memiliki akses untuk ke lantai 12, 8, dan 5.
+
+yang mana, di dunia Digital, Authorization mengontrol Data dan Feature apa yang bisa kita akses berdasarkan Role (Peran) atau Permission (izin) kita.
+
+
+
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
 
