@@ -577,8 +577,10 @@ Hasura memberikan akses sesuai peraturan apa yang boleh diakses oleh Role kita
 yang mana Teknik Load Balancing ini membantu mencegah System mengalami Crash
 
 
+### F. Alur kerja (workflow) pada bagian Data Delivery Network (DDN) di Hasura :
 
-### F.  Gambar : "Architecture of Hasura Data Delivery Network"
+
+### G.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
 
 
@@ -589,33 +591,3 @@ yang mana Teknik Load Balancing ini membantu mencegah System mengalami Crash
 ### G. Workflow Explanation of "Hasura Data Delivery Network (DDN)" :
 
 
-### H. Hasura Strategy to Decide which Data will be sent to "Edge Server" vs which Data that remain in "Origin Server" :
-
-
-### I. Supergraph in Hasura : -> sepertinya di artikel terpisah
-
-### J. Data Plane & Control Plane in Hasura : -> sepertinya di artikel terpisah
-
-### K. GraphQL API in Hasura  -> sepertinya di artikel terpisah
-
-### L. Federation Layer in Hasura  -> sepertinya di artikel terpisah
-
-### M. Hasura Architecture  -> sepertinya di artikel terpisah
-
-(urutannya mulai dari G perbaiki lagi)
-
-## >>>>>For your information : <<<<<
-
-### 1. Edge Server's Cache : 
-
-
-### 2. Caching Layer : 
-
-===
-
-to do :
-
-1) Analytic & Monitoring in Hasura
-2) Security in Hasura DDN
-3) Networking in Hasura
-4) Architecture of Hasura
