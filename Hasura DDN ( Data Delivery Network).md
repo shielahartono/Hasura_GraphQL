@@ -568,6 +568,16 @@ Hasura mengecek Role kita, dan melihat aturan, apa saja yang boleh dilakukan ole
 
 Hasura memberikan akses sesuai peraturan apa yang boleh diakses oleh Role kita
 
+
+#### [6] Load Balancer :
+
+-> Load Balancer mendistribusikan Traffic ke beberapa Server untuk menghindari bottlenecks (kemacetan) dan mengoptimalkan penggunaan Resources.
+
+-> Load Balancing merupakan teknik yang digunakan untuk mendistribusikan Request atau Traffic ke beberapa Server, yang bertujuan untuk memastikkan agar tidak ada satu server pun yang kewelahan dengan terlalu banyak Request atau Traffic, sementara Server lainnya kurang dimanfaat dengan baik.
+yang mana Teknik Load Balancing ini membantu mencegah System mengalami Crash
+
+
+
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
 
