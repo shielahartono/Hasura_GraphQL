@@ -579,6 +579,44 @@ yang mana Teknik Load Balancing ini membantu mencegah System mengalami Crash
 
 ### F. Alur kerja (workflow) pada bagian Data Delivery Network (DDN) di Hasura :
 
+#### [1] Client Request :
+
+Pada bagian Client (seperti bagian Frontend Applications), User melakukan Request Data.
+kemudian, Request diberikan rute oleh DDN atau Load Balancer, yakni Rute untuk menunjukkan Request harus diberikan ke Server mana.
+
+Rute yang diberikan berdasarkan pertimbangan, beberapa diantaranya adalah :
+(1) "Edge Server" mana yang mempunyai jarak terdekat dengan User yang mengirimkan Request.
+karena Jarak yang terdekat membantu mempercepat pengiriman data.
+
+(2) Membagikan Traffic atau beban kerja kepada Server secara merata.
+hal ini bertujuan untuk mencegah System Crash karena adanya Server yang Overload.
+
+
+#### [2] Pemrosesan "GraphQL API"  :
+
+ "GraphQL API" merupakan 'Entry Point' (titik masuk) yang User gunakan untuk meminta Data.
+yang mana User 'mengirim Request' melalui GraphQL API untuk meminta Data.
+
+#### [3] Authentication & Authorization : 
+
+-> Hasura memverifikasi User Credentials menggunakan Token (seperti JWT Token) untuk memastikkan hanya User yang berwenang (Authorized User) yang dapat mengakses data.
+
+-> izin berdasarkan RBAC (Role-Based-Access-Control) diterapkan untuk menentukkan Data mana yang User dapat Read, Write, atau Modify.
+
+#### [4] Response Caching : 
+
+Response dari Database (data yang diambil dari Database) dilakukan "Response Caching" pada Edge Server di Data Delivery Network.
+
+"Response Caching" adalah cara untuk menyimpan hasil Request Data sebelumnya ke Edge Server (Server yang Jarak Geografis nya lebih dekat dengan User) , sehingga saat permintaan Data yang sama diajukan lagi oleh User, System dapat dengan cepat mengirimkan Data yang sudah disimpan pada Edge Server, daripada harus memproses Permintaan data dari awal lagi.
+
+Maka pada step ini, yang dilakukan adalah menyimpan Data yang sudah di-request sebelumnya ke "Edge Server"
+
+
+#### [5] Data Delivery :
+
+Pada Step ini, Data Delivery Network (DDN) mengirim Response kembali ke User.
+Pengiriman Data tersebut dilakukan dari "Edge Server" terdekat dengan User.
+
 
 ### G.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
