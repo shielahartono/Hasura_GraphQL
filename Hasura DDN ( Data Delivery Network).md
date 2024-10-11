@@ -538,6 +538,35 @@ Role "User" hanya boleh melihat data miliknya sendiri, tetapi Role "Admin" dapat
 Kita bisa menyiapkan aturan baru untuk memberikan akses tertentu untuk suatu peran.
 
 
+>> Combining Steps of Authentication & Authorization :
+>> (Menggabungkan langkah-langkah dari Authentication & Authorization)
+
+(1) Login :
+(ini merupakan Proses Authentication)
+
+Kita Login dengan Email & Password dengan menggunakan Third Party Services (misalnya Firebase Auth).
+
+
+
+(2) Token Issued (Token diterbitkan) :
+(ini merupakan Proses Authentication)
+
+Setelah Login sukses, kita akan mendapatkan JWT Token yang berisi "ini [nama anda], dan mereka adalah User"
+
+(3) Request Data : 
+(ini merupakan Proses Authentication)
+
+kita bisa Request Data yang ingin kita akses.
+Request yang kita minta tersebut, dikirimkan beserta Token kita
+
+(4) Hasura Checks Token :
+(ini merupakan Proses Authorization)
+
+Hasura mengecek Role kita, dan melihat aturan, apa saja yang boleh dilakukan oleh Role kita.
+
+(5) Access Control : 
+
+Hasura memberikan akses sesuai peraturan apa yang boleh diakses oleh Role kita
 
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
