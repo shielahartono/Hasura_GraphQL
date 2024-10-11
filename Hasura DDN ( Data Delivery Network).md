@@ -513,6 +513,30 @@ sementara Jane memiliki akses untuk ke lantai 12, 8, dan 5.
 
 yang mana, di dunia Digital, Authorization mengontrol Data dan Feature apa yang bisa kita akses berdasarkan Role (Peran) atau Permission (izin) kita.
 
+-> Hasura menggunakan Authorization berupa "Role-Based Access Control" (RBAC).
+RBAC menentukkan Data apa yang bisa kita akses dan Action apa yang bisa kita lakukan berdasarkan Role (peran) kita.
+
+-> Langkah-langkah dalam Authorization Process :
+
+(1) Token berisi Role / Claims :
+
+JWT Token (yang didapat dari Authentication) mengandung informasi mengenai "Role" kita,
+apakah Role kita sebagai "User", "Admin", atau sebagai role lainnya.
+yang mana, informasi "JWT Token" mengenai Role ini, memberitahu Hasura jenis akses apa yang anda miliki.
+
+(2) Hasura Checks your Role :
+
+Hasura mengecek Role, dan memutuskan Data apa yang bisa diakses.
+Jika Role kita mengizinkannya, kita dapat melakukan View, Modify, dan Delete pada Data,
+tetapi jika Role kita tidak mengizinkannya, maka Hasura memblokir permintaan (Request) kita.
+
+contoh :
+Role "User" hanya boleh melihat data miliknya sendiri, tetapi Role "Admin" dapat mengakses Data milik semua orang.
+
+(3) Custom Rules :
+
+Kita bisa menyiapkan aturan baru untuk memberikan akses tertentu untuk suatu peran.
+
 
 
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
