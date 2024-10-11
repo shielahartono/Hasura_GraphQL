@@ -585,6 +585,7 @@ Pada bagian Client (seperti bagian Frontend Applications), User melakukan Reques
 kemudian, Request diberikan rute oleh DDN atau Load Balancer, yakni Rute untuk menunjukkan Request harus diberikan ke Server mana.
 
 Rute yang diberikan berdasarkan pertimbangan, beberapa diantaranya adalah :
+
 (1) "Edge Server" mana yang mempunyai jarak terdekat dengan User yang mengirimkan Request.
 karena Jarak yang terdekat membantu mempercepat pengiriman data.
 
@@ -618,6 +619,7 @@ Pada Step ini, Data Delivery Network (DDN) mengirim Response kembali ke User.
 Pengiriman Data tersebut dilakukan dari "Edge Server" terdekat dengan User.
 
 
+
 ### G.  Gambar : "Architecture of Hasura Data Delivery Network"
 ![Arsitektur Hasura DDN (Data Delivery Network)](https://github.com/user-attachments/assets/841afeb2-b6aa-4d8b-b7b3-d954ab93a161)
 
@@ -625,7 +627,5 @@ Pengiriman Data tersebut dilakukan dari "Edge Server" terdekat dengan User.
 
 
 
-
-### G. Workflow Explanation of "Hasura Data Delivery Network (DDN)" :
 
 
