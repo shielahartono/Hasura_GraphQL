@@ -453,13 +453,53 @@ yang mana merupakan tempat untuk membuat "GraphQL Queries" dan "Mutations" untuk
 "Kemudian data yang diambil dari Database tersebut, dikirim oleh GraphQL Engine ke User"
 
 
-### [3] Database :
+#### [3] Database :
 merupakan Database yang menyimpan data, seperti PostgreSQL
 
 
 #### [4] CDN / Edge Servers :
 "Edge Server" merupakan Tempat penyimpanan sementara untuk menyimpan Data yang sering diakses agar Data tersebut dekat ke End-User untuk mengurangi Latency & meningkatkan performance. 
 
+
+#### [5] Authentication and Authorization Services :
+
+>> **Authentication** : 
+
+-> Authentication adalah Proses untuk pembuktian identitas kita.
+seperti pertanyaan "Who are you ?" (Siapa anda ?)
+
+-> Analogi nya seperti memasuki Gedung dan kita harus menunjukkan ID Card di pintu untuk membuktikkan Siapa kita.
+Di dunia Digital, Authentication berarti "Log In" menggunakan Username & Password,
+atau bentuk identifikasi lainnya untuk membuktikkan identitas.
+
+-> Bagaimana Authentication bekerja di Hasura ? 
+
+Hasura tidak secara langsung menangani Authentication (seperti mengelola Username atau Password), tetapi Hasura berkerja sama dengan layanan lainnya, seperti JWT (JSON Web Token), dan juga Third Party Services, seperti Auth0, Firebase Auth, atau Okta.
+
+
+-> Langkah-langkah Proses Authentication :
+
+(1) Login :
+kita login menggunakan Third Party Services, seperti Auth0.
+Third Party Services ini memverifikasi Credentials kita (seperti Email & Password)
+
+(2) Token Generation :
+
+Setiap kali identity User dikonfirmasi, User akan diberikan "JWT Token".
+Token ini seperti digital ID yang mengatakan "This is who I am, and I'm allowed to access this System"
+(inilah saya, dan saya boleh untuk mengakses System ini)
+
+(3) Send Token to Hasura :
+
+Setiap kali kita berinteraksi dengan Hasura (seperti membuat Request Data),
+sebenarnya kita juga mengirim Token bersamaan dengan Request.
+
+(ini seperti Menunjukkan ID Card kita setiap kali kita membuat Request Data)
+
+
+(4) Hasura Memverifikasi Token :
+Hasura mengecek apakah Token tersebut Valid,
+Jika Valid, maka Hasura mengetahui bahwa anda adalah orang yang sama dengan Identitas yang anda Claim.
 
 
 ### F.  Gambar : "Architecture of Hasura Data Delivery Network"
