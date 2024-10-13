@@ -127,13 +127,13 @@ yan mana pada Tabel Orders , "Row-Level Security" dapat memastikkan agar User ha
 
 -> Dan juga, misalnya pada suatu Table terdapat baris tertentu yang merupakan Sensitive Data, maka "Row-Level Security" memastikkan hanya Orang tertentu yang dapat mengakses atau memodifikasi data tersebut. 
 
-- Bagaimana "Row-Level Security" bekerja :
+#### A. Bagaimana "Row-Level Security" bekerja :
 
 -> Hasura memungkinkan kita untuk membuat "Permission Rules" yang menentukkan Row mana yang User dapat Akses berdasarkan Role nya (seperti Role sebagai Admin, User, dan peran khusus lainnya)
 
--> Langkah-langkah "Row-Level Security" bekerja :
+ - Langkah-langkah "Row-Level Security" bekerja :
 
-#### [1} Define Roles :
+##### [1} Define Roles :
 (Tentukan Peran)
 
 -> Kita menentukkan Role di Hasura, seperti "Admin", "User", atau "Guest",
