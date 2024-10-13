@@ -123,6 +123,9 @@ Misalnya, kita dapat membuat aturan yang menyatakan :
 -> Pada Table Orders, User hanya dapat melihat Baris (row) yang memiliki nilai user_id yang cocok dengan nilai user_id milik User tersebut,
 yang mana tidak diperbolehkan melihat Baris (row) yang memiliki nilai user_id milik User lain.
 
+yan mana pada Tabel Orders , "Row-Level Security" dapat memastikkan agar User hanya dapat melihat "Order milik mereka sendiri", dan tidak bisa melihat Order milik orang lain.
+
+-> Dan juga, misalnya pada suatu Table terdapat baris tertentu yang merupakan Sensitive Data, maka "Row-Level Security" memastikkan hanya Orang tertentu yang dapat mengakses atau memodifikasi data tersebut. 
 
 
 ## >>> For your Information :  <<<
