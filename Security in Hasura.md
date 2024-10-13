@@ -109,6 +109,21 @@ Hasura mengecek Role kita, dan melihat aturan, apa saja yang boleh dilakukan ole
 Hasura memberikan akses sesuai peraturan apa yang boleh diakses oleh Role kita
 
 
+### 3. Row-Level Security (Fine-Grained Data Access)
+
+- "Row-Level Security" juga dikenal sebagai "Fine-Grained Data Access" (Akses Data Terperinci), merupakan sebuah Fitur keamanan di Hasura yang mengontorol akses ke "Baris Data Tertentu" (Specific Rows of Data).
+
+- "Row-Level Security" berarti mengontrol Akses di tingkat Baris pada Database
+(Controlling Access at the Row Level in Database)
+
+- Kita dapat menentukkan Aturan untuk setiap Tabel (Rules for each table) untuk membatasi Data berdasarkan kondisi tertentu.
+
+Misalnya, kita dapat membuat aturan yang menyatakan :
+
+-> Pada Table Orders, User hanya dapat melihat Baris (row) yang memiliki nilai user_id yang cocok dengan nilai user_id milik User tersebut,
+yang mana tidak diperbolehkan melihat Baris (row) yang memiliki nilai user_id milik User lain.
+
+
 
 ## >>> For your Information :  <<<
 
