@@ -130,13 +130,15 @@ yan mana pada Tabel Orders , "Row-Level Security" dapat memastikkan agar User ha
 
 ## >>> For your Information :  <<<
 
-#### 1.  External Authentication Services in Hasura :
+### 1. Where does "Web Application Firewall" (WAF) fit in Hasura Security ?
 
-#### 2. External Authorization Services in Hasura :
+### 2.  External Authentication Services in Hasura :
 
-#### 3. JWT Token for Authentication in Hasura :
+### 3. External Authorization Services in Hasura :
 
-#### 4. JWT Token for Authorization in Hasura :
+### 4. JWT Token for Authentication in Hasura :
+
+### 5. JWT Token for Authorization in Hasura :
 ================
 
 To do :
