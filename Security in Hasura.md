@@ -139,7 +139,7 @@ yan mana pada Tabel Orders , "Row-Level Security" dapat memastikkan agar User ha
 -> Kita menentukkan Role di Hasura, seperti "Admin", "User", atau "Guest",
 yang mana setiap Role dapat memiliki tingkat akses yang berbeda (Different levels of access)
 
-
+###### [2]
 
 ## >>> For your Information :  <<<
 
