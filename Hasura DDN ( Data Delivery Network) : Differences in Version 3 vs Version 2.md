@@ -13,3 +13,7 @@ Setiap Modul menjalankan fungsi tertentu dan dapat beroperasi secara independen 
 
 -> Modularized Metadata memungkinkan team untuk mengelola Metadata dalam Repositori terpisah.
 
+### [2] Federated CI/CD :
+
+Continuous Integration (CI) dan Continuous Development (CD) yang memungkinkan Development, Testing, dan Deployment dari Distributed Microservices dan Multiple Data Source (Subgraph) dalam sebuah Federated Architecture
+
