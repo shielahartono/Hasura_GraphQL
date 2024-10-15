@@ -3,4 +3,13 @@
 
 ## A. Features baru pada Hasura DDN "Versi 3" : 
 
-### [1] 
+### [1] Modularized Metadata : 
+(Metadata Termodularisasi)
+
+-> "Modularized" itu sendiri berarti pengorganisasian Komponen menjadi modul-modul yang terpisah dan berdiri sendiri (self-contained).
+Setiap Modul menjalankan fungsi tertentu dan dapat beroperasi secara independen saat berinteraksi dengan modul-modul lainnya.
+
+-> "Modularized Metadata" (Metadata Termodularisasi) berarti memecah Metadata menjadi komponen yang lebih kecil dan berdiri sendiri (self-contained)
+
+-> Modularized Metadata memungkinkan team untuk mengelola Metadata dalam Repositori terpisah.
+
