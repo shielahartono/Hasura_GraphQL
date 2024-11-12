@@ -41,6 +41,32 @@ Jika kita Request Field dengan menulis "usernames" padahal nama field yang benar
 maka kita akan mendapat 400 Status Code dengan error message "Unknown field 'usernames' " <br/> <br/>
 
 
+### 3) Status Code : 401 Unauthorized  <br/>
+-> Status Code ini berarti Request memerlukan "User Authentication", dan Client tidak menyediakan "User Authentication" tersebut. <br/>
+-> ini berarti Request nya ditolak karena kurangnya "Authentication Credentials" yang layak, seperti Token. <br/>
+<br/>
+-> Common Causes (Penyebab Umum) : <br/>
+[-] Missing Authorization Token : <br/>
+ini biasanya terjadi karena System mengharapkan agar "Authorization Token" disediakan <br/>
+("Authorization Token" tersebut seperti "API Key", "JWT", atau "OAuth Token"), <br/>
+yang mana Request tersebut tidak mengandung "Authorization Token" atau Key. <br/>
+<br/>
+[-] Invalid or Expired Token : <br/>
+ini berarti "Authorization Token" yang digunakan "Invalid" atau "Expired". <br/>
+"Invalid" berarti Token tersebut Salah. <br/>
+"Expired" berarti Token yang disediakan telah melebihi batas waktu kadaluwarsa nya (has passed its expiration time). <br/>
+yang berarti Token tersebut tidak lagi Valid untuk Autentikasi atau Autorisasi. <br/>
+<br/>
+<br/> 
+-> How to Diagnose (Cara melakukan Diagnosa) :  <br/> 
+[-] Verify Token : <br/> 
+mengecek Token pada 'Request Header' dan memastikkan Token tersebut Valid. <br/> 
+<br/> 
+[-] Check Hasura Permissions : <br/> 
+Pada Hasura Console, kita arahkan ke Tab "Permissions" untuk memastikkan "User Role" (User Role yang diasosiasikan dengan Token tersebut) sudah mempunyai Akses ke Resource atau Data yang kita Request. <br/> 
+
+
+
 
 ## B. How to See Status Code in Hasura
 
