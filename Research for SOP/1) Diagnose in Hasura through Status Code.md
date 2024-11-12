@@ -123,7 +123,8 @@ Pada Hasura Console, kita dapat mengecek bahwa Table & Fields itu Ada dan dapat 
 
 -----
 to do list :
-1) Understanding Error Messages & Analyze Log for Troubleshooting in Hasura <br/>
+1) Understanding Error Messages & Analyze Log for Troubleshooting in Hasura  -> Untuk Troubleshoot ini, langsung cari tahu cara pengerjaannya  menggunakan Linux, Docker, dan Kubernetes.    <br/>
+(Pahami Konsep cara Solve Issue nya, kemudian Langsung cari tahu cara Solve Issue tersebut menggunakan Linux, Docker, dan Kubernetes)<br/>  <br/>
 2) Understanding Linux, Docker, and Kubernetes for Troubleshooting in Hasura <br/>
 3) Understanding Linux, Docker, and Kubernetes for Scaling in Hasura <br/>
 4) Understanding Linux, Docker, and Kubernetes for Horizontal Scale & Vertical Scale in Hasura <br/>
