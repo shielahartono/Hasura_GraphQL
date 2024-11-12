@@ -78,4 +78,4 @@ to do list :
 2) Understanding Linux, Docker, and Kubernetes for Troubleshooting in Hasura <br/>
 3) Understanding Linux, Docker, and Kubernetes for Scaling in Hasura <br/>
 4) Understanding Linux, Docker, and Kubernetes for Horizontal Scale & Vertical Scale in Hasura <br/>
-5) API Explorer in Hasura Console for Troubleshooting Issue Missing Required Fields:
+5) API Explorer in Hasura Console for Troubleshooting Issue (Missing Required Fields, and hopefully other issue)
