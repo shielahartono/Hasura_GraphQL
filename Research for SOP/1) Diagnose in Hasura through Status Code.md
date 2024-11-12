@@ -91,6 +91,31 @@ namun hanya "Admin" yang diperbolehkan untuk menghapus data, <br/>
 sehingga mengirimkan Respons "403 Error" <br/> <br/> 
 
 
+### 5) Status Code : 404 Not Found  <br/> 
+
+-> Status Code ini meingdikasikan bahwa Server tidak dapat menemukan Resource atau Data yang diminta pada Request, <br/> 
+Mungkin karena Data hilang (Missing) atau Endpoint yang salah (incorrect Endpoint). <br/> 
+<br/> 
+-> Common Cause (Penyebab Umum) : <br/> 
+[-] Invalid Endpoint : <br/> 
+(Endpoint yang salah) <br/> 
+ini berarti terdapat kesalahan pada Endpoint (pada URL Path di Request)  <br/> 
+<br/> 
+[-] Nonexistent Resource : <br/> 
+User mencoba untuk mengakses Table, Field, atau Endpoint yang tidak ada di Hasura. <br/> 
+<br/> 
+
+-> How to Diagnose (Cara melakukan Diagnosa ) : <br/> 
+[-] Verify Endpoint URL : <br/> 
+Kita pastikkan "Endpoint URL" sudah benar <br/> 
+<br/> 
+[-] Check Resource Availability : <br/> 
+Pada Hasura Console, kita dapat mengecek bahwa Table & Fields itu Ada dan dapat diakses <br/> 
+(Table & Fields exist and are accessible) <br/> 
+
+
+
+
 
 ## B. How to See Status Code in Hasura
 
