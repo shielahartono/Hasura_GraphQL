@@ -66,6 +66,30 @@ mengecek Token pada 'Request Header' dan memastikkan Token tersebut Valid. <br/>
 Pada Hasura Console, kita arahkan ke Tab "Permissions" untuk memastikkan "User Role" (User Role yang diasosiasikan dengan Token tersebut) sudah mempunyai Akses ke Resource atau Data yang kita Request. <br/> 
 
 
+### 4) Status Code : 403 Forbidden  <br/> 
+
+-> Status Code ini memiliki arti walaupun Request dikenali, tetapi Server memblokir Request tersebut karena tidak User tidak memiliki Permissions (izin) yang memadai. <br/> 
+
+-> Common Cause (Penyebab Umum) : <br/> 
+[-] Role Restrictions : <br/> 
+Role yang berkaitan dengan Token tidak punya Permission (izin) untuk menjalankan Operasi yang diminta. <br/> 
+
+[-] Row-Level Permissions : <br/> 
+"Row-Level Permissions" merupakan Pembatasan akses pada "Row Level",  <br/> 
+ini berarti User memiliki larangan untuk mengakses atau melakukan Operasi pada Row (baris) tertentu. <br/> 
+<br/> 
+-> How to Diagnose (cara melakukan Diagnosa) :   <br/> 
+[-] Check Role Permissions : <br/> 
+Pilih Tab "Permissions" di 'Hasura Console' untuk memastikkan Role diizinkan untuk melakukan suatu tindakan. <br/> 
+<br/> 
+[-] Verify Row-Level Permissions : <br/> 
+Kita perlu melakukan Review pada "Row-Level Permissions" yang ditetapkan pada Table untuk memastikkan Role yang diminta memenuhi ketentuan Akses. <br/> 
+<br/>  <br/> 
+-> Contoh Error "403 Forbidden" :  <br/> 
+Contoh Budi memiliki Role hanya sebagai "Viewer", tetapi Budi mencoba untuk menghapus Data, <br/> 
+namun hanya "Admin" yang diperbolehkan untuk menghapus data, <br/> 
+sehingga mengirimkan Respons "403 Error" <br/> <br/> 
+
 
 
 ## B. How to See Status Code in Hasura
