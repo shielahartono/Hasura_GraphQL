@@ -9,3 +9,12 @@ atau masalah disebebkan oleh oleh Sisi Server (Server-Side Issue) seperti Server
 
 
 ## B. How to See Status Code in Hasura
+
+
+
+-----
+to do list :
+1) Understanding Error Messages & Analyze Log for Troubleshooting in Hasura </b>
+2) Understanding Linux, Docker, and Kubernetes for Troubleshooting in Hasura </b>
+3) Understanding Linux, Docker, and Kubernetes for Scaling in Hasura </b>
+4) Understanding Linux, Docker, and Kubernetes for Horizontal Scale & Vertical Scale in Hasura </b>
