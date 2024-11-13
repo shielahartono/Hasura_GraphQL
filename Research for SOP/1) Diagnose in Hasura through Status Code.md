@@ -111,11 +111,11 @@ Kita pastikkan "Endpoint URL" sudah benar <br/>
 <br/> 
 [-] Check Resource Availability : <br/> 
 Pada Hasura Console, kita dapat mengecek bahwa Table & Fields itu Ada dan dapat diakses <br/> 
-(Table & Fields exist and are accessible) <br/> 
+(Table & Fields exist and are accessible) <br/>  <br/> 
 
 
 ### 6) Status Code : 500 Internal Server Error <br/>
-<br/>
+
 -> Status Code ini memilik arti "Server-Side Error", yang berarti Issue nya ada di Sisi Hasura (atau koneksi Hasura ke Database), <br/>
 dan issue nya bukan karena Request dari Client. <br/>
 <br/>
