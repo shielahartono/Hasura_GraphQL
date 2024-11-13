@@ -207,7 +207,38 @@ yang mana seringkali issue ini terjadi antara Hasura dan Database (atau dengan S
 >> <br/>
 >>
 
+-> Common Causes (Penyebab Umum) : <br/>
+[-] Network Issues : <br/>
+Bisa terjadi "Connectivity Issue" dengan Database Server <br/>
+<br/>
+[-] Database Overload : <br/>
+Database kelelahan (Overwhelmed) atau tidak dapat me-respond tepat waktu. <br/>
+'Database Overload' terjadi karena Database menangani banyak Request melebihi dari Kapasitas yang Database bisa tangani. <br/>
+<br/>
+[-] Proxy/Load Balancer Timeout : <br/>
+jika diantara Hasura dan Client terdapat "Load Balancer" atau "Proxy". <br/>
+"Proxy" atau "Load Balancer" mempunyai "Timeout Setting",  <br/>
+yang mana "Timeout Setting" merupakan waktu maksimum untuk menunggu Response dari Server (yang mana hal ini untuk menghindari Delay terlalu lama dari Client) . <br/>
+sehingga jika melebihi waktu yang lebih lama dari yang diatur pada "Timeout Setting", maka akan muncul Erro "Proxy/Load Balancer Timeout" <br/>
+<br/>
+-> How to Diagnose (Cara melakukan Diagnosa) : <br/>
+[-] Check Database Status : <br/>
+Pastikkan bahwa Database Online dan Responsive. <br/>
+Database Online berarti Database sudah dalam keadaan Aktif dan dapat Menerima Request & Memproses Request. <br/>
+<br/>
+[-] Examine Network Connections : <br/>
+Pastikkan tidak ada "Connetivity Issues" (masalah konektivitas) antara Hasura dan Database. <br/>
+<br/>
+[-] Adjust Timeout Settings : <br/> 
+Jika perlu, tambahkan Waktu "Timeout Settings" pada 'Load Balancer' atau 'Proxy'. <br/>
+<br/>
+<br/>
+-> Contoh Error "502 Bad Gateway / 504 Gateway Timeout" :  <br/>
+Jika Hasura mencoba melakukan Query pada Database yang sedang Down, <br/>
+maka kita dapat melihat rror dengan Status Code 502 atau 504 , <br/>
+yang mana Error ini dapat diakibatkan oleh "Network Issue" atau "Database being Down". <br/>
 
+<br/>
 
 
 
