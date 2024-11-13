@@ -166,7 +166,7 @@ yang mana seringkali issue ini terjadi antara Hasura dan Database (atau dengan S
 <br/>
 >> ^For your information^ <br/>
 >> ### 1) Upstream Service : <br/>
-?? -> "Upstream Services" merupakan Component atau Services yang menyediakan Data (atau yang menyediakan functionality yang dibutuhkan oleh 'Downstream Services'). <br/>
+>> -> "Upstream Services" merupakan Component atau Services yang menyediakan Data (atau yang menyediakan functionality yang dibutuhkan oleh 'Downstream Services'). <br/>
 >> <br/>
 >> -> "Downstream" : <br/>
 >> merupakan Service yang membuat Request  <br/>
