@@ -207,7 +207,7 @@ yang mana seringkali issue ini terjadi antara Hasura dan Database (atau dengan S
 >> <br/>
 >>
 
-## B. How to See Status Code in Hasura
+
 
 
 
