@@ -156,6 +156,56 @@ lakukan Test dengan Query yang lebih sederhana untuk melihat apakah Hasura dapat
 Query yang mencoba melakukan Join pada beberapa Table tanpa Indexing yang bagus, dapat mengakibatkan Timeout, sehingga terjadi Error dengan Status Code "500" <br/>
 <br/>
 
+### 7) Status Code : 502 Bad Gateway / 504 Gateway Timeout <br/>
+
+-> Status Code "502 Bad Gateway" & "504 Gateway Timeout" mengindikasikan "Server-Side Issues" (Issue yang terjadi di Server). <br/>
+<br/>
+-> Status Code "502 Bad Gateway" & "504 Gateway Timeout" <br/>
+mengindikasikan adanya "Communication Issues" (masalah Komunikasi) dengan "Upstream Services", <br/>
+yang mana seringkali issue ini terjadi antara Hasura dan Database (atau dengan Services lainnya yang terhubung yang bertindak sebagai Upstream Services (Penyedia Data)). <br/>
+<br/>
+>> ^For your information^ <br/>
+>> ### 1) Upstream Service : <br/>
+?? -> "Upstream Services" merupakan Component atau Services yang menyediakan Data (atau yang menyediakan functionality yang dibutuhkan oleh 'Downstream Services'). <br/>
+>> <br/>
+>> -> "Downstream" : <br/>
+>> merupakan Service yang membuat Request  <br/>
+>> <br/>
+>>
+>> -> "Upstream" : <br/>
+>> merupakan Service atau Component yang me-respond terhadap Request. <br/>
+> yang mana, "Upstream Services" merupakan Services yang berinteraksi atau dimintai Data oleh Downstream Services. <br/>
+>>  <br/>
+>> -> Istilah untuk memberi Contoh :  <br/>
+>> Contoh nya pada Restaurant, mari kita buat analogy : <br/>
+>> [-] Downstream Servive : <br/>
+>> Customer merupakan "Downstream Service". <br/>
+>> "Downstream Service" merupakan yang meminta Data. <br/>
+>> Contoh pada implementasinya, "Downstream Service" ini merupakan "Web Application" <br/>
+>> "Web Application" merupakan "Downstream Service" karena "Web Application" meminta Data <br/>
+>>  <br/>
+>> [-] Intermediate Service : <br/>
+>> Waiter (Pelayan) merupakan "Intermediate Service". <br/>
+>> "Intermediate Service" merupakan yang mengantarkan Data <br/>
+>> Contoh pada implementasinya, "Intermediate Service" merupakan "Backend Server" <br/>
+>> "Backend Server" merupakan "Intermediate Service" karena "Backend Server" menangani Request dan Response antara 'Web Application' dan Database. <br/>
+>> yang mana "Backend Server" menangani Request & Response dengan "Mengantarkan Data" antara 'Web App' dan Database. <br/>
+>>  <br/>
+>> 
+>> [-] Upstream Service : <br/>
+>> Kitchen (dapur) merupakan "Upstream Service". <br/>
+>> "Upstream Service" merupakan yang Menyediakan Data. <br/>
+>> Contoh pada implementasinya, "Upstream Service" merupakan "Database". <br/>
+>> "Database" merupakan "Upstream Service" karena Database menyediakan Data ke "Backend Server" (Intermediate Service) <br/>
+>> <br/>
+>> -> Contoh Alur Kerja "Upstream Services", "Intermediate Services", dan "Backend Server" pada konteks Web Services : <br/>
+>> (1) User menggunakan "Web Application"  <br/>
+>> (2) "Web Application" mengirim Request ke "Backend Server", yang mana Request tersebut berisi informasi untuk Mengambil Data (Fetch Data) <br/>
+>> (3) "Backend Server" meminta ke Database mengenai Data yang diminta pada Request <br/>
+>> (4) Database mengirim data yang diminta ke "Backend Server", <br/>
+>> yang mana kemudian "Backend Server" mengirim Data ke "Web Application" <br/>
+>> <br/>
+>>
 
 ## B. How to See Status Code in Hasura
 
@@ -165,6 +215,8 @@ Query yang mencoba melakukan Join pada beberapa Table tanpa Indexing yang bagus,
 to do list :
 1) Understanding Error Messages & Analyze Log for Troubleshooting in Hasura  -> Untuk Troubleshoot ini, langsung cari tahu cara pengerjaannya  menggunakan Linux, Docker, dan Kubernetes.    <br/>
 (Pahami Konsep cara Solve Issue nya, kemudian Langsung cari tahu cara Solve Issue tersebut menggunakan Linux, Docker, dan Kubernetes)<br/>  <br/>
+2) How to see Status Code in Hasura
+<br/>  <br/> 
 2) Understanding Linux, Docker, and Kubernetes for Troubleshooting in Hasura <br/>
 3) Understanding Linux, Docker, and Kubernetes for Scaling in Hasura <br/>
 4) Understanding Linux, Docker, and Kubernetes for Horizontal Scale & Vertical Scale in Hasura <br/>
