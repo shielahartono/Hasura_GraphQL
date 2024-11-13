@@ -114,7 +114,47 @@ Pada Hasura Console, kita dapat mengecek bahwa Table & Fields itu Ada dan dapat 
 (Table & Fields exist and are accessible) <br/> 
 
 
-
+### 6) Status Code : 500 Internal Server Error <br/>
+<br/>
+-> Status Code ini memilik arti "Server-Side Error", yang berarti Issue nya ada di Sisi Hasura (atau koneksi Hasura ke Database), <br/>
+dan issue nya bukan karena Request dari Client. <br/>
+<br/>
+-> Common Cause (Penyebab Umum) : <br/>
+[-] Database Connectivity Issues: <br/>
+Hasura tidak bisa Connect ke Database <br/>
+<br/>
+[-] Resource Limitations :  <br/>
+Kemungkinan Server mengalami "Out of Memory" atau Server mengalami "High CPU Load." <br/>
+<br/>
+"Out of Memory"(OOM) merupakan kondisi pada Server dimana Operating System (OS) kehabisan ketersediaan RAM (Random Access Memory) yang bisa dialokasikan untuk menjalankan proses. <br/>
+yang mana "Out of Memory" dapat menyebabkan penurunan performa yang serius atau System Crash karena Operating System tidak dapat menyediakan Memory yang cukup untuk menjalankan Proses yang baru atau Proses yang sudah ada. <br/>
+Saat System sudah mencapai kondisi dimana System tidak bisa menyediakan Memory untuk menjalankan Proses, System dapat mengambil tindakan seperti "Killing Process" (Menghentikan Poses) untuk 'Free-Up Memory' (membebaskan Memory), yang mana tindakan ini terkadang dapat terjadi tanpa User Intervention (tanpa campur tangan pengguna), <br/>
+yang mana umumnya hal ini disebut sebagai mekanisme "OOM Killer" pada Linux. <br/>
+<br/>
+"High CPU Load" merupakan Situasi dimana Processor (CPU) dari sebuah Server sedang dalam Heavy Usage (sedang digunakan secara berat), 
+artinya CPU tersebut memproses Task yang mendekati Full Capacity (kapasitas penuh dari CPU). <br/>
+yang mana, hal ini dapat diakibatkan oleh hal seperti Menjalankan terlalu banyak Proses secara bersamaan, Inefficient Code (Code yang tidak efisien), atau menangani terlalu banyak Request melebihi yang System bisa. <br/>
+("Inefficient Code" merupakan Code yang tidak menggunakan System Resources secara efisien, seperti terdapat Infinite Loop, Unoptimized Algorithm (Algorithm yang tidak teroptimisasi dengan baik), dan lain sebagainya) <br/>
+<br/> 
+[-] Timeouts :  <br/>
+Timeouts berarti Request memakan waktu terlalu lama untuk diproses, seringkali ini terjadi karena Query yang Complex atau tidak efsien (Ineffiecient Query). <br/>
+("Inefficient Query" merupakan Query yang memakan lebih banyak waktu atau Resources daripada yang dibutuhkan. <br/>
+yang mana Query tersebut biasanya kurang memakai Index (lack of index), melakukan pengambilan data lebih dari yang diperlukkan (seperti memakai `select *` padahal hanya membutuhkan sedikit data), dan lain sebagainya ). <br/>  <br/>
+<br/>
+-> How to Diagnose (cara melakukan Diagnosa) : <br/>
+[-] Check Logs :  <br/>
+Hasura Logs seringkali menyediakan Detail mengenai Error, terutama yang berkaitan dengan Connectivity (konektifitas) atau Timeout Issues. <br/>
+<br/>
+[-] Monitor Server Resources : <br/>
+Check penggunaan Memory dan CPU pada Server. <br/>
+Jika penggunaan secara konsisten terus-menerus tinggi, pertimbangkan untuk meng-optimisasi Query (Optimizing Query).  <br/>
+<br/>
+[-] Simplify Queries : <br/>
+lakukan Test dengan Query yang lebih sederhana untuk melihat apakah Hasura dapat menangani Query tersebut tanpa terjadi Issue. <br/>
+<br/>
+-> Contoh Error "500 Internal Server Error" : <br/>
+Query yang mencoba melakukan Join pada beberapa Table tanpa Indexing yang bagus, dapat mengakibatkan Timeout, sehingga terjadi Error dengan Status Code "500" <br/>
+<br/>
 
 
 ## B. How to See Status Code in Hasura
