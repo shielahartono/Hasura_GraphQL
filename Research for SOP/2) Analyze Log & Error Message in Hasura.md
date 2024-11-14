@@ -74,7 +74,7 @@ yang mana didalam "Hasura Log" tersebut juga terdapat "Error Message" <br/> <br/
 Continue..............
 
 ## C. Hasura Log vs Error Message 
-### (Konsep Perbedaan "Hasura Log" dan "Error Message")
+## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
 <br/>
 <br/>
