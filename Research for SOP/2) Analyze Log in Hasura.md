@@ -18,11 +18,11 @@ Logs dapat kita lihat melalui "Terminal" <br/>
 -> Menganalisis Log (Analyze Log) merupakan Langkah penting untuk Debugging Issue, yakni untuk Mengidentifikasi, Meng-Diagnosa, dan Memperbaiki Masalah. <br/>
 
 
-### A. Why "Linux", "Docker", and "Kubernetes" are important for Troubleshooting ? <br/>
-### (Mengapa Linux, Docker, dan Kubernetes penting untuk Troubleshooting) <br/>
+## A. Why "Linux", "Docker", and "Kubernetes" are important for Troubleshooting ? <br/>
+## (Mengapa Linux, Docker, dan Kubernetes penting untuk Troubleshooting) <br/>
 
 
-#### 1) Linux : 
+### 1) Linux : 
 Linux merupakan Operating System yag berjalan pada Server kita. <br/>
 Linux membantu kita untuk Mengakses "Server-Level Logs", "System Resources", dan"Configurations". <br/>
 <br/>
