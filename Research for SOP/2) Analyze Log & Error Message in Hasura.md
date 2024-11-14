@@ -1,6 +1,6 @@
-# Analyze Log in Hasura
+# Analyze Log & Error Message in Hasura
 
--> Where do you See Error Messges ? <br/>
+-> Where do you See Error Messages ? <br/>
 (dimana kita bisa melihat Error Messages) <br/>
 <br/>
 [-] Hasura Console :  <br/>
@@ -66,4 +66,21 @@ yang seringkali mencakup beberapa Server, Data Center, atau Cloud Regions) <br/>
 
 ## B. Where to Find "Hasura Log" ?
 ## (Dimana menemukan "Hasura Log")
+-> "Error Message" berada di dalam "Hasura Log", tetapi adalah Dua Hal yang berbeda untuk dianalisa. <br/>
+
+-> Disini kita akan membahas cara menemukan "Haura Log",  <br/>
+yang mana didalam "Hasura Log" tersebut juga terdapat "Error Message" <br/> <br/>
+
+Continue..............
+
+## C. Hasura Log vs Error Message 
+### (Konsep Perbedaan "Hasura Log" dan "Error Message")
+
+<br/>
+<br/>
+
+
+## D. Example of "Hasura Log" vs "Error Message"
+## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
+
 
