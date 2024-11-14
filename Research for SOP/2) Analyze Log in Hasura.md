@@ -21,7 +21,7 @@ Logs dapat kita lihat melalui "Terminal" <br/>
 ### A. Why "Linux", "Docker", and "Kubernetes" are important for Troubleshooting ? <br/>
 ### (Mengapa Linux, Docker, dan Kubernetes penting untuk Troubleshooting) <br/>
 <br/>
-1) Linux : <br/>
+#### 1) Linux : <br/>
 Linux merupakan Operating System yag berjalan pada Server kita. <br/>
 Linux membantu kita untuk Mengakses "Server-Level Logs", "System Resources", dan"Configurations". <br/>
 <br/>
