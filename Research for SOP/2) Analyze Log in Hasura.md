@@ -13,6 +13,6 @@ Error Messages dapat kita lihat Pada "Response Body" <br/>
 Saat kita menjalankan Hasura pada Server atau Container, <br/>
 yakni seperti Docker atau Kuberntes, <br/>
 Logs dapat kita lihat melalui "Terminal" <br/>
-
 <br/>
 
+-> Menganalisis Log (Analyze Log) merupakan Langkah penting untuk Debugging Issue, yakni untuk Mengidentifikasi, Meng-Diagnosa, dan Memperbaiki Masalah. <br/>
