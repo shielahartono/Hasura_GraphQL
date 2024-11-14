@@ -37,3 +37,28 @@ Linux menyediakan akses ke "Configuration Files", <br/>
 yang mana kita dapat meng-akses dan memodifikasi Configuration Files untuk memastikkan System telah diatur dengan benar. <br/>
 "Configuration Files" mengontrol perilaku System (System Behavior). <br/>
 <br/>
+
+### 2) Docker :  <br/>
+-> Docker memungkinkan kita untuk Troubleshoot Container tertentu (Specific Container) tanpa mempengaruhi bagian lainnya pada System.
+(Troubleshoot The Specific Container)  <br/>
+
+-> Docker menyediakan "Consistent Environment" dan "Isolates Problems" dalam Container.  <br/>
+
+-> "Consistent Environment" memiliki arti bahwa Aplikasi akan Berjalan dengan cara yang sama, tidak masalah pada Environment manapun Aplikasi tersebut di-Deploy. <br/>
+(Application will run in the same way, regardless of where the application is deployed), <br/>
+Misalnya Aplikasi di-deploy pada Local Machine, pada Test Server, atau pada Production Environment di Cloud, <br/>
+Consistency akan tetap terjaga melalui penggunaan "Container" pada Docker. <br/>
+<br/>
+-> "Isolates Problem" ini berarti Masalah pada sebuah Container tidak akan mempengaruhi Container lainnya. <br/>
+"Isolaltion" sendiri berarti Setiap Container berjalan secara independen dengan Environment, Resources, dan Dependencies nya sendiri. <br/>
+yang mana, "Isolation" membantu mencegah Problem yang terjadi pada satu Container agar tidak mempengaruhi Container lainnya, dan juga tidak mempengaruhi Host System. <br/>
+
+-> Troubleshooting dengan Docker melibatkan pengecekkan "Container Log", "Resource Usage", dan "Network Configuration". <br/>
+Docker memastikkan Environment tempat Hasura berjalan terisolasi (isolated) dan dapat direproduksi (Reproducible). <br/>
+"Reproducible" atau "Reproducibility" artinya kita bisa membuat ulang (re-create) Environment yang berjalan pada Development, Testing, Staging, atau Production. <br/> <br/>
+
+### 3) Kubernetes : <br/>
+-> Kubernetes memungkinkan kita untuk Manage, Scale, dan Monitor Hasura pada 'Distributed Containerized Environment'. <br/>
+<br/>
+("Distributed Containerized Environment" merupakan System tempat beberapa Container dijalankan dan dikelola di seluruh rangkaian Machines atau Node yang terdistribusi, <br/>
+yang seringkali mencakup beberapa Server, Data Center, atau Cloud Regions) <br/> <br/>
