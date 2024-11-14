@@ -62,3 +62,8 @@ Docker memastikkan Environment tempat Hasura berjalan terisolasi (isolated) dan 
 <br/>
 ("Distributed Containerized Environment" merupakan System tempat beberapa Container dijalankan dan dikelola di seluruh rangkaian Machines atau Node yang terdistribusi, <br/>
 yang seringkali mencakup beberapa Server, Data Center, atau Cloud Regions) <br/> <br/>
+
+
+## B. Where to Find "Hasura Log" ?
+## (Dimana menemukan "Hasura Log")
+
