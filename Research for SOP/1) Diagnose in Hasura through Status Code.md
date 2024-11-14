@@ -248,6 +248,8 @@ to do list :
 (Pahami Konsep cara Solve Issue nya, kemudian Langsung cari tahu cara Solve Issue tersebut menggunakan Linux, Docker, dan Kubernetes)<br/>  <br/>
 2) How to see Status Code in Hasura
 <br/>  <br/>
+3) How to Understand Error Messages in Hasura
+   <br/>  <br/>
 3) The Difference between  502 Bad Gateway vs 504 Gateway Timeout
    <br/> (explain the Detail)
 <br/>  <br/>
