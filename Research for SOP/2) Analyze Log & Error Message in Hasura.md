@@ -119,6 +119,13 @@ Contoh Timestamp : <br/>
 >> Jadi "Timezone" yang dipakai adalah **UTC** (Coordinated Universal Time) <br/> <br/>
 >> 
 
+## 2. Docker or Kubernetes Logs
+
+-> Jika Hasura kita berjalan di dalam "Docker Container" atau pada "Kubernetes Cluster",
+maka Logs dapat diakses melalui Command pada "Terminal" <br/>
+<br/>
+-> 
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
