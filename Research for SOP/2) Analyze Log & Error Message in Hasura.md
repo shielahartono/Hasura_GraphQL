@@ -68,10 +68,26 @@ yang seringkali mencakup beberapa Server, Data Center, atau Cloud Regions) <br/>
 ## (Dimana menemukan "Hasura Log")
 -> "Error Message" berada di dalam "Hasura Log", tetapi adalah Dua Hal yang berbeda untuk dianalisa. <br/>
 
--> Disini kita akan membahas cara menemukan "Haura Log",  <br/>
+-> Disini kita akan membahas cara menemukan "Hasura Log",  <br/>
 yang mana didalam "Hasura Log" tersebut juga terdapat "Error Message" <br/> <br/>
 
-Continue..............
+### 1. Hasura Console (Self-Hosted)
+-> "Self-Hosted" berarti kita meng-install Hasura di Laptop atau Machine kita sendiri (menggunakan Docker atau Kubernetes), <br/>
+maka kita bisa mengecek "Hasura Console".  <br/>
+<br/>
+-> Cara melihat Log pada "Hasura Console" : <br/>
+(1) Buka "Hasura Console" pada Browser <br/>
+(2) Pilih Tab "Monitoring" <br/>
+(3) Dibawah "Logs" atau "Request Logs", kita bisa menemukan Detail Logs milik GraphQL Requests. <br/>
+(4) Kita dapat melakukan Filter dengan Timestamps untuk menemukkan "exact error" (untuk menemukkan letak Error yang pasti). <br/>
+Contoh Timestamp : <br/>
+(`2024-11-14T12:05:00Z`) <br/>
+<br/>
+>> ^For your information^ <br/>
+>> ### {1} Cara baca Timestamp : 
+>> `2024-11-14T12:05:00Z` <br/>
+>>
+>> 
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
