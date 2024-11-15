@@ -86,7 +86,37 @@ Contoh Timestamp : <br/>
 >> ^For your information^ <br/>
 >> ### {1} Cara baca Timestamp : 
 >> `2024-11-14T12:05:00Z` <br/>
->>
+>>  <br/>
+>> -> Format Jam ini menunjukkan Format "ISO 8601" <br/>
+>>  ```
+>>  YYYY-MM-DDTHH:MM:SSZ
+>>  ```
+>>  [-] `T` : adalah huruf yang memisahkan antara "Date" dan "Time" <br/>
+>> <br/>
+>> <br/>
+>>  -> Date : `2024-11-14` <br/>
+>>  [-] `2024` : The Year (Tahun) <br/>
+>>  [-] `11` : The Month (Bulan) , yaitu November (Bulan ke-11) <br/>
+>>  [-] `14`: The Day (Tanggal) , yaitu Tanggal 14 atau Hari ke-14 pada Bulan tersebut <br/>
+>>  <br/>
+>>  Jadi "Date" tersebut adalah November 14, 2024 <br/>
+>>  <br/>
+>> -> Time : `12:05:00` <br/>
+>> [-] `12` : The Hour (Jam), jam tersebut dalam 24-hour Format, yang berarti jam tersebut >>  adalah Pukul 12 Siang atau 12 PM <br/>
+>> [-] `05` : The Minutes (Menit) <br/>
+>> [-] `00` : The Seconds (Detik) <br/>
+>> <br/>
+>> Jadi "Time" tersebut adalah 12:05:00 PM  (Dengan Format 24-hour) <br/>
+>>  <br/>
+>>  -> Timezone :  `Z`  <br/>
+>>  [-] huruf `Z` diakhir merupakan kepanjangan dari "Zulu Time".  <br/>
+>>  yang mana "Zulu Time" sama dengan "UTC" (Coordinated Universal Time) <br/>
+>>  <br/>
+>> [-] Timezone untuk Indonesia bagian Barat (WIB), seperti Jakarta adalah **UTC+7**   <br/>
+>> , yang mana jika kita ingin Konversikan (ubah) jam UTC ke jam UTC+7 , kita hanya perlu >> menambah 7 jam. <br/>
+>> yaitu Pukul 19:05:00 PM waktu Indonesia bagian Barat (UTC+7) <br/>
+>>  <br/>
+>> Jadi "Timezone" yang dipakai adalah **UTC** (Coordinated Universal Time) <br/> <br/>
 >> 
 
 ## C. Hasura Log vs Error Message 
