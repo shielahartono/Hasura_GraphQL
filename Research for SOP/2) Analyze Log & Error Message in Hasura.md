@@ -167,6 +167,12 @@ docker logs -f my-app-container
 [-] `-f` = memberitahu Docker untuk mengikuti Logs secara Real-Time   <br/>
 
 
+### (4) Menampilkan Log mulai dari Jangka Waktu tertentu untuk Spesifik Container :
+### (View Logs "Since" Specific Time Range for Spesific Container)
+
+
+
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
