@@ -155,8 +155,16 @@ docker logs --timestamps my-app-container
 ```
 
 ### (3) Menampilkan Log secara Real-Time untuk Spesifik Container :
-
-
+```
+docker logs -f <container_name>
+```
+contoh : <br/>
+Nama Container adalah : my-app-container  <br/>
+, maka Contoh Command pada Terminal adalah : <br/>
+```
+docker logs -f my-app-container
+```
+[-] `-f` = memberitahu Docker untuk mengikuti Logs secara Real-Time   <br/>
 
 
 ## C. Hasura Log vs Error Message 
