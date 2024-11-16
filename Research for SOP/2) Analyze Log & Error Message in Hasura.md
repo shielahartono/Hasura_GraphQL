@@ -126,7 +126,7 @@ maka Logs dapat diakses melalui Command pada "Terminal" <br/>
 <br/>
 -> Cara mengecek Logs pada Docker melalui Terminal : <br/>
 
-### (1) Menampilkan Log untuk Spesifik Hasura Container : <br/>
+### (1) Menampilkan Log untuk Spesifik Container : <br/>
 ### (Menampilkan Log utnuk Container tertentu)  <br/>
 Jalankan Command ini pada Terminal :
 ```
@@ -140,6 +140,23 @@ Nama Container adalah : my-app-container  <br/>
 ```
 docker logs my-app-container
 ```
+
+### (2) Menampilkan Log dengan Timestamp untuk Spesifik Container :
+Jalankan Command ini pada Terminal :
+```
+docker logs --timestamps <container_name>
+```
+contoh : <br/>
+Nama Container adalah : my-app-container  <br/>
+, maka Contoh Command pada Terminal adalah : <br/>
+
+```
+docker logs --timestamps my-app-container
+```
+
+### (3) Menampilkan Log secara Real-Time untuk Spesifik Container :
+
+
 
 
 ## C. Hasura Log vs Error Message 
