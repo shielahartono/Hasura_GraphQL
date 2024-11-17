@@ -178,6 +178,14 @@ docker logs --since 10m my-app-container
 [-] `10m` = 10 menit terakhir (Berarti kita ingin menampilkan Log yang terbentuk selama 10 menit terakhir) <br/>
 [-] `my-app-container` =  merupakan nama Container yang ingin kita lihat Log nya <br/>
 
+<br/> <br/>
+`10m` merupakan format Waktu yang berarti "menit", yang mana Format tersebut dapat kita ganti ke "hour"(jam) atau "day"(hari), <br/>
+contoh seperti ini : <br/>
+[-] `10m` = 10 menit terakhir (untuk melihat Log yang terbentuk selama 10 hari terakhir) <br/>
+[-] `2h` = 2 hours terakhir atau 2 jam terakhir (untuk melihat Log yang terbentuk selama 2 jam terakhir) <br/>
+[-] `1d` = 1 day terakhir atau 1 hari terakhir (untuk melihat Log yang terbentuk selama 1 hari terakhir) <br/>
+
+<br/>
 
 
 ## C. Hasura Log vs Error Message 
