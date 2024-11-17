@@ -210,8 +210,8 @@ docker logs --since "2024-11-15T14:00:00" --until "2024-11-15T16:00:00" my-app-c
 <br/>
 Jadi Command diatas meminta untuk menunjukkan Logs mulai dari jam 14.00 sampai 16.00 UTC pada 15 November, 2024.  <br/> <br/>
 
--> Menampilkan Daftar Log dengan jumlah tertentu <br/>
-- Misalnya kita ingin melihat 50 baris Log terakhir yang terbentuk, maka kita bisa gunakan `--tail`
+### (5) Menampilkan Daftar Log dengan jumlah tertentu <br/>
+-> Misalnya kita ingin melihat 50 baris Log terakhir yang terbentuk, maka kita bisa gunakan `--tail`
 Contoh :
 ```
 docker logs --tail 50 my-app-container
