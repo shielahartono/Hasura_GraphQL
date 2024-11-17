@@ -222,6 +222,15 @@ Jumlah baris Log nya tidak harus 50, kalau misalnya kita ingin melihat 100 baris
 <br/>
 <br/>
 
+### (6) Menampilkan Logs dengan beberapa Kombinasi Command diatas :
+- Misalnya kita ingin melihat Logs secara "Real-Time", kita ingin pada Logs tersebut terdapat "Timestamp", <br/> dan kita hanya ingin melihat "100 baris Logs terakhir" yang terbentuk. <br/>
+Contoh :
+```
+docker logs -f --timestamps --tail 100 my-app-container
+```
+[-] `-f` = untuk menunjukkan Logs secara "Real-Time"  <br/>
+[-] `--timestamps` = untuk meampilkan "Timestamps" pada Logs  <br/>
+[-] `--tail 100` = untuk menampilkan 100 Baris Terakhir Logs yang terbentuk  <br/>
 
 
 
