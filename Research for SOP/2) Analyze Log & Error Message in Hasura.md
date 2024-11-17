@@ -124,10 +124,11 @@ Contoh Timestamp : <br/>
 -> Jika Hasura kita berjalan di dalam "Docker Container" atau pada "Kubernetes Cluster",
 maka Logs dapat diakses melalui Command pada "Terminal" <br/>
 <br/>
--> Cara mengecek Logs pada Docker melalui Terminal : <br/>
 
-### (1) Menampilkan Log untuk Spesifik Container : <br/>
-### (Menampilkan Log utnuk Container tertentu)  <br/>
+### 2.1) Cara mengecek Logs pada Docker melalui Terminal : <br/>
+
+#### (1) Menampilkan Log untuk Spesifik Container : <br/>
+#### (Menampilkan Log utnuk Container tertentu)  <br/>
 Jalankan Command ini pada Terminal :
 ```
 docker logs <container_name>
@@ -141,7 +142,7 @@ Nama Container adalah : my-app-container  <br/>
 docker logs my-app-container
 ```
 
-### (2) Menampilkan Log dengan Timestamp untuk Spesifik Container :
+#### (2) Menampilkan Log dengan Timestamp untuk Spesifik Container :
 Jalankan Command ini pada Terminal :
 ```
 docker logs --timestamps <container_name>
@@ -154,7 +155,7 @@ Nama Container adalah : my-app-container  <br/>
 docker logs --timestamps my-app-container
 ```
 
-### (3) Menampilkan Log secara Real-Time untuk Spesifik Container :
+#### (3) Menampilkan Log secara Real-Time untuk Spesifik Container :
 ```
 docker logs -f <container_name>
 ```
@@ -167,8 +168,8 @@ docker logs -f my-app-container
 [-] `-f` = memberitahu Docker untuk mengikuti Logs secara Real-Time   <br/>
 
 
-### (4) Menampilkan Log mulai dari Jangka Waktu tertentu untuk Spesifik Container :
-### (View Logs "Since" Specific Time Range for Spesific Container)
+#### (4) Menampilkan Log mulai dari Jangka Waktu tertentu untuk Spesifik Container :
+#### (View Logs "Since" Specific Time Range for Spesific Container)
 -> Kita bisa menggunakan `--since` untuk menampilkan Logs mulai dari Periode waktu tertentu  <br/> 
 <br/>
 -> Misalnya, Kita ingin menampilkan Logs yang terbentuk semenjak 10 Menit terakhir :
@@ -210,7 +211,7 @@ docker logs --since "2024-11-15T14:00:00" --until "2024-11-15T16:00:00" my-app-c
 <br/>
 Jadi Command diatas meminta untuk menunjukkan Logs mulai dari jam 14.00 sampai 16.00 UTC pada 15 November, 2024.  <br/> <br/>
 
-### (5) Menampilkan Daftar Log dengan jumlah tertentu <br/>
+#### (5) Menampilkan Daftar Log dengan jumlah tertentu <br/>
 -> Misalnya kita ingin melihat 50 baris Log terakhir yang terbentuk, maka kita bisa gunakan `--tail`
 Contoh :
 ```
@@ -222,7 +223,7 @@ Jumlah baris Log nya tidak harus 50, kalau misalnya kita ingin melihat 100 baris
 <br/>
 <br/>
 
-### (6) Menampilkan Logs dengan beberapa Kombinasi Command diatas :
+#### (6) Menampilkan Logs dengan beberapa Kombinasi Command diatas :
 - Misalnya kita ingin melihat Logs secara "Real-Time", kita ingin pada Logs tersebut terdapat "Timestamp", <br/> dan kita hanya ingin melihat "100 baris Logs terakhir" yang terbentuk. <br/>
 Contoh :
 ```
