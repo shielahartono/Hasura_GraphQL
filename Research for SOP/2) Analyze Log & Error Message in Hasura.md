@@ -240,9 +240,11 @@ docker logs -f --timestamps --tail 100 my-app-container
 <br/>
 -> Saat kita menerapkan Hasura di Kubernetes,  <br/>
 maka Hasura berjalan di Pod. <br/>
-yang mana "Pod mengandung Satu atau Lebih Containers".  <br/>
+yang mana "Pod mengandung Satu atau Lebih Containers".  <br/> <br/> 
 
+<br/>
 
+Continue ........
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
