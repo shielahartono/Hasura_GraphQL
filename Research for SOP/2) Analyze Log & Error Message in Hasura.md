@@ -236,6 +236,13 @@ docker logs -f --timestamps --tail 100 my-app-container
 
 ### 2.2) Cara mengecek Logs pada Kubernetes melalui Terminal :
 
+-> Kubernetes merupakan sebuah System yang membantu kita Mengelola Aplikasi (manage applications) yang berjalan pada Containers (seperti Docker, yang mana Docker merupakan 'Container Technology'). <br/>
+<br/>
+-> Saat kita menerapkan Hasura di Kubernetes,  <br/>
+maka Hasura berjalan di Pod. <br/>
+yang mana "Pod mengandung Satu atau Lebih Containers".  <br/>
+
+
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
