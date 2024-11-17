@@ -234,6 +234,8 @@ docker logs -f --timestamps --tail 100 my-app-container
 [-] `--tail 100` = untuk menampilkan 100 Baris Terakhir Logs yang terbentuk  <br/>
 
 
+### 2.2) Cara mengecek Logs pada Kubernetes melalui Terminal :
+
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
