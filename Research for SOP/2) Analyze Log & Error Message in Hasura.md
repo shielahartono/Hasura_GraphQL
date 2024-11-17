@@ -187,14 +187,27 @@ contoh seperti ini : <br/>
 
 <br/>
 
--> Misalnya, Kita ingin menampilkan Logs yang terbentuk semenjak Timestamp tertentu :
-(kita ingin menampilkan Logs yang terbentuk semenjak Waktu & tanggal sepesifik tertentu)
-
+-> Misalnya, Kita ingin menampilkan Logs yang terbentuk semenjak Timestamp tertentu : <br/>
+(kita ingin menampilkan Logs yang terbentuk semenjak Waktu & tanggal sepesifik tertentu) 
 ```
 docker logs --since "2024-11-15T14:00:00" my-app-container
 ```
-[-] `"2024-11-15T14:00:00"` = merupakan Timestamp (Berarti kita ingin menampilkan Log yang terbentuk ssemenjak Timestamp ini) <br/>
+[-] `"2024-11-15T14:00:00"` = merupakan Timestamp (Berarti kita ingin menampilkan Log yang terbentuk semenjak Timestamp ini) <br/>
 [-] `my-app-container` =  merupakan nama Container yang ingin kita lihat Log nya <br/>
+
+<br/>
+<br/>
+-> Menampilkan Logs dengan "Time Range" menggunakan `--since` dam `--until` <br/>
+- Kita dapat mengkombinasikan `--since` dengan `--until` untuk memperinci waktu "Start" dan waktu "End" untuk Logs. <br/>
+
+- Contoh :
+```
+docker logs --since "2024-11-15T14:00:00" --until "2024-11-15T16:00:00" my-app-container
+```
+[-] `--since "2024-11-15T14:00:00"` = berarti kita menampilkan Logs yang terbentuk semenjak 15 November 2024, pada Jam 14.00  <br/>
+[-] `--until "2024-11-15T16:00:00"` = berarti kita menampilkan Logs yang terbentuk sampai 15 November 2024, pada Jam 16.00   <br/>
+<br/>
+Jadi Command diatas meminta untuk menunjukkan Logs mulai dari jam 14.00 sampai 16.00 UTC pada 15 November, 2024.  <br/>
 
 
 
