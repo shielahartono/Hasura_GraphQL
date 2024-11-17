@@ -169,7 +169,14 @@ docker logs -f my-app-container
 
 ### (4) Menampilkan Log mulai dari Jangka Waktu tertentu untuk Spesifik Container :
 ### (View Logs "Since" Specific Time Range for Spesific Container)
-
+-> Kita bisa menggunakan `--since` untuk menampilkan Logs mulai dari Periode waktu tertentu  <br/> 
+<br/>
+-> Misalnya, Kita ingin menampilkan Logs yang terbentuk semenjak 10 Menit terakhir :
+```
+docker logs --since 10m my-app-container
+```
+[-] `10m` = 10 menit terakhir (Berarti kita ingin menampilkan Log yang terbentuk selama 10 menit terakhir) <br/>
+[-] `my-app-container` =  merupakan nama Container yang ingin kita lihat Log nya <br/>
 
 
 
