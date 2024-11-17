@@ -187,6 +187,17 @@ contoh seperti ini : <br/>
 
 <br/>
 
+-> Misalnya, Kita ingin menampilkan Logs yang terbentuk semenjak Timestamp tertentu :
+(kita ingin menampilkan Logs yang terbentuk semenjak Waktu & tanggal sepesifik tertentu)
+
+```
+docker logs --since "2024-11-15T14:00:00" my-app-container
+```
+[-] `"2024-11-15T14:00:00"` = merupakan Timestamp (Berarti kita ingin menampilkan Log yang terbentuk ssemenjak Timestamp ini) <br/>
+[-] `my-app-container` =  merupakan nama Container yang ingin kita lihat Log nya <br/>
+
+
+
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
