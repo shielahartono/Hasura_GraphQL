@@ -244,7 +244,19 @@ yang mana "Pod mengandung Satu atau Lebih Containers".  <br/> <br/>
 
 <br/>
 
-Continue ........
+#### (1) Menampilkan Logs dari Pod tertentu : <br/>
+#### (View Logs dari Pod tertentu)
+
+```
+kubectl logs <pod_name>
+```
+kemudian ganti `<pod_name>` dengan "Nama Pod" yang ingin kita lihat Log nya.  <br/>
+Contoh : <br/>
+```
+kubectl logs hasura-abc123
+```
+[-] `hasura-abc123` = merupakan "Nama Pod" <br/>
+<br/>
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
