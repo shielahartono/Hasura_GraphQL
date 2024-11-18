@@ -410,7 +410,7 @@ kubectl logs -l app=hasura --all-containers=true
   <br/>
 
 #### (6) Menampilkan Logs dengan Keyword menggunakan `grep`
-### (seperti menampilkan Logs yang mempunyai keyword "error" atau "failed")
+#### (seperti menampilkan Logs yang mempunyai keyword "error" atau "failed")
 
 ....Bahas detail juga mengenai `grep`  .......
 
