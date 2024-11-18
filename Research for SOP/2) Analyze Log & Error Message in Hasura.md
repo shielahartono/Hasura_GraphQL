@@ -383,6 +383,31 @@ yang mana -c memungkinkan kita untuk menetukkan Container yang mana yang ingin k
 <br/>
 Jadi kita ingin melihat Logs untuk Container yang bernama "hasura" secara Real-Time  <br/> <br/>
 
+
+#### (5) Menampilkan Logs dari semua Pods (yang mengandung Label yang sama)
+
+-> Label merupakan informasi tambahan yang kita bisa tambahkan di Resource Kubernetes.  <br/>
+ <br/>
+-> Jika kita mempunyai Multiple Pods , maka kita bisa menampilkan Logs pada banyak Pods,   <br/>
+yang mana kita hanya menampilkan Logs untuk Pod yang mempunyai Nilai pada Label yang sama.  <br/>  <br/>
+
+-> Command :
+```
+kubectl logs -l <label> --all-containers=true
+```
+
+Contoh :
+```
+kubectl logs -l app=hasura --all-containers=true
+```
+[-] `-l app=hasura`  = ini memberitahu Kubernetes untuk menampilkan semua Pods yang mempunyai Label `app=hasura`.   <br/>
+(yang mana maksudnya Label tersebut dimiliki oleh Pods, bukan Container)   <br/>
+(for your information, Pod mempunyai Label, tetapi Container tidak mempunyai Label )   <br/>
+ <br/>
+[-] `--all-containers=true`  = ini memberitahu Kubernetes untuk mengambil Logs dari Semua Container yang ada di Pod yang mengandung nilai Label ``app=hasura``    <br/>
+(ini akan menampilkan semua Pods yang mengandung Label `app=hasura`)   <br/>
+ <br/>
+  <br/>
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
