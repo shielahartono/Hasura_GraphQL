@@ -344,7 +344,44 @@ kubectl logs hasura-abc123 -c hasura --previous
 <br/>
 Jadi Command diatas ingin menampilkan Log untuk Container yang bernama "hasura". dimana Logs yang ditampilkan pada keadaan sebelum Container tersebut mengalami Crashed atau ter-Restart. <br/>
 
+#### (4) Menampilkan Logs secara Real-Time : 
 
+-> untuk menampilkan Logs secara Real-Time, kita dapat mengunakan `-f` .  <br/>
+
+{1} Command untuk menampilkan Logs secara Real-Time untuk Pod tertentu :   
+```
+kubectl logs -f <pod_name>
+```
+`-f` artinya "Follow", yang mana memungkinkan kita untuk melihat Logs secara Real-time atau langsung (let us Stream Logs in Real-Time)
+<br/>
+contoh :
+```
+kubectl logs -f hasura-abc123
+```
+[-] `hasura-abc123`  = merupakan "Nama Pod" yang ingin kita tampilkan Logs nya  <br/>
+
+Jadi kita ingin melihat Logs untuk Pod yang bernama "hasura-abc123" secara Real-Time   <br/> <br/>
+
+
+{2} Command untuk menampilkan Logs secara Real-Time untuk Container tertentu :  <br/>
+(yang mana Container tersebut berada di dalam Pod)  <br/>
+(For your information, Setiap Container memang harus berada di dalam Pod)  <br/>
+
+```
+kubectl logs -f <pod_name> -c <container_name>
+```
+contoh :
+```
+kubectl logs -f hasura-abc123 -c hasura
+```
+[-] `-f`  = artinya "Follow", yang mana memungkinkan kita untuk melihat Logs secara Real-time atau langsung (let us Stream Logs in Real-Time)  <br/>
+[-] `hasura-abc123`  = merupakan "Nama Pod"   <br/>
+[-] -c = merupakan kepanjangan dari "Container",   <br/>
+yang mana -c memungkinkan kita untuk menetukkan Container yang mana yang ingin kita tampilkan Log nya,   <br/>
+(yang mana Container tersebut berada di dalam Pod)   <br/>
+[-] `hasura`  = merupakan "Nama Container"   <br/>
+<br/>
+Jadi kita ingin melihat Logs untuk Container yang bernama "hasura" secara Real-Time  <br/> <br/>
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
