@@ -326,6 +326,26 @@ Jadi kita ingin Menampilkan Logs untuk semua Container yang ada di Pod "hasura-a
 >>
 >>
 
+#### (3) Menampilkan Logs untuk Container yang "Crashed" atau yang "ter-Restart" 
+
+-> Jika Container (yang ada di dalam Pod) mengalami Crash atau Restart. <br/>
+maka kita dapat melihat Log untuk Container tersebut dengan cara :
+
+```
+kubectl logs <pod_name> -c <container_name> --previous
+```
+contoh :
+```
+kubectl logs hasura-abc123 -c hasura --previous
+``` 
+[-] `--previous`  = memberitahu Kubernetes untuk menampilkan Log dari "Previous instance of Container" (keadaan Container sebelum Container tersebut ter-Restart atau mengalami Crash ) <br/>
+[-] `hasura-abc123` = merupakan "Nama Pod"  <br/>
+[-] `hasura`  = merupakan "Nama Container"   <br/>
+<br/>
+Jadi Command diatas ingin menampilkan Log untuk Container yang bernama "hasura". dimana Logs yang ditampilkan pada keadaan sebelum Container tersebut mengalami Crashed atau ter-Restart. <br/>
+
+
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
