@@ -295,6 +295,37 @@ kubectl logs hasura-abc123 --all-containers=true
 <br/> 
 Jadi kita ingin Menampilkan Logs untuk semua Container yang ada di Pod "hasura-abc123"  <br/>  <br/> 
 
+>> ^For your Information^ <br/>
+>> ### Pengecekkan Logs jika Pod mengandung Multiple Containers :
+>> <br/>
+>> Misalnya kita mempunyai Sebuah Pod yang berisi Multiple Containers, <br/>
+>> jika kita lihat penjelasan beberapa Jenis Command diatas, maka kita berfikir kita bisa memakai Banyak Jenis Command. <br/>
+>> Mari kita bahas Jenis Command jika kita gunakan untuk mengecek Logs untuk Pod yang mengandung Multiple Containers : <br/>
+>>
+>> #### (1) `kubectl logs <pod_name>`
+>> -> Jika kita menggunakan Command diatas, maka akan muncul error seperti ini :
+>>   ```
+>>	error: a container name must be specified for pod <pod_name>, because there are multiple containers in the pod
+>>   ```
+>>  [-] `a container name must be specified for pod` = Error itu menyuruh kita memberitahu secara Spesifik Nama Container  <br/>
+>>  [-] Error tersebut terjadi karena Kubernetes tidak mengetahui Container mana yang ingin ditampilkan Logs nya  <br/>
+>> <br/>
+>> -> yang mana Command ini lebih cocok untuk Menampilkan Logs untuk Pod yang hanya mengandung Satu Container. <br/> <br/>
+>>
+>>
+>> #### (2) `kubectl logs <pod_name> -c <container_name>` 
+>> -> Pada Command diatas, kita perlu memberitahu secara Spesifik Nama Container yang ingin kita tampilkan Logs nya. <br/>
+>> yang mana, dengan Command diatas kita hanya bisa menampilkan Logs untuk Salah Satu Container yang ada pada Pod. <br/>
+>> -> Seharusnya tidak ada error saat kita menggunakan Command tersebut, jika kita sudah mendeskripsikan secara Spesifik nama Container nya. <br/>
+>>
+>> -> Seharusnya Command ini cocok untuk menampilkan Logs untuk Pod yang memiliki Multiple Containers, dengan catatan kita harus menuliskan secara Spesifik salah satu Container yang ingin kita tampilkan Logs nya. <br/> <br/>
+>>
+>> #### (3) `kubectl logs <pod_name> --all-containers=true`
+>> -> Pada Command diatas, kita dapat Menampilkan Logs untuk semua Contaginers yang ada di dalam Pod.  <br/>
+>> -> Seharusnya Command ini cocok untuk menampilkan Logs untuk Pod yang memiliki Multiple Containers.  <br/>
+>>
+>>
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
