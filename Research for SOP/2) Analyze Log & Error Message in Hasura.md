@@ -408,6 +408,13 @@ kubectl logs -l app=hasura --all-containers=true
 (ini akan menampilkan semua Pods yang mengandung Label `app=hasura`)   <br/>
  <br/>
   <br/>
+
+#### (6) Menampilkan Logs dengan Keyword menggunakan `grep`
+### (seperti menampilkan Logs yang mempunyai keyword "error" atau "failed")
+
+....Bahas detail juga mengenai `grep`  .......
+
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
