@@ -279,6 +279,22 @@ yang mana `-c` memungkinkan kita untuk menetukkan Container yang mana yang ingin
 Jadi kita ingin melihat Container yang bernama "hasura",    <br/>
 yang mana Container tersebut berada di dalam Pod "hasura-abc123"   <br/>
 
+#### (3) Menampilkan Logs untuk Semua Container yang ada di dalam Pod : 
+
+-> Sebuah Pod berisi banyak Container, <br/>
+dan kita ingin menampilkan Logs untuk semua Container yang berada di dalam Pod tersebut.
+
+```
+kubectl logs <pod_name> --all-containers=true
+```
+contoh :
+```
+kubectl logs hasura-abc123 --all-containers=true
+```
+[-] `hasura-abc123` = merupakan "Nama Pod"  <br/>
+<br/> 
+Jadi kita ingin Menampilkan Logs untuk semua Container yang ada di Pod "hasura-abc123"  <br/>  <br/> 
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
