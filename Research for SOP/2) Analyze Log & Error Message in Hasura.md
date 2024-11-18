@@ -258,6 +258,27 @@ kubectl logs hasura-abc123
 [-] `hasura-abc123` = merupakan "Nama Pod" <br/>
 <br/>
 
+#### (2) Menampilkan Logs dari Container tertentu (Jika terdapat Multiple Container dalam satu Pod) <br/>
+
+-> Misalnya Suatu Pod mempunyai Multiple Containers (lebih dari Satu Container), <br/>
+maka kita dapat menggunakan Command berikut untuk mengecek Logs : <br/>
+```
+kubectl logs <pod_name> -c <container_name>
+```
+Contoh :
+```
+kubectl logs hasura-abc123 -c hasura
+```
+[-] `-c` = merupakan kepanjangan dari "Container",  <br/>
+yang mana `-c` memungkinkan kita untuk menetukkan Container yang mana yang ingin kita tampilkan Log nya,   <br/>
+(yang mana Container tersebut berada di dalam Pod)   <br/>
+
+[-] `hasura-abc123` = merupakan "Nama Pod"   <br/>
+[-] `hasura`	= merupakan "Nama Container"   <br/>
+
+Jadi kita ingin melihat Container yang bernama "hasura",    <br/>
+yang mana Container tersebut berada di dalam Pod "hasura-abc123"   <br/>
+
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
