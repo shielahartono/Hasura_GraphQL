@@ -411,7 +411,33 @@ kubectl logs -l app=hasura --all-containers=true
 
 #### (6) Menampilkan Logs dengan Keyword menggunakan `grep`
 #### (seperti menampilkan Logs yang mempunyai keyword "error" atau "failed")
+<br/>
+-> Kita bisa mem-filter Logs menggunakan Keyword, misalnya kita ingin filter untuk hanya menampilkan Log yang mengandung kata "error" atau "failed". <br/>
+yang mana kita bisa menggunakan `grep` pada Command.
 
+```
+kubectl logs <pod_name> | grep "error"
+```
+[-] `| grep "error"`  = artinya kita ingin menampilkan Logs yang mengandung kata "error" <br/>
+
+<br/>
+Contoh :
+
+```
+kubectl logs hasura-abc123 | grep "failed"
+```
+Pada Command diatas, kita ingin menampilkan Logs yang mengandung kata "Failed", <br/>
+yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
+
+[-] `hasura-abc123`  = merupakan "Nama Pod"  <br/>
+[-] `| grep "failed"` =  artinya kita ingin menampilkan Logs yang mengandung kata "failed"  <br/> <br/>
+
+
+>> ^For your information^
+>> ### `grep`
+>> ### Understanding `grep` untuk mem-Filter Log
+>> 
+>> 
 ....Bahas detail juga mengenai `grep`  .......
 
 
