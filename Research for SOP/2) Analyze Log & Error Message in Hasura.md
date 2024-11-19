@@ -441,11 +441,12 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >>  <br/> <br/>
 >> -> Dengan `grep` kita bisa mem-Filter, yakni hanya menampilkan Log yang hanya mengandung Kata tertentu. <br/>
 >> Misalnya kita mem-Filter dengan kata "error",  <br/>
->> berarti kita hanya menampilkan Log yang mengandung kata "error".  <br/>
->>  <br/>
+>> berarti kita hanya menampilkan Log yang mengandung kata "error".  <br/> <br/>
+>> 
 >> #### (1) `grep` dengan penggunaan yang Simple :
+>> 
 >> Jika kita ingin mem-Filter Logs dengan hanya menampilkan Logs yang mengandung kata "error",  <br/>
->> maka kita bisa menggunakan Command berikut ini :  <br/>
+>> maka kita bisa menggunakan Command berikut ini :  
 >>   ```
 >>   kubectl logs <pod_name> | grep "error"
 >>   ```
@@ -458,9 +459,9 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >>   2024-11-19 10:05:00 - info: starting process
 >>   2024-11-19 10:10:00 - error: timeout occurred
 >>   ```
->>  <br/>
+>>  
 >> maka dengan Command diatas, <br/>
->> output yang tampil adalah : <br/>
+>> output yang tampil adalah : 
 >>    ```
 >>    2024-11-19 10:00:00 - error: database connection failed
 >>    2024-11-19 10:10:00 - error: timeout occurred
