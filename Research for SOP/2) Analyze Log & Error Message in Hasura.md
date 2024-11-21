@@ -557,7 +557,32 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> 2024-11-19 10:00:00 - database connection failed
 >> 2024-11-19 10:07:00 - error occurred database connection failed
 >> ```
-
+>>
+>> ##### (5) Menggunakan "Regular Expression" (menggunakan `-E`)
+>>  <br/>
+>> -> Contoh Command :
+>> ```
+>> kubectl logs <pod_name> | grep -E "error|failure"
+>> ```
+>> [-] `-E "error|failure"` =  ini artinya kita ingin hanya menampilkan Logs yang mengandung kata "error" atau "failure"  <br/>
+>>  <br/>
+>> -> Contoh :  <br/>
+>> Jika kita mempunyai Daftar Logs seperti ini :
+>> ```
+>> 2024-11-19 10:00:00 - error: database connection failed
+>> 2024-11-19 10:05:00 - failure: timeout occurred
+>> 2024-11-19 10:10:00 - info: process started
+>> ```
+>> 
+>> maka dengan Command diatas,
+>> <br/>
+>> output yang tampil adalah :
+>> ```
+>> 2024-11-19 10:00:00 - error: database connection failed
+>> 2024-11-19 10:05:00 - failure: timeout occurred
+>> ```
+>> 
+>> 
 
 
 ## C. Hasura Log vs Error Message 
