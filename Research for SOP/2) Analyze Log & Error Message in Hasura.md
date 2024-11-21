@@ -568,19 +568,17 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >>  <br/>
 >> -> Contoh :  <br/>
 >> Jika kita mempunyai Daftar Logs seperti ini :
->>   ```
->>   2024-11-19 10:00:00 - error: database connection failed
->>   2024-11-19 10:05:00 - failure: timeout occurred
->>   2024-11-19 10:10:00 - info: process started
->>   ```
+>>     2024-11-19 10:00:00 - error: database connection failed
+>>     2024-11-19 10:05:00 - failure: timeout occurred
+>>     2024-11-19 10:10:00 - info: process started
+>>  
 >> 
 >> maka dengan Command diatas,
 >> <br/>
 >> output yang tampil adalah :
->> ```
->> 2024-11-19 10:00:00 - error: database connection failed
->> 2024-11-19 10:05:00 - failure: timeout occurred
->> ```
+>>    2024-11-19 10:00:00 - error: database connection failed
+>>    2024-11-19 10:05:00 - failure: timeout occurred
+>> 
 >> 
 >> #### (6) Excluding Specific Keywords (menggunakan `-v`) :
 #### (Mengecualikan Keywords tertentu - menggunakan `-v`)
