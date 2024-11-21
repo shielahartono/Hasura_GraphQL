@@ -654,6 +654,8 @@ yang mana Catatan Terperinci tersebut berisi Peristiwa & Aktifitas yang terjadi 
 <br/>
 -> "Auditing" merupakan Proses untuk menyimpan Catatan semua Aktifitas & Peristiwa yang terjadi pada System untuk tujuan Tracking (Pelacakan) & Review (evaluasi). <br/>
 <br/>
+
+
 ===
 Logs vs Error Messages in Monitoring, Debugging, dan Auditing  <br/>
 
