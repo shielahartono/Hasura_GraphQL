@@ -535,8 +535,30 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> Dapat kita lihat diatas. walaupun pada Command kita ketik "error",   <br/>
 >> tetapi dengan `-i` , `grep` dapat mem-Filter dan menampilkan Logs yang mengandung kata "Error" dan "error".  <br/>
 >> 
->> 
->> 
+>> #### (4) `grep` untuk mencari Phrase (beberapa Kata) 
+>> -> Misalnya kita ingin mem-Filter menggunakan "beberapa Kata",  <br/>
+>> maka kita bisa menggunakan contoh Command berikut ini : 
+>>   ```
+>>   kubectl logs <pod_name> | grep "database connection failed"
+>>   ```
+>> [-] `grep "database connection failed"` =  ini berarti mem-Filter Logs untuk hanya menampilkan Logs yang mengandung Phrase "database connection failed". <br/>
+>>  <br/>
+>> -> Contoh : <br/>
+>> Jika kita mempunyai Daftar Logs seperti ini :
+>> ```
+>> 2024-11-19 10:00:00 - database connection failed
+>> 2024-11-19 10:05:00 - error occurred
+>> 2024-11-19 10:07:00 - error occurred database connection failed
+>> ```
+>> maka dengan Command diatas,
+>> <br/>
+>> output yang tampil adalah :
+>> ```
+>> 2024-11-19 10:00:00 - database connection failed
+>> 2024-11-19 10:07:00 - error occurred database connection failed
+>> ```
+
+
 
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
