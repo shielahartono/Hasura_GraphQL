@@ -641,8 +641,21 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 ## C. Hasura Log vs Error Message 
 ## (Konsep Perbedaan "Hasura Log" dan "Error Message")
 
+
+-> "Logs" merupakan Catatan terperinci yang ter-generate secara otomatis. <br/>
+yang mana Catatan Terperinci tersebut berisi Peristiwa & Aktifitas yang terjadi di dalam Sistem. <br/>
 <br/>
+-> "Error Messages" merupakan bagian Spesifik pada Logs yang menyediakan Informasi Detail mengenai Issue, yang mana hal ini sangat penting untuk mengidentifikasi penyebab Failure atau kegagalan. <br/>
+("Error Messages" berada di dalam Logs) <br/>
 <br/>
+-> "Logs" & "Error Messages" berguna untuk Monitoring, Debugging, dan Auditing operasi yang berlangsung di Hasura. <br/>
+<br/>
+-> "Debugging" merupakan Proses untuk melakukan Identifikasi, Diagnosa, dan Memperbaiki Problem atau Error. <br/>
+<br/>
+-> "Auditing" merupakan Proses untuk menyimpan Catatan semua Aktifitas & Peristiwa yang terjadi pada System untuk tujuan Tracking (Pelacakan) & Review (evaluasi). <br/>
+<br/>
+===
+Logs vs Error Messages in Monitoring, Debugging, dan Auditing  <br/>
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
