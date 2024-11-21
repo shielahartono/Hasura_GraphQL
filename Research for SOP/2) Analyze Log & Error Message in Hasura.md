@@ -609,6 +609,32 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> ```
 >> 2024-11-19 10:10:00 - error: timeout occurred
 >> ```
+>>
+>> #### (7) Show "Line Numbers" (menggunakan `-n`)
+>> 
+>> -> dengan menggunakan `-n` , kita dapat melihat di baris keberapa Logs yang mengandung Keyword berada.  <br/>
+>>  <br/>
+>> -> Contoh Command :
+>> ```
+>> kubectl logs <pod_name> | grep -n "error"
+>> ```
+>> [-] `-n "error"` =  ini menujukkan di baris keberapa Logs yang mengandung Keyword "error" berada.  <br/>
+>> 
+>> -> Contoh :  <br/>
+>>  Jika kita mempunyai Daftar Logs seperti ini :
+>> ```
+>> 2024-11-19 10:00:00 - error: database connection failed
+>> 2024-11-19 10:05:00 - info: starting process
+>> 2024-11-19 10:10:00 - error: timeout occurred
+>> ```
+>> maka dengan Command diatas, output yang tampil adalah :
+>> ```
+>> 1:2024-11-19 10:00:00 - error: database connection failed
+>> 3:2024-11-19 10:10:00 - error: timeout occurred
+>> ```
+>> [-] Angka `1` dan `3` merupakan "Baris Keberapa" Logs yang mengandung kata "error" berada.  <br/>
+>> (Logs yang mengandung kata "error" berada pada baris `1` dan `3`)  <br/>
+>> <br/>
 >> 
 
 
