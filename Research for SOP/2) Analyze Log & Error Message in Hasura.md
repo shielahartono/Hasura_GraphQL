@@ -521,17 +521,17 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> <br/>
 >> -> Contoh :  <br/>
 >> Jika kita mempunyai Daftar Logs seperti ini :  
->>      ```
+>>    
 >>      2024-11-19 10:00:00 - Error: database connection failed
 >>      2024-11-19 10:10:00 - error: timeout occurred
->>      ```
+>>     
 >> maka dengan Command diatas,
 >> <br/>
 >> output yang tampil adalah :
->>         ```
+>>         
 >>         2024-11-19 10:00:00 - Error: database connection failed
 >>         2024-11-19 10:10:00 - error: timeout occurred
->>         ```
+>>         
 >> Dapat kita lihat diatas. walaupun pada Command kita ketik "error",   <br/>
 >> tetapi dengan `-i` , `grep` dapat mem-Filter dan menampilkan Logs yang mengandung kata "Error" dan "error".  <br/>
 >> 
