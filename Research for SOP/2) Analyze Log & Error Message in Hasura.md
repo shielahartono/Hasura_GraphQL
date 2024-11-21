@@ -492,6 +492,49 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >>     2024-11-19 10:00:00 - error: database connection failed
 >>     2024-11-19 10:10:00 - error: timeout occurred
 >>     
+>> #### (3) Case-Insensitive Search (menggunakan `-i`)
+>> -> Secara default, `grep` merupakan "Case-Sensitive" yang berarti secara Default, `grep` mem-filter menggunakan persis "huruf Kapital" atau "huruf kecil" yang kita ketik di Command. <br/>
+>>  <br/>
+>> -> Jika kita ingin `grep` mem-filter menggunakan "Case-Insensitive",  <br/>
+>>  maka kita perlu menggunakan `-i`.   <br/>
+>> <br/>
+>> -> Misalnya pada Command kita mengetik "error", <br/>
+>> maka dengan menggunakan `-i` , Logs yang kita tampilkan adalah  yang mengandung kata : <br/>
+>> "ERROR"    <br/>
+>> "Error"    <br/>
+>> "error"     <br/>
+>> <br/>
+>> -> tetapi misalnya kita tidak menggunakan `i`, maka `grep` kembali lagi ke Default menjadi "Case-Sensitive". <br/>
+>> Contoh pada Command kita mengetik "error",  <br/>
+>> maka Logs yang kita tampilkan adalah  yang mengandung kata : <br/>
+>> "error"  <br/>
+>>  <br/>
+>> Dan System tidak akan menampilkan Logs yang mengandung kata :  <br/>
+>> "ERROR"  <br/>
+>> "Error"  <br/>
+>>  <br/>
+>> -> Contoh Command dengan menggunakan `-i` : 
+>>    ```
+>>    kubectl logs <pod_name> | grep -i "error"
+>>    ```
+>> [-] `-i`  = ini membuat search menjadi "Case-Insensitive", sehingga tidak masalah huruf nya "Uppercase" atau "Lowercase".  <br/>
+>> <br/>
+>> -> Contoh :  <br/>
+>> Jika kita mempunyai Daftar Logs seperti ini :  
+>>      ```
+>>      2024-11-19 10:00:00 - Error: database connection failed
+>>      2024-11-19 10:10:00 - error: timeout occurred
+>>      ```
+>> maka dengan Command diatas,
+>> <br/>
+>> output yang tampil adalah :
+>>         ```
+>>         2024-11-19 10:00:00 - Error: database connection failed
+>>         2024-11-19 10:10:00 - error: timeout occurred
+>>         ```
+>> Dapat kita lihat diatas. walaupun pada Command kita ketik "error",   <br/>
+>> tetapi dengan `-i` , `grep` dapat mem-Filter dan menampilkan Logs yang mengandung kata "Error" dan "error".  <br/>
+>> 
 >> 
 >> 
 
