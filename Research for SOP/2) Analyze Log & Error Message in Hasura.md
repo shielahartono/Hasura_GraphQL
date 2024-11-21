@@ -469,10 +469,9 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >>
 >> #### (2) Searching for Multiple Keywords (menggunakan `-e` ) :  
 >> Misalnya kita ingin mem-Filter dengan Keywords "error" dan "failed",  <br/>
->> maka kita bisa gunakan Command berikut ini :  <br/>
+>> maka kita bisa gunakan Command berikut ini : 
 >>     ```
 >>     kubectl logs <pod_name> | grep -e "error" -e "failed"
->>     
 >>     ```
 >> [-] `-e`  = memungkinkan kita untuk mem-filter menggunakan beberapa Kata  <br/>
 >> [-] '-e "error"'  = untuk mem-filter dengan menggunakan Kata "error", sehingga hanya menampilkan Logs yang mengandung kata "error". <br/>
@@ -486,7 +485,8 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >>      2024-11-19 10:05:00 - info: starting process
 >>      2024-11-19 10:10:00 - error: timeout occurred
 >>      ```
->> maka dengan Command diatas, <br/>
+>> maka dengan Command diatas,
+>> <br/>
 >> output yang tampil adalah :
 >>     ```
 >>     2024-11-19 10:00:00 - error: database connection failed
