@@ -561,9 +561,9 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> ##### (5) Menggunakan "Regular Expression" (menggunakan `-E`)
 >>  <br/>
 >> -> Contoh Command :
->>  ```
->>   kubectl logs <pod_name> | grep -E "error|failure"
->>  ```
+  ```
+   kubectl logs <pod_name> | grep -E "error|failure"
+  ```
 >> [-] `-E "error|failure"` =  ini artinya kita ingin hanya menampilkan Logs yang mengandung kata "error" atau "failure"  <br/>
 >>  <br/>
 >> -> Contoh :  <br/>
@@ -585,30 +585,31 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> 
 >> 
 >> #### (6) Excluding Specific Keywords (menggunakan `-v`) :
-#### (Mengecualikan Keywords tertentu - menggunakan `-v`)
-
-Jika kita ingin mengecualikan Logs, yaitu kita tidak ingin menampilkan Logs yang mengandung kata tertentu,
-kita dapat menggunakan `-v`.
-
--> Contoh Command :
-```
-kubectl logs <pod_name> | grep -v "info"
-```
-[-] `-v "info"`  = ini artinya kita ingin mengecualikan Logs yang mengandung kata "info"
-(Kita tidak ingin menampilkan Logs yang mengandung kata "info")
-
-
--> Contoh :
-Jika kita mempunyai Daftar Logs seperti ini :
-```
-2024-11-19 10:00:00 - info: starting process
-2024-11-19 10:10:00 - error: timeout occurred
-```
-maka dengan Command diatas,
-output yang tampil adalah :
-```
-2024-11-19 10:10:00 - error: timeout occurred
-```
+>> #### (Mengecualikan Keywords tertentu - menggunakan `-v`)
+>> 
+>> Jika kita ingin mengecualikan Logs, yaitu kita tidak ingin menampilkan Logs yang mengandung kata tertentu,
+>> kita dapat menggunakan `-v`.
+>> 
+>> -> Contoh Command :
+>> ```
+>> kubectl logs <pod_name> | grep -v "info"
+>> ```
+>> [-] `-v "info"`  = ini artinya kita ingin mengecualikan Logs yang mengandung kata "info"
+>> (Kita tidak ingin menampilkan Logs yang mengandung kata "info")
+>> 
+>> 
+>> -> Contoh :
+>> Jika kita mempunyai Daftar Logs seperti ini :
+>> ```
+>> 2024-11-19 10:00:00 - info: starting process
+>> 2024-11-19 10:10:00 - error: timeout occurred
+>> ```
+>> maka dengan Command diatas,
+>> output yang tampil adalah :
+>> ```
+>> 2024-11-19 10:10:00 - error: timeout occurred
+>> ```
+>> 
 
 
 ## C. Hasura Log vs Error Message 
