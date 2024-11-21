@@ -561,18 +561,18 @@ yang mana Logs tersebut berada pada Pod yang bernama "hasura-abc123". <br/>
 >> ##### (5) Menggunakan "Regular Expression" (menggunakan `-E`)
 >>  <br/>
 >> -> Contoh Command :
->> ```
->> kubectl logs <pod_name> | grep -E "error|failure"
->> ```
+>>  ```
+>>   kubectl logs <pod_name> | grep -E "error|failure"
+>>  ```
 >> [-] `-E "error|failure"` =  ini artinya kita ingin hanya menampilkan Logs yang mengandung kata "error" atau "failure"  <br/>
 >>  <br/>
 >> -> Contoh :  <br/>
 >> Jika kita mempunyai Daftar Logs seperti ini :
->> 
+>>   ```
 >>   2024-11-19 10:00:00 - error: database connection failed
 >>   2024-11-19 10:05:00 - failure: timeout occurred
 >>   2024-11-19 10:10:00 - info: process started
->> 
+>>   ```
 >> 
 >> maka dengan Command diatas,
 >> <br/>
