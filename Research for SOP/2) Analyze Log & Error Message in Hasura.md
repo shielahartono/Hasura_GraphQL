@@ -702,7 +702,7 @@ yang mana Aplikasi mengalami masalah yang mencegah aplikasi tersebut bekerja den
 - Contoh : <br/>
 "Failure in Database Connection" <br/>
 atau "Unhandled Exception" <br/>
-<br/>
+
 >> ^For your information^ <br/>
 >> {1} **Unhandled Exception**  :  <br/>
 >> merupakan Error yang terjadi saat 'excecution of program', tetapi error tersebut tidak ditangani secara baik oleh mekanisme "Error Handling" pada Program.  <br/>
