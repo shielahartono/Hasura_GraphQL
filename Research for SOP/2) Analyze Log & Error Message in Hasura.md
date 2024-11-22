@@ -655,9 +655,31 @@ yang mana Catatan Terperinci tersebut berisi Peristiwa & Aktifitas yang terjadi 
 -> "Auditing" merupakan Proses untuk menyimpan Catatan semua Aktifitas & Peristiwa yang terjadi pada System untuk tujuan Tracking (Pelacakan) & Review (evaluasi). <br/>
 <br/>
 
+### [1] Contoh Logs :
+### (Real-World Example of Logs)
 
-===
-Logs vs Error Messages in Monitoring, Debugging, dan Auditing  <br/>
+-> Misalnya kita memakai Hasura, dan kita mencoba menambahkan sebuah User baru dengan Email john@example.com    <br/>
+, tetapi email tersebut sudah ada di Database, sehingga Hasura mengirimkan Response Error,   <br/>
+yang mana Log nya akan terihat seperti contoh berikut ini :  <br/>
+
+
+```
+{
+  "timestamp": "2024-11-14T12:00:00Z",
+  "level": "error",
+  "message": "query failed",
+  "query": "mutation { insert_users_one(object: { name: \"John\", email: \"john@example.com\" }) { id } }",
+  "error": {
+    "message": "duplicate key value violates unique constraint \"users_email_key\"",
+    "details": "Key (email)=(john@example.com) already exists."
+  },
+  "request_id": "abc123",
+  "session_variables": {
+    "x-hasura-user-id": "123",
+    "x-hasura-role": "admin"
+  }
+}
+```
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
