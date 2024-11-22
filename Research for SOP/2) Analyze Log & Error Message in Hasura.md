@@ -731,6 +731,24 @@ yang mana Feature ini masih berfungsi dengan baik tetapi dianggap ketinggalan ja
 <br/>
 "Slow Database Queries" merupakan Database Query yang memakan lebih banyak waktu saat diekseskusi, dibandingkan waktu perkiraan. <br/>
 
+<br/>
+<br/>
+
+[3] INFO :  <br/>
+- menyediakan informasi mengenai Application's Normal Operation (Operasi Normal Aplikasi) 
+
+- INFO berarti suati aksi telah sukses dan tidak ada error saat itu.
+
+- Pada waktu saat kita mendapatkan INFO, berarti tidak ada error. <br/>
+tetapi Error masih dapat terjadi di kemudian waktu. <br/>
+
+- Contoh : <br/>
+"User Login Successful" <br/>
+atau <br/>
+"File Uploaded Successfully" <br/>
+<br/>
+
+
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
