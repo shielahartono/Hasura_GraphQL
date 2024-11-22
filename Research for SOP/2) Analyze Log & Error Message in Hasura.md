@@ -695,12 +695,12 @@ yang mana disini menujukkan Level dari Log tersebut adalah "Error". <br/>
 "Log Levels" digunakan untuk meng-klasifikasikan tingkat Keparahan. <br/>
 <br/>
 => Berikut ini Urutan Tingkatan Log Level (Mulai dari yang paling "Ringan" hingga yang "Paling Parah") :
-<1> Trace
-<2> Debug
-<3> Info
-<4> Warn
-<5> Error
-<6> Fatal
+<1> Trace  <br/>
+<2> Debug  <br/>
+<3> Info  <br/>
+<4> Warn  <br/>
+<5> Error  <br/>
+<6> Fatal  <br/>
  <br/>
 "Trace" merupakan Kondi yang Paling Ringan.  <br/>
 "Fatal" merupakan kondisi paling Parah, biasanya meng-indikasikan Applikasi tidak tetap berjalan.   <br/>
