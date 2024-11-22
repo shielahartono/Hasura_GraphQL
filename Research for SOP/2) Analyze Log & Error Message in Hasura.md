@@ -761,6 +761,12 @@ atau <br/>
 "File Uploaded Successfully" <br/>
 <br/>
 
+[4] DEBUG :  <br/>
+Log Levels tingkat DEBUG menyediakan informasi detail yang digunakan untuk Troubleshoot & Debug Issues pada Aplikasi. <br/>
+Log untuk DEBUG berisi catatan mendalam mengenai cara kerja Internal Aplikasi (seperti Nilai Variable, Flow of Execution, atau langkah-langkah dalam Algoritme). <br/>
+Tingkat pencatatan Log tingkat DEBUG ini biasanya lebih bertele-tele dan mencakup informasi yang biasanya tidak diperlukan selama 'Normal Operation', <br/>
+tetapi Log DEBUG ini berguna untuk "Mengidentifikasi Masalah" atau "Memahami cara kerja secara Internal". <br/>
+
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
