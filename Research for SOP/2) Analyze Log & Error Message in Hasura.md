@@ -766,7 +766,47 @@ Log Levels tingkat DEBUG menyediakan informasi detail yang digunakan untuk Troub
 Log untuk DEBUG berisi catatan mendalam mengenai cara kerja Internal Aplikasi (seperti Nilai Variable, Flow of Execution, atau langkah-langkah dalam Algoritme). <br/>
 Tingkat pencatatan Log tingkat DEBUG ini biasanya lebih bertele-tele dan mencakup informasi yang biasanya tidak diperlukan selama 'Normal Operation', <br/>
 tetapi Log DEBUG ini berguna untuk "Mengidentifikasi Masalah" atau "Memahami cara kerja secara Internal". <br/>
+<br/>
+[4] DEBUG :  <br/>
+Log Levels tingkat DEBUG menyediakan informasi detail yang digunakan untuk Troubleshoot & Debug Issues pada Aplikasi.
+Log untuk DEBUG berisi catatan mendalam mengenai cara kerja Internal Aplikasi (seperti Nilai Variable, Flow of Execution, atau langkah-langkah dalam Algoritme).  <br/>
+Tingkat pencatatan Log tingkat DEBUG ini biasanya lebih bertele-tele dan mencakup informasi yang biasanya tidak diperlukan selama 'Normal Operation',  <br/>
+tetapi Log DEBUG ini berguna untuk "Mengidentifikasi Masalah" atau "Memahami cara kerja secara Internal".  <br/>
+<br/>
+=> Apa saja isi "DEBUG Logs" :  <br/>
+- Internal States : berisi informasi mengenai keadaan Variable, Objects, atau Data Structure.  <br/>
+- Execution Flow : Informasi Detail mengenai apa yang program lakukan pada Setiap Step (Seperti "Entering atau Exiting Functions, Loop, atau Code Block tertentu")  <br/>
+- Intermediate Data : Values yang diproses pada Aplikasi (seperti isi dari Arrays atau Objects saat Loop atau Calculations)  <br/>
 
+<br/>
+=> Contoh "DEBUG Log" : <br/>
+<1> `Entering function calculateTotal()`   <br/>
+ini menunjukkan Program memasuki Function Tertentu.  <br/>
+yang mana, hal ini dapat membantu kita untuk Melacak Function atau Bagian Code mana yang di-eksekusi.  <br/>
+(Jika terdapat Error, klta dapat melihat Function mana yang Error atau Bagian Code mana yang Error)  <br/>
+<br/>
+<2> `Value of counter in loop: 5`   <br/>
+ini menunjukkan Nilai dari Variable "counter" pada sebuah Point Khusus, yaitu pada Loop.  <br/>
+yang mana kita dapat memahami bagaimana Loop Berlangsung.  <br/>
+<br/>
+<3> `Querying database with parameters: {username: 'JohnDoe', age: 30}`  <br/>
+ini menunjukkan Parameter Tertentu yang digunakan pada Database Query.  <br/>
+<br/>
+Berikut Detail Penjelasan Parameter :  <br/>
+` username: 'JohnDoe' `   <br/>
+- Parameter Name : `username`  <br/>
+- Value : ` 'JohnDoe' `  <br/>
+<br/>
+`age: 30`  <br/>
+- Parameter Name : `age`  <br/>
+- Value : `30`  <br/>
+<br/>
+
+<4> `"Variable result after calculation: 256"`  : <br/>
+ini menunjukkan Hasil Perhitungan,  <br/>
+yang mana ini dapat juga kita gunakan untuk Memverifikasi apakah Logika nya benar.  <br/>
+<br/>
+<br/>
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
