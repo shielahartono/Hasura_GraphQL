@@ -720,7 +720,7 @@ atau "Unhandled Exception" <br/>
 [2] WARN (Waarning) : <br/>
 - Meng-indikasikan "Potential Problem" (Potensi Masalah) atau sesuatu yang tidak Ideal tetapi tidak menghambat jalannya Aplikasi. <br/>
 yang mana ini bukan merupakan masalah yang Critical, tetapi tetap membutuhkan Perhatian. <br/>
-<br/>
+
 - Contoh : <br/>
 "Deprecated Featured being Used" <br/>
 atau  <br/>
