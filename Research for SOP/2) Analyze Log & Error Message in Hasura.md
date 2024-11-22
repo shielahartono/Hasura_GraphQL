@@ -683,11 +683,13 @@ yang mana Log nya akan terihat seperti contoh berikut ini :  <br/>
 
 #### [1.a] Mari kita uraikan Logs tersebut :
 <br/>
-{1) **Timestamp**  : <br/>
+{1) **Timestamp**  :
+ <br/>
 `"timestamp": "2024-11-14T12:00:00Z"`   <br/>
 Timetamp ini memberitahu "Kapan" Error terjadi.  <br/>
 <br/>
-(2) **Level**   :   <br/>
+(2) **Level**   :  
+ <br/>
 `"level": "error"`  <br/>
 ini merupakan "Log Levels".   <br/>
 yang mana disini menujukkan Level dari Log tersebut adalah "Error". <br/>
