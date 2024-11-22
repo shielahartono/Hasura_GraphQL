@@ -808,6 +808,23 @@ yang mana ini dapat juga kita gunakan untuk Memverifikasi apakah Logika nya bena
 <br/>
 <br/>
 
+=> Kita tidak bisa selalu melihat "DEBUG Logs" kecuali jika "DEBUG Logs" di-Setting "Enable" pada "System Configuration".  <br/>
+Secara Default, "DEBUG Logs" biasanya di-setting "Disabled" pada 'Production Environments' untuk menghindari hal berikut ini :   <br/>
+<1> Performance Overhead :  <br/>
+merupakan Konsumsi "Computational Resources" yang berlebihan (seperti Konsumsi Memory atau Processing Power yang berlebihan)  <br/>
+ <br/>
+<2> Excessive Log Data :  <br/>
+merupakan situasi dimana System menghasilkan Jumlah Log yang lebih banyak daripada biasanya,  <br/>
+yang mana ini dapat mencakup terlalu banyak detail, informasi yang tidak relevant, atau lebih banyak data dari yang diperlukan untuk Normal Operations.   <br/>
+ <br/>
+<3> Potential Exposure of Sensitive Information :   <br/>
+Merupakan Risiko bahwa Data Rahasia atau Pribadi dapat diakses, di-ungkapkan, atau dikompromikan   <br/>
+karena Vulnerabilities, Misconfigurations, Penanganan System yang tidak Proper.  <br/>
+(ini bisa terjadi oleh berbagai cara seperti melalui Improper Logging, Insecure Data Storage, Inadequate Encryption, atau System Flaws yang memungkinkan Pihak yang tidak berwenang untuk mengakses Sensitive Data)  <br/>
+ <br/>
+=> Misalnya terjadi Issue saat kita membuat Settingan Disable untuk "DEBUG LOG", maka kita tidak bisa melihat "DEBUG Log" untuk kita mencoba Troubleshoot, bahkan jika setalah itu kita mengubah Settingan "DEBUG Log" menjadi "Enable",  <br/>
+kita masih tetap tidak bisa melihat "DEBUG Log" untuk Issue tersebut karena Issue tersebut terjadi saat settingan masih "Disable", sehingga tidak "DEBUG Log" tidak terbentuk issue tersebut.  <br/>  <br/>
+
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
