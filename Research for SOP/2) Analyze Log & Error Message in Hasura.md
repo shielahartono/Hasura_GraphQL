@@ -717,6 +717,20 @@ atau "Unhandled Exception" <br/>
 >> yang mana jika Exception tidak tertangani dengan baik, maka hal ini dapat menyebabakn Error "Unhandled Exception".  <br/>
 >>
 
+[2] WARN (Waarning) : <br/>
+- Meng-indikasikan "Potential Problem" (Potensi Masalah) atau sesuatu yang tidak Ideal tetapi tidak menghambat jalannya Aplikasi. <br/>
+yang mana ini bukan merupakan masalah yang Critical, tetapi tetap membutuhkan Perhatian. <br/>
+<br/>
+- Contoh : <br/>
+"Deprecated Featured being Used" <br/>
+atau  <br/>
+"Slow Database Queries"  <br/>
+<br/>
+"Deprecated Features being Used" merupakan Features, Functions, atau Method pada Software atau Library yang "tidak lagi direkomendasikan" atau "akan di-remove di masa yang akan datang". <br/>
+yang mana Feature ini masih berfungsi dengan baik tetapi dianggap ketinggalan jaman.  <br/>
+<br/>
+"Slow Database Queries" merupakan Database Query yang memakan lebih banyak waktu saat diekseskusi, dibandingkan waktu perkiraan. <br/>
+
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
