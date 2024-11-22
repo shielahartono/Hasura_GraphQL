@@ -681,6 +681,42 @@ yang mana Log nya akan terihat seperti contoh berikut ini :  <br/>
 }
 ```
 
+#### [1.a] Mari kita uraikan Logs tersebut :
+<br/>
+{1) **Timestamp**  : <br/>
+`"timestamp": "2024-11-14T12:00:00Z"`   <br/>
+Timetamp ini memberitahu "Kapan" Error terjadi.  <br/>
+<br/>
+(2) **Level**   :   <br/>
+`"level": "error"`  <br/>
+ini merupakan "Log Levels".   <br/>
+yang mana disini menujukkan Level dari Log tersebut adalah "Error". <br/>
+<br/>
+"Log Levels" digunakan untuk meng-klasifikasikan tingkat Keparahan. <br/>
+ <br/>
+Berikut ini adalah tingkatan "Log Levels" (Mulai dari yang 'Paling Parah' hingga yang 'Ringan') : <br/>
+<br/>
+[1] ERROR :  <br/>
+- ini meng-indikasikan 'Serious Issue' yang membutuhkan perhatian. <br/>
+yang mana Aplikasi mengalami masalah yang mencegah aplikasi tersebut bekerja dengan benar. <br/>
+- Contoh : <br/>
+"Failure in Database Connection" <br/>
+atau "Unhandled Exception" <br/>
+<br/>
+>> ^For your information^ <br/>
+>> {1} **Unhandled Exception**  :  <br/>
+>> merupakan Error yang terjadi saat 'excecution of program', tetapi error tersebut tidak ditangani secara baik oleh mekanisme "Error Handling" pada Program.  <br/>
+>> Mekanisme "Error Handling" itu seperti "Try and Catch" pada Kodingan.  <br/>
+>> yang mana Pada Case Normal, jika terjadi error, seharusnya Exceptions tersebut dapat ditangani oleh Mekanisme "Error Handling".  <br/>
+>> 
+>> "Exceptions" merupakan kejadian tidak terduga yang mengganggu aliran eksekusi normal suatu program.  <br/>
+>>  <br/>
+>> Misalnya, kita mempunyai Program untuk "Divide two numbers" tetapi salah satu angka tersebut adalah 0 (Nol), yang mana angka Nol tersebut tidak bisa dibagi, yang mana ini dapat menyebabkan Error.  <br/>
+>> Error tersebut yang kita sebut "Exception."  <br/>
+>> Dan Exception seharusnya dapat tertangani dengan baik oleh Mekanisme "Error-Handling" ,  <br/>
+>> yang mana jika Exception tidak tertangani dengan baik, maka hal ini dapat menyebabakn Error "Unhandled Exception".  <br/>
+>>
+
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
