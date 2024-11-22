@@ -694,7 +694,7 @@ yang mana disini menujukkan Level dari Log tersebut adalah "Error". <br/>
 <br/>
 "Log Levels" digunakan untuk meng-klasifikasikan tingkat Keparahan. <br/>
 <br/>
-=> Berikut ini Urutan Tingkatan Log Level (Mulai dari yang paling "Ringan" hingga yang "Paling Parah") :
+=> Berikut ini Urutan Tingkatan Log Level (Mulai dari yang paling "Ringan" hingga yang "Paling Parah") :   <br/>
 <1> Trace  <br/>
 <2> Debug  <br/>
 <3> Info  <br/>
