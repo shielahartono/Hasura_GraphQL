@@ -717,7 +717,7 @@ atau "Unhandled Exception" <br/>
 >> yang mana jika Exception tidak tertangani dengan baik, maka hal ini dapat menyebabakn Error "Unhandled Exception".  <br/>
 >>
 
-[2] WARN (Waarning) : <br/>
+[2] WARN (Warning) : <br/>
 - Meng-indikasikan "Potential Problem" (Potensi Masalah) atau sesuatu yang tidak Ideal tetapi tidak menghambat jalannya Aplikasi. <br/>
 yang mana ini bukan merupakan masalah yang Critical, tetapi tetap membutuhkan Perhatian. <br/>
 
