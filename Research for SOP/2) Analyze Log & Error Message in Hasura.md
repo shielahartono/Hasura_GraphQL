@@ -835,5 +835,10 @@ Biasanya issue yang terjadi menghentikkan aplikasi agar tidak berfungsi.
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
+<br/>
 
 ## E. How to gain insight from Debug Log
+
+<br/>
+
+## F. How to gain insight from Trace Log
