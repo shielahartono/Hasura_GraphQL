@@ -849,6 +849,30 @@ Pada case ini, kita coba menjalankan Query untuk memasukkan User baru ke Databas
 
 <br/>
 
+(4) query :
+
+- "query" pada Log berarti menunjukkan Query yang dilakukan. <br/>
+pada Case ini, Query tersebut adalah :
+```
+mutation { 
+  insert_users_one(object: { name: "John", email: "john@example.com" }) { 
+    id 
+  } 
+}
+
+```
+- Query diatas meminta untuk Insert User ke Database dan meminta System untuk Memberikan Response berupa User's ID yang di-insert tersebut. <br/>
+yang mana pada Query diatas, User yang ingin di-insert diatas adalah "John" dengan email "john@example.com".
+
+```
+{ 
+    id 
+  } 
+```
+ini bearti Query meminta System untuk Memberikan Response berupa User's ID yang di-insert tersebut.
+<br/>
+<br/>
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
