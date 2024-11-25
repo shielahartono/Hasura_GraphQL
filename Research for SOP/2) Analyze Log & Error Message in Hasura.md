@@ -830,7 +830,13 @@ Biasanya issue yang terjadi menghentikkan aplikasi agar tidak berfungsi.
 
 <br/>
 [6] Trace : 
-
+- Trace merupakan Log Level yang memiliki Tingkat pencatatan paling terperinci, <br/>
+bahkan Trace lebih terperinci daripada DEBUG.
+- Trace Log mencatat setiap Detail Kecil pad Alur Aplikasi, bahkan lebih terperinci daripada DEBUG. <br/>
+Dan Trace Log biasanya digunakan saat Fase Development (Development Phase).
+- Trace biasanya digunakan saat Fase Development untuk melacak Detail terkecil dari Eksekusi Program, <br/>
+sehingga Trace Log dapat membantu kita melihat apa yang terjadi di dalam aplikasi. <br/>
+yang mana, Trace Logs dapat membantu untuk Melacak Bugs atau Errors, dan memudahkan untuk menemukan dimana kesalahannya. <br/>
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
