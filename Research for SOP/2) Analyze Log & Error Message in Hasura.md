@@ -899,6 +899,20 @@ sehingga muncul error "Duplicate Key Violation".  <br/> <br/>
 <br/>
 <br/>
 
+(6) request_id :
+`"request_id": "abc123" `
+- "request_id" itu seperti 'tracking number' (nomor pelacakan) untuk Request tertentu. <br/>
+yang mana "request_id" itu seperti tanda pengenal unik (Unique Identifier) untuk setiap Request,  <br/>
+yang mana ini berguna untuk membedakan suatu Request dengan Request lainnya.
+
+- "request_id" berguna untuk debugging, jika sesuatu issue terjadi dan kita ingin melihat Log, kita bisa mem-filter Log dengan request_id sehingga kita dapat hanya melihat Log milik suatu Request yang terjadi issue (sehingga tidak perlu melihat Log milik Request lainnya).  <br/>
+
+<br/>
+<br/>
+
+
+
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
