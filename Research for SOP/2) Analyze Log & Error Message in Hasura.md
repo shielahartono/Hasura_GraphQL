@@ -838,6 +838,17 @@ Dan Trace Log biasanya digunakan saat Fase Development (Development Phase).
 sehingga Trace Log dapat membantu kita melihat apa yang terjadi di dalam aplikasi. <br/>
 yang mana, Trace Logs dapat membantu untuk Melacak Bugs atau Errors, dan memudahkan untuk menemukan dimana kesalahannya. <br/>
 
+<br/>
+<br/>
+
+(3) message : <br/>
+` "message": "query failed" `
+- "message" pada Log memberi Rangkuman Singkat mengenai masalah (Quick Summary of the problem).
+- ""query failed" berarti Operasi atau Query yang kita coba lakukan telah gagal. <br/>
+Pada case ini, kita coba menjalankan Query untuk memasukkan User baru ke Database, tetapi kita gagal untuk memasukkan User baru tersebut ke dalam Database. <br/>
+
+<br/>
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
