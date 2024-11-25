@@ -873,7 +873,7 @@ ini berarti Query meminta System untuk Memberikan Response berupa User's ID yang
 <br/>
 <br/>
 
-(5) error :
+(5) error : (ini merupakan "Error Message" )
 ```
 "error": {
     "message": "duplicate key value violates unique constraint \"users_email_key\"",
@@ -881,14 +881,22 @@ ini berarti Query meminta System untuk Memberikan Response berupa User's ID yang
   }
 ```
 - Bagian pada Log ini merupakan "Error Message".
-- Bagian ini menjelaskan apa yang bermasalah.
+- yang mana, pada bagian "Error Message", terdapat "message" dan juga "details"
+- Bagian "Error Message" menjelaskan apa yang bermasalah.
+
+<5.a> Bagian "message" : `"message": "duplicate key value violates unique constraint \"users_email_key\""`
 - `duplicate key value violates unique constraint` ini berarti Operasi gagal karena ada ada "Duplicate Key Violation".  <br/>
 "Duplicate Key Violation" biasanya terjadi karena ada usaha untuk Insert atau Update Data ke Database, tetapi pada Database sudah ada Data dengan Value yang sama dengan yang mau di-insert atau di-update,  <br/>
 sehingga muncul issue "Duplicate Key Violation".  
 - Pada Contoh Case ini, User Baru yang ingin di-insert ke Database, ternyata sudah ada pada Database,  <br/>
-sehingga muncul error "Duplicate Key Violation".  <br/>
+sehingga muncul error "Duplicate Key Violation".  <br/> <br/>
 
+<5.b> Bagian "details" : ` "details": "Key (email)=(john@example.com) already exists."`
+- "details" merupakan tambahan detail informasi mengenai Error
+- yang mana pada Case ini, "details" memberitahu bahwa penyebab issue adalah email "john@example.com" sudah ada di Database
 
+<br/>
+<br/>
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
