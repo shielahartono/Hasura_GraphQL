@@ -869,7 +869,7 @@ yang mana pada Query diatas, User yang ingin di-insert diatas adalah "John" deng
     id 
   } 
 ```
-ini bearti Query meminta System untuk Memberikan Response berupa User's ID yang di-insert tersebut.
+ini berarti Query meminta System untuk Memberikan Response berupa User's ID yang di-insert tersebut.
 <br/>
 <br/>
 
