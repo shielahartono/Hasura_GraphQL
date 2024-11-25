@@ -873,6 +873,23 @@ ini berarti Query meminta System untuk Memberikan Response berupa User's ID yang
 <br/>
 <br/>
 
+(5) error :
+```
+"error": {
+    "message": "duplicate key value violates unique constraint \"users_email_key\"",
+    "details": "Key (email)=(john@example.com) already exists."
+  }
+```
+- Bagian pada Log ini merupakan "Error Message".
+- Bagian ini menjelaskan apa yang bermasalah.
+- `duplicate key value violates unique constraint` ini berarti Operasi gagal karena ada ada "Duplicate Key Violation".  <br/>
+"Duplicate Key Violation" biasanya terjadi karena ada usaha untuk Insert atau Update Data ke Database, tetapi pada Database sudah ada Data dengan Value yang sama dengan yang mau di-insert atau di-update,  <br/>
+sehingga muncul issue "Duplicate Key Violation".  
+- Pada Contoh Case ini, User Baru yang ingin di-insert ke Database, ternyata sudah ada pada Database,  <br/>
+sehingga muncul error "Duplicate Key Violation".  <br/>
+
+
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
