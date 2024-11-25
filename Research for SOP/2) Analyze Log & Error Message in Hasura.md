@@ -828,7 +828,7 @@ Biasanya issue yang terjadi menghentikkan aplikasi agar tidak berfungsi.
 - Contoh : System mengalami "Out of Memory" kemudian Crash
 
 
-<br/>
+
 [6] Trace : 
 - Trace merupakan Log Level yang memiliki Tingkat pencatatan paling terperinci, <br/>
 bahkan Trace lebih terperinci daripada DEBUG.
