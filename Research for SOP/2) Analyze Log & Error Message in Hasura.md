@@ -761,12 +761,7 @@ atau <br/>
 "File Uploaded Successfully" <br/>
 <br/>
 
-[4] DEBUG :  <br/>
-Log Levels tingkat DEBUG menyediakan informasi detail yang digunakan untuk Troubleshoot & Debug Issues pada Aplikasi. <br/>
-Log untuk DEBUG berisi catatan mendalam mengenai cara kerja Internal Aplikasi (seperti Nilai Variable, Flow of Execution, atau langkah-langkah dalam Algoritme). <br/>
-Tingkat pencatatan Log tingkat DEBUG ini biasanya lebih bertele-tele dan mencakup informasi yang biasanya tidak diperlukan selama 'Normal Operation', <br/>
-tetapi Log DEBUG ini berguna untuk "Mengidentifikasi Masalah" atau "Memahami cara kerja secara Internal". <br/>
-<br/>
+
 [4] DEBUG :  <br/>
 Log Levels tingkat DEBUG menyediakan informasi detail yang digunakan untuk Troubleshoot & Debug Issues pada Aplikasi.
 Log untuk DEBUG berisi catatan mendalam mengenai cara kerja Internal Aplikasi (seperti Nilai Variable, Flow of Execution, atau langkah-langkah dalam Algoritme).  <br/>
@@ -824,6 +819,17 @@ karena Vulnerabilities, Misconfigurations, Penanganan System yang tidak Proper. 
  <br/>
 => Misalnya terjadi Issue saat kita membuat Settingan Disable untuk "DEBUG LOG", maka kita tidak bisa melihat "DEBUG Log" untuk kita mencoba Troubleshoot, bahkan jika setalah itu kita mengubah Settingan "DEBUG Log" menjadi "Enable",  <br/>
 kita masih tetap tidak bisa melihat "DEBUG Log" untuk Issue tersebut karena Issue tersebut terjadi saat settingan masih "Disable", sehingga tidak "DEBUG Log" tidak terbentuk issue tersebut.  <br/>  <br/>
+<br/>
+
+[5] Fatal :
+- Fatal merupakan Kondisi paling Parah (Most Severe Level)
+- "Fatal" berarti System berada pada Kondisi Kritis (Critical State) dan System tidak bisa terus berjalan.
+Biasanya issue yang terjadi menghentikkan aplikasi agar tidak berfungsi.
+- Contoh : System mengalami "Out of Memory" kemudian Crash
+
+
+<br/>
+[6] Trace : 
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
