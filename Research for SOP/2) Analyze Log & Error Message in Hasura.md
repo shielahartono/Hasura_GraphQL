@@ -967,7 +967,7 @@ yang mana "Performance Logs" membantu kita menemukkan 'Slow Request'.  <br/>
 (4) System Logs :  <br/>
 menrupakan Log Umum (General Logs) yang memberikkan informasi mengenai Kesehatan System Hasura secara keseluruhan   <br/><br/>
 
--> Mari kita lihat contoh Tipe Log berikut :
+-> Mari kita lihat contoh Tipe Log berikut : <br/>
 (1) Request Log :
 ```
 {
