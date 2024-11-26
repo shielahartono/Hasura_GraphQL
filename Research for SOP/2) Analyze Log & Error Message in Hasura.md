@@ -945,7 +945,30 @@ Pada case ini, "User ID" tersebut adalah 123    <br/>  <br/>
 <7.b> ` "x-hasura-role": "admin" `  <br/>
 ini menunjukkan Role milik User yang membuat Request.   <br/>
 Pada case ini, Role tersebut adalah "admin",  <br/>
-yang berarti User memiliki hak istimewa sebagai admin untuk melakukan tindakan pada System   <br/>
+yang berarti User memiliki hak istimewa sebagai admin untuk melakukan tindakan pada System   <br/> <br/>
+
+
+### [2] Types of Hasura Logs <br/>
+### (Berbagai Jenis Log di Hasura)  <br/>
+
+-> Berikut berbagai Jenis Logs pada Hasura : <br/>
+(1) Request Logs : <br/>
+"Request Logs" menunjukkan Detail mengenai Request yang masuk (incoming Request). <br/>
+yang mana, "Request Log" berisi informasi apakah Request berhasil atau terdapat Issue.  <br/> <br/>
+
+(2) Error Logs : <br/>
+"Error Logs" mencatat Issue atau Error yang terjadi saat Request  <br/>
+(Misalnya Invalid Queries atau Permission Issue)  <br/> <br/>
+
+(3) Performance Logs : <br/>
+"Performance Logs" ini menunjukkan berapa lama Query di-eksekusi. <br/>
+yang mana "Performance Logs" membantu kita menemukkan 'Slow Request'.  <br/>
+
+(4) System Logs :  <br/>
+menrupakan Log Umum (General Logs) yang memberikkan informasi mengenai Kesehatan System Hasura secara keseluruhan   <br/><br/>
+
+
+
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
