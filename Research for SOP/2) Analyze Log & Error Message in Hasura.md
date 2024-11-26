@@ -967,7 +967,20 @@ yang mana "Performance Logs" membantu kita menemukkan 'Slow Request'.  <br/>
 (4) System Logs :  <br/>
 menrupakan Log Umum (General Logs) yang memberikkan informasi mengenai Kesehatan System Hasura secara keseluruhan   <br/><br/>
 
-
+-> Mari kita lihat contoh Tipe Log berikut :
+(1) Request Log :
+```
+{
+  "timestamp": "2024-11-14T12:00:00Z",
+  "level": "info",
+  "message": "processed request",
+  "query": "query { users { id name email } }",
+  "response_time_ms": 120,
+  "status_code": 200,
+  "execution_time_ms": 50,
+  "request_id": "abc123"
+}
+```
 
 
 
