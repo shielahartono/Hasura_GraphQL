@@ -1030,7 +1030,25 @@ maka bisa jadi Query tersebut kompleks atau menangani banyak data. <br/> <br/>
 }
 
 ```
-(Komponen di Log ini sudah pernahj diatas pada Catatan bagian atas)
+(Komponen di Log ini sudah pernahj diatas pada Catatan bagian atas)  <br/>
+<br/>
+=> Apa yang coba dikatakan oleh "Error Logs" :  <br/>
+[-] bagian "Error Message" : <br/>
+berikut ini bagian "Error Message"  
+```
+ "error": {
+    "message": "duplicate key value violates unique constraint \"users_email_key\"",
+    "details": "Key (email)=(john@example.com) already exists."
+  }
+```
+
+untuk memahami masalahnya, kita bisa pahami bagian "Error Message" pada Error Logs. <br/>
+
+pada bagian "message", terdapat kalimat "duplicate key value violates unique constraint"  <br/>
+ini berarti Issue terjadi karena ada 'Duplicate Value'  <br/><br/>
+
+Pada bagian "details", terdapat kalimat "Key (email)=(john@example.com) already exists"  <br/>
+berarti Issue terjadi karena terdapat Duplikat Email, yakni karena email john@example.com sudah ada di Database.  <br/> <br/>
 
 
 
