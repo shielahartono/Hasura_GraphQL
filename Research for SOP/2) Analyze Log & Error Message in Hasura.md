@@ -1080,6 +1080,10 @@ ini menunjukkan Berapa lama waktu yang dibutuhkan untuk menjalankan Query di dal
 yang mana, mungkin kita ingin meng-optimisasi dengan menambah Indexing ke Database atau dengan menyederhanakan Query  <br/>
 <br/> <br/>
 
+
+(4) System Logs :   <br/>
+.....
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
