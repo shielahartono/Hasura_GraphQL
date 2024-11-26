@@ -1048,10 +1048,37 @@ pada bagian "message", terdapat kalimat ` "duplicate key value violates unique c
 ini berarti Issue terjadi karena ada 'Duplicate Value'  <br/><br/>
 
 Pada bagian "details", terdapat kalimat ` "Key (email)=(john@example.com) already exists"  `  <br/>
-berarti Issue terjadi karena terdapat Duplikat Email, yakni karena email john@example.com sudah ada di Database.  <br/> <br/>
+berarti Issue terjadi karena terdapat Duplikat Email, yakni karena email john@example.com sudah ada di Database.  <br/> <br/> <br/>
 
 
 
+(3) Performance Logs : <br/>
+-> Performance Logs digunakan untuk mennjukkan Waktu yang digunakan untuk ekseskusi Query, <br/>
+yang mana ini membantu kita meng-identifikasi "Slow Queries". 
+
+```
+{
+  "timestamp": "2024-11-14T12:10:00Z",
+  "level": "info",
+  "message": "query performance",
+  "query": "query { users { id name email } }",
+  "execution_time_ms": 180,
+  "status_code": 200,
+  "request_id": "abc125"
+}
+
+```
+ 
+(Kita bahas component yang belum pernah dibahas diatas) <br/> <br/>
+
+[-] execution_time_ms  : <br/>
+ini menunjukkan Berapa lama waktu yang dibutuhkan untuk menjalankan Query di dalam Hasura. <br/>
+<br/>
+
+=> Apa yang coba dikatakan oleh "Performance Log" : <br/>
+[-] jika `execution_time_ms` terlalu tinggi (misalnya melebihi Threshold. dan misalnya Threshold kita 100ms) maka artinya Query kita itu lambat (Slow Query). <br/>
+yang mana, mungkin kita ingin meng-optimisasi dengan menambah Indexing ke Database atau dengan menyederhanakan Query  <br/>
+<br/> <br/>
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
