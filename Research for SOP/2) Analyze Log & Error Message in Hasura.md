@@ -910,7 +910,42 @@ yang mana ini berguna untuk membedakan suatu Request dengan Request lainnya.
 <br/>
 <br/>
 
+(7) session_variables :
+```
+"session_variables": {
+    "x-hasura-user-id": "123",
+    "x-hasura-role": "admin"
+  }
+```
+- "session_variables" mengandung informasi tambahan mengenai Session yang aktif saat Request dibuat.  <br/>
+Informasi Tambahan itu seperti Data User Preference, Data Shopping Cart, dan sebagainya.  <br/>
+Misalnya kita mengunjungi sebuah Website, kemudian kita Log-in,  <br/>
+Website perlu mengingat detail tertentu tentang kita (ini yang dimaksud "informasi tambahan"),  <br/>
+Detail tersebut seperti :  <br/>
+=> Username  <br/>
+=> Data Preferences (seperti Language, Theme)  <br/>
+=> Data Shopping Cart Items   <br/>
+=> Permission (seperti "admin" atau "user")   <br/> <br/>
 
+- "Session Variables" itu seperti catatan sementara yang Website ingat saat User berinteraksi dengan Website.   <br/>
+Catatan ini hanya disimpan saat Durasi Session.    <br/>
+Catatan ini digunakan untuk melacak aktivitas kita saat kita Log-in.    <br/>
+Saat Session berakhir, maka Session Data biasanya dihapus ('Session berakhir' itu seperti saat kita Log-out atau saat Session times out (Sesi berakhir))   <br/>
+
+Catatan mengenai User ini biasanya tidak disimpan secara Permanent oleh Server,    <br/>
+kecuali jika User membuat Account (create an account), melakukan pembelian (making a purchase),   <br/>
+maka Data User akan disimpan di Database.   <br/>
+
+- pada "session_variables" terdapat "x-hasura-user-id" dan "x-hasura-role"   <br/>
+
+<7.a> ` "x-hasura-user-id": "123" `    <br/>
+ini menunjukkan "User ID" milik User yang membuat Request.   <br/>
+Pada case ini, "User ID" tersebut adalah 123    <br/>  <br/>
+
+<7.b> ` "x-hasura-role": "admin" `  <br/>
+ini menunjukkan Role milik User yang membuat Request.   <br/>
+Pada case ini, Role tersebut adalah "admin",  <br/>
+yang berarti User memiliki hak istimewa sebagai admin untuk melakukan tindakan pada System   <br/>
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
