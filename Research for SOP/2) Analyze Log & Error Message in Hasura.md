@@ -1013,6 +1013,23 @@ yang mana ini bisa jadi meng-indikasikan 'Performance Issue' <br/> <br/>
 jika `execution_time_ms` nya tinggi,  <br/>
 maka bisa jadi Query tersebut kompleks atau menangani banyak data. <br/> <br/>
 
+<br/> <br/>
+
+(2) Error Logs :
+```
+{
+  "timestamp": "2024-11-14T12:05:00Z",
+  "level": "error",
+  "message": "query failed",
+  "query": "mutation { insert_users_one(object: { name: \"John\", email: \"john@example.com\" }) { id } }",
+  "error": {
+    "message": "duplicate key value violates unique constraint \"users_email_key\"",
+    "details": "Key (email)=(john@example.com) already exists."
+  },
+  "request_id": "abc124"
+}
+
+```
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
