@@ -1030,6 +1030,9 @@ maka bisa jadi Query tersebut kompleks atau menangani banyak data. <br/> <br/>
 }
 
 ```
+(Komponen di Log ini sudah pernahj diatas pada Catatan bagian atas)
+
+
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
