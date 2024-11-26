@@ -997,9 +997,21 @@ merupakan HTTP Status Code dari Request  <br/>
 (`200` untuk Success, `500` untuk Error, dan sebagainya) <br/> 
 
 [-] request_id : <br/>
-merupakan "Unique ID" untuk Request. <br/> <br/>
+merupakan "Unique ID" untuk Request. <br/> <br/> <br/>
 
 
+=> Apa yang coba dikatakan oleh "Request Log" :  <br/>
+[-] Status Code : <br/>
+jika "Status Code" nya 200 berarti semua berjalan dengan baik <br/> 
+
+[-] response_time_ms : <br/>
+jika `response_time_ms` nya tinggi, <br/>
+berarti Request memakan waktu lebih banyak waktu untuk diproses, <br/>
+yang mana ini bisa jadi meng-indikasikan 'Performance Issue' <br/> <br/>
+
+[-] execution_time_ms  : <br/>
+jika `execution_time_ms` nya tinggi,  <br/>
+maka bisa jadi Query tersebut kompleks atau menangani banyak data. <br/> <br/>
 
 
 
