@@ -982,6 +982,25 @@ menrupakan Log Umum (General Logs) yang memberikkan informasi mengenai Kesehatan
 }
 ```
 
+(Kita bahas component yang belum pernah dibahas diatas) <br/>
+[-] response_time_ms : <br/>
+Waktu yang dibutuhkan untuk mendapatkan Response. <br/>
+Satuan dalam miliseconds. <br/> <br/>
+
+[-] execution_time_ms : <br/>
+Waktu yang dibutuhkan untuk mengeksekusi Query. <br/>
+Satuan dalam miliseconds. <br/>
+(time to execute Query) <br/> <br/>
+
+[-] status_code : <br/>
+merupakan HTTP Status Code dari Request  <br/>
+(`200` untuk Success, `500` untuk Error, dan sebagainya) <br/> 
+
+[-] request_id : <br/>
+merupakan "Unique ID" untuk Request. <br/> <br/>
+
+
+
 
 
 ## D. Example of "Hasura Log" vs "Error Message"
