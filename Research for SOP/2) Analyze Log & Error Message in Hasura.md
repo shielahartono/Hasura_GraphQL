@@ -1447,6 +1447,49 @@ Pada Log diatas, "Response Times" nya ada di ujung paling kanan.  <br/>
 "Response Time" tersebut adalah 0.345 seconds.  <br/>  <br/> 
 
 
+[4] Version Awareness : <br/>
+Terkadang terdapat Issue yang terkait dengan Versi tertentu. <br/>
+
+Pada Log, kita dapat perhatikan Aspek ini :<br/>
+[-] Version :
+```
+version": "v2.21.0"
+```
+ini artinya Versi yang dipakai adalah 2.21.0   <br/><br/>
+
+
+[5] Spot Patterns and Trends : <br/>
+Dengan melihat Log secara berkala, kita bisa menemukkan Issue yang sering terjadi yang meng-indikasikan masalah yang lebih besar. <br/>
+
+Berikut ini aspek yang perlu diperhatikan : <br/>
+[-] Frequent Errors : <br/>
+Jika Issue yang sama sering terjadi, yang mana ini menandakan Hal yang perlu perhatian mendesak. <br/>
+<br/>
+[-] Inreased Load atau Traffic : <br/>
+"Increased Load or Traffic" merupakan Waktu saat System mengalami Lonjakan jumlah Load atau Traffic yang lebih tinggi dari biasanya.
+Lonjakkan ini seperti Jumlah Users, Requests, atau Data. <br/> <br/>
+
+Jika Logs menunjukkan Traffic atau Load yang tinggi secara berkala, <br/>
+artinya System menangani lebih banyak Request dari biasanya. <br/> <br/>
+
+Saat System mengalami Lonjakkan Traffic atau Load, maka itu artinya System harus bekerja lebih keras untuk memproses Request yang akan datang. <br/>
+Dan jika System tidak di-optimisasi secara baik, itu artinya System dapat mengalami Penurunan Performa. <br/>
+
+Dengan adanya, Lonjakkan Load atau Traffic secara berkala, kita dapat "Understanding How the Systems Behaves Under Stress" (Memahami bagaimana Systems berperilaku dibawah Stress) <br/>
+yang berarti kita mengamati bagaiamana Performa System saat menangani Lebih banyak Traffic dari biasanya . <br/>
+Beberapa hal untuk diamati, diantaranya sebagai berikut : <br/>
+[-] Performance : <br/>
+Apakah System mengalami perlambatan (Slow-Down) ?  <br/>
+Apakah "Response Times" menjadi lebih besar ? <br/><br/>
+
+[-] Error Rates : <br/>
+Apakah Error atau Failure menjadi lebih sering terjadi saat Lonjakkan Load atau Traffic ? <br/><br/>
+
+[-] Resource Usage : <br/>
+Apakah System menggunakkan lebih banyak CPU, Memory, atau Bandwith lebih dari biasanya ? <br/> <br/>
+
+[-] Capacity : <br/>
+Dapatkan System menangani Load saat High Traffic, atau apakah dibutuhkan lebih banyak Resources (seperti dibutuhkan tambahan Server, Optimisasi Database yang lebih baik, dan sebagainya) ? <br/><br/><br/>
 
 
 
