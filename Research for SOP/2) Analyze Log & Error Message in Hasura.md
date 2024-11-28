@@ -1238,6 +1238,164 @@ Contoh Startup Errors :
 Jika terdapat Error pada Log bagian `database connection failed` , hal ini mengetahui kita untuk mengetahui bahwa ada yang salah dengan Koneksi Database saat Startup Process,
 dan kita perlu memperbaikinya. <br/><br/>
 
+
+<2.b> Error and Warnings : <br/>
+Saat terjadi suatu masalah, System Logs biasanya berisi "Error Messages", <br/>
+yang mana "Error Messages" memberitahu kita apa yang menyebabkan Masalah. <br/> <br/> 
+
+Misalnya terdapat error terkait Database atau Network, artinya kita perlu investigasi masalah yang berkaitan dengan Database atau Network dan memperbaikinya. <br/> 
+
+Untuk meng-assess Error & Warning, kita bisa melihat aspek berikut ini pada Log : <br/> 
+[-] `level` : menjelaskan apakah terdapat error <br/>  <br/> 
+
+[-] `message` : message menjelaskan Status yang terjadi <br/>  <br/> 
+
+[-] Error Messages : menyediakan Informasi Detail mengenai Issue <br/> 
+Contoh bagian pada Error Messages :
+```
+"error": {
+    "message": "duplicate key value violates unique constraint \"users_email_key\"",
+    "details": "Key (email)=(john@example.com) already exists."
+  }
+```
+
+[-] Contextual Information : <br/> 
+beberapa Logs mengandung Contextual Information <br/> 
+(tidak semua Logs berisi 'Contextual Information') <br/> <br/> 
+
+"Contextual Information" merupakan informasi detail tambahan pada Log. <br/> 
+yang mana "Contextual Information" memberikan informasi Spesifik mengenai apa yang menjadi masalah, <br/> 
+yang hal ini bermanfaat untuk mempersempit Ruang Lingkup masalah, dan membantu kita untuk Troubleshoot lebih cepat. <br/> <br/> 
+
+^^Contoh 1 : User Information
+```
+{
+  "timestamp": "2024-11-28T10:20:00Z",
+  "level": "ERROR",
+  "message": "authentication failed",
+  "context": {
+    "user_id": "john_doe",
+    "ip_address": "192.168.0.2"
+  }
+}
+
+```
+yang merupakan "Contextual Information" pada Log diatas adalah :
+```
+"context": {
+    "user_id": "john_doe",
+    "ip_address": "192.168.0.2"
+  }
+```
+
+Pada Log diatas, terdapat bagian ` "message": "authentication failed" ` yang berarti Error tersebut dikarenakan "gagal pada proses Autentikasi". <br/> 
+Kemudian dengan melihat pada Log bagian Context, kita bisa mengetahui bahwa gagal authetikasi dilakukan oleh User yang memiliki user_id `john_doe` dan User tersebut memakai ip_address `192.168.0.2` <br/> <br/> 
+
+
+^^Contoh 2 : System Component atau Service Involved <br/> 
+Jika terdapat Issue pada Database atau Service, kita bisa melihat mengenai Nama Spesifik pada Database atau Service yang mengalami Issue.
+```
+{
+  "timestamp": "2024-11-28T10:20:00Z",
+  "level": "ERROR",
+  "message": "unable to connect to database",
+  "context": {
+    "database_name": "user_db",
+    "error_code": "ECONNREFUSED"
+  }
+}
+```
+yang merupakan "Contextual Information" pada Log diatas adalah :
+```
+"context": {
+    "database_name": "user_db",
+    "error_code": "ECONNREFUSED"
+  }
+```
+Pada Log diatas, terdapat bagian `"message": "unable to connect to database"`, yang artinya error tersebut dikarenakan "tidak bisa Connect ke Database". <br/> 
+Kemudian dengan melihat pada Log bagian Context, kita bisa mengetahui bahwa Error terjadi pada Database yang bernama "user_db", <br/> 
+dan Error Code tersebut adalah "ECONNREFUSED". <br/> 
+ECONNREFUSED merupakan kepanjangan dari "Connection Refused", yang mana ini biasanya terjadi ketika Upaya Koneksi Jaringan ditolak secara aktif (actively rejected) oleh Machine atau Service. <br/> <br/> 
+
+^^Contoh 3 : Request or Process ID
+Contoh Log :
+```
+{
+  "timestamp": "2024-11-28T10:20:00Z",
+  "level": "ERROR",
+  "message": "request timed out",
+  "context": {
+    "request_id": "abc123",
+    "process_id": "pid789"
+  }
+}
+
+```
+Pada Case dimana Banyak Proses atau Banyak Request ditangani, Logs yang berisi Contextual Information, ini dapat membantu untuk mengetahui secara Spesifik Request mana atau Process mana yang mengalami masalah. <br/>  <br/> 
+
+yang merupakan "Contextual Information" pada Log diatas adalah :
+```
+ "context": {
+    "request_id": "abc123",
+    "process_id": "pid789"
+  }
+```
+Pada Log diatas, terdapat bagian ` "message": "request timed out" ` yang artinya Penyebab Error tersebut adalah "Request Timed Out".
+Kemudian dengan melihat pada Log bagian Context, kita bisa mengetahui bahwa Error terjadi pada Spesifik Request & Spesifik Process,
+yaitu Request yang memiliki request_id `abc123` dan Proses yang memiliki process_id `pid789`  <br/> <br/> 
+
+
+^^Contoh 4 : Location or Source of the Issue <br/> 
+Misalnya terjadi masalah pada System atau Network Component (Komponen Jaringan), dengan Contextual Information kita dapat mengetahui secara Spesifik System atau Network Component mana yang mengalami masalah. <br/> <br/> 
+
+Contoh Log :
+```
+{
+  "timestamp": "2024-11-28T10:20:00Z",
+  "level": "ERROR",
+  "message": "failed to connect to remote server",
+  "context": {
+    "server": "app_server_01",
+    "ip_address": "192.168.0.10"
+  }
+}
+```
+Pada Log diatas, terdapat bagian "message": "failed to connect to remote server" yang artinya Penyebab Error adalah "Failed to connect ti Remote Server" (Gagal untuk menghubungkan ke Remote Server).<br/> 
+Kemudian dengan melihat pada Log bagian Context, kita bisa mengetahui bahwa Error terjadi pada Spesifik Server yaitu "app_server_01" dan Server tersebut memiliki ip_address `192.168.0.10` <br/> <br/> 
+
+
+^^Contoh 5 : Environment or Configuration Information <br/> 
+Logs dapat berisi Informasi Detail mengenai "Environment" diamana System berjalan <br/> 
+(Environment tersebut seperti Development, Staging, atau Production). <br/> 
+
+Contoh Logs :
+```
+{
+  "timestamp": "2024-11-28T10:20:00Z",
+  "level": "ERROR",
+  "message": "configuration file missing",
+  "context": {
+    "environment": "production",
+    "config_file": "/etc/config/app_config.json"
+  }
+}
+
+```
+yang merupakan "Contextual Information" pada Log diatas adalah :
+```
+ "context": {
+    "environment": "production",
+    "config_file": "/etc/config/app_config.json"
+  }
+```
+Pada Log diatas, terdapat bagian ` "message": "configuration file missing" ` yang artinya Error diakibatkan oleh "Hilangnya Configuration File". <br/> 
+Kemudian dengan melihat pada Log bagian Context, kita bisa mengetahui bahwa :  <br/> 
+- Configuration File yang hilang, seharusnya berada pada Environment Production, <br/> 
+dah seharusnya berada pada Path `/etc/config/` 
+- Nama Configuration yang hilang adalah `app_config.json`
+
+<br/> <br/> 
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
