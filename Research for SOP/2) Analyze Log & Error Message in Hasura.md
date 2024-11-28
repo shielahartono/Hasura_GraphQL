@@ -1086,6 +1086,22 @@ yang mana, mungkin kita ingin meng-optimisasi dengan menambah Indexing ke Databa
 Systems Logs memberikkan informasi mengenai keadaan Hasura dan bagaimana Hasura berinteraksi dengan Komponen-komponennya (seperti berinteraksi dengan Database, Server, dan sebagainya).
 System Logs biasanya mengandung informasi mengenai Service Startup, onfiguration Changes, System Error, dan sebagainya.  <br/>  <br/>
 
+-> Contoh System Logs :
+```
+{
+  "timestamp": "2024-11-14T12:30:00Z",
+  "level": "info",
+  "message": "Hasura instance started",
+  "instance_id": "hasura-instance-001",
+  "db_connection_status": "connected",
+  "server_status": "running",
+  "version": "v2.21.0",
+  "uptime": "5 hours 20 minutes",
+  "request_id": "sys-start-001"
+}
+
+```
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
