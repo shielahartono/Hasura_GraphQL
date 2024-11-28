@@ -1200,7 +1200,7 @@ yang mana, hal tersebut memberi tahu Apa yang bekerja dengan baik, apa yang perl
 <br/>
 Cara untuk mendapatkan Insight dari System Logs : <br/>
 <br/>
-[1] Monitor System Health : <br/>
+[1] **Monitor System Health** : <br/>
 untuk Monitor System Health, kita dapat lihat dari aspek berikut ini pada Log : <br/>
 <1.a> Server Status :  <br/>
 apakah Server nya berjalan atau Server nya Down. <br/>
