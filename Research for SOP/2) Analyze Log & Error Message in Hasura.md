@@ -1082,7 +1082,9 @@ yang mana, mungkin kita ingin meng-optimisasi dengan menambah Indexing ke Databa
 
 
 (4) System Logs :   <br/>
-.....
+-> System Logs pada Hasura menyediakan Informasi Umum (General Information) mengenai System's Operation, Health, and Environment.
+Systems Logs memberikkan informasi mengenai keadaan Hasura dan bagaimana Hasura berinteraksi dengan Komponen-komponennya (seperti berinteraksi dengan Database, Server, dan sebagainya).
+System Logs biasanya mengandung informasi mengenai Service Startup, onfiguration Changes, System Error, dan sebagainya.  <br/>  <br/>
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
