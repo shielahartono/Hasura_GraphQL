@@ -1215,6 +1215,23 @@ Contoh : <br/>
 jika pada Log terdapat ` "db_connection_status": "connected" ` maka artinya System mempunyai Healthy Connection ke Database.
 <br/><br/>
 
+[2] Detect Issues Early : <br/>
+Untuk mendeteksi Issue secara early (lebih awal), <br/>
+kita bisa melihat dari aspek berikut ini pada Log : <br/>
+<2.a> Startup Errors : <br/>
+Startup Error terjadi saat System gagal saat meng-inisialisasi atau menyelesaikan Startup Process. <br/>
+Hal ini dapat terjadi karena beberapa alasan, seperti masalah Koneksi ke Database, Pengaturan yang salah dikonfigurasi, Missing Files, atau Network Problems. <br/>
+Startup Error merupakan hal yang sangat Critical karena itu mencegah System berfungsi secara baik. <br/>
+Kita dapat lihat dari aspek berikut ini pada Log : <br/>
+[-] `db_connection_status` : menjelaskan bagaimana Koneksi ke Database <br/>
+
+[-] `server_status` : menjelaskan apakan Server berjalan dengan baik <br/>
+
+[-] `message` : message menjelaskan Status yang terjadi <br/>
+
+[-] `error_detail` : memberikan Informasi tambahan mengenai Error <br/>
+
+[-] `Level` : menjelaskan apakah terdapat error <br/><br/>
 
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
