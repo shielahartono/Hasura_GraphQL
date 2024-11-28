@@ -1,12 +1,14 @@
 # Analyze Real-Life Issue :
 # Connector - Error during Inspector Connector Phoenix
 
--> Connector merupakan komponen yang memungkinkan Hasura untuk meng-integrasikan dengan System atau Services lainnya,  <br/>
-yang memungkinkan kita untuk menghubungkan Hasura dengan External Database, API, atau Service lainnya.  <br/>
-Connector ini berfungsi sebagai jembatan yang memungkinkan Hasura untuk mengambil atau mengirim Data ke Sumber yang berbeda. <br/><br/>
+<br/><br/>
 
 ## 1. Understanding Connector ini General :
 ## (Memahami Connector secara umum)
+
+-> Connector merupakan komponen yang memungkinkan Hasura untuk meng-integrasikan dengan System atau Services lainnya,  <br/>
+yang memungkinkan kita untuk menghubungkan Hasura dengan External Database, API, atau Service lainnya.  <br/>
+Connector ini berfungsi sebagai jembatan yang memungkinkan Hasura untuk mengambil atau mengirim Data ke Sumber yang berbeda. <br/><br/>
 
 -> Berikut ini adalah Berbagai Tipe Connector atau Berbagai "Integration Points" pada Connector : <br/>
 1. Database Connector (Primary Connector)  <br/>
