@@ -1192,6 +1192,27 @@ yang mana, "Log Entry" merupakan Message yang dibuat oleh System untuk menangkap
 
 - "Request ID" dapat digunakan untuk melacak (tracking) event tertentu atau menghubungkannya dengan Log lain yang terkait dengan Event ini.
 yang mana, jika kita sedang Troubleshooting, maka kita perlu refer ke "Request ID".
+<br/><br/> <br/>
+
+=> How to gain insight from System Logs : <br/>
+Mendapatkan Insight (wawasan) dari Sytem Logs itu seperti membaca Report Card milik System. <br/>
+yang mana, hal tersebut memberi tahu Apa yang bekerja dengan baik, apa yang perlu attention, dan bagaimana Performa dari waktu ke waktu. <br/>
+<br/>
+Cara untuk mendapatkan Insight dari System Logs : <br/>
+<br/>
+[1] Monitor System Health : <br/>
+untuk Monitor System Health, kita dapat lihat dari aspek berikut ini pada Log : <br/>
+<1.a> Server Status :  <br/>
+apakah Server nya berjalan atau Server nya Down. <br/>
+Logs akan memberitahu apakah Server berjalan lancar atau apakah ada Problem, Crash atau Downtime. <br/>
+Contoh : <br/>
+Jika pada Log tertulis `server_status": "running` maka artinya Server berjalan tanpa ada masalah yang mendesak. <br/>
+<br/>
+<1.b> Database Connection : <br/>
+Logs bagian "Database Connection" menunjukkan bagaimana System telah sukses terkoneksikan ke Database. <br/>
+Jika terdapat Issue, biasanya kita akan menemukan `disconnected` pada Log bagian "Database Connection" <br/>
+Contoh : <br/>
+jika pada Log terdapat ` "db_connection_status": "connected" ` maka artinya System mempunyai Healthy Connection ke Database.
 <br/><br/>
 
 
