@@ -1233,6 +1233,11 @@ Kita dapat lihat dari aspek berikut ini pada Log : <br/>
 
 [-] `Level` : menjelaskan apakah terdapat error <br/><br/>
 
+
+Contoh Startup Errors :
+Jika terdapat Error pada Log bagian `database connection failed` , hal ini mengetahui kita untuk mengetahui bahwa ada yang salah dengan Koneksi Database saat Startup Process,
+dan kita perlu memperbaikinya. <br/><br/>
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
