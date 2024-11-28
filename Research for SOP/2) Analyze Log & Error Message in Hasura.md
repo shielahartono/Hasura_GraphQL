@@ -1396,6 +1396,60 @@ dah seharusnya berada pada Path `/etc/config/`
 
 <br/> <br/> 
 
+[3] Track System Performance :  <br/> 
+Logs melacak seberapa bagus Performa System kita.  <br/>  <br/> 
+
+Terdapat beberapa Aspek untuk melacak System Performance, yaitu :  <br/> 
+<3.a> Uptime :  <br/> 
+Uptime berarti berapa lama System telah berjalan secara terus menerus tanpa Interupsi atau tanpa mengalami Restart.  <br/> 
+Jika System telah berjalan tanpa adanya Issue untuk waktu yang lama, ini merupakan pertanda yang bagus kalau semuanya berfungsi dengan baik dan Stabil.  <br/>  <br/> 
+
+Jika System sering mengalami Restart, ini dapat meng-indikasikan bahwa terdapat Issue pada System yang membutuhkan Perhatian.
+Frekuensi Restart yang sering dapat menandakan ketidakstabilan atau masalah pada System's Configuration, Software, atau Hardware.
+ <br/>  <br/> 
+Berikut ini aspek-aspek pada Logs untuk menilai Performa Uptime :  <br/> 
+[-] Uptime : 
+ ` "uptime": "5 hours 20 minutes" `
+ini menandakan System telah berjalan secara terus menerus selama 5 jam 20 menit   <br/> 
+tanpa ada Restart atau Failure (kegagalan).  <br/> 
+yang mana ini menandakan System nya Stabil.  <br/> 
+ <br/>   <br/> 
+
+<3.b> Response Times :  <br/> 
+"Reponse Time" berarti waktu yang dibutuhkan System untuk memproses Request.  <br/> 
+"Reponse Times" yang besar dapat meng-indikasikan Performance Issue  <br/>  <br/> 
+
+Berikut ini cara untuk melihat Reponse Times pada Log :  <br/> 
+
+^^Contoh 1 :
+```
+{
+  "timestamp": "2024-11-28T10:25:00Z",
+  "level": "INFO",
+  "message": "Request processed",
+  "context": {
+    "response_time": "2.3s"
+  }
+}
+
+```
+Pada Log diatas, pada bagian ` "response_time": "2.3s" ` memberitahu bahwa Nilai "Response Time" kita adalah 2.3 second.
+(jika 'Response Time' kita melebihi Threshold, maka artinya 'Response Time' kita masih terlalu lama)  <br/>  <br/> 
+
+
+^^Contoh 2 : Logs pada Web Server  <br/> 
+Misalnya kita menggunakan Web Server (seperti Nginx atau Apache), maka Logs nya dapat terlihat seperti ini :
+```
+192.168.0.1 - - [28/Nov/2024:10:35:00 +0000] "GET /index.html HTTP/1.1" 200 1456 0.345
+
+```
+Pada Log diatas, "Response Times" nya ada di ujung paling kanan.  <br/> 
+"Response Time" tersebut adalah 0.345 seconds.  <br/>  <br/> 
+
+
+
+
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
