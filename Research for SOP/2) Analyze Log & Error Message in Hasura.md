@@ -1102,6 +1102,99 @@ System Logs biasanya mengandung informasi mengenai Service Startup, onfiguration
 
 ```
 
+
+[1] Timestamp :
+```
+ "timestamp": "2024-11-14T12:30:00Z"
+```
+- Timestamp memberitahu kita "kapan Log dibentuk"
+Pada case ini, Log dibentuk pada 14 November 2024 pada jam 12:30 PM UTC
+
+- Timestamp membantu kita untuk mengetahui waktu persis kejadian, yang mana ini berguna untuk Tracking (melacak) & Troubleshooting. <br/><br/>
+
+
+[2] Level :
+```
+"level": "info"
+```
+- ini memberitahu kita tingkat keparahan suatu Issue
+atau seberapa penting issue tersebut harus diprioritaskan.
+
+- pada case ini, `info` berarti semua baik-baik saja dan Log ini hanya berupa informational message. <br/><br/>
+
+
+[3] Message :
+```
+"message": "Hasura instance started"
+```
+
+- ini merupakan "Main Message" (Message utama) pada Log.
+- Pada case ini, `Hasura instance started` memberitahu kita bahwa Hasura "has successfully started" (telah berhasil dimulai).
+yang mana `Hasura instance started` merupakan Log message yang biasa kita temui saat System mulai berjalan. <br/><br/>
+
+
+[4] Instace ID :
+```
+ "instance_id": "hasura-instance-001"
+```
+- Jika kita mempunyai Hasura Instances lebih dari satu (misalnya untuk Server yang berbeda atau Environment berbeda),
+"Instance ID" membantu untuk meng-identifikasi dari Instance mana Log tersebut berasal.
+Pada Case ini, Log berasal dari Instance `hasura-instance-001` <br/><br/>
+
+
+[5] Database Connection Status :
+```
+"db_connection_status": "connected"
+```
+- "Database Conncection Status" memberitahu kita mengenai "Koneksi" antara Hasura dan Database.
+
+- pada case ini, ` "connected" ` berarti Hasura telah berhasil terkoneksi ke Database.
+
+- Jika terdapat masalah, maka biasanya kita akan melihat ` "disconnected" ` yang mana meng-indikasikan issue saat meng-koneksikan ke Database (mengkin dikarenakan Credential yang salah, atau Network Issue)  <br/><br/>
+
+
+[6] Server Status :
+```
+"server_status": "running"
+```
+- "Server Status" menunjukkan  dari Hasura Server.
+pada case ini, `running` berarti Server aktif dan berjalan tanpa masalah (Server is up & Running without Issues).
+
+- Jika terjadi masalah (Misalnya Server Crashed) , maka biasanya pada Log akan tertulis "Not Running" atau "Crashed"
+ <br/><br/>
+
+[7] Version :
+```
+  "version": "v2.21.0"
+```
+- ini memberitahu kita Versi Hasura berapa yang Running.
+Pada case ini, Versi Hasura nya adalah 2.21.0
+
+- Version dapat membantu, karena terkadang features dan bug dapat spesfik untuk version tertentu.
+<br/><br/>
+
+[8] Uptime :
+```
+"uptime": "5 hours 20 minutes"
+```
+- "Uptime" menunjukkan berapa lama Hasura telah berjalan secara terus-menerus sejak terakhir kali di-restart (how long Hasura has been Running Continuously since it was last restarted).
+- contohnya, pada case ini, `5 hours 20 minutes` System menyala selama 5 jam 20 menit.
+- Jika "Uptime" nya Singkat, maka ini mungkin menunjukkan masalah seperti System yang sering mengalami "Restart",
+yang mana dapat disebabkan oleh Crash atau 'Configuration Issues'
+<br/><br/>
+
+[9] Request ID :
+```
+ "request_id": "sys-start-001"
+```
+- "Request ID" merupakan "Unique Identifier" untuk "Log Entry" (untuk membedakan antara "Log Entry" satu dengan "Log Entry" lainnya ).
+yang mana, "Log Entry" merupakan Message yang dibuat oleh System untuk menangkap Informasi mengenai suatu Event, Action, atau Status pada spesifik moment.
+
+- "Request ID" dapat digunakan untuk melacak (tracking) event tertentu atau menghubungkannya dengan Log lain yang terkait dengan Event ini.
+yang mana, jika kita sedang Troubleshooting, maka kita perlu refer ke "Request ID".
+<br/><br/>
+
+
 ## D. Example of "Hasura Log" vs "Error Message"
 ## (Contoh Real Example "Hasura Log", dan Identifilkasi "Error Message" di dalam "Hasura Log" tersebut )
 
