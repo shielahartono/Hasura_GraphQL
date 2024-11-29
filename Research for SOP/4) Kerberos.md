@@ -106,6 +106,8 @@ merupakan Ticket yang dikeluarkan oleh TGS (Ticket Granting Server) yang memungk
 ### 1. Initial Login Request (AS Request)
 ("AS" adalah kepanjangan dari "Authentication Server") <br/><br/>
 
+-> Client mengirim Request ke  "Authentication Server" (AS) <br/> <br/>
+
 Saat Client LogIn ke System (seperti Memasukkan "Username" dan "Password"), <br/>
 pada saat itu, User perlu di-autentikasi, <br/>
 berikut ini hal yang terjadi : <br/><br/>
