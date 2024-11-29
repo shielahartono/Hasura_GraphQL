@@ -92,3 +92,9 @@ merupakan Special Ticket yang membuktikkan bahwa Client telah terautentikasi ole
 
 #### [-] Service Ticket :
 merupakan Ticket yang dikeluarkan oleh TGS (Ticket Granting Server) yang memungkinkan akses ke Service tertentu. <br/><br/>
+
+
+>> ^For your Information^ <br/>
+>> -> "Service Ticket" diterbitkan oleh TGS (Ticket Granting Server)  <br/><br/>
+>>
+>> -> "Ticket Granting Ticket" (TGT) diterbitkan oleh AS (Authentication Server) <br/><br/>
