@@ -44,3 +44,12 @@ yang mana "Shared Secret Key" ini tidak pernah di-transmisikan melalui jaringan.
 >> "Ticket Granting Server" merupakan salah satu Komponen pada "Key Distribution Center" (KDC). <br/>
 >> "Ticket Granting Server" berperan dalam Mengeluarkan Ticket kepada User untuk meng-akses Services lain. <br/>
 <br/>
+
+
+### 2. Tickets 
+-> Pada Kerberos, "Ticket" merupakan 'jenis bukti khusus' yang membuktikkan Identitas Pengguna ke suatu Service tanpa mengungkapkan Password milik User. <br/>
+(Ticket membuktikkan Identitas milik User tanpa mengungkapkan Password milik User) <br/><br/>
+
+-> secara analogi, Ticket itu seperti 'Temporary Pass' (izin Akses ke Service atau System untuk Periode waktu tertentu) yang User dapatkan setelah berhasil membuktikkan Identitas User tersebut ke System. <br/>
+Setelah User berhasil ter-autentikasi, User tersebut dapat menggunakan Ticket ini untuk meng-akses berbagai Service tanpa harus memasukkan kembali Password mereka. <br/><br/><br/>
+
