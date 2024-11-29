@@ -202,6 +202,17 @@ Dan juga Request tersebut juga mengandung Timestamp (untuk mencegah "Replay Atta
 Request dan Timestamp di-enkripsi menggunakan "Session Key" dari TGT <br/>
 <br/>
 
+### 4. Ticket Granting Server (TGS) Response
+### ("Ticket Granting Server" (TGS) memberikan Response)
+<br/>
+[-] TGS mengecek "Ticket Granting Ticket" (TGT) untuk meng-konfirmasi Identitas milik Client, dan Pastikkan Client mempunyai Autorisasi untuk meng-akses Service yang di-Request. <br/><br/>
+
+[-] Jika semuanya Valid, maka TGS akan menerbitkan "Service Ticket" untuk Service yang di-request (contohnya Web Server atau File Server). <br/>
+"Service Ticket" di-enkripsi menggunakan "Secret Key" milik Service (sehingga hanya Service yang bisa melakukan Dekripsi)<br/><br/>
+
+[-] "Service Ticket" juga mengandung "Session Key" yang akan digunakan untuk mengamankan komunikasi antara Client dan Service.<br/><br/>
+
+
 
 
 ## E) "Session Key" vs "Shared Secret Key" in Korberos
