@@ -223,6 +223,13 @@ Client juga mengirim sebuah Timestamps untuk membutikkan bahwa itu bukanlah "Rep
 Jika Service Ticket nya Valid  dan Session Key nya benar, maka Service memberikan akses ke Client. <br/><br/>
 
 
+### 6. Session Communication 
+
+[-] Setelah Proses Authetikasi yang berhasil, Client dan Service dapat dengan aman berkomunikasi menggunakan "Session Key" yang disediakan pada "Service Ticket"  <br/><br/>
+
+[-] Session Key digunakan untuk meng-enkripsi komunikasi antara Client dan Service, <br/>
+memastikkan Confidentiality (kerahasiaan) dan Integritas.  <br/><br/>
+
 
 ## E) "Session Key" vs "Shared Secret Key" in Korberos
 
