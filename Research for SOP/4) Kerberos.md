@@ -216,3 +216,9 @@ Request dan Timestamp di-enkripsi menggunakan "Session Key" dari TGT <br/>
 
 
 ## E) "Session Key" vs "Shared Secret Key" in Korberos
+
+
+----
+to do list : <br/>
+1. thick & thin <br/>
+1. KDP
