@@ -163,8 +163,9 @@ tetapi Password digunakan untuk membuat Permintaan Autentikasi ke Authentication
 (Password milik masing-masing User, diolah menjadi "Secret Key" untuk meng-enkripsi data)
 
 
-#### d) What The Authentication Server (AS) Does ?
-#### (Apa yang dilakukan oleh "Authentication Server" (AS) )
+
+### 2. Authentication Server (AS) Response
+### ("Authentication Server" (AS) memberikan Response)
 
 [-] "Authentication Server" (AS) mengecek Identitas milik Client : <br/>
 AS mengecek Client's Username pada Database dan mengambil Data Password (yang disimpan dalam bentuk Hash) <br/><br/>
