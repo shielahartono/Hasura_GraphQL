@@ -181,7 +181,8 @@ Jika Client tersebut Authentic (asli), maka kemudian "Authentication Server" (AS
 <br/><br/>
 
 
-#### e) What is Ticket Granting Ticket (TGT) ?
+### 3. Requesting Access to a Service (TGS Request)
+### ("Ticket Granting Server" (TGS) melakukan Request )
 
 [-] "Ticket Granting Ticket (TGT)" merupakan "Encrypted Ticket" (Ticket yang ter-enkripsi) yang membuktikkan Client sudah ter-autentikasi oleh KDC (Key Distribution Center) <br/> <br/>
 
