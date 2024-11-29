@@ -34,3 +34,13 @@ Data yang di-Enkripsikan tersebut diterjemahkan menggunakan "Secret Key", <br/>
 agar Data tersebut bisa di-terjemahkan kedalam format yang bisa dibaca. <br/><br/>
 
 
+-> Pada case Kerberos : <br/>
+[-] Client dan 'Authentication Server' (AS) masing-masing memiliki "Shared Secret Key", <br/>
+yang mana "Shared Secret Key" ini tidak pernah di-transmisikan melalui jaringan. <br/>
+<br/>
+[-] "Ticket Granting Server" (TGS) dan Client juga memiliki "Shared Secret Key" yang sama  <br/>
+<br/>
+>> ^For your Information^ <br/>
+>> "Ticket Granting Server" merupakan salah satu Komponen pada "Key Distribution Center" (KDC). <br/>
+>> "Ticket Granting Server" berperan dalam Mengeluarkan Ticket kepada User untuk meng-akses Services lain. <br/>
+<br/>
