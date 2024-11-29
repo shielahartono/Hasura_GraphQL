@@ -1,6 +1,6 @@
 # Analyze Real-Life Issue :
 # Connector - Error during Inspector Connector Phoenix
-
+(nanti sebagian taruh di Private)
 <br/><br/>
 
 ## 1. Understanding Connector ini General :
