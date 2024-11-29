@@ -67,10 +67,10 @@ Server merupakan System yang menyediakan Service yang ingin diakses oleh Client 
 merupakan Autoritas Pusat (Central Authority) yang mengelola Autentikasi pada Kerberos. <br/><br/>
 
 "Key Distribution Center" mempunyai Dua Komponen utama, yaitu : <br/>
-#### Authentication Server (AS) :
+#### [-] Authentication Server (AS) :
 Bertugas memverifikasi Identitas User. <br/><br/>
 
-#### Ticket Granting Server (TGS) :
+#### [-] Ticket Granting Server (TGS) :
 bertugas Mengeluarkan "Service Ticket" kepada User untuk meng-akses Services lain, <br/>
 yang mana hal ini dilakukan setelah User ter-autentikasi oleh AS (Authenticated Server). <br/><br/>
 
@@ -87,8 +87,8 @@ yang mana hal ini dilakukan setelah User ter-autentikasi oleh AS (Authenticated 
 Setelah User berhasil ter-autentikasi, User tersebut dapat menggunakan Ticket ini untuk meng-akses berbagai Service tanpa harus memasukkan kembali Password mereka. <br/><br/> <br/>
 
 -> "Tickets" mempunyai Dua Komponen, yaitu : <br/>
-#### Ticket Granting Ticket (TGT) :
+#### [-] Ticket Granting Ticket (TGT) :
 merupakan Special Ticket yang membuktikkan bahwa Client telah terautentikasi oleh KDC (Key Distribution Center). <br/><br/>
 
-#### Service Ticket :
+#### [-] Service Ticket :
 merupakan Ticket yang dikeluarkan oleh TGS (Ticket Granting Server) yang memungkinkan akses ke Service tertentu. <br/><br/>
