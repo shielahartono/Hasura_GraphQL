@@ -53,3 +53,42 @@ yang mana "Shared Secret Key" ini tidak pernah di-transmisikan melalui jaringan.
 -> secara analogi, Ticket itu seperti 'Temporary Pass' (izin Akses ke Service atau System untuk Periode waktu tertentu) yang User dapatkan setelah berhasil membuktikkan Identitas User tersebut ke System. <br/>
 Setelah User berhasil ter-autentikasi, User tersebut dapat menggunakan Ticket ini untuk meng-akses berbagai Service tanpa harus memasukkan kembali Password mereka. <br/><br/><br/>
 
+
+## C) Key Components in Kerberos
+## (Komponen Utama pada Kerberos) 
+<br/>
+### [1] Client :
+Client merupakan User atau Machine yang mencoba meng-akses sebuah Service. <br/> <br/>
+
+### [2] Server : 
+Server merupakan System yang menyediakan Service yang ingin diakses oleh Client <br/><br/>
+
+### [3] Key Distribution Center (KDC) :
+merupakan Autoritas Pusat (Central Authority) yang mengelola Autentikasi pada Kerberos. <br/><br/>
+
+"Key Distribution Center" mempunyai Dua Komponen utama, yaitu : <br/>
+#### Authentication Server (AS) :
+Bertugas memverifikasi Identitas User. <br/><br/>
+
+#### Ticket Granting Server (TGS) :
+bertugas Mengeluarkan "Service Ticket" kepada User untuk meng-akses Services lain, <br/>
+yang mana hal ini dilakukan setelah User ter-autentikasi oleh AS (Authenticated Server). <br/><br/>
+
+
+
+### [4] Tickets :
+
+-> "Tickets" adalah bagian data yang Secure dan ter-Enkripsi yang digunakan untuk meng-autentikasi identitas User dan memfasilitasi Komunikasi yang aman antara Client dan Service yang coba di-akses. <br/><br/>
+
+-> Pada Kerberos, "Ticket" merupakan 'jenis bukti khusus' yang membuktikkan Identitas Pengguna ke suatu Service tanpa mengungkapkan Password milik User. <br/>
+(Ticket membuktikkan Identitas milik User tanpa mengungkapkan Password milik User) <br/><br/>
+
+-> secara analogi, Ticket itu seperti 'Temporary Pass' (izin Akses ke Service atau System untuk Periode waktu tertentu) yang User dapatkan setelah berhasil membuktikkan Identitas User tersebut ke System. <br/>
+Setelah User berhasil ter-autentikasi, User tersebut dapat menggunakan Ticket ini untuk meng-akses berbagai Service tanpa harus memasukkan kembali Password mereka. <br/><br/> <br/>
+
+-> "Tickets" mempunyai Dua Komponen, yaitu : <br/>
+#### Ticket Granting Ticket (TGT) :
+merupakan Special Ticket yang membuktikkan bahwa Client telah terautentikasi oleh KDC (Key Distribution Center). <br/><br/>
+
+#### Service Ticket :
+merupakan Ticket yang dikeluarkan oleh TGS (Ticket Granting Server) yang memungkinkan akses ke Service tertentu. <br/><br/>
