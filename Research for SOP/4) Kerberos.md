@@ -98,3 +98,57 @@ merupakan Ticket yang dikeluarkan oleh TGS (Ticket Granting Server) yang memungk
 >> -> "Service Ticket" diterbitkan oleh TGS (Ticket Granting Server)  <br/><br/>
 >>
 >> -> "Ticket Granting Ticket" (TGT) diterbitkan oleh AS (Authentication Server) <br/><br/>
+
+
+## D) Kerberos Authentication Process (Step-by-Step)
+## (Proses Autentikasi Kerberos) <br/><br/>
+
+### 1. Initial Login Request (AS Request)
+("AS" adalah kepanjangan dari "Authentication Server") <br/><br/>
+
+Saat Client LogIn ke System (seperti Memasukkan "Username" dan "Password"), <br/>
+pada saat itu, User perlu di-autentikasi, <br/>
+berikut ini hal yang terjadi : <br/><br/>
+
+#### (a) Apa yang dilakukukan Client :
+[-] Client's Action : <br/>
+Client memasukkan Username & Password mereka ke dalam System. <br/><br/>
+
+[-] Password tidak dikirim secara langsung melalui Jaringan,  <br/>
+tetapi Password digunakan untuk membuat Permintaan Autentikasi ke Authentication Server (AS). <br/><br/>
+ 
+>> ^For your Information^ <br/>
+>> Password digunakan untuk membuat "Hash" atau "Secret Key" yang meng-enkripsi Permintaan Autentikasi (Authentication Request). <br/>
+>> (Password milik masing-masing User, diolah menjadi "Secret Key" untuk meng-enkripsi data) <br/> <br/>
+
+#### (b) What Happens in the "Authentication Server" (AS) Request : <br/>
+[-] Client mengirim "Authentication Request" (Permintaan Authentikasi) kepada "Authentication Server" (AS) <br/>
+(yang mana "Authentication Server" (AS) merupakan bagian dari "Key Distribution Center" (KDC) ) <br/> <br/>
+<br/>
+[-] "Authentication Request" biasanya mengandung hal berikut ini : <br/>
+=> Client's Username (Username milik Client) :
+- contohnya : "Alice" <br/><br/>
+
+=> Timestamp :
+- Timestamp ini bersifat Opsional.
+- Timestamp dapat membantu untuk mencegah "Replay Attacks" dan memastikkan Request tersebut dalam keadaan Fresh <br/>
+(Timestamp is helpful to prevent replay attacks and ensure the request is fresh)
+
+>> ^For your Information^ <br/>
+>> {1} **Timestamp dapat membantu untuk mencegah "Replay Attacks" dan memastikkan Request tersebut dalam keadaan Fresh**  <br/>
+>> -> "Replay Attack" terjadi saat Hacker Menyadap Pesan (seperti "Authentication Request"), <br/>
+>> lalu melakukan "Replay" atau mengirimkan Pesan yang sama tersebut ke Server di kemudian waktu, hal ini dilakukan untuk "Menipu Server" agar seolah-olah Request/Pesan tersebut merupakan saat ini. <br/> <br/>
+>>
+>> -> Untuk mencegah hal tersebut terjadi, Kerberos menggunakan Timestamp untuk hal berikut ini : <br/>
+>> [-] Freshness : <br/>
+>> Timestamp memastikkan Request yang dikirim ke Server merupakan Request saat ini. <br/>
+>> Jika "Authentication Server" (AS) melihat "umur Timestamp terlalu tua" yang berarti Request dibuat terlalu lama dimasa lalu. <br/>
+>> , maka "Authentication Server" (AS) dapat menolak Request tersebut <br/>
+>> (karena bisa jadi Request tersebut merupakan Pengulangan atau Replay) <br/><br/>
+>>
+>> [-] Time Window (Jendela Waktu) : <br/>
+>> Kerberos biasanya memberikkan "Time Window" yang singkat (misalnya 5 menit) agar Timestamp tersebut Valid <br/>
+>> Jika Timestamp pada Request tersebut berada pada Time Window ini (Request dibuat tidak lebih lama dari 5 menit yang lalu), maka Server mengetahui bahwa Request tersebut Baru dan Sah. <br/>
+>> dan Jika Timestamp pada Request tersebut berada diluar "Time Window", maka Server akan menolak Request tersebut. <br/>
+
+
