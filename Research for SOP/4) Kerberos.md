@@ -174,8 +174,12 @@ AS mengecek Client's Username pada Database dan mengambil Data Password (yang di
 Jika kedua Hashed Value tersebut cocok, maka Authentication Server" (AS) tahu bahwa Client tersebut Authentic (asli). <br/><br/>
 
 Jika Client tersebut Authentic (asli), maka kemudian "Authentication Server" (AS)  menerbitkan "Ticket Granting Ticket" (TGT) 
-
 <br/><br/>
+
+[-] Bersama dengan TGT (Ticket Granting Ticket), "Authentication Server" (AS) mengirim kembali "Session Key" yang di-enkripsikan menggunakan TGT.
+"Session Key" akan digunakan untuk komunikasi lebih lanjut antara Client dan "Ticket Granting Server" (TGS).
+<br/><br/>
+
 
 #### e) What is Ticket Granting Ticket (TGT) ?
 
