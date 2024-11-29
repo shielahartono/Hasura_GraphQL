@@ -193,5 +193,15 @@ Jika Client tersebut Authentic (asli), maka kemudian "Authentication Server" (AS
 
 <br/><br/>
 
+[-] Karena Sekarang Client sudah mempunyai TGT yang valid, maka Client dapat menggunakan TGT tersebut untuk meng-akses Services pada Network. <br/><br/>
+
+[-] Client mengirim TGT ke "Ticket Granting Server" (TGS) bersama dengan Request (Permintaan) untuk sebuah "Service Ticket", <br/>
+yang mana "Service Ticket" tersebut untuk meminta izin akses ke Service tertentu (seperti File Server atau Database Server). <br/> <br/>
+
+Dan juga Request tersebut juga mengandung Timestamp (untuk mencegah "Replay Attack"). <br/>
+Request dan Timestamp di-enkripsi menggunakan "Session Key" dari TGT <br/>
+<br/>
+
+
 
 ## E) "Session Key" vs "Shared Secret Key" in Korberos
