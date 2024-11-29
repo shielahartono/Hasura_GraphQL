@@ -213,6 +213,15 @@ Request dan Timestamp di-enkripsi menggunakan "Session Key" dari TGT <br/>
 [-] "Service Ticket" juga mengandung "Session Key" yang akan digunakan untuk mengamankan komunikasi antara Client dan Service.<br/><br/>
 
 
+### 5. Accessing the Service (Service Request)
+
+[-] Sekarang Client mengirimkan "Service Ticket" ke "Target Service" (Service yang Client ingin Akses, seperti Web Server). <br/>
+Client juga mengirim sebuah Timestamps untuk membutikkan bahwa itu bukanlah "Replay Attack". <br/>
+(Timestamp dikirimkan didalam "Service Ticket") <br/><br/>
+
+[-] Service melakukan Dekripsi pada "Service Ticket" menggunakan "Secret Key" milik Service itu sendiri.  <br/>
+Jika Service Ticket nya Valid  dan Session Key nya benar, maka Service memberikan akses ke Client. <br/><br/>
+
 
 
 ## E) "Session Key" vs "Shared Secret Key" in Korberos
