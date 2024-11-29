@@ -173,3 +173,14 @@ Jika kedua Hashed Value tersebut cocok, maka Authentication Server" (AS) tahu ba
 Jika Client tersebut Authentic (asli), maka kemudian "Authentication Server" (AS)  menerbitkan "Ticket Granting Ticket" (TGT) 
 
 <br/><br/>
+
+#### e) What is Ticket Granting Ticket (TGT) ?
+
+[-] "Ticket Granting Ticket (TGT)" merupakan "Encrypted Ticket" (Ticket yang ter-enkripsi) yang membuktikkan Client sudah ter-autentikasi oleh KDC (Key Distribution Center) <br/> <br/>
+
+[-] "Ticket Granting Ticket (TGT)" berisi informasi penting seperti : <br/>
+- "Identitas Client" (seperti Username)
+- "Timestamp" saat Ticket diterbitkan 
+- "Expiration Time" of the Ticket (Waktu Kadaluawarsa Ticket)
+
+<br/><br/>
