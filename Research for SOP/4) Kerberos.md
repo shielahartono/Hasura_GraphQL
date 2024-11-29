@@ -151,4 +151,25 @@ tetapi Password digunakan untuk membuat Permintaan Autentikasi ke Authentication
 >> Jika Timestamp pada Request tersebut berada pada Time Window ini (Request dibuat tidak lebih lama dari 5 menit yang lalu), maka Server mengetahui bahwa Request tersebut Baru dan Sah. <br/>
 >> dan Jika Timestamp pada Request tersebut berada diluar "Time Window", maka Server akan menolak Request tersebut. <br/>
 
+<br/>
 
+#### c) Why is The Password Not Sent in the Request ?
+
+- Pada Kerberos Protocol, Password tidak pernah dikirimkan secara langsung melalui Network (Jaringan), tetapi Client menggunakan Password untuk menghasilkan "Cryptographic Request" (atau Hash) yang dikirim ke "Authentication Server" (AS).
+
+- Password digunakan untuk membuat "Hash" atau "Secret Key" yang meng-enkripsi Permintaan Autentikasi (Authentication Request).
+(Password milik masing-masing User, diolah menjadi "Secret Key" untuk meng-enkripsi data)
+
+
+#### d) What The Authentication Server (AS) Does ?
+#### (Apa yang dilakukan oleh "Authentication Server" (AS) )
+
+[-] "Authentication Server" (AS) mengecek Identitas milik Client : <br/>
+AS mengecek Client's Username pada Database dan mengambil Data Password (yang disimpan dalam bentuk Hash) <br/><br/>
+
+[-]  "Authentication Server" (AS) membandingkan Hashed Value milik Password yang diambil dari Database dengan Hashed Value milik Password yang ada di dalam Request. <br/>
+Jika kedua Hashed Value tersebut cocok, maka Authentication Server" (AS) tahu bahwa Client tersebut Authentic (asli). <br/><br/>
+
+Jika Client tersebut Authentic (asli), maka kemudian "Authentication Server" (AS)  menerbitkan "Ticket Granting Ticket" (TGT) 
+
+<br/><br/>
