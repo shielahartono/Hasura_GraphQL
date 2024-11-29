@@ -17,3 +17,20 @@ Sebaliknya, Kerberos menggunakan "Cryptographic Key" dan "Tickets" untuk mengaut
 <br/>
 
 ## B) "Cryptographic Key" dan "Tickets" in Kerberos
+
+-> Pada Konteks Kerberos, "Cryptographic Key" and "Tickets" merupakan konsep penting yang membantu memastikkan Autentikasi dan Komunikasi yang aman. <br/> <br/>
+
+### 1. Cryptographic Keys
+-> "Cryptographic Keys" (kunci Kriptografi) merupakan bagian informasi rahasia yang digunakan dalam Proses Enkripsi & Dekripsi untuk melindungi Data. <br/><br/>
+
+-> "Encryption" : <br/>
+adalah saat Data di-enkripsi. <br/>
+Pada saat Data di-enkripsi, Data diacak ke dalam Format yang tidak bisa dibaca. <br/>
+Dan Data tersebut hanya bisa dibaca oleh orang yang mempunyai "Secret Key". <br/>
+<br/>
+-> "Decryption" : <br/>
+Decryption merupakan cara untuk membaca Data yang di-Enkripsikan. <br/>
+Data yang di-Enkripsikan tersebut diterjemahkan menggunakan "Secret Key", <br/>
+agar Data tersebut bisa di-terjemahkan kedalam format yang bisa dibaca. <br/><br/>
+
+
