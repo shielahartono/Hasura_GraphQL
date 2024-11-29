@@ -192,3 +192,6 @@ Jika Client tersebut Authentic (asli), maka kemudian "Authentication Server" (AS
 - "Expiration Time" of the Ticket (Waktu Kadaluawarsa Ticket)
 
 <br/><br/>
+
+
+## E) "Session Key" vs "Shared Secret Key" in Korberos
