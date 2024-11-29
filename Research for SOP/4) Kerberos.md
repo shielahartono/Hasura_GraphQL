@@ -231,7 +231,7 @@ Jika Service Ticket nya Valid  dan Session Key nya benar, maka Service memberika
 memastikkan Confidentiality (kerahasiaan) dan Integritas.  <br/><br/>
 
 
-## E) "Session Key" vs "Shared Secret Key" in Korberos
+## E) "Session Key" vs "Shared Secret Key" in Kerberos
 
 
 ----
