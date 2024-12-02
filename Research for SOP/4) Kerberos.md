@@ -250,6 +250,21 @@ program-program ini terpasang langsung pada Device, sehingga anda dapat mengguna
 
 [-] Video Games yang ter-install langsung pada Console tanpa harus terhubung ke Server untuk memainkan Video Game tersebut. <br/><br/>
 
+### 2. Thin Client :
+-> Thin Client merupakan Computer atau Device yang bergantung pada Server untuk melakukan sebagian besar Pekerjaannya. <br/>
+(Sebagian Pemrosesan terjadi pada Server, bukan pada Device milik Thin Client) <br/><br/>
+
+-> Device milik Thin Client hanya memiliki Sedikit "Computing Power" dan biasanya Device ini hanya menangani task untuk 'Displaying Information & input from User' (menampilkan Informasi & input dari User), <br/>
+yang mana Sebagian Pemrosesan terjadi pada Server. <br/><br/>
+
+-> Cara Kerja : <br/>
+Thin Client tidak memiliki banyak 'Memory' atau 'Processing Power'. <br/>
+Melainkan, Thin Client terhubung ke sebuah "Central Server" (Server Pusat), yang mana "Central Server" merupakan tempat semua Pemrosesan terjadi, dan juga "Central Server" juga dapat mmenjadi tempat Aplikasi dan Data berada. <br/><br/>
+
+Device milik "Thin Client" hanya mengirimkan Input ke Server (seperti Input yang dimasukkan oleh User) <br/>
+, dan Device milik "Thin Client" menunjukkan Hasil Pemrosesan Server kepada User
+(Pemrosesan terjadi di Server, kemudian hasilnya ditampilkan ke User) <br/><br/>
+<br/>
 
 
 ## F) Advantages & Disadvantages of Thick Client and Thin Client
