@@ -232,6 +232,18 @@ memastikkan Confidentiality (kerahasiaan) dan Integritas.  <br/><br/>
 
 ## E) Thick Client vs Thin Client
 
+### 1. Thick Client (Fat Client)
+
+-> Thick Client adalah Computer atau Device yang memiliki sebagian besar Resources dan Software yang dibutuhkannya terpasang secara lokal (pada Device itu sendiri). <br/>
+ini berarti Thick Client dapat menjalankan aplikasi dan memproses Data tanpa perlu melakukan Komunikasi dengan Server secara terus menerus (Karena Thick Client sudah bisa melakukan Pemrosesan dengan Device nya sendiri, sehingga tidak membutuhkan banyak bantuan Server untuk Pemrosesan) <br/><br/>
+
+-> Cara Kerjanya : <br/>
+[-] Thick Client memiliki "Processinhg Power", "Memory", dan "Storage" sendiri
+(di dalam Device milik Thick Client sudah terdapat "Processinhg Power", "Memory", dan "Storage" sendiri)  <br/>
+yang mana ini memungkinkan Thick Client untuk menjalankan Program, Menyimpan File, dan Mengerjakan Tasks tanpa perlu bergantung pada "Remote Server". <br/>
+Namun, terkadang Thick Client masih perlu meng-akses Server untuk Service tertentu, seperti Updates, Backups, dan meng-akses Database Besar (Large Database). <br/>
+<br/><br/>
+
 ## F) Advantages & Disadvantages of Thick Client and Thin Client
 
 ## G) "Session Key" vs "Shared Secret Key" in Kerberos
