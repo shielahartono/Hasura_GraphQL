@@ -269,7 +269,9 @@ Device milik "Thin Client" hanya mengirimkan Input ke Server (seperti Input yang
 
 ## F) Advantages & Disadvantages of Thick Client and Thin Client
 
-## G) "Session Key" vs "Shared Secret Key" in Kerberos
+## G) "Thick Client" & "Thin Client" in Kerberos 
+
+## H) "Session Key" vs "Shared Secret Key" in Kerberos
 
 
 ----
