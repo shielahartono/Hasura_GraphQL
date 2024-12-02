@@ -266,6 +266,15 @@ Device milik "Thin Client" hanya mengirimkan Input ke Server (seperti Input yang
 (Pemrosesan terjadi di Server, kemudian hasilnya ditampilkan ke User) <br/><br/>
 <br/>
 
+-> Contoh Thin Client : <br/>
+[-] Web Browser : <br/>
+"Web Browser" merupakan contoh umum Thin Client. <br/>
+"Web Browser" hanya menampilkan 'Halaman Web', sementara Data di-fetch (diambil) dan diproses oleh 'Web Server' <br/>
+(Data Diproses di Server) <br/><br/>
+
+[-] Remote Desktop System : <br/>
+Pada "Remote Desktop System", aplikasi atau Software sebenarnya berjalan di "Server yang kuat", dan User hanya berinteraksi dengan melalui Device yang Resources-nya tidak terlalu besar. <br/>
+"Remote Desktop System" memilik contoh seperti 'Citirix' atau 'Windows Remote Desktop'. <br/><br/>
 
 ## F) Advantages & Disadvantages of Thick Client and Thin Client
 
