@@ -341,6 +341,24 @@ yang mana hal ini dapat menyebabkan Inefficient (ketidakefisienan) dan Biaya yan
 
 ## G) Advantages & Disadvantages of "Thin Client"
 
+### 1. Advantages of "Thin Client" : <br/>
+<br/>
+{1) Lower Cost : <br/>
+[-] Cheaper Hardware : <br/>
+Komputer untuk "Thin Client" itu lebih murah karena tidak memerlukkan 'Powerful Processor' atau 'Big Storage' . <br/><br/>
+
+(2) Easier to Maintain : <br/>
+(lebih mudah untuk dirawat) <br/>
+Karena semuanya diproses pada Central Server, kita tidak perlu, sehingga Maintenance hanya perlu pada Server.   <br/><br/>
+
+(3) Better Security : <br/>
+Semua Data disimpan pada Server, sehingga mengurangi Risiko 'Data Theft' (Pencurian Data). <br/><br/>
+
+(4) Scalable : <br/>
+melakukan 'Scale-up' hanya perlu pada Server, dan tidak perlu pada masing-masing Komputer, sehingga tidak ribet. <br/><br/>
+
+
+
 ## H) "Thick Client" & "Thin Client" in Kerberos 
 
 ## I) "Session Key" vs "Shared Secret Key" in Kerberos
