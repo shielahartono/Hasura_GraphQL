@@ -377,12 +377,8 @@ sehingga kita tidak bisa melakukan Personalized Setting untuk tiap Individual. <
 Jika Server mengalami "down", maka "Thin Client" akan terkena dampaknya. <br/>
 dan juga jika semua User terhubung pada Server di waktu yang sama, hal ini akan memperlambat Server.<br/><br/>
 
-## H) "Thick Client" & "Thin Client" in Kerberos 
-
-## I) "Session Key" vs "Shared Secret Key" in Kerberos
 
 
-----
-to do list : <br/>
-1. thick & thin <br/>
-1. KDP
+## H) "Session Key" vs "Shared Secret Key" in Kerberos
+
+
