@@ -357,7 +357,25 @@ Semua Data disimpan pada Server, sehingga mengurangi Risiko 'Data Theft' (Pencur
 (4) Scalable : <br/>
 melakukan 'Scale-up' hanya perlu pada Server, dan tidak perlu pada masing-masing Komputer, sehingga tidak ribet. <br/><br/>
 
+### 2. Disadvantages of Thin Client :
 
+(1) Depends on Network : <br/>
+"Thin Clients" membutuhkan 'Network Connection' yang bagus dan Dapat diandalkan. <br/><br/>
+
+(2) Cannot Work Offline: <br/>
+Jika Server atau Internet nya 'down', kita tidak bisa menggunakan Thin Client sama sekali, karena kita tidak bisa meng-akses Server tanpa Internet. <br/>
+Sehingga "thin client" bukan merupakan pilihan terbaik jika kita berada di daerah yang Konenksi Internet nya tidak memadai.
+ <br/><br/>
+ 
+(3) Limited Customization : <br/>
+(Kustomisasi terbatas untuk Individual) <br/>
+Karena semuanya dikelola pada "Central Server" (Server Pusat), <br/>
+sehingga kita tidak bisa melakukan Personalized Setting untuk tiap Individual. <br/>
+<br/>
+
+(4) Ketergantungan Pada Server : <br/>
+Jika Server mengalami "down", maka "Thin Client" akan terkena dampaknya. <br/>
+dan juga jika semua User terhubung pada Server di waktu yang sama, hal ini akan memperlambat Server.<br/><br/>
 
 ## H) "Thick Client" & "Thin Client" in Kerberos 
 
