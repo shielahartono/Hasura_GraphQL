@@ -230,8 +230,11 @@ Jika Service Ticket nya Valid  dan Session Key nya benar, maka Service memberika
 [-] Session Key digunakan untuk meng-enkripsi komunikasi antara Client dan Service, <br/>
 memastikkan Confidentiality (kerahasiaan) dan Integritas.  <br/><br/>
 
+## E) Thick Client vs Thin Client
 
-## E) "Session Key" vs "Shared Secret Key" in Kerberos
+## F) Advantages & Disadvantages of Thick Client and Thin Client
+
+## G) "Session Key" vs "Shared Secret Key" in Kerberos
 
 
 ----
