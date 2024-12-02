@@ -306,6 +306,39 @@ Pada Device milik "Thick Client", Users atau Organisasi dapat meng-install Softw
 Sehinhgga jika Network nya sedang 'down', User tetap bisa menjalankan Tasks mereka. <br/><br/>
 
 
+### 2. Disadvantages of Thick Client :
+
+(1) Higher Maintenance Cost : <br/>
+(Biaya Perawatan yang lebih mahal) <br/><br/>
+
+[-] Software Updates : <br/>
+Setiap "Thick Client" membutuhkan Update secara individu (Secara masing-masing untuk setiap Device). <br/>
+Jika ada Issue pada Software, kita perlu memperbaikinya pada setiap Komputer atau Device.
+<br/><br/>
+
+[-] Hardware Maintenance : <br/>
+Karana setiap Device memiliki Hardware nya masing-masing, sehingga semakin mahal untuk Maintenance, <br/>
+karena Setiap Device atau Komputer membutuhkan Upgrade atau Repairs (Perbaikkan) pada Hardware seiring berjalannya waktu. <br/>
+
+(2) Security Risks : <br/>
+[-] More Vulnerable to attacks : <br/>
+(lebih rentan terkena Serangan) <br/>
+Karena Data disimpan secara Local, maka terdapat Risiko yang lebih besar untuk Pencurian Data (Data Theft) atau Kehilangan Data (Data Loss). <br/>
+Misalnya jika Komputer dicuri, kemudian Sensitive Information ter-ekspos. <br/>
+atau Misalnya User secara tidak sengaja meng-install aplikasi yang terdapat Malware atau tidak sengaja terhubung ke Network yang tidak aman, <br/>
+sehingga Attackers mendapatkan Akses ke File, Password, dan Sensitive Information lainnya.
+<br/><br/>
+
+(3) Higher Initial Cost : <br/>
+[-] More Expensive Hardware : <br/>
+Thick Client memerlukkan Computer yang Powerful, yang mana ini dapat lebih mahal dibandingkan 'Thin Client' <br/><br/>
+
+
+(4) Difficlut to Scale : <br/>
+[-] Limited Scalability : <br/>
+Jika kita mau menambahkan lebih banyak User atau Devices, kita perlu membeli lebih banyak Hardware untuk setiap Komputer, <br/>
+yang mana hal ini dapat menyebabkan Inefficient (ketidakefisienan) dan Biaya yang lebih mahal. <br/><br/>
+
 ## G) Advantages & Disadvantages of "Thin Client"
 
 ## H) "Thick Client" & "Thin Client" in Kerberos 
