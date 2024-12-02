@@ -276,11 +276,13 @@ Device milik "Thin Client" hanya mengirimkan Input ke Server (seperti Input yang
 Pada "Remote Desktop System", aplikasi atau Software sebenarnya berjalan di "Server yang kuat", dan User hanya berinteraksi dengan melalui Device yang Resources-nya tidak terlalu besar. <br/>
 "Remote Desktop System" memilik contoh seperti 'Citirix' atau 'Windows Remote Desktop'. <br/><br/>
 
-## F) Advantages & Disadvantages of Thick Client and Thin Client
+## F) Advantages & Disadvantages of "Thick Client"
 
-## G) "Thick Client" & "Thin Client" in Kerberos 
+## G) Advantages & Disadvantages of "Thin Client"
 
-## H) "Session Key" vs "Shared Secret Key" in Kerberos
+## H) "Thick Client" & "Thin Client" in Kerberos 
+
+## I) "Session Key" vs "Shared Secret Key" in Kerberos
 
 
 ----
