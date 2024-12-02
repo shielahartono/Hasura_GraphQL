@@ -278,6 +278,34 @@ Pada "Remote Desktop System", aplikasi atau Software sebenarnya berjalan di "Ser
 
 ## F) Advantages & Disadvantages of "Thick Client"
 
+### 1. Advantages of Thick Client : <br/>
+<br/>
+(1) Performance & Speed : <br/>
+[-] Faster Response Time : <br/>
+Karena Thick Client melakukan Sebagian Besar Pemrosesan-nya secara Lokal, maka "Thick Client" cenderung lebih cepat, <br/>
+karena tidak perlu menunggu Data dikirim ke Server, dan tidak perlu menunggu Response dari Server. <br/><br/>
+
+[-] Can Handle Complex Application (Dapat menangani Aplikasi yang Kompleks) : <br/>
+Device milik "Thick Client" dapat menangani Aplikasi yang kompleks tanpa memerlukan Koneksi ke Server secara terus-menerus. <br/>
+Hal ini karena "Thick Client" mempunyai lebih banyak 'Processing Power' dan 'Storage', <br/>
+sehingga Device milik Thick Client dapat menjalankan 'Resource-heavy Applications'  <br/>(Aplikasi yang membutuhkan Resource Berat), seperti Video Editing Software, 3D Games, atau Large Database. <br/><br/>
+
+
+(2) Offline Capabilities (Dapat bekerja Offline tanpa Internet) : <br/>
+Device milik "Thick Clients" dapat bekerja tanpa Internet. <br/>
+Misalnya, kita dapat menggunakan Aplikasi Excel tanpa perlu terhubung ke Internet. <br/><br/>
+
+
+(3) Customization and Flexibility : <br/>
+[-] More Control : <br/>
+Pada Device milik "Thick Client", Users atau Organisasi dapat meng-install Software mereka sendiri, Customize Settings, dan Melakukan Konfigurasi berdasarkan kebutuhan tertentu. <br/><br/>
+
+
+(4) Reduced Dependency on Network : <br/>
+"Thick Client" tidak bergantung pada Network atau Server untuk menjalankan Tasks mereka, karena Device milik "Thick Client" mempunyai Software dan Data yang diperlukan. <br/>
+Sehinhgga jika Network nya sedang 'down', User tetap bisa menjalankan Tasks mereka. <br/><br/>
+
+
 ## G) Advantages & Disadvantages of "Thin Client"
 
 ## H) "Thick Client" & "Thin Client" in Kerberos 
