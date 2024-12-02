@@ -244,6 +244,14 @@ yang mana ini memungkinkan Thick Client untuk menjalankan Program, Menyimpan Fil
 Namun, terkadang Thick Client masih perlu meng-akses Server untuk Service tertentu, seperti Updates, Backups, dan meng-akses Database Besar (Large Database). <br/>
 <br/><br/>
 
+-> Contoh Thick Client : <br/>
+[-] Komputer atau Laptop yang menjalankan 'Microsoft Word' atau 'Adobe Photoshop',
+program-program ini terpasang langsung pada Device, sehingga anda dapat menggunakan Program tersebut bahkan tanpa Koneksi Internet atau Akses ke Server. <br/><br/>
+
+[-] Video Games yang ter-install langsung pada Console tanpa harus terhubung ke Server untuk memainkan Video Game tersebut. <br/><br/>
+
+
+
 ## F) Advantages & Disadvantages of Thick Client and Thin Client
 
 ## G) "Session Key" vs "Shared Secret Key" in Kerberos
