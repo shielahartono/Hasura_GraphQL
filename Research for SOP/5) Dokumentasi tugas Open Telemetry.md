@@ -256,3 +256,8 @@ yang mana "4318" merupakan Port http pada Configuration File <br/> <br/>
 
 ![image](https://github.com/user-attachments/assets/47d8e418-403c-42a8-a1ad-e83a5bef489f)
 
+-> Query yang di-Hit tersebut mempunyai :
+- nama Tabel "todo"
+- dan salah satu Nama Kolom nya adalah "name" yang mempunyai nilai "ferdy"
+
+
