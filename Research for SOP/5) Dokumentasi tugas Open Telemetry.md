@@ -358,7 +358,7 @@ Perubahan yang kita buat pada Command tersebut adalah : <br/>
 
 Ada beberapa Fase dalam memperbaiki Error "File Configuration Yaml" untuk Open Telemetry, yaitu :
 
-#### 1) Mengambil File Configuration yaml dari "Link Dokumentasi" dan digabungkan dengan yang dari "PDF"
+#### Fase 1) Mengambil File Configuration yaml dari "Link Dokumentasi" dan digabungkan dengan yang dari "PDF"
 
 -> File Configuration yang ada pada Link Dokumentasi adalah :
 (Link Dokumentasi : https://opentelemetry.io/docs/collector/configuration/ )
@@ -456,3 +456,56 @@ service:
       processors: [batch]
       exporters: [debug, otlp/elastic]
 ```
+
+tetapi File Configuration tersebut masih error <br/><br/>
+
+
+#### Fase 2) Mengganti Port 9200 pada Endpoint
+#### (9200 merupakan Port Elastic Search )
+
+Berdasarkan Error pada Fase 2, ChatGPT menyarankan menggunakan Port 9200 untuk Endpoint. <br/>
+Port 9200 merupakan Port untuk 'Elastic Search' ) <br/><br/>
+
+Sepertinya ChatGPT menyarankan kita untuk memakai Port ElasticSearch karena pada bagian Service di File Configuration PDF terdapat tulisan `otlp/elastic`.
+<br/><br/>
+Sehingga File Configuration kita menjadi :
+```
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+processors:
+  batch:
+
+exporters:
+  debug: {}
+  otlp:
+    endpoint: "http://localhost:9200"
+
+extensions:
+  health_check:
+  pprof:
+  zpages:
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+    logs:
+receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+```
+
+#### Fase 3) 
+
+
