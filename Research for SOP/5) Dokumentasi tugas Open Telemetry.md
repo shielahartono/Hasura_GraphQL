@@ -298,5 +298,6 @@ yaitu saat Kita ingin mem-filter Log dengan "Nama Tabel", Log tersebut muncul. <
 Tetapi jika ingin meanampilkan Log secara lebih detail lagi, yaitu dengan mem-filter Log dengan "Nama Kolom", Log tersebut tidak muncul. <br/><br/>
 
 
-
+-----
+Catatan : 
 
