@@ -399,3 +399,60 @@ service:
       exporters: [otlp]
 
 ```
+
+-> Pada PDF, hanya terdapat File Configuration untuk Service, yaitu :
+```
+service: 
+ pipelines: 
+ traces: 
+ receivers: [otlp] 
+ processors: [batch] 
+ exporters: [debug, otlp/elastic] 
+ metrics: 
+ receivers: [otlp] 
+ processors: [batch] 
+ exporters: [debug, otlp/elastic] 
+ logs: 
+ receivers: [otlp] 
+ processors: [batch] 
+ exporters: [debug, otlp/elastic]
+```
+
+-> Kemudian kita gabungkan, File Configuration yaml dari Link Dokumentasi & PDF.  <br/>
+yang dari PDF hanya untuk bagian Services, yang lainnya menggunakan File Configuration dari Link Dokumentasi. <br/>
+Sehingga File Configuration kita adalah :
+```
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+processors:
+  batch:
+
+exporters:
+  otlp:
+    endpoint: otelcol:4317
+
+extensions:
+  health_check:
+  pprof:
+  zpages:
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp/elastic]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp/elastic]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp/elastic]
+```
