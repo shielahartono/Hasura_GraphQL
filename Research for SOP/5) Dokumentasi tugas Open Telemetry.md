@@ -513,10 +513,16 @@ sudo netstat -tuln
 ```
 kita Check menggunakan Command diatas untuk mengecek Port apa saja yang aktif melakukan "LISTENING" pada Server  <br/>
 ![image](https://github.com/user-attachments/assets/9f83b6f9-a9a3-4770-84b3-e14a328b313d)
+![image](https://github.com/user-attachments/assets/b265819c-fc2c-45d6-b501-3bdaad65b6ee)
+
 
 tetapi Port yang ada pada File Configuration, tidak ada yang aktif melakukan "LISTENING" pada Server, <br/>
 yakni Port 4317 , 4318 , 9200 tidak ada yang aktif melakukan "LISTENING" pada Server, <br/>
 yang mana artinya Server tidak melakukan Koneksi dengan Port 4317 , 4318 , 9200 . <br/>
 
+
+<br/><br/>
+Kemudian kita juga melakukan Pengecekkan Telnet, tetapi Connection Refused
+![image](https://github.com/user-attachments/assets/4a54f56c-32ca-4e8b-8c0f-00645d6b16ae)
 
 
