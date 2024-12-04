@@ -56,7 +56,7 @@ Setelah User berhasil ter-autentikasi, User tersebut dapat menggunakan Ticket in
 
 ## C) Key Components in Kerberos
 ## (Komponen Utama pada Kerberos) 
-<br/>
+
 ### [1] Client :
 Client merupakan User atau Machine yang mencoba meng-akses sebuah Service. <br/> <br/>
 
