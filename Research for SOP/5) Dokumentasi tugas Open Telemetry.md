@@ -342,11 +342,11 @@ Hasil dari menjalankan Command tersebut adalah `/root/OTEL/otel-collector-config
 docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
 ```
 Perubahan yang kita buat pada Command tersebut adalah : <br/>
-[-] Nama File Konfigurasi : <br/>
+[-] Nama File Konfigurasi : 
 - Nama File Konfigurasi yang kita pakai adalah : `otel-collector-config.yaml`
 - Sedangkan Nama File Konfigurasi pada Link Dokumentasi adalah : `config.yaml`
-  <br/>
-[-] Path untuk Lokasi File Konfigurasi :<br/>
+
+[-] Path untuk Lokasi File Konfigurasi :
 - Path untuk Lokasi File Konfigurasi yang kita pakai adalah : `/root/OTEL/otel-collector-config.yaml`
 - Sedangkan Path untuk Lokasi File Konfigurasi pada Link Dokumentasi adalah : `/etc/otelcol-contrib/config.yaml`
 
