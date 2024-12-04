@@ -351,3 +351,51 @@ Perubahan yang kita buat pada Command tersebut adalah : <br/>
 - Sedangkan Path untuk Lokasi File Konfigurasi pada Link Dokumentasi adalah : `/etc/otelcol-contrib/config.yaml`
 
 <br/><br/>
+
+
+## 2) Error "File Configuration Yaml" untuk Open Telemetry :
+### Solusi : Kita gunakan "File Configuration Yaml untuk Open Telemetry" yang ada di Server Mas Fahryan
+
+Ada beberapa Fase dalam memperbaiki Error "File Configuration Yaml" untuk Open Telemetry, yaitu :
+
+#### 1) Mengambil File Configuration yaml dari "Link Dokumentasi" dan digabungkan dengan yang dari "PDF"
+
+-> File Configuration yang ada pada Link Dokumentasi adalah :
+(Link Dokumentasi : https://opentelemetry.io/docs/collector/configuration/ )
+```
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+processors:
+  batch:
+
+exporters:
+  otlp:
+    endpoint: otelcol:4317
+
+extensions:
+  health_check:
+  pprof:
+  zpages:
+
+service:
+  extensions: [health_check, pprof, zpages]
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlp]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlp]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlp]
+
+```
