@@ -1,7 +1,7 @@
 # Dokumentasi Tugas Open Telemetry
 
 
-## 1. Connect ke Server yang dipakai 
+## (A) Connect ke Server yang dipakai 
 Kita Connect ke Server yang dipakai dengan cara : <br/>
 (1) Buka "Windows Powershell"  <br/> <br/>
 
@@ -10,7 +10,7 @@ ssh root@10.100.13.239
 <br/> <br/>
 (3) kemudian ketik Password  <br/><br/>
 
-## 2. Install Docker pada Server yang dipakai
+## (B) Install Docker pada Server yang dipakai
 (link referensi Dokumentasi : https://docs.docker.com/engine/install/ubuntu/ )
 
 ### 1. Set up Docker's `apt` repository.
@@ -56,3 +56,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 sudo docker run hello-world
 ```
+
+
+## (C) Install "Open Telemetry" pada Server
+
+Link Referensi Dokumentasi :
+https://opentelemetry.io/docs/collector/installation/
+https://opentelemetry.io/docs/collector/configuration/
