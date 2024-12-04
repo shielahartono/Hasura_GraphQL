@@ -182,4 +182,44 @@ Setelah menjalankan ini, terdapat issue `Unit otelcol.service could not be found
 
 Kita cari error `Unit otelcol.service could not be found` pada ChatGPT, <br/>
 yang mana, Error tersebut artinya kita perlu install "otelcol", <br/>
-maka kita jalankan Command berikut : <br/>
+
+#### [1] maka kita jalankan Command berikut : <br/>
+
+```
+which otelcol
+```
+
+```
+curl -sL https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.81.0/otelcol_0.81.0_linux_amd64.deb -o otelcol.deb
+```
+
+```
+sudo dpkg -i otelcol.deb
+
+```
+
+```
+sudo nano /etc/systemd/system/otelcol.service
+```
+
+<br/> <br/>
+
+### [2] Kita masukkan "File Configurasi" untuk otelcol "OpenTelemetry Collector" :
+
+```
+[Unit]
+Description=OpenTelemetry Collector
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/otelcol --config=/etc/otelcol-config.yaml
+Restart=always
+RestartSec=10
+User=otel
+Group=otel
+
+[Install]
+WantedBy=multi-user.target
+
+```
