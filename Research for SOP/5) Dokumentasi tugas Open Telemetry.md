@@ -75,4 +75,10 @@ docker run otel/opentelemetry-collector-contrib:0.114.0
 
 ### 2. Masukkan "File Configuration YAML" untuk "Open Telemetry"
 
+[1] tampilkan Daftar File atau Direktori :
+```
+ls -ll
+```
+![image](https://github.com/user-attachments/assets/d172dde1-03ad-4433-8564-5a93d35e0362)
+
 
