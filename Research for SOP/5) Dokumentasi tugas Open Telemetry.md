@@ -261,3 +261,42 @@ yang mana "4318" merupakan Port http pada Configuration File <br/> <br/>
 - dan salah satu Nama Kolom nya adalah "name" yang mempunyai nilai "ferdy"
 
 
+### [6] Kemudian kita Filter Log, dengan hanya menampilkan Log yang memiliki keyword tertentu
+
+(1) Kita ingin menampilkan Log yang memiliki Keyword "Nama Tabel", yaitu `todo`
+```
+journalctl -u otelcol --since "1 hour ago" | grep "todo"
+```
+![image](https://github.com/user-attachments/assets/1e4e5975-7d0d-4c5a-8c33-b68ff7d5a021)
+
+Pada gambar diatas, dapat kita lihat, saat kita ingin menampilkan Log yang memiliki Keyword "Nama Tabel", 
+"Log tersebut ada"
+
+(2)  Kita ingin menampilkan Log yang memiliki Keyword "Nama Kolom", yaitu yang mempunyai nilai "ferdy" (ini value untuk kolom "name" )
+```
+journalctl -u otelcol --since "1 hour ago" | grep "ferdy"
+```
+
+![image](https://github.com/user-attachments/assets/6d07ff7f-0243-4a8c-ac59-308e93deafc5)
+
+Pada gambar diatas, dapat kita lihat, saat kita ingin menampilkan Log yang memiliki Keyword "Nama Kolom", 
+"Log tersebut tidak ada"
+
+
+#### Kesimpulan : 
+
+Pada gambar diatas, dapat kita lihat, saat kita ingin menampilkan Log yang memiliki Keyword "Nama Tabel",  <br/>
+"Log tersebut ada".
+<br/> <br/>
+tetapi Pada gambar diatas, saat kita ingin menampilkan Log yang memiliki Keyword "Nama Kolom",  <br/>
+"Log tersebut tidak ada" .
+<br/><br/>
+
+
+Dapat kita buat dugaan, bahwa Log tersebut tidak menampilkan Secara Detail, melainkan hanya menampilkan secara garis besar.
+yaitu saat Kita ingin mem-filter Log dengan "Nama Tabel", Log tersebut muncul. <br/>
+Tetapi jika ingin meanampilkan Log secara lebih detail lagi, yaitu dengan mem-filter Log dengan "Nama Kolom", Log tersebut tidak muncul. <br/><br/>
+
+
+
+
