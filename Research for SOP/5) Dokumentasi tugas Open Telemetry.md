@@ -149,3 +149,10 @@ Kemudian kita pilih "yes" untuk Save
 
 <br/><br/>
 
+
+[6] Kemudian kita jalankan Command berikut ini :
+```
+docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
+```
+-> note : <br/>
+`-d` adalah Daemon agar Command tersebut berjalan di belakang layar
