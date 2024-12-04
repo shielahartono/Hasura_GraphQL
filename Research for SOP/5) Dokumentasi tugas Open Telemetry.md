@@ -652,3 +652,8 @@ Setelah menambahkan File Configuration tersebut, kemudian kita jalankan Command 
 docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
 ```
 Dan berhasil menjalankan Command tersebut
+
+
+## 3) Error OTECOL (OpenTelemetry Collector) belum ter-install
+### Solusi : Install OTECOL
+
