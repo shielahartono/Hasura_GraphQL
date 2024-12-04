@@ -93,5 +93,59 @@ ls -ll
 ```
 ![image](https://github.com/user-attachments/assets/2c826014-fd9d-402d-bb6e-c4a88d6c6a13)
 
+[4] Kemudian kita edit file "otel-collector-config.yaml" untuk memasukkan File Configurasi
+```
+nano otel-collector-config.yaml
+```
+![image](https://github.com/user-attachments/assets/5492195a-3238-4704-bf02-8433e05ea610)
 
+<br/> <br/>
+Kemudian kita masukkan File Configurasi berikut ini :
+```
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+processors:
+  batch:
+
+exporters:
+  debug: {}
+  verbosity: detailed
+
+extensions:
+  health_check:
+  pprof:
+    endpoint: 0.0.0.0:1777
+  zpages:
+    endpoint: 0.0.0.0:55679
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+```
+
+![image](https://github.com/user-attachments/assets/e9350219-64bd-4626-a222-f62723292a9f)
+
+
+<br/><br/>
+
+[5] Kemudian kita ketik `ctrl + x` untuk Exit. <br/>
+Kemudian kita pilih "yes" untuk Save
+
+<br/><br/>
 
