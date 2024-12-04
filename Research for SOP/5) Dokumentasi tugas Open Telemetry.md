@@ -204,7 +204,7 @@ sudo nano /etc/systemd/system/otelcol.service
 
 <br/> <br/>
 
-### [2] Kita masukkan "File Configurasi" untuk otelcol "OpenTelemetry Collector" :
+#### [2] Kita masukkan "File Configurasi" untuk otelcol "OpenTelemetry Collector" :
 
 ```
 [Unit]
@@ -223,3 +223,14 @@ Group=otel
 WantedBy=multi-user.target
 
 ```
+
+#### [3] Untuk melihat Log, kita jalankan Command berikut ini :
+```
+journalctl -u otelcol -f
+```
+
+#### [4] Sambungkan Server kita dengan Hasura pada Rancher :
+(Sambungkan Server yang ada di Powershell dengan Hasura pada Rancher ) :
+
+
+#### [5] Kemudian lakukan "Hit" dengan menjalankan Query di Hasura
