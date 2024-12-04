@@ -63,3 +63,12 @@ sudo docker run hello-world
 Link Referensi Dokumentasi :  <br/>
 https://opentelemetry.io/docs/collector/installation/          <br/>
 https://opentelemetry.io/docs/collector/configuration/          <br/>
+
+### 1. Jalankan Command berikut ini :
+```
+docker pull otel/opentelemetry-collector-contrib:0.114.0
+```
+
+```
+docker run otel/opentelemetry-collector-contrib:0.114.0
+```
