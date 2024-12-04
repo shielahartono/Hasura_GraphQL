@@ -11,6 +11,7 @@ ssh root@10.100.13.239
 (3) kemudian ketik Password  <br/><br/>
 
 ## 2. Install Docker pada Server yang dipakai
+(link referensi Dokumentasi : https://docs.docker.com/engine/install/ubuntu/ )
 
 Pada Terminal Windows Powershell, kita jalankan Command berikut :
 
@@ -41,3 +42,5 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 ```
+
+
