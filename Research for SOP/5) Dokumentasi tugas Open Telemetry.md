@@ -657,3 +657,15 @@ Dan berhasil menjalankan Command tersebut
 ## 3) Error OTECOL (OpenTelemetry Collector) belum ter-install
 ### Solusi : Install OTECOL
 
+(1) Kita ingin Check apakah OTEL (Open Telemetry) sudah ter-install pada Server,
+yakni dengan menggunakan Command :
+```
+sudo systemctl status otelcol
+
+```
+tetapi terdapat Error yaitu :
+![image](https://github.com/user-attachments/assets/54a4af89-e14e-46db-b00f-e79147b23180)
+Error tersebut dikarenakan kita belum meng-install OTECOL pada Sever
+<br/><br/>
+Sehingga untuk Solve error tersebut, kita perlu Install OTECOL. <br/>
+Langkah-langkah untuk meng-install OTECOL sudah dijelaskan pada Penjelasan sebelumnya.  <br/>
