@@ -506,6 +506,17 @@ receivers: [otlp]
       exporters: [debug, otlp]
 ```
 
-#### Fase 3) 
+#### Fase 3) Port yang ada pada File Configuration, tidak ada yang aktif melakukan "LISTENING" pada Server
+#### (Port 4317 , 4318 , 9200 tidak ada yang aktif melakukan "LISTENING" )
+```
+sudo netstat -tuln
+```
+kita Check menggunakan Command diatas untuk mengecek Port apa saja yang aktif melakukan "LISTENING" pada Server  <br/>
+![image](https://github.com/user-attachments/assets/9f83b6f9-a9a3-4770-84b3-e14a328b313d)
+
+tetapi Port yang ada pada File Configuration, tidak ada yang aktif melakukan "LISTENING" pada Server, <br/>
+yakni Port 4317 , 4318 , 9200 tidak ada yang aktif melakukan "LISTENING" pada Server, <br/>
+yang mana artinya Server tidak melakukan Koneksi dengan Port 4317 , 4318 , 9200 . <br/>
+
 
 
