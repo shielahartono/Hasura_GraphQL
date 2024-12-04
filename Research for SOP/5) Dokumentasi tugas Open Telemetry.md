@@ -91,6 +91,7 @@ cd OTEL
 ```
 ls -ll
 ```
-![image](https://github.com/user-attachments/assets/8ae688ab-231d-4151-8584-3d7379c0508d)
+![image](https://github.com/user-attachments/assets/2c826014-fd9d-402d-bb6e-c4a88d6c6a13)
+
 
 
