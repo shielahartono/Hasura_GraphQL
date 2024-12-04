@@ -72,3 +72,7 @@ docker pull otel/opentelemetry-collector-contrib:0.114.0
 ```
 docker run otel/opentelemetry-collector-contrib:0.114.0
 ```
+
+### 2. Masukkan "File Configuration YAML" untuk "Open Telemetry"
+
+
