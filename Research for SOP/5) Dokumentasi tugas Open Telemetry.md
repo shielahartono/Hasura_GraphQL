@@ -180,6 +180,6 @@ Setelah menjalankan ini, terdapat issue `Unit otelcol.service could not be found
 
 ### (F) Install "OpenTelemetry Collector" (otelcol) pada Server
 
-Kita cari error `Unit otelcol.service could not be found` pada ChatGPT,
-yang mana, Error tersebut artinya kita perlu install "otelcol",
-maka kita jalankan Command berikut :
+Kita cari error `Unit otelcol.service could not be found` pada ChatGPT, <br/>
+yang mana, Error tersebut artinya kita perlu install "otelcol", <br/>
+maka kita jalankan Command berikut : <br/>
