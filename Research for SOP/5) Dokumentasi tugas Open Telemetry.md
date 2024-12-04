@@ -526,3 +526,129 @@ Kemudian kita juga melakukan Pengecekkan Telnet, tetapi Connection Refused
 ![image](https://github.com/user-attachments/assets/4a54f56c-32ca-4e8b-8c0f-00645d6b16ae)
 
 
+#### Fase 4) Kita menggunakan "File Configuration Open Telemetry" yang ada di Server milik Mas Fahryan
+
+Kita Copy File Configuration yang ada di Server Mas Fahryan, kemudian kita melakukan Adjustment (Penyesuaian) sebelum kita taruh File Configuration tersebut di Server kita.
+
+-> File Configuration milik Mas Fahryan - Versi Original (sebelum dimodifikasi) :
+```
+extensions:
+  health_check:
+  pprof:
+    endpoint: 0.0.0.0:1777
+  zpages:
+    endpoint: 0.0.0.0:55679
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+  opencensus:
+    endpoint: 0.0.0.0:55678
+
+  # Collect own metrics
+  prometheus:
+    config:
+      scrape_configs:
+      - job_name: 'otel-collector'
+        scrape_interval: 10s
+        static_configs:
+        - targets: ['0.0.0.0:8888']
+
+  jaeger:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:14250
+      thrift_binary:
+        endpoint: 0.0.0.0:6832
+      thrift_compact:
+        endpoint: 0.0.0.0:6831
+      thrift_http:
+        endpoint: 0.0.0.0:14268
+
+  zipkin:
+    endpoint: 0.0.0.0:9411
+
+processors:
+  batch:
+
+exporters:
+  debug:
+    verbosity: detailed
+
+service:
+
+  pipelines:
+
+    traces:
+      receivers: [otlp, opencensus, jaeger, zipkin]
+      processors: [batch]
+      exporters: [debug]
+
+    metrics:
+      receivers: [otlp, opencensus, prometheus]
+      processors: [batch]
+      exporters: [debug]
+
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug]
+
+  extensions: [health_check, pprof, zpages]
+
+```
+
+
+-> Kemudian kita melakukan Adjustment pada File Configuration Mas Fahryan,
+yakni dengan menghilangkan bagian yang tidak perlu, yaitu  opencensus ,  prometheus , jaeger , zipkin.
+Berikut ini File Configuration setelah di-adjust :
+
+```
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+processors:
+  batch:
+
+exporters:
+  debug: {}
+  verbosity: detailed
+
+extensions:
+  health_check:
+  pprof:
+    endpoint: 0.0.0.0:1777
+  zpages:
+    endpoint: 0.0.0.0:55679
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+ logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug, otlp]
+```
+
+
+Setelah menambahkan File Configuration tersebut, kemudian kita jalankan Command Open Telemetry selanjutnya, yaitu :
+```
+docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
+```
+Dan berhasil menjalankan Command tersebut
