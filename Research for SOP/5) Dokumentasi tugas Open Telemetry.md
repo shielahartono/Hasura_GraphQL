@@ -60,6 +60,6 @@ sudo docker run hello-world
 
 ## (C) Install "Open Telemetry" pada Server
 
-Link Referensi Dokumentasi :
+Link Referensi Dokumentasi :  <br/>
 https://opentelemetry.io/docs/collector/installation/
 https://opentelemetry.io/docs/collector/configuration/
