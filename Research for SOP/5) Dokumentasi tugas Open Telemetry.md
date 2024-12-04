@@ -253,3 +253,6 @@ yang mana "4318" merupakan Port http pada Configuration File <br/> <br/>
 
 
 #### [5] Kemudian lakukan "Hit" dengan menjalankan Query di Hasura
+
+![image](https://github.com/user-attachments/assets/47d8e418-403c-42a8-a1ad-e83a5bef489f)
+
