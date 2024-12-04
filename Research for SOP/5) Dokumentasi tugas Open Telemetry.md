@@ -232,5 +232,23 @@ journalctl -u otelcol -f
 #### [4] Sambungkan Server kita dengan Hasura pada Rancher :
 (Sambungkan Server yang ada di Powershell dengan Hasura pada Rancher ) :
 
+(1) Buka Hasura pada Rancher
+
+(2) Pilih Setting :
+![image](https://github.com/user-attachments/assets/06b482a8-ae7b-4df4-bce6-eaa36a1250c7)
+![image](https://github.com/user-attachments/assets/ee113a11-0b68-446c-b231-841b375ada26)
+
+(2) Pilih "Open Telemetry Exporter"
+![image](https://github.com/user-attachments/assets/8163f19c-0a65-41f0-8eaf-f1551906986d)
+![image](https://github.com/user-attachments/assets/3e9f610e-5ef8-4897-a27a-d871026d5798)
+
+(3) masukkan Endpoint pada Hasura di Rancher :
+-> disini kita masukkan Endpoint "4318".
+yang mana "4318" merupakan Port http pada Configuration File
+
+![image](https://github.com/user-attachments/assets/f0becc6c-669f-46bb-b45a-2cee508e7b13)
+![image](https://github.com/user-attachments/assets/cd1f9fca-5eec-4ea0-a92c-c5923c8cb870)
+
+
 
 #### [5] Kemudian lakukan "Hit" dengan menjalankan Query di Hasura
