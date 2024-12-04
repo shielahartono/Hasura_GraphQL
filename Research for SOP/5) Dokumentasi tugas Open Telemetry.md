@@ -13,6 +13,8 @@ ssh root@10.100.13.239
 ## 2. Install Docker pada Server yang dipakai
 (link referensi Dokumentasi : https://docs.docker.com/engine/install/ubuntu/ )
 
+### 1. Set up Docker's `apt` repository.
+
 Pada Terminal Windows Powershell, kita jalankan Command berikut :
 
 ```
@@ -43,4 +45,14 @@ echo \
 sudo apt-get update
 ```
 
+### 2. Install the Docker packages.
 
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+### 3. Verify that the installation is successful by running the `hello-world` image:
+
+```
+sudo docker run hello-world
+```
