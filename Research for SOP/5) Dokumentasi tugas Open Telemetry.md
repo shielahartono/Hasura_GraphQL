@@ -309,7 +309,7 @@ Berikut ini penjelasannya :
 ### Solusi : kita perbaiki Path pada Command tersebut
 -> Berikut ini adalah Command yang benar setelah diperbaiki :
 ```
-docker run -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
+docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
 ```
 
 <br/> <br/>
@@ -325,5 +325,29 @@ docker run -v $(pwd)/config.yaml:/etc/otelcol-contrib/config.yaml otel/opentelem
 <img width="542" alt="image" src="https://github.com/user-attachments/assets/1f70a260-704a-465a-9dde-a200b2a4619d">
 
 
+Pada original Command tersebut, Path nya berbeda dengan Path milik File Configurasi yaml Open Telemetry kita.
+<br/><br/>
+
+Kita menggunakan Command berikut ini untuk menge-cek Lokasi Path milik File Configurasi kita :
+```
+ls $(pwd)/otel-collector-config.yaml
+```
+[-] Nama File Konfigurasi kita adalah : `otel-collector-config.yaml`   <br/>
+[-] `ls $(pwd)/`  =  merupakan Command untuk menge-cek Path untuk Lokasi File kita   <br/> <br/>
+Hasil dari menjalankan Command tersebut adalah `/root/OTEL/otel-collector-config.yaml`
 
 
+-> Sehingga Command tersebut kita perbaiki menjadi :
+```
+docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
+```
+Perubahan yang kita buat pada Command tersebut adalah : <br/>
+[-] Nama File Konfigurasi : <br/>
+- Nama File Konfigurasi yang kita pakai adalah : `otel-collector-config.yaml`
+- Sedangkan Nama File Konfigurasi pada Link Dokumentasi adalah : `config.yaml`
+  <br/>
+[-] Path untuk Lokasi File Konfigurasi :<br/>
+- Path untuk Lokasi File Konfigurasi yang kita pakai adalah : `/root/OTEL/otel-collector-config.yaml`
+- Sedangkan Path untuk Lokasi File Konfigurasi pada Link Dokumentasi adalah : `/etc/otelcol-contrib/config.yaml`
+
+<br/><br/>
