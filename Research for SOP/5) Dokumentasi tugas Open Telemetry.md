@@ -306,7 +306,7 @@ Tetapi jika ingin meanampilkan Log secara lebih detail lagi, yaitu dengan mem-fi
 Berikut ini penjelasannya : 
 
 ##  1) Error Command :
-### Solusi : kita perbaiki Command nya 
+### Solusi : kita perbaiki Path pada Command tersebut
 -> Berikut ini adalah Command yang benar setelah diperbaiki :
 ```
 docker run -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
