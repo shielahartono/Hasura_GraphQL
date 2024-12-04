@@ -56,15 +56,30 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 sudo docker run hello-world
 ```
+## (C) Kita buat Folder & File
 
+[1] Buat Folder OTEL :
+```
+mkdir OTEL
+```
 
-## (C) Install "Open Telemetry" pada Server
+[2] Buat file otel-collector-config.yaml
+```
+touch otel-collector-config.yaml
+```
+
+## (D) Install "Open Telemetry" pada Server
 
 Link Referensi Dokumentasi :  <br/>
 https://opentelemetry.io/docs/collector/installation/          <br/>
 https://opentelemetry.io/docs/collector/configuration/          <br/>
 
-### 1. Jalankan Command berikut ini :
+### 1. Masuk ke Folder OTEL :
+```
+cd OTEL
+```
+
+### 2. Jalankan Command berikut ini :
 ```
 docker pull otel/opentelemetry-collector-contrib:0.114.0
 ```
@@ -73,21 +88,21 @@ docker pull otel/opentelemetry-collector-contrib:0.114.0
 docker run otel/opentelemetry-collector-contrib:0.114.0
 ```
 
-### 2. Masukkan "File Configuration YAML" untuk "Open Telemetry"
+### 3. Masukkan "File Configuration YAML" untuk "Open Telemetry"
 
-[1] tampilkan Daftar File atau Direktori :
+[1] tampilkan Daftar File atau Direktori : 
 ```
 ls -ll
 ```
 ![image](https://github.com/user-attachments/assets/d172dde1-03ad-4433-8564-5a93d35e0362)
 
 
-[2] Kita arahkan ke Folder "OTEL"
+[2] Kita arahkan ke Folder "OTEL"  <br/>
 ```
 cd OTEL
 ```
 
-[3] Kemudian tampilkan daftar file pada Folder OTEL
+[3] Kemudian tampilkan daftar file pada Folder OTEL <br/>
 ```
 ls -ll
 ```
@@ -155,7 +170,7 @@ Kemudian kita pilih "yes" untuk Save
 docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
 ```
 
-### (D) Check apakah "OpenTelemetry Collector" (otelcol)  sudah ter-install :
+### (E) Check apakah "OpenTelemetry Collector" (otelcol)  sudah ter-install :
 ```
 sudo systemctl status otelcol
 
@@ -163,7 +178,7 @@ sudo systemctl status otelcol
 ![image](https://github.com/user-attachments/assets/e245a478-3fd4-4011-8044-da33b81f1c38)
 Setelah menjalankan ini, terdapat issue `Unit otelcol.service could not be found`
 
-### (E) Install "OpenTelemetry Collector" (otelcol) pada Server
+### (F) Install "OpenTelemetry Collector" (otelcol) pada Server
 
 Kita cari error `Unit otelcol.service could not be found` pada ChatGPT,
 yang mana, Error tersebut artinya kita perlu install "otelcol",
