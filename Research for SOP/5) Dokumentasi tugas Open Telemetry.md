@@ -299,5 +299,31 @@ Tetapi jika ingin meanampilkan Log secara lebih detail lagi, yaitu dengan mem-fi
 
 
 -----
-Catatan : 
+# Catatan Kaki: <br/>
+<br/>
+-> Catatan Kaki ini berisi Catatan mengenai Error yang terjadi selama kita mengerjakkan tugas ini, dan bagaimana Proses kita dalam Solve Error tersebut.
+<br/>
+Berikut ini penjelasannya : 
+
+##  1) Error Command :
+### Solusi : kita perbaiki Command nya 
+-> Berikut ini adalah Command yang benar setelah diperbaiki :
+```
+docker run -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
+```
+
+<br/> <br/>
+
+-> Command tersebut, Original nya sebelum dimodifikasi, kita ambil dari File Dokumentasi,
+yaitu pada Link berikut ini : <br/>
+https://opentelemetry.io/docs/collector/installation/
+
+```
+docker run -v $(pwd)/config.yaml:/etc/otelcol-contrib/config.yaml otel/opentelemetry-collector-contrib:0.114.0
+```
+
+<img width="542" alt="image" src="https://github.com/user-attachments/assets/1f70a260-704a-465a-9dde-a200b2a4619d">
+
+
+
 
