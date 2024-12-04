@@ -154,5 +154,17 @@ Kemudian kita pilih "yes" untuk Save
 ```
 docker run -d -v $(pwd)/otel-collector-config.yaml:/root/OTEL/otel-collector-config.yaml otel/opentelemetry-collector-contrib:0.114.0
 ```
--> note : <br/>
-`-d` adalah Daemon agar Command tersebut berjalan di belakang layar
+
+### (D) Check apakah "OpenTelemetry Collector" (otelcol)  sudah ter-install :
+```
+sudo systemctl status otelcol
+
+```
+![image](https://github.com/user-attachments/assets/e245a478-3fd4-4011-8044-da33b81f1c38)
+Setelah menjalankan ini, terdapat issue `Unit otelcol.service could not be found`
+
+### (E) Install "OpenTelemetry Collector" (otelcol) pada Server
+
+Kita cari error `Unit otelcol.service could not be found` pada ChatGPT,
+yang mana, Error tersebut artinya kita perlu install "otelcol",
+maka kita jalankan Command berikut :
