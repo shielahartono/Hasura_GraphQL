@@ -82,3 +82,15 @@ ls -ll
 ![image](https://github.com/user-attachments/assets/d172dde1-03ad-4433-8564-5a93d35e0362)
 
 
+[2] Kita arahkan ke Folder "OTEL"
+```
+cd OTEL
+```
+
+[3] Kemudian tampilkan daftar file pada Folder OTEL
+```
+ls -ll
+```
+![image](https://github.com/user-attachments/assets/8ae688ab-231d-4151-8584-3d7379c0508d)
+
+
