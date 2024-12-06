@@ -3,6 +3,8 @@
 Metrics adalah gambaran besar kinerja sistem atau aplikasi, digunakan untuk monitoring dan alerting. 
 <br/> <br/><br/>
 
+## Metrics yang Success : 
+
 Berikut ini Log Pada Elastic : 
 
 ```
@@ -66,6 +68,77 @@ Berikut ini Log Pada Elastic :
     ],
     "hasura_graphql_requests_total": [
       9
+    ]
+  }
+}
+```
+
+
+--------
+--------
+## Metrics yang Failed : 
+
+```
+{
+  "_index": ".ds-metrics-generic-default-2024.12.06-000001",
+  "_id": "kRJGm5MBatu-e5CDTqZF",
+  "_version": 1,
+  "_source": {
+    "@timestamp": "2024-12-06T09:16:43.968594654Z",
+    "data_stream": {
+      "dataset": "generic",
+      "namespace": "default",
+      "type": "metrics"
+    },
+    "hasura_cron_events_invocation_total": 0,
+    "hasura_cron_events_processed_total": 0,
+    "hasura_oneoff_events_invocation_total": 0,
+    "hasura_oneoff_events_processed_total": 0,
+    "host": {
+      "hostname": "hasura-sheila-688fb7b47c-bgdt8:8080",
+      "name": "hasura-sheila-688fb7b47c-bgdt8:8080"
+    },
+    "service": {
+      "name": "hasura"
+    },
+    "status": "failed"
+  },
+  "fields": {
+    "hasura_cron_events_processed_total": [
+      0
+    ],
+    "@timestamp": [
+      "2024-12-06T09:16:43.968Z"
+    ],
+    "service.name": [
+      "hasura"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "data_stream.dataset": [
+      "generic"
+    ],
+    "hasura_cron_events_invocation_total": [
+      0
+    ],
+    "hasura_oneoff_events_processed_total": [
+      0
+    ],
+    "host.hostname": [
+      "hasura-sheila-688fb7b47c-bgdt8:8080"
+    ],
+    "host.name": [
+      "hasura-sheila-688fb7b47c-bgdt8:8080"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "hasura_oneoff_events_invocation_total": [
+      0
+    ],
+    "status": [
+      "failed"
     ]
   }
 }
