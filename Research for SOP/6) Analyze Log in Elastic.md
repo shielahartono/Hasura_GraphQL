@@ -1,5 +1,8 @@
 # Analyze Metrics in Elastic
 
+Metrics adalah gambaran besar kinerja sistem atau aplikasi, digunakan untuk monitoring dan alerting. 
+<br/> <br/><br/>
+
 Berikut ini Log Pada Elastic : 
 
 ```
