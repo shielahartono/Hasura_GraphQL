@@ -3,7 +3,7 @@
 Metrics adalah gambaran besar kinerja sistem atau aplikasi, digunakan untuk monitoring dan alerting. 
 <br/> <br/><br/>
 
-## Metrics yang Success : 
+## A) Metrics yang Success : 
 
 Berikut ini Log Pada Elastic : 
 
@@ -76,7 +76,7 @@ Berikut ini Log Pada Elastic :
 
 --------
 --------
-## Metrics yang Failed : 
+## B) Metrics yang Failed : 
 
 ```
 {
