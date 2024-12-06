@@ -1,4 +1,4 @@
-# Analyze Log in Elastic
+# Analyze Metrics in Elastic
 
 Berikut ini Log Pada Elastic : 
 
