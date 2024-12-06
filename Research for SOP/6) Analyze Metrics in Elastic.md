@@ -92,10 +92,9 @@ Index merupakan "Nama Folder Besar" tempat dokumen ini disimpan di Elastic Searc
 [-] `.ds-metrics` : <br/>
 - "ds" = berarti 'Data Stream' (Aliran Data)  <br/>
 - "metrics" = ini menunjukkan Data tentang 'Metrik Kinerja System'  <br/>
-
-<br/><br
+<br/>
        
-[-] `generic` :
+[-] `generic` : ...
 
 
 
