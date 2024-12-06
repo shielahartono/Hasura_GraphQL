@@ -3,7 +3,7 @@
 Metrics adalah gambaran besar kinerja sistem atau aplikasi, digunakan untuk monitoring dan alerting. 
 <br/> <br/><br/>
 
-## A) Metrics yang Success : 
+# A) Metrics yang Success : 
 
 Berikut ini Log Pada Elastic : 
 
@@ -73,10 +73,38 @@ Berikut ini Log Pada Elastic :
 }
 ```
 
+## 1. Informasi Meta Elasticsearch
+
+```
+ "_index": ".ds-metrics-generic-default-2024.12.06-000001",
+  "_id": "MBIam5MBatu-e5CD0VNL",
+  "_version": 1
+```
+
+<br/> <br/>
+
+### [1] Index :
+Index merupakan "Nama Folder Besar" tempat dokumen ini disimpan di Elastic Search.
+```
+.ds-metrics-generic-default-2024.12.06-000001
+```
+-> Arti dari bagian-bagian ini : <br/>
+[-] `.ds-metrics` : <br/>
+- "ds" = berarti 'Data Stream' (Aliran Data)  <br/>
+- "metrics" = ini menunjukkan Data tentang 'Metrik Kinerja System'  <br/>
+
+<br/><br
+       
+[-] `generic` :
+
+
+
+
+
 
 --------
 --------
-## B) Metrics yang Failed : 
+# B) Metrics yang Failed : 
 
 ```
 {
