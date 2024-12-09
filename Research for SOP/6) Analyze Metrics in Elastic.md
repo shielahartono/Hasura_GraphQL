@@ -367,6 +367,10 @@ yang mana, jenis operasi "query" artinya hanya "read-only", dan tidak melakukan 
       "hasura"
     ]
 ```
+-> `service.name` artinya  Nama layanan atau aplikasi yang menghasilkan Metrices ini. <br/>
+Pada case ini, Metrices berasal dari aplikasi Hasura. <br/><br/>
+
+
 
 ### [7] data_stream.namespace :
 ```
@@ -374,6 +378,15 @@ yang mana, jenis operasi "query" artinya hanya "read-only", dan tidak melakukan 
       "default"
     ]
 ```
+-> `data_stream.namespace` adalah elemen yang digunakan  untuk mengelompokkan data berdasarkan kategori atau tujuan tertentu. <br/>
+alam hal ini, namespace digunakan untuk memberi label atau kelompok untuk data yang dikumpulkan. <br/><br/>
+
+-> Namespace adalah cara untuk mengelompokkan atau mengorganisir data observabilitas yang dikumpulkan. <br/><br/>
+
+-> Data observabilitas seperti log, metrics, atau traces dapat dikelompokkan ke dalam namespace tertentu untuk membedakan satu set data dengan set lainnya. <br/><br/>
+
+-> `default` : <br/>
+pada Case ini, nilai namespace adalah "default". Ini menunjukkan bahwa data observabilitas ini tidak memiliki namespace khusus dan disimpan dalam namespace default. <br/><br/>
 
 ### [8]  data_stream.dataset  :
 ```
@@ -381,6 +394,7 @@ yang mana, jenis operasi "query" artinya hanya "read-only", dan tidak melakukan 
       "generic"
     ]
 ````
+
 
 
 ### [9] host.hostname
