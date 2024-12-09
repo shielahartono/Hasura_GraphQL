@@ -701,3 +701,10 @@ pada case ini, Nilai 0 berarti tidak ada one-off event yang dipanggil sejauh ini
 ```
 "hasura_oneoff_events_processed_total": 0
 ```
+-> `hasura_oneoff_events_processed_total` : <br/>
+Metrik ini menunjukkan jumlah total one-off events 'yang telah diproses' oleh Hasura. <br/><br/>
+
+-> Setelah "One-off events" dipanggil, Hasura memprosesnya hingga selesai. <br/><br/>
+
+-> `0` : <br/>
+pada case ini, Nilai `0` berarti tidak ada "one-off event" yang berhasil diproses <br/><br/>
