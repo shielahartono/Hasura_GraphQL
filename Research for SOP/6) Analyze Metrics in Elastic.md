@@ -290,6 +290,12 @@ yang mana, Hash ini digunakan untuk mengidentifikasi operasi tertentu tanpa meny
 -> `service` : merupakan Informasi tentang layanan atau Service yang memproses data ini.  <br/>
 -> `hasura` : artinya nama Service adalah "hasura"  <br/>
 
+
+## 3. Bagian Fields : 
+Bagian ini menyusun ulang data dari _source untuk digunakan dalam pencarian atau analitik. 
+
+
+
 --------
 --------
 # B) Metrics yang Failed : 
