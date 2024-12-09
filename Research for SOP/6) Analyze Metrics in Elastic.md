@@ -717,6 +717,18 @@ pada case ini, Nilai `0` berarti tidak ada "one-off event" yang berhasil diprose
       "name": "hasura-sheila-688fb7b47c-bgdt8:8080"
     }
 ```
+```
+ "host": {
+      "hostname": "hasura-sheila-688fb7b47c-bgdt8:8080",
+      "name": "hasura-sheila-688fb7b47c-bgdt8:8080"
+    }
+```
+-> "Host" Informasi tentang server yang memproses permintaan  <br/>
+-> `hasura-sheila-688fb7b47c-bgdt8:8080` merupakan Informasi mengenai Nama Host & Port tempat Server atau Aplikasi berjalan.   <br/>
+coba kita breakdown :  <br/>
+- Hostname : `hasura-sheila-688fb7b47c-bgdt8`
+- Port : `8080`   <br/>
+yaitu nomor port tempat Hasura GraphQL Engine menjalankan layanannya.  <br/> <br/>
 
 
 ## 10. Service :
@@ -724,18 +736,32 @@ pada case ini, Nilai `0` berarti tidak ada "one-off event" yang berhasil diprose
 "service": {
       "name": "hasura"
 ```
-
+-> `service` : merupakan Informasi tentang layanan atau Service yang memproses data ini.  <br/>
+-> `hasura` : artinya nama Service adalah "hasura"  <br/>
 
 ## 11. Status : 
 ```
 "status": "failed"
 ```
+-> `status` : Status operasi atau metrik yang dicatat. <br/>
+-> `failed` : berarti ada kegagalan dalam operasi terkait data ini. <br/>
+
 
 ## 12. data_stream.namespace :
 ```
  "data_stream.namespace": [
       "default"
 ```
+-> `data_stream.namespace` adalah elemen yang digunakan  untuk mengelompokkan data berdasarkan kategori atau tujuan tertentu. <br/>
+Dalam hal ini, "namespace" digunakan untuk memberi label atau kelompok untuk data yang dikumpulkan. <br/><br/>
+
+-> Namespace adalah cara untuk mengelompokkan atau mengorganisir data observabilitas yang dikumpulkan. <br/><br/>
+
+-> Data observabilitas seperti log, metrics, atau traces dapat dikelompokkan ke dalam namespace tertentu untuk membedakan satu set data dengan set lainnya. <br/><br/>
+
+-> `default` : <br/>
+pada Case ini, nilai namespace adalah "default". Ini menunjukkan bahwa data observabilitas ini tidak memiliki namespace khusus dan disimpan dalam namespace default. <br/><br/>
+
 
 ## 13. data_stream.dataset :
 ```
@@ -743,3 +769,17 @@ pada case ini, Nilai `0` berarti tidak ada "one-off event" yang berhasil diprose
       "generic"
     ]
 ```
+
+-> `data_stream.dataset`: adalah elemen yang digunakan untuk mengidentifikasi "jenis dataset" yang digunakan untuk mengelompokkan data observabilitas. <br/>
+Dataset ini menggambarkan kategori data berdasarkan jenis atau sumber data yang dikumpulkan. <br/><br/>
+
+-> `generic` : <br/>
+Pada case ini, "Jenis Dataset" adalah `generic`. <br/>
+ini berarti data tersebut adalah data umum atau generik yang tidak terikat pada dataset spesifik. Ini biasanya digunakan untuk data yang tidak terkait langsung dengan aplikasi atau proses tertentu. <br/><br/>
+
+-> Contoh lain, jenis Dataset : <br/>
+- `database` untuk data yang berkaitan dengan sistem basis data.
+- `web` untuk data yang berkaitan dengan aplikasi web atau permintaan HTTP.
+- `authentication` untuk data yang berkaitan dengan sistem autentikasi.
+
+<br/><br/>
