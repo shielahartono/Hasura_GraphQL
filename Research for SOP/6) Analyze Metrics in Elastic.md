@@ -94,7 +94,8 @@ Index merupakan "Nama Folder Besar" tempat dokumen ini disimpan di Elastic Searc
 - "metrics" = ini menunjukkan Data tentang 'Metrik Kinerja System'  <br/>
 <br/>
        
-[-] `generic` : ...
+[-] `generic` : <br/>
+Menandakan bahwa data ini adalah Metrik yang bersifat "Generic" atau merupakan 'Metric Umum', yakni tidak spesifik ke satu jenis aplikasi tertentu.
 
 
 
