@@ -158,8 +158,47 @@ bagian ini merupakan "inti data yang diambil"
       "namespace": "default",
       "type": "metrics"
 ```
+Elasticsearch menggunakan data stream untuk menangani data yang terus-menerus masuk, seperti log dan metrik <br/> 
 
+"data_stream" ini merupakan informasi tentang Aliran Data. <br/>
 
+[-] `dataset` :
+```
+ "dataset": "generic"
+```
+-> `generic` menunjukkan bahwa dataset ini adalah data umum atau tidak spesifik untuk aplikasi tertentu. <br/>
+-> Data ini mungkin mencakup metrik dasar seperti penggunaan CPU, memori, atau metrik jaringan yang bisa digunakan oleh berbagai sistem. <br/>
+<br/>
+-> Contoh : <br/>
+- Jika dataset-nya adalah `nginx`, berarti datanya spesifik untuk server NGINX.  <br/>
+- Jika dataset-nya `hasura` , berarti data berasal dari aplikasi Hasura. <br/><br/>
+
+[-] `namespace` : 
+```
+"namespace": "default"
+```
+->  Namespace adalah grup atau label untuk mengelompokkan data. <br/>
+->  Pada case ini, nama "Namespace" tersebut adalah "default" <br/>
+->  `default` adalah namespace bawaan, biasanya digunakan jika Anda tidak menentukan namespace khusus saat mengirim data. <br/>
+<br/>
+-> Tujuan Penamaan Namespace : <br/>
+Membantu membedakan data berdasarkan sumber atau tujuan. <br/>
+- `default` : Kita dapat mengeetahui bahwa Data tersebut merupakan "Data metrik umum". <br/>
+- `application-logs` : Kita dapat mengeetahui bahwa Data tersebut merupakan  "Data log dari aplikasi tertentu". <br/>
+- `infrastructure` : Kita dapat mengeetahui bahwa Data tersebut merupakan  "Data dari infrastruktur server". <br/>
+
+<br/>
+
+[-] `type` : <br/>
+"type" memberitahukan "Jenis Data".
+```
+"type": "metrics"
+```
+-> Pada Case ini, jenis Data tersebut adalah "Metrics" , yang berarti data ini berisi informasi mengenai "Data Pengukuran Kinerja Sistem", seperti Waktu Response aplikasi, dan sebagainya. <br/>
+-> Pentingnya "Type" yaitu memberitahukan Informasi apa yang diberitahukan oleh Jenis Data tersebut, <br/>
+seperti : <br/>
+- `logs` : jenis data ini memberikan informasi mengenai "Data log" (rekaman aktivitas sistem).
+- `traces` : jenis data ini memberikan informasi mengenai "Data Trace yang melacak alur permintaan di dalam sistem"
 
 
 --------
