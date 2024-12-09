@@ -680,6 +680,23 @@ Nilai 0 berarti tidak ada cron event yang berhasil diproses. <br/><br/>
 "hasura_oneoff_events_invocation_total": 0
 ```
 
+-> `hasura_oneoff_events_invocation_total` : <br/>
+Metrik ini menunjukkan jumlah total "one-off events" yang telah dipanggil oleh Hasura. <br/><br/>
+
+-> "One-off events" adalah event yang hanya dijalankan satu kali, biasanya digunakan untuk tugas khusus yang tidak dijadwalkan berulang. <br/><br/>
+
+-> "One-off events" tidak dijalankan berulang kali seperti "Cron Events" <br/><br/>
+
+-> Contoh "One-off events" : <br/>
+[-] Memproses Pesanan Sekali Saja : <br/>
+Setelah pengguna menyelesaikan pembayaran, sistem memicu one-off event untuk memproses pesanan. <br/>
+"One-off events" memastikan agar pesanan diproses tanpa pengulangan. <br/><br/>
+
+-> `0` : <br/>
+pada case ini, Nilai 0 berarti tidak ada one-off event yang dipanggil sejauh ini. <br/><br/>
+
+
+
 ## 8. hasura_oneoff_events_processed_total
 ```
 "hasura_oneoff_events_processed_total": 0
