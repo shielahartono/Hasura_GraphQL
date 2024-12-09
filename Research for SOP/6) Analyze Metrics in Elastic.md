@@ -638,6 +638,30 @@ seperti : <br/>
 hasura_cron_events_invocation_total": 0
 ```
 
+-> `hasura_cron_events_invocation_total` : <br/>
+Metrik ini menunjukkan jumlah total "cron events" yang telah 'dipanggil' oleh Hasura. <br/>
+(Invocation = Pemanggilan) <br/>
+
+-> "Cron events" adalah event yang dijadwalkan untuk dijalankan pada waktu tertentu, seperti tugas terjadwal. <br/>
+<br/>
+-> Contoh "Cron Event" : <br/>
+Bayangkan Anda memiliki aplikasi e-commerce, dan Anda ingin: <br/>
+
+- Mengirimkan email promosi setiap hari pukul 7 pagi.
+- Mengirim pengingat email ke pengguna setiap hari pukul 9 pagi.
+- Memproses laporan penjualan setiap akhir bulan.
+- Memperbarui cache atau data tertentu setiap jam.
+<br/>
+Cron events memungkinkan Anda menjadwalkan tugas-tugas ini tanpa campur tangan manual. <br/> <br/>
+
+
+-> `0` : <br/>
+pada case ini, nilai "Cron Events" adalah 0. <br/>
+ini berarti tidak ada cron event yang dipanggil sejauh ini. <br/><br/>
+
+
+
+
 ## 6. hasura_cron_events_processed_total 
 ```
 "hasura_cron_events_processed_total": 0
