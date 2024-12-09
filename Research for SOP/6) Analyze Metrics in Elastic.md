@@ -114,10 +114,15 @@ pada case ini, "Generasi Indeks" adalah "000001". <br/>
 yang mana hal ini bermanfaat agar Performa tetap baik, Penyimpanan data lebih terorganisir, dan Proses Pencarian Data lebih cepat.
 <br/><br/> <br/>
 
-### [2] Id :
+### [2] _Id :
 ```
  "_id": "MBIam5MBatu-e5CD0VNL"
 ```
+ini merupakan "ID unik dokumen" pada ElasticSearch.  <br/>
+ <br/>
+Setiap dokumen di Elasticsearch memiliki ID yang unik, seperti nomor identitas. Ini mempermudah Elasticsearch untuk mengambil dokumen tertentu.  <br/>
+Dalam ElasticSearch, "ID Unik Dokumen" adalah "Pengidentifikasi Khusus" yang diberikan kepada setiap dokumen yang disimpan di Indeks.
+ <br/>
 
 
 --------
