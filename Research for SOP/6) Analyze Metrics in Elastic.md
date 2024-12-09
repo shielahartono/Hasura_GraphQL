@@ -379,7 +379,7 @@ Pada case ini, Metrices berasal dari aplikasi Hasura. <br/><br/>
     ]
 ```
 -> `data_stream.namespace` adalah elemen yang digunakan  untuk mengelompokkan data berdasarkan kategori atau tujuan tertentu. <br/>
-alam hal ini, namespace digunakan untuk memberi label atau kelompok untuk data yang dikumpulkan. <br/><br/>
+Dalam hal ini, "namespace" digunakan untuk memberi label atau kelompok untuk data yang dikumpulkan. <br/><br/>
 
 -> Namespace adalah cara untuk mengelompokkan atau mengorganisir data observabilitas yang dikumpulkan. <br/><br/>
 
@@ -394,8 +394,19 @@ pada Case ini, nilai namespace adalah "default". Ini menunjukkan bahwa data obse
       "generic"
     ]
 ````
+-> `data_stream.dataset`: adalah elemen yang digunakan untuk mengidentifikasi "jenis dataset" yang digunakan untuk mengelompokkan data observabilitas. <br/>
+Dataset ini menggambarkan kategori data berdasarkan jenis atau sumber data yang dikumpulkan. <br/><br/>
 
+-> `generic` : <br/>
+Pada case ini, "Jenis Dataset" adalah `generic`. <br/>
+ini berarti data tersebut adalah data umum atau generik yang tidak terikat pada dataset spesifik. Ini biasanya digunakan untuk data yang tidak terkait langsung dengan aplikasi atau proses tertentu. <br/><br/>
 
+-> Contoh lain, jenis Dataset : <br/>
+- `database` untuk data yang berkaitan dengan sistem basis data.
+- `web` untuk data yang berkaitan dengan aplikasi web atau permintaan HTTP.
+- `authentication` untuk data yang berkaitan dengan sistem autentikasi.
+
+<br/><br/>
 
 ### [9] host.hostname
 ```
