@@ -247,6 +247,48 @@ yaitu nomor port tempat Hasura GraphQL Engine menjalankan layanannya.  <br/> <br
 ->  `MyQuery` : Operasi GraphQL yang dilakukan bernama "MyQuery"
 
 
+### [6]  operation_type :
+```
+"operation_type": "query"
+```
+-> `operation_type` : merupakan 'Jenis operasi' pada GraphQL. <br/><br/>
+
+-> `query` : artinya jenis operasi ini adalah "Query",  <br/>
+yang  berarti Operasi ini adalah Permintaan Data (query), yang mana Permintaan Data tersebut bersifat "Read-Only" dan tidak mengubah data. <br/><br/>
+
+-> Contoh "Operation Type" lainnya :
+- `mutation` : digunakan untuk "mengubah data" di Server.
+- `subscription` : digunakan untuk "berlangganan Update Real-Time" dari Server.
+
+
+<br/><br/>
+
+### [7] parameterized_query_hash :
+```
+ "parameterized_query_hash": "4ef3f375a154c4cf81d3f8f0d1743d568cd9be64"
+```
+"parameterized_query_hash" merupakan Hash unique untuk operasi GraphQL . <br/>
+yang mana, Hash ini digunakan untuk mengidentifikasi operasi tertentu tanpa menyimpan detail seluruh query. <br/>
+yang mana, Hash ini digunakan untuk mengidentifikasi operasi tertentu tanpa menyimpan detail seluruh query. <br/>
+
+
+### [8]  response_status :
+```
+"response_status": "success"
+```
+-> `response_status` : merupakan Status balasan dari server (Status Response dari Server).  <br/>
+-> `success` : artinya Operasi berhasil diproses oleh Hasura.  <br/>
+ <br/> <br/>
+
+
+### [9]  service : 
+```
+ "service": {
+      "name": "hasura"
+    }
+```
+-> `service` : merupakan Informasi tentang layanan atau Service yang memproses data ini.  <br/>
+-> `hasura` : artinya nama Service adalah "hasura"  <br/>
 
 --------
 --------
