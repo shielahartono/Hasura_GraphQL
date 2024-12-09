@@ -136,12 +136,25 @@ Jika Dokumen diperbarui (misalnya jika data baru ditambahkan), maka "_version" a
 ## 2. Informasi Utama dalam _source
 bagian ini merupakan "inti data yang diambil"
 ```
- "_source": {
+"_source": {
     "@timestamp": "2024-12-06T08:29:13.561688326Z",
     "data_stream": {
       "dataset": "generic",
       "namespace": "default",
       "type": "metrics"
+    },
+    "hasura_graphql_requests_total": 9,
+    "host": {
+      "hostname": "hasura-sheila-688fb7b47c-bgdt8:8080",
+      "name": "hasura-sheila-688fb7b47c-bgdt8:8080"
+    },
+    "operation_name": "MyQuery",
+    "operation_type": "query",
+    "parameterized_query_hash": "4ef3f375a154c4cf81d3f8f0d1743d568cd9be64",
+    "response_status": "success",
+    "service": {
+      "name": "hasura"
+    }
 ```
 
 ### [1] @timestamp :
