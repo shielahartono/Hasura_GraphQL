@@ -633,5 +633,22 @@ seperti : <br/>
 - `traces` : jenis data ini memberikan informasi mengenai "Data Trace yang melacak alur permintaan di dalam sistem"
 
 
+## 5. hasura_cron_events_invocation_total
+```
+hasura_cron_events_invocation_total": 0
+```
 
+## 6. hasura_cron_events_processed_total 
+```
+"hasura_cron_events_processed_total": 0
+```
 
+## 7. hasura_oneoff_events_invocation_total
+```
+"hasura_oneoff_events_invocation_total": 0
+```
+
+## 8. hasura_oneoff_events_processed_total
+```
+"hasura_oneoff_events_processed_total": 0
+```
