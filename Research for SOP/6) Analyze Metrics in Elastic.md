@@ -134,6 +134,7 @@ Jika Dokumen diperbarui (misalnya jika data baru ditambahkan), maka "_version" a
 
 
 ## 2. Informasi Utama dalam _source
+bagian ini merupakan "inti data yang diambil"
 ```
  "_source": {
     "@timestamp": "2024-12-06T08:29:13.561688326Z",
@@ -147,7 +148,16 @@ Jika Dokumen diperbarui (misalnya jika data baru ditambahkan), maka "_version" a
 ```
  "@timestamp": "2024-12-06T08:29:13.561688326Z"
 ```
+- @timestamp merupakan "Waktu" dokumen ini dibuat.
+- pada case ini, "GraphQL Request" terjadi pada 6 Desember 2024, pukul 08:29:13 UTC
 
+### [2] Data Stream :
+```
+ "data_stream": {
+      "dataset": "generic",
+      "namespace": "default",
+      "type": "metrics"
+```
 
 
 
