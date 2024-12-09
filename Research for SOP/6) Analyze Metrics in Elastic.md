@@ -332,12 +332,23 @@ Misalnya, Kita memiliki sebuah query (permintaan data) yang sama, tetapi dengan 
     ]
 ```
 
+-> `@timestamp` merupakan Waktu ketika operasi ini terjadi, dalam format UTC. <br/><br/>
+-> pada Case ini, Operasi ini terjadi pada 6 Desember 2024, pukul 08:29:13 UTC.
+<br/><br/>
+
+
 ### [4]  operation_type :
 ```
  "operation_type": [
       "query"
     ]
 ```
+-> `operation_type` merupakan 'Jenis operasi' GraphQL yang dilakukan <br/><br/>
+
+-> `query` : artinya jenis operasinya adalah "Permintaan Data dari Server".
+yang mana, jenis operasi "query" artinya hanya "read-only", dan tidak melakukan perubahan data seperti `mutation` dan tidak menerima Data Real-Time seperti `subscription`. <br/><br/>
+
+
 
 ### [5]  response_status :
 ```
@@ -345,6 +356,10 @@ Misalnya, Kita memiliki sebuah query (permintaan data) yang sama, tetapi dengan 
       "success"
     ]
 ```
+-> `response_status` artinya Status respons dari server <br/>
+
+-> `success` artinya Operasi berhasil tanpa error <br/>
+
 
 ### [6]  service.name :
 ```
