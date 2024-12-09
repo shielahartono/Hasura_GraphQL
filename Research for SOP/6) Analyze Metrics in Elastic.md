@@ -300,7 +300,7 @@ Bagian ini menyusun ulang data dari _source untuk digunakan dalam pencarian atau
       "MyQuery"
     ]
 ```
-
+-> `MyQuery` : artinya "MyQuery" adalah 'Nama operasi GraphQL' yang dijalankan oleh klien
 
 
 ### [2] parameterized_query_hash :
@@ -309,6 +309,21 @@ Bagian ini menyusun ulang data dari _source untuk digunakan dalam pencarian atau
       "4ef3f375a154c4cf81d3f8f0d1743d568cd9be64"
     ]
 ```
+-> `parameterized_query_hash` merupakan Hash unik yang merepresentasikan isi query. <br/>
+Ini digunakan untuk mengenali query serupa yang dikirimkan berulang kali oleh klien tanpa menyimpan detailnya. <br/>
+Misalnya, Kita memiliki sebuah query (permintaan data) yang sama, tetapi dengan parameter yang berbeda-beda.  <br/><br/>
+
+-> Daripada menyimpan setiap query yang berbeda dengan parameter yang berbeda, sistem hanya akan menyimpan "Unique Hash" dari struktur query itu sendiri. <br/>
+
+-> Jadi, meskipun Parameter nya berbeda, karena struktur query-nya sama, hash-nya akan tetap sama. <br/> <br/>
+
+-> Daripada menyimpan banyak query dengan Parameter yang berbeda-beda, sistem hanya menyimpan hash-nya saja. Ini menghemat banyak ruang penyimpanan. <br/><br/>
+
+-> Sistem bisa memantau berapa sering query yang sama dipanggil. Ini berguna untuk mengetahui query mana yang lebih sering dipakai.
+<br/><br/>
+
+
+
 
 ### [3] @timestamp :
 ```
