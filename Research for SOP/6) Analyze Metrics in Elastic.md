@@ -133,6 +133,23 @@ pada Case ini, Nilai "Versi Dokumen" adalah "1", yang berarti ini adalah "Versi 
 Jika Dokumen diperbarui (misalnya jika data baru ditambahkan), maka "_version" akan meningkat  <br/> <br/>
 
 
+## 2. Informasi Utama dalam _source
+```
+ "_source": {
+    "@timestamp": "2024-12-06T08:29:13.561688326Z",
+    "data_stream": {
+      "dataset": "generic",
+      "namespace": "default",
+      "type": "metrics"
+```
+
+### [1] @timestamp :
+```
+ "@timestamp": "2024-12-06T08:29:13.561688326Z"
+```
+
+
+
 
 
 --------
