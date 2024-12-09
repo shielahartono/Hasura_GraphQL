@@ -224,6 +224,21 @@ merupakan total "GraphQL Request" yang diterima oleh Hasura
 -> `9` : 
 artinya, sejauh ini, Hasura telah menerima 9 "GraphQL Request" 
 
+### [4] Host :
+```
+ "host": {
+      "hostname": "hasura-sheila-688fb7b47c-bgdt8:8080",
+      "name": "hasura-sheila-688fb7b47c-bgdt8:8080"
+    }
+```
+-> "Host" Informasi tentang server yang memproses permintaan  <br/>
+-> `hasura-sheila-688fb7b47c-bgdt8:8080` merupakan Informasi mengenai Nama Host & Port tempat Server atau Aplikasi berjalan.   <br/>
+coba kita breakdown :  <br/>
+- Hostname : `hasura-sheila-688fb7b47c-bgdt8`
+- Port : `8080`   <br/>
+yaitu nomor port tempat Hasura GraphQL Engine menjalankan layanannya.  <br/> <br/>
+
+
 --------
 --------
 # B) Metrics yang Failed : 
