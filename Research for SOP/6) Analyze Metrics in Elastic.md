@@ -124,6 +124,16 @@ Setiap dokumen di Elasticsearch memiliki ID yang unik, seperti nomor identitas. 
 Dalam ElasticSearch, "ID Unik Dokumen" adalah "Pengidentifikasi Khusus" yang diberikan kepada setiap dokumen yang disimpan di Indeks.
  <br/>
 
+### [3] _version :
+```
+"_version": 1
+```
+ini merupakan "Versi Dokumen" dalam Indeks.  <br/>
+pada Case ini, Nilai "Versi Dokumen" adalah "1", yang berarti ini adalah "Versi Pertama Dokumen ini".  <br/>
+Jika Dokumen diperbarui (misalnya jika data baru ditambahkan), maka "_version" akan meningkat  <br/> <br/>
+
+
+
 
 --------
 --------
