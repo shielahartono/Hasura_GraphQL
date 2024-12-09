@@ -708,3 +708,38 @@ Metrik ini menunjukkan jumlah total one-off events 'yang telah diproses' oleh Ha
 
 -> `0` : <br/>
 pada case ini, Nilai `0` berarti tidak ada "one-off event" yang berhasil diproses <br/><br/>
+
+
+## 9. host :
+```
+ "host": {
+      "hostname": "hasura-sheila-688fb7b47c-bgdt8:8080",
+      "name": "hasura-sheila-688fb7b47c-bgdt8:8080"
+    }
+```
+
+
+## 10. Service :
+```
+"service": {
+      "name": "hasura"
+```
+
+
+## 11. Status : 
+```
+"status": "failed"
+```
+
+## 12. data_stream.namespace :
+```
+ "data_stream.namespace": [
+      "default"
+```
+
+## 13. data_stream.dataset :
+```
+ "data_stream.dataset": [
+      "generic"
+    ]
+```
