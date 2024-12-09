@@ -239,6 +239,15 @@ coba kita breakdown :  <br/>
 yaitu nomor port tempat Hasura GraphQL Engine menjalankan layanannya.  <br/> <br/>
 
 
+### [5]  operation_name  : 
+-> "operation_name" merupakan 'Nama operasi' GraphQL yang dijalankan.
+```
+  "operation_name": "MyQuery"
+```
+->  `MyQuery` : Operasi GraphQL yang dilakukan bernama "MyQuery"
+
+
+
 --------
 --------
 # B) Metrics yang Failed : 
