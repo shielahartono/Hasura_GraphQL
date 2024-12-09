@@ -553,7 +553,7 @@ yang mana hal ini bermanfaat agar Performa tetap baik, Penyimpanan data lebih te
 <br/><br/> <br/>
 
 
-### [2] _Id :
+## 2.  _Id :
 ```
  "_id": "kRJGm5MBatu-e5CDTqZF"
 ```
@@ -562,3 +562,76 @@ ini merupakan "ID unik dokumen" pada ElasticSearch.  <br/>
 Setiap dokumen di Elasticsearch memiliki ID yang unik, seperti nomor identitas. Ini mempermudah Elasticsearch untuk mengambil dokumen tertentu.  <br/>
 Dalam ElasticSearch, "ID Unik Dokumen" adalah "Pengidentifikasi Khusus" yang diberikan kepada setiap dokumen yang disimpan di Indeks.
  <br/>
+
+
+## 3.  _version :
+```
+"_version": 1
+```
+ini merupakan "Versi Dokumen" dalam Indeks.  <br/>
+pada Case ini, Nilai "Versi Dokumen" adalah "1", yang berarti ini adalah "Versi Pertama Dokumen ini".  <br/>
+Jika Dokumen diperbarui (misalnya jika data baru ditambahkan), maka "_version" akan meningkat  <br/> <br/>
+
+
+## 4. _source :
+
+### [1] @timestamp :
+```
+ "@timestamp": "2024-12-06T08:29:13.561688326Z"
+```
+- @timestamp merupakan "Waktu" dokumen ini dibuat.
+- pada case ini, "GraphQL Request" terjadi pada  6 Desember 2024, pukul 09:16:43 UTC
+
+
+### [2] Data Stream :
+```
+ "data_stream": {
+      "dataset": "generic",
+      "namespace": "default",
+      "type": "metrics"
+```
+Elasticsearch menggunakan data stream untuk menangani data yang terus-menerus masuk, seperti log dan metrik <br/> 
+
+"data_stream" ini merupakan informasi tentang Aliran Data. <br/>
+
+[-] `dataset` :
+```
+ "dataset": "generic"
+```
+-> `generic` menunjukkan bahwa dataset ini adalah data umum atau tidak spesifik untuk aplikasi tertentu. <br/>
+-> Data ini mungkin mencakup metrik dasar seperti penggunaan CPU, memori, atau metrik jaringan yang bisa digunakan oleh berbagai sistem. <br/>
+<br/>
+-> Contoh : <br/>
+- Jika dataset-nya adalah `nginx`, berarti datanya spesifik untuk server NGINX.  <br/>
+- Jika dataset-nya `hasura` , berarti data berasal dari aplikasi Hasura. <br/><br/>
+
+[-] `namespace` : 
+```
+"namespace": "default"
+```
+->  Namespace adalah grup atau label untuk mengelompokkan data. <br/>
+->  Pada case ini, nama "Namespace" tersebut adalah "default" <br/>
+->  `default` adalah namespace bawaan, biasanya digunakan jika Anda tidak menentukan namespace khusus saat mengirim data. <br/>
+<br/>
+-> Tujuan Penamaan Namespace : <br/>
+Membantu membedakan data berdasarkan sumber atau tujuan. <br/>
+- `default` : Kita dapat mengeetahui bahwa Data tersebut merupakan "Data metrik umum". <br/>
+- `application-logs` : Kita dapat mengeetahui bahwa Data tersebut merupakan  "Data log dari aplikasi tertentu". <br/>
+- `infrastructure` : Kita dapat mengeetahui bahwa Data tersebut merupakan  "Data dari infrastruktur server". <br/>
+
+<br/>
+
+[-] `type` : <br/>
+"type" memberitahukan "Jenis Data".
+```
+"type": "metrics"
+```
+-> Pada Case ini, jenis Data tersebut adalah "Metrics" , yang berarti data ini berisi informasi mengenai "Data Pengukuran Kinerja Sistem", seperti Waktu Response aplikasi, dan sebagainya. <br/>
+-> Pentingnya "Type" yaitu memberitahukan Informasi apa yang diberitahukan oleh Jenis Data tersebut, <br/>
+seperti : <br/>
+- `logs` : jenis data ini memberikan informasi mengenai "Data log" (rekaman aktivitas sistem).
+- `traces` : jenis data ini memberikan informasi mengenai "Data Trace yang melacak alur permintaan di dalam sistem"
+
+
+
+
