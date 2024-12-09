@@ -294,6 +294,84 @@ yang mana, Hash ini digunakan untuk mengidentifikasi operasi tertentu tanpa meny
 ## 3. Bagian Fields : 
 Bagian ini menyusun ulang data dari _source untuk digunakan dalam pencarian atau analitik. 
 
+### [1]  operation_name :
+```
+ "operation_name": [
+      "MyQuery"
+    ]
+```
+
+
+
+### [2] parameterized_query_hash :
+```
+ "parameterized_query_hash": [
+      "4ef3f375a154c4cf81d3f8f0d1743d568cd9be64"
+    ]
+```
+
+### [3] @timestamp :
+```
+"@timestamp": [
+      "2024-12-06T08:29:13.561Z"
+    ]
+```
+
+### [4]  operation_type :
+```
+ "operation_type": [
+      "query"
+    ]
+```
+
+### [5]  response_status :
+```
+"response_status": [
+      "success"
+    ]
+```
+
+### [6]  service.name :
+```
+ "service.name": [
+      "hasura"
+    ]
+```
+
+### [7] data_stream.namespace :
+```
+"data_stream.namespace": [
+      "default"
+    ]
+```
+
+### [8]  data_stream.dataset  :
+```
+"data_stream.dataset": [
+      "generic"
+    ]
+````
+
+
+### [9] host.hostname
+```
+ "host.hostname": [
+      "hasura-sheila-688fb7b47c-bgdt8:8080"
+    ]
+```
+
+### [10]  data_stream.type  :
+```
+"data_stream.type": [
+      "metrics"
+```
+
+### [11]  hasura_graphql_requests_total  :
+```
+"hasura_graphql_requests_total": [
+      9
+    ]
+```
 
 
 --------
