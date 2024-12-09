@@ -214,6 +214,16 @@ seperti : <br/>
 - `traces` : jenis data ini memberikan informasi mengenai "Data Trace yang melacak alur permintaan di dalam sistem"
 
 
+### [3] hasura_graphql_requests_total
+```
+"hasura_graphql_requests_total": 9
+```
+-> `hasura_graphql_requests_total`: 
+merupakan total "GraphQL Request" yang diterima oleh Hasura
+
+-> `9` : 
+artinya, sejauh ini, Hasura telah menerima 9 "GraphQL Request" 
+
 --------
 --------
 # B) Metrics yang Failed : 
