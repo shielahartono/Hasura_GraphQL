@@ -667,6 +667,14 @@ ini berarti tidak ada cron event yang dipanggil sejauh ini. <br/><br/>
 "hasura_cron_events_processed_total": 0
 ```
 
+-> `hasura_cron_events_processed_total` : <br/>
+Metrik ini menunjukkan jumlah total "cron events" yang telah diproses oleh Hasura. <br/>
+<br/>
+-> Setelah cron event dipanggil, Hasura bertanggung jawab untuk menjalankan atau memproses event tersebut. <br/><br/>
+
+-> `0` : <br/>
+Nilai 0 berarti tidak ada cron event yang berhasil diproses. <br/><br/>
+
 ## 7. hasura_oneoff_events_invocation_total
 ```
 "hasura_oneoff_events_invocation_total": 0
