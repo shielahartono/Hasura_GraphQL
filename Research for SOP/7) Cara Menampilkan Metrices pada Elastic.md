@@ -44,3 +44,63 @@ Sebelum itu kita melakukan Perintah Put dan juga Post dengan menggunakan Postman
 
 6. Berikut adalah contoh hasil pada bagian metrics elastic ketika dilakukan hit
 ![image](https://github.com/user-attachments/assets/d7159e6f-dc13-4acf-880a-8b7f75ede409)
+
+
+----
+----
+
+# Menganalisa Metrics di Elasticsearch
+
+## Panduan Penggunaan Elastic
+
+Kita akan mengakses GUI Elastic menggunakan Kibana. 
+  
+### 1. Login ke Kibana
+  
+Terlebih dahulu login ke kibana untuk mengakses GUI Elastic. Masuk ke endpoint elasticsearch ganti port elastic 9200 (Port Default Elastic) menjadi 5601 (Port Default Kibana) dan lalu masukkan username dan password.
+  
+![screencapture-10-100-13-25-5601-login-2024-12-06-16_17_43](https://github.com/user-attachments/assets/e7f739b8-690c-47ce-ad4d-2a5a15e68568)
+
+  
+### 2. Masuk ke Discover
+
+Setelah itu pergi ke Discover dengan cara klik `Discover` pada sidebar menu. Lebih jelasnya perhatikan gambar berikut.
+
+![Screenshot (5) (1)](https://github.com/user-attachments/assets/38c6ca93-7e31-4113-8093-3f014b3cd54a)
+  
+### 3. Filter Data View
+  
+Kita dapat memfilter data yang ditampilkan dengan klik dropdown button di sebelah button `Data view` pada pojok kiri atas. 
+
+![Screenshot (6)](https://github.com/user-attachments/assets/88a40089-da56-456c-b219-44528eac1644)
+
+### 4. Munculkan Metrics
+  
+Setelah itu, pilih metrics untuk memfilter data yang dimunculkan hanya terkhusus pada metrics, metrics yang dimaksud adalah metrics dari sistem observasi atau monitoring aplikasi, khususnya terkait penggunaan dan performa layanan Hasura GraphQL Engine. Metrics seperti ini digunakan untuk memantau aktivitas, performa, dan status sistem yang berjalan. Perhatikan gambar berikut untuk lebih jelasnya.
+
+![Screenshot (7)](https://github.com/user-attachments/assets/243118a8-cf76-4d37-9340-2045fd7f152b)
+
+### 5. Fitur Filter Metrics
+
+Kita dapat memfilter data Metrics dengan menggunakan KQL. KQL (Kibana Query Language) adalah bahasa kueri yang memungkinkan pengguna untuk membuat kueri secara cepat dan intuitif di Kibana, terutama untuk pencarian dan penyaringan data yang disimpan di Elasticsearch. Berikut panduan penggunaannya.
+  
+#### 1. Pilih kolom `Filter your data using KQL syntax`.
+     
+   ![Screenshot (7) (1)](https://github.com/user-attachments/assets/b63d3567-2253-4d55-8826-284dbe5db255)
+
+#### 2. Ketikan field atau element yang ingin dicari atau difilter
+  
+Dalam hal ini kita menfilter metrics berdasarkan `host.name` atau `nama host` yang mengacu pada identitas atau nama dari server atau pod yang menangani permintaan.  
+
+![Screenshot (8)](https://github.com/user-attachments/assets/24aeea6d-f23a-4cef-bf0d-731e035606be)
+
+  
+#### 3. Equals dan exist
+  
+Ketika selesai mengetikkan `field` atau `elemen` pada kolom filter, kolom filter akan memberikan `suggestion` antara `equals` dan `exist`.
+  
+![Screenshot (9)](https://github.com/user-attachments/assets/b9c51bff-9bb2-4338-b622-807cc2091c2c)
+
+
+---
+---
