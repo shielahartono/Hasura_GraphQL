@@ -414,6 +414,11 @@ ini berarti data tersebut adalah data umum atau generik yang tidak terikat pada 
       "hasura-sheila-688fb7b47c-bgdt8:8080"
     ]
 ```
+-> `hasura-sheila-688fb7b47c-bgdt8` = ini adalah "hostname". <br/>
+yang mana, "hostname" adalah Nama server atau container tempat aplikasi berjalan. <br/><br/>
+
+-> `8080` : ini adalah "Port". <br/>
+yang mana ini merupakan "Port" tempat server menerima koneksi <br/><br/>
 
 ### [10]  data_stream.type  :
 ```
@@ -421,12 +426,27 @@ ini berarti data tersebut adalah data umum atau generik yang tidak terikat pada 
       "metrics"
 ```
 
+-> `data_stream.type` : memberikan informasi mengenai tipe data yang dikumpulkan, yang membantu untuk mengelompokkan data sesuai dengan kategori atau fungsinya.  <br/><br/>
+
+-> `metrics` :  <br/>
+pada Case ini, kita memakai Tipe data "metrices". <br/>
+Data ini berisi pengukuran dan statistik performa atau status sistem. <br/>
+
+-> (contoh lain type) berikut ini adalah tiga kategori utama dalam Observabilitas :
+- `metrics` : Data yang berisi pengukuran dan statistik performa atau status sistem. Contoh: penggunaan CPU, memori, latensi,  throughput, dll.
+- `logs` : Data yang berisi informasi log tentang aktivitas dan kejadian dalam aplikasi atau sistem. Contoh: error logs, event logs, dll. 
+- `traces` : Data yang berisi jejak atau riwayat eksekusi dari permintaan atau proses yang berjalan dalam aplikasi, untuk melacak alur eksekusi dan interaksi antara layanan. <br/>
+
+
 ### [11]  hasura_graphql_requests_total  :
 ```
 "hasura_graphql_requests_total": [
       9
     ]
 ```
+-> `hasura_graphql_requests_total` : ini merupakan Total permintaan GraphQL (GraphQL Request) yang telah diterima oleh server Hasura pada saat log ini dihasilkan.
+
+-> `9` : artinya Server Hasura telah menerima 9 'GraphQL Request'.
 
 
 --------
