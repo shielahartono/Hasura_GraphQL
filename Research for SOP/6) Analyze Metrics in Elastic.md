@@ -95,11 +95,29 @@ Index merupakan "Nama Folder Besar" tempat dokumen ini disimpan di Elastic Searc
 <br/>
        
 [-] `generic` : <br/>
-Menandakan bahwa data ini adalah Metrik yang bersifat "Generic" atau merupakan 'Metric Umum', yakni tidak spesifik ke satu jenis aplikasi tertentu.
+Menandakan bahwa data ini adalah Metrik yang bersifat "Generic" atau merupakan 'Metric Umum', yakni tidak spesifik ke satu jenis aplikasi tertentu. <br/>
+<br/> <br/>
 
+[-] `default` :  <br/>
+ini adalah "Namespace", <br/>
+seperti Group atau Kategori dimana Data disimpan.  <br/>
+Pada case ini, nama Namespace tersebut adalah "default"  <br/><br/>
 
+[-] `2024.12.06` : <br/>
+merupakan Tanggal data dibuat. <br/>
+yang mana, pada case ini adalah "6 Desember 2024" <br/> <br/>
 
+[-] `000001`  : <br/>
+merupakan "Generasi Indeks". <br/>
+pada case ini, "Generasi Indeks" adalah "000001". <br/>
+"Generasi Indeks" digunakan untuk Mengorganisasi Data dalam jumlah besar, <br/>
+yang mana hal ini bermanfaat agar Performa tetap baik, Penyimpanan data lebih terorganisir, dan Proses Pencarian Data lebih cepat.
+<br/><br/> <br/>
 
+### [2] Id :
+```
+ "_id": "MBIam5MBatu-e5CD0VNL"
+```
 
 
 --------
