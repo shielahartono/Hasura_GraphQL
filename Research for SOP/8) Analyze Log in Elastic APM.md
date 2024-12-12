@@ -56,3 +56,7 @@ http://10.100.13.24:4318/v1/logs
 
 ![WhatsApp Image 2024-12-10 at 23 46 15_82d7c292](https://github.com/user-attachments/assets/18f1ea74-0f0c-4ceb-8619-f53c4af9c766)
 
+
+10. Pilih "Update"  <br/>
+![WhatsApp Image 2024-12-10 at 23 47 19_2be3c0d5](https://github.com/user-attachments/assets/a9a7f72d-c602-4c8e-b1d1-818c9aa51244)
+![WhatsApp Image 2024-12-10 at 23 47 19_e70fd47e](https://github.com/user-attachments/assets/56e767c2-f79b-46b2-94a7-2b4cd4c09791)
