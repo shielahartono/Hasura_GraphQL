@@ -312,8 +312,23 @@ Chart **Failed Transaction Rate** digunakan untuk memonitor persentase transaksi
 4. **Sumbu Horizontal (Waktu)**:
    - Menampilkan waktu dalam interval menit, memperlihatkan kapan transaksi gagal terjadi.
 
+5. **Garis Orange** :
+Garis Orange merupakan Representasi persentase transaksi gagal dalam waktu yang ditampilkan. <br/>
+Berdasarkan grafik di atas, Failed Transaction Rate terlihat sangat kecil, mendekati 0%.   <br/> <br/>
 
+Hal ini terlihat dari garis oranye yang hampir tidak naik dari sumbu 0% pada skala vertikal. Karena tidak ada angka spesifik yang tertulis pada grafik, kita hanya bisa mengasumsikan bahwa tingkat kegagalan ini sangat rendah, mungkin di bawah 1%.  <br/> <br/>
 
+Pada grafik, garis oranye muncul diantara waktu 20:50:00 dan 20:51:00, artinya kegagalan transaksi hanya terjadi pada waktu tersebut.  <br/>
+Tidak ada garis oranye di waktu lain, yang menunjukkan tidak ada transaksi gagal di luar waktu tersebut.  <br/> <br/>
+
+6. Area Abu-abu**:
+ **Area Abu-abu** artinya Data untuk waktu tersebut belum tersedia atau sedang menunggu pembaruan.
+
+ **Area abu-abu di bagian kanan grafik** menunjukkan:
+   - Data pada waktu tersebut (setelah 20:56:00) **tidak tersedia** atau **belum terkumpul**.
+   - Ini mungkin disebabkan karena:
+     - Grafik diambil sebelum data terbaru diproses.
+     - Waktu akhir grafik belum sampai pada waktu tersebut.
 
 
 ### Cara Membaca Chart:
