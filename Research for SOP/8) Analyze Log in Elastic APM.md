@@ -547,118 +547,124 @@ Berikut penjelasan detail dari setiap elemen yang ada dalam data tersebut:   <br
 
 
 
-### 1. **@timestamp**
-   - **"2024-12-10T14:27:41.541Z"**: 
-     - Menunjukkan waktu saat transaksi ini tercatat (dalam format UTC).
-     - Waktu ini adalah ketika transaksi terjadi di sistem.
 
-### 2. **agent.name** & **agent.version**
-   - **"otlp"**: 
-     - Menunjukkan jenis agen yang digunakan untuk mengirim data ini (dalam hal ini, menggunakan **OTLP (OpenTelemetry Protocol)**).
-   - **"unknown"**: 
-     - Versi agen tidak diketahui atau tidak dapat diidentifikasi dalam log ini.
+### 1. **@timestamp**  
+   - **"2024-12-10T14:27:41.541Z"**  
+     **Penjelasan**: Ini adalah waktu **UTC** saat transaksi ini terjadi. Waktu ini merekam kapan transaksi berlangsung dalam sistem. Dalam hal ini, transaksi terjadi pada tanggal **10 Desember 2024**, pukul **14:27:41 dan 541 milidetik**.
 
-### 3. **ecs.version**
-   - **"1.12.0"**:
-     - Versi dari **Elastic Common Schema** (ECS) yang digunakan untuk format data.
+### 2. **agent.name** & **agent.version**  
+   - **"otlp"**:  
+     **Penjelasan**: Agen yang digunakan untuk mengirim data ke Elastic APM adalah **OTLP** (OpenTelemetry Protocol). OTLP adalah protokol standar yang digunakan untuk mengirimkan data observasi (seperti transaksi dan metrik) dari aplikasi ke sistem monitoring.
+   - **"unknown"**:  
+     **Penjelasan**: Versi agen ini tidak dapat diketahui atau tidak ditentukan.
 
-### 4. **event.ingested**
-   - **"2024-12-10T14:32:36.808Z"**:
-     - Menunjukkan waktu saat data ini diproses dan dimasukkan ke dalam sistem Elastic.
+### 3. **ecs.version**  
+   - **"1.12.0"**:  
+     **Penjelasan**: Ini adalah versi dari **Elastic Common Schema (ECS)** yang digunakan. ECS adalah format standar yang dipakai oleh Elastic untuk menyimpan dan mengatur data log, sehingga data dapat lebih mudah dianalisis.
 
-### 5. **event.outcome**
-   - **"success"**:
-     - Menunjukkan bahwa transaksi ini berhasil diselesaikan.
+### 4. **event.ingested**  
+   - **"2024-12-10T14:32:36.808Z"**:  
+     **Penjelasan**: Ini adalah waktu saat data transaksi ini dimasukkan atau diproses oleh Elastic APM. Waktu ini sedikit berbeda dengan **@timestamp**, karena mencatat waktu data diproses di server APM.
 
-### 6. **labels.enduser_role**
-   - **"admin"**:
-     - Menunjukkan bahwa pengguna yang terlibat dalam transaksi ini memiliki peran **admin**.
+### 5. **event.outcome**  
+   - **"success"**:  
+     **Penjelasan**: Ini menunjukkan bahwa transaksi ini berhasil diselesaikan tanpa error. Hasil dari transaksi tersebut adalah **sukses**.
 
-### 7. **labels.graphql_operation_name**
-   - **"MyQuery"**:
-     - Nama operasi **GraphQL** yang dijalankan selama transaksi ini (dalam hal ini, sebuah query bernama "MyQuery").
+### 6. **labels.enduser_role**  
+   - **"admin"**:  
+     **Penjelasan**: Pengguna yang melakukan transaksi ini memiliki peran **admin** dalam sistem. Artinya, pengguna ini memiliki hak akses penuh untuk melakukan berbagai tindakan dalam aplikasi.
 
-### 8. **labels.http_response_content_length**
-   - **"24"**:
-     - Menunjukkan panjang konten yang dikembalikan dalam respon HTTP, dalam hal ini 24 byte.
+### 7. **labels.graphql_operation_name**  
+   - **"MyQuery"**:  
+     **Penjelasan**: Nama dari operasi **GraphQL** yang dijalankan dalam transaksi ini. **GraphQL** adalah query language untuk API, dan **MyQuery** adalah nama operasi yang dijalankan di backend.
 
-### 9. **labels.request_id**
-   - **"d0eab577-5388-4436-9edb-8695ebb2c970"**:
-     - ID unik untuk melacak permintaan ini melalui sistem.
+### 8. **labels.http_response_content_length**  
+   - **"24"**:  
+     **Penjelasan**: Ini adalah ukuran **konten respons HTTP** yang dikembalikan setelah transaksi selesai. Dalam hal ini, respons yang dikembalikan berukuran **24 byte**.
 
-### 10. **labels.session_variables**
-   - **"{\"x-hasura-role\":\"admin\"}"**:
-     - Menunjukkan variabel sesi yang terkait dengan transaksi ini. Dalam hal ini, variabel **x-hasura-role** diset ke **admin**, yang mungkin mengindikasikan hak akses atau peran pengguna dalam sistem.
+### 9. **labels.request_id**  
+   - **"d0eab577-5388-4436-9edb-8695ebb2c970"**:  
+     **Penjelasan**: Ini adalah ID unik yang digunakan untuk melacak permintaan (request) ini di seluruh sistem. Setiap request yang dikirim akan memiliki ID unik untuk memudahkan pencarian atau pemantauan.
 
-### 11. **observer.ephemeral_id**
-   - **"f1168f81-ff63-485a-a3de-7bad197ee4f4"**:
-     - ID sementara untuk mengidentifikasi **observer** yang mencatat transaksi ini.
+### 10. **labels.session_variables**  
+   - **"{\"x-hasura-role\":\"admin\"}"**:  
+     **Penjelasan**: Ini adalah variabel sesi yang berisi informasi tambahan tentang transaksi. Dalam hal ini, variabel **x-hasura-role** menunjukkan bahwa peran pengguna di sistem adalah **admin**.
 
-### 12. **observer.hostname**
-   - **"worker1.k8s.alldataint.com"**:
-     - Nama host dari server atau **worker** yang menjalankan aplikasi ini di lingkungan Kubernetes.
+### 11. **observer.ephemeral_id**  
+   - **"f1168f81-ff63-485a-a3de-7bad197ee4f4"**:  
+     **Penjelasan**: Ini adalah ID sementara yang digunakan untuk mengidentifikasi **observer** yang mencatat transaksi ini. Observer ini mengawasi dan mencatat data transaksi.
 
-### 13. **observer.id**
-   - **"4fa9447e-2492-4e9b-af43-0977fa67cb28"**:
-     - ID unik dari observer yang mencatat transaksi ini.
+### 12. **observer.hostname**  
+   - **"worker1.k8s.alldataint.com"**:  
+     **Penjelasan**: Nama host dari **worker** (server) yang menjalankan aplikasi ini dalam lingkungan **Kubernetes**. Host ini bertanggung jawab atas pemrosesan transaksi.
 
-### 14. **observer.type** & **observer.version**
-   - **"apm-server"** & **"7.17.18"**:
-     - Tipe observer ini adalah **APM Server** (server untuk menangani data aplikasi) dan versinya adalah **7.17.18**.
+### 13. **observer.id**  
+   - **"4fa9447e-2492-4e9b-af43-0977fa67cb28"**:  
+     **Penjelasan**: ID unik yang digunakan untuk mengidentifikasi observer ini dalam sistem.
 
-### 15. **processor.event** & **processor.name**
-   - **"transaction"**:
-     - Menunjukkan bahwa data ini adalah transaksi, bukan jenis event lainnya (seperti error).
+### 14. **observer.type** & **observer.version**  
+   - **"apm-server"** & **"7.17.18"**:  
+     **Penjelasan**: Jenis observer ini adalah **APM Server** yang memproses data transaksi aplikasi. Versi APM Server yang digunakan adalah **7.17.18**.
 
-### 16. **service.framework.name** & **service.framework.version**
-   - **"hasura"** & **"v2.42.0"**:
-     - Framework yang digunakan adalah **Hasura** (platform untuk mengembangkan aplikasi GraphQL secara real-time), dan versinya adalah **v2.42.0**.
+### 15. **processor.event** & **processor.name**  
+   - **"transaction"**:  
+     **Penjelasan**: Ini menandakan bahwa data yang tercatat adalah tentang **transaksi** (bukan error atau jenis event lain).
+  
+### 16. **service.framework.name** & **service.framework.version**  
+   - **"hasura"** & **"v2.42.0"**:  
+     **Penjelasan**: Framework yang digunakan oleh aplikasi ini adalah **Hasura** (platform untuk membangun aplikasi GraphQL secara real-time), dengan versi **v2.42.0**.
 
-### 17. **service.language.name**
-   - **"unknown"**:
-     - Bahasa yang digunakan dalam aplikasi ini tidak diketahui atau tidak dapat diidentifikasi.
+### 17. **service.language.name**  
+   - **"unknown"**:  
+     **Penjelasan**: Bahasa pemrograman yang digunakan dalam aplikasi ini tidak diketahui atau tidak teridentifikasi dalam log ini.
 
-### 18. **service.name**
-   - **"hasura"**:
-     - Nama layanan yang tercatat adalah **Hasura**.
+### 18. **service.name**  
+   - **"hasura"**:  
+     **Penjelasan**: Nama layanan yang tercatat adalah **Hasura**, platform backend untuk API GraphQL.
 
-### 19. **timestamp.us**
-   - **1733840861541105**:
-     - Menunjukkan timestamp dalam **mikrodetik** untuk transaksi ini.
+### 19. **timestamp.us**  
+   - **1733840861541105**:  
+     **Penjelasan**: Timestamp dalam **mikrodetik** yang menunjukkan waktu pasti dari transaksi ini.
 
-### 20. **trace.id**
-   - **"27148b955db232089406bbf2a8ce0196"**:
-     - ID unik untuk melacak transaksi ini melalui seluruh sistem.
+### 20. **trace.id**  
+   - **"27148b955db232089406bbf2a8ce0196"**:  
+     **Penjelasan**: ID unik untuk melacak **trace** ini di seluruh sistem. Trace ini berfungsi untuk menghubungkan berbagai transaksi yang saling terkait dalam alur kerja yang lebih besar.
 
-### 21. **transaction.duration.us**
-   - **1073**:
-     - Durasi transaksi dalam **mikrodetik**. Dalam hal ini, transaksi ini membutuhkan **1073 mikrodetik** (atau 1.073 milidetik) untuk diselesaikan.
+### 21. **transaction.duration.us**  
+   - **1073**:  
+     **Penjelasan**: Durasi transaksi ini adalah **1073 mikrodetik** (atau sekitar 1.073 milidetik). Artinya, transaksi ini selesai dalam waktu yang sangat singkat.
 
-### 22. **transaction.id**
-   - **"d38652ae50be0b52"**:
-     - ID unik untuk transaksi ini.
+### 22. **transaction.id**  
+   - **"d38652ae50be0b52"**:  
+     **Penjelasan**: ID unik untuk transaksi ini, digunakan untuk melacak transaksi tersebut dalam sistem.
 
-### 23. **transaction.name** & **transaction.name.text**
-   - **"/v1/graphql"**:
-     - Nama endpoint yang dijalankan selama transaksi ini. Dalam hal ini, endpoint yang dipanggil adalah **/v1/graphql**, yang mungkin menunjukkan query GraphQL.
+### 23. **transaction.name** & **transaction.name.text**  
+   - **"/v1/graphql"**:  
+     **Penjelasan**: Nama endpoint yang dijalankan dalam transaksi ini. Endpoint yang dipanggil adalah **/v1/graphql**, yang menunjukkan bahwa transaksi ini adalah operasi GraphQL.
 
-### 24. **transaction.result**
-   - **"Success"**:
-     - Transaksi ini berhasil tanpa adanya error.
+### 24. **transaction.result**  
+   - **"Success"**:  
+     **Penjelasan**: Hasil transaksi ini adalah **berhasil**, yang berarti tidak ada error yang terjadi saat transaksi berlangsung.
 
-### 25. **transaction.sampled**
-   - **true**:
-     - Menunjukkan bahwa transaksi ini telah disample (dimonitoring) untuk analisis lebih lanjut.
+### 25. **transaction.sampled**  
+   - **true**:  
+     **Penjelasan**: Data ini disample untuk dianalisis lebih lanjut. Artinya, data transaksi ini dimonitor untuk analisis lebih dalam mengenai kinerja aplikasi.
 
-### 26. **transaction.type**
-   - **"custom"**:
-     - Jenis transaksi ini adalah **custom**, yang berarti transaksi ini tidak standar atau mungkin dikategorikan secara khusus.
+### 26. **transaction.type**  
+   - **"custom"**:  
+     **Penjelasan**: Jenis transaksi ini adalah **custom**, artinya ini adalah transaksi yang dikategorikan khusus oleh sistem, mungkin transaksi yang tidak standar atau unik bagi aplikasi.
 
-### 27. **_id** & **_index**
-   - **"d3L8sJMB2LTZdF1KegbI"** & **"apm-7.17.18-transaction-000001"**:
-     - ID dokumen dan indeks tempat data ini disimpan dalam ElasticSearch.
+### 27. **_id** & **_index**  
+   - **"d3L8sJMB2LTZdF1KegbI"** & **"apm-7.17.18-transaction-000001"**:  
+     **Penjelasan**: Ini adalah **ID dokumen** dan **indeks** tempat data transaksi disimpan dalam **ElasticSearch**, tempat Elastic APM menyimpan semua data observasi.
 
 
 
-### Kesimpulan:
-Transaksi ini menunjukkan sebuah operasi **GraphQL** yang berhasil dijalankan di aplikasi **Hasura**. Waktu yang diperlukan untuk menyelesaikan transaksi ini adalah **1073 mikrodetik**. Semua informasi terkait variabel sesi, peran pengguna, dan metadata lainnya tercatat dengan baik, dan transaksi ini berhasil tanpa adanya error.
+### **Kesimpulan:**
+Transaksi ini merekam operasi GraphQL yang terjadi pada aplikasi **Hasura**, yang berlangsung sangat cepat (dengan durasi hanya **1.073 milidetik**). Transaksi ini berhasil tanpa error dan melibatkan pengguna dengan peran **admin**. Semua data terkait transaksi tercatat dengan baik, termasuk informasi sesi dan variabel terkait.
+
+>> ^For your Information^
+>> "transaction.duration.us": [1073]     -> artinya : Durasi Transaksi selama 1.073 milidetik   <br/> <br/>
+>> 
+>> "labels.enduser_role": ["admin"]	 -> artinya : Transaksi ini melibatkan User dengan Role "admin"
+
