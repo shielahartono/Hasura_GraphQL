@@ -66,3 +66,27 @@ http://10.100.13.24:4318/v1/logs
 -----
 # B) Tutorial Setting di Hasura Rancher & Hit di Postman 500 kali
 
+
+1. Buka Postman <br/>
+![WhatsApp Image 2024-12-10 at 22 14 59_83468103](https://github.com/user-attachments/assets/666f343b-8ca3-438d-bb5b-15941c63d6f2)
+
+2. Pilih Post <br/>
+![WhatsApp Image 2024-12-10 at 22 29 35_95579548](https://github.com/user-attachments/assets/d58540b5-72b8-4bd4-8acd-e1ed735ebde7)
+![WhatsApp Image 2024-12-10 at 22 27 45_db879c99](https://github.com/user-attachments/assets/60be369e-ebe9-4a06-8498-79a573e171e3)
+
+
+3. bagian Endpoint pada Postman, kita copy dari Endpoint paling atas pada Hasura Console (Hasura yang ada di Rancher)  <br/>
+![WhatsApp Image 2024-12-10 at 22 33 14_f921d3b7](https://github.com/user-attachments/assets/40d0cebf-7af6-4901-82e7-ab876463a9ab)
+
+
+4. pada bagian "Headers" di Postman, kita tambahkan Password Hasura  <br/>
+![WhatsApp Image 2024-12-10 at 22 36 09_fc635dd9](https://github.com/user-attachments/assets/3d6f2122-7227-4095-a9a1-17bd958c4d81)
+
+dengan menambahkan 
+- pada "Key" : x-hasura-admin-secret
+- pada "Value" : rahasia123
+
+(rahasia123 merupakan Password untuk masuk ke Hasura)  <br/>
+
+![WhatsApp Image 2024-12-10 at 22 38 05_2c4c99a3](https://github.com/user-attachments/assets/4ae242ba-afa8-4497-98aa-86b74b48ac83)
+
