@@ -151,3 +151,11 @@ dapat kita lihat pada bagian kanan, status nya "200 OK" yang berarti semuanya be
 ![WhatsApp Image 2024-12-10 at 23 09 23_d252f919](https://github.com/user-attachments/assets/7e6a75b3-8866-4f82-be01-2b4eac562342)
 
 
+12. kemudian kita Connect ke VPN, dan kita buka URL Elastic APM pada Browser.
+Berikut ini URL nya :
+http://10.100.13.25:5601/app/apm/services
+
+untuk masuk halaman Elastic APM, kita  masukkan Username & Password untuk Elastic APM
+
+![WhatsApp Image 2024-12-10 at 23 17 21_87ecf99a](https://github.com/user-attachments/assets/388f64f7-c091-4f63-a06e-8f35a49ba063)
+
