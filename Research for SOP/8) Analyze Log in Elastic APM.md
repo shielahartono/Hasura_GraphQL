@@ -163,6 +163,7 @@ untuk masuk halaman Elastic APM, kita  masukkan Username & Password untuk Elasti
 -------
 
 # C) Analisa Log pada Web "Elastic APM"
+(APM = Application Performance Monitoring) <br/>
 
 1. Tampilan APM saat kita membuka menggunakan URL Berikut ini :  <br/>
 http://10.100.13.25:5601/app/apm/services
@@ -184,6 +185,16 @@ kemudian kita scroll kebawah
 ![WhatsApp Image 2024-12-10 at 21 00 52_bdadfef9](https://github.com/user-attachments/assets/e15c1dce-153c-4f20-b5ac-5d270a3460af)
 
 <...lakukan analisa>
+
+## (1) Chart "Throughput" pada Elastic APM (App):
+![image](https://github.com/user-attachments/assets/9663f807-6896-487a-a962-0e863e640746)
+
+Throughput mengukur jumlah transaksi atau Request yang diproses oleh aplikasi dalam jangka waktu tertentu (Pada case ini adalah menit).  <br/>
+satuan untuk Throughput adalah "tpm", yaitu transaksi per menit. <br/>
+<br/>
+Grafik membantu memahami intensitas Request yang diterima. <br/>
+
+
 
 5. Failed Transaction Rate  <br/>
 ![WhatsApp Image 2024-12-10 at 21 01 41_6e22c6c9](https://github.com/user-attachments/assets/74e3ab39-aa09-40cd-aac9-0e80cf2415eb)
