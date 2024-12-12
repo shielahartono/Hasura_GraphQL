@@ -120,3 +120,9 @@ dengan menambahkan
 
 ![WhatsApp Image 2024-12-10 at 22 56 31_46d3f346](https://github.com/user-attachments/assets/69eb4ece-eacb-4eaf-ac7b-c449b9280946)
 
+
+9. Pilih "Run Collection"  <br/>
+![WhatsApp Image 2024-12-10 at 23 01 33_dd628278](https://github.com/user-attachments/assets/2c1a6fde-474e-4c4c-9876-85c6520777b5)
+
+![WhatsApp Image 2024-12-10 at 22 58 56_856874c6](https://github.com/user-attachments/assets/15a9c368-4906-4ac5-a46d-7ddc10c0a0b0)
+
