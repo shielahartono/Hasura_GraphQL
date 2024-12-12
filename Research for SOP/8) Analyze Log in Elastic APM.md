@@ -105,4 +105,12 @@ dengan menambahkan
 ![WhatsApp Image 2024-12-10 at 22 52 08_01ded351](https://github.com/user-attachments/assets/2aef9a55-33dc-4cfc-89b3-789d9e2ef06f)
 
 
+6. Pada Postman, kita Pilih Send untuk Hit 1 kali <br/>
+![WhatsApp Image 2024-12-10 at 22 52 37_3530732e](https://github.com/user-attachments/assets/b1fe9cf9-f99f-47c6-9fd8-4a8b3fbf35c5)
+
+
+7. Pada Postman, kita Pilih "Save" pada bagian atas  <br/>
+![WhatsApp Image 2024-12-10 at 22 53 57_9e395c6f](https://github.com/user-attachments/assets/db9b2e8e-d591-4fec-9d16-705111477c59)
+
+![WhatsApp Image 2024-12-10 at 22 53 58_36e9fb16](https://github.com/user-attachments/assets/d3e4bc80-6c79-456f-a582-403b968e9b4f)
 
