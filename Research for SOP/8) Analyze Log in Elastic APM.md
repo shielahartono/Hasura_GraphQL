@@ -184,7 +184,7 @@ kemudian kita scroll kebawah
 4. Latency & Throughput <br/>
 ![WhatsApp Image 2024-12-10 at 21 00 52_bdadfef9](https://github.com/user-attachments/assets/e15c1dce-153c-4f20-b5ac-5d270a3460af)
 
-<...lakukan analisa>
+
 
 ## (1) Chart "Throughput" pada Elastic APM (App):
 ![image](https://github.com/user-attachments/assets/9663f807-6896-487a-a962-0e863e640746)
@@ -236,6 +236,57 @@ Pada grafik ini, garis tersebut tidak terlihat jelas, kemungkinan karena through
 
 ## (2) Chart "Latency" pada Elastic APM (App):
 ![image](https://github.com/user-attachments/assets/d930bbbc-f408-4542-bc90-1c18c630e693)
+
+
+
+### **Apa itu Latency?**
+Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaksi atau permintaan, biasanya diukur dalam **milidetik (ms)**. Latensi rendah menunjukkan bahwa aplikasi memproses permintaan dengan cepat, sedangkan latensi tinggi bisa menjadi tanda adanya bottleneck atau masalah performa. <br/>
+(semakin kecil Latency, maka semakin baik) <br/>
+
+
+
+### **Cara Membaca Grafik**
+1. **Sumbu X (Horizontal):**
+   Menunjukkan waktu, yaitu dari pukul **20:45 hingga 20:55**.
+
+2. **Sumbu Y (Vertikal):**
+   Menunjukkan latensi rata-rata dalam milidetik (**ms**) pada waktu tertentu, dengan skala dari **0 ms hingga 1.0 ms**.
+
+3. **Garis Biru Tua (Average):**
+   Menunjukkan rata-rata waktu yang diperlukan untuk menyelesaikan satu transaksi selama periode waktu tertentu.  
+   - Pada grafik ini, rata-rata latensi stabil di sekitar **1.0 ms** di rentang waktu tertentu.
+
+4. **Garis Biru Muda (Day Before):**
+   Mewakili latensi pada waktu yang sama **hari sebelumnya**. Garis ini tidak terlihat, yang kemungkinan menunjukkan tidak ada data pembanding atau latensi hari sebelumnya sangat kecil.
+
+
+
+### **Pola yang Ditunjukkan**
+- **Latensi Stabil:** Grafik menunjukkan bahwa rata-rata latensi tetap stabil di sekitar **1.0 ms** selama waktu yang ditampilkan.
+- **Data Terbatas:** Grafik hanya mencakup beberapa titik waktu (mungkin karena pengambilan data diatur per interval tertentu atau aktivitas rendah).
+
+
+
+### **Mengapa Penting?**
+Grafik latensi digunakan untuk:
+1. **Monitoring Kinerja Aplikasi:**  
+   Memastikan aplikasi memproses permintaan dengan cepat.
+   
+2. **Identifikasi Masalah:**  
+   Jika latensi tiba-tiba meningkat, itu bisa menunjukkan adanya bottleneck, overload, atau kegagalan sistem tertentu.
+
+3. **Analisis Tren:**  
+   Membandingkan performa hari ini dengan hari sebelumnya untuk mendeteksi degradasi atau peningkatan kinerja.
+
+
+
+### **Apa yang Bisa Dilakukan?**
+- **Jika Latensi Stabil:**  
+  Artinya aplikasi bekerja dengan baik. Pastikan untuk terus memantau agar tidak ada perubahan signifikan.
+
+- **Jika Latensi Naik:**  
+  - Lakukan analisis mendalam untuk mencari tahu penyebab lonjakan, seperti query lambat, beban tinggi, atau masalah infrastruktur.
+  - Optimalkan database, aplikasi, atau layanan terkait.
 
 
 
