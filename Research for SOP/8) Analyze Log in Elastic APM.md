@@ -564,7 +564,13 @@ Berikut penjelasan detail dari setiap elemen yang ada dalam data tersebut:   <br
 
 ### 4. **event.ingested**  
    - **"2024-12-10T14:32:36.808Z"**:  
-     **Penjelasan**: Ini adalah waktu saat data transaksi ini dimasukkan atau diproses oleh Elastic APM. Waktu ini sedikit berbeda dengan **@timestamp**, karena mencatat waktu data diproses di server APM.
+     **Penjelasan**:waktu event.ingested menunjukkan kapan data tersebut diterima dan diproses oleh server APM. Waktu ini sedikit berbeda dengan **@timestamp**, karena mencatat waktu data diproses di server APM.
+
+     Waktu event.ingested yang tercatat dalam log, seperti "2024-12-10T14:32:36.808Z", adalah waktu ketika data transaksi diproses atau dimasukkan ke dalam server APM (Application Performance Monitoring) oleh sistem Elastic APM.
+
+Pencatatan waktu ini dilakukan oleh APM Server, yang merupakan komponen yang mengumpulkan, memproses, dan menyimpan data dari aplikasi yang dipantau. APM Server berfungsi untuk menerima data dari agen yang terpasang pada aplikasi (seperti agen OTLP yang disebutkan dalam log ), memproses data tersebut, dan mengirimkannya ke penyimpanan backend (seperti ElasticSearch).
+
+Jadi, APM Server yang bertanggung jawab untuk mencatat waktu saat data transaksi dimasukkan ke dalam sistem Elastic APM, tepatnya pada elemen event.ingested.
 
 ### 5. **event.outcome**  
    - **"success"**:  
@@ -661,7 +667,7 @@ Berikut penjelasan detail dari setiap elemen yang ada dalam data tersebut:   <br
 
 
 ### **Kesimpulan:**
-Transaksi ini merekam operasi GraphQL yang terjadi pada aplikasi **Hasura**, yang berlangsung sangat cepat (dengan durasi hanya **1.073 milidetik**). Transaksi ini berhasil tanpa error dan melibatkan pengguna dengan peran **admin**. Semua data terkait transaksi tercatat dengan baik, termasuk informasi sesi dan variabel terkait.
+Transaksi ini merekam operasi GraphQL yang terjadi pada aplikasi **Hasura**, yang berlangsung dengan durasi  **1.073 milidetik**. Transaksi ini berhasil tanpa error dan melibatkan pengguna dengan peran **admin**.
 
 >> ^For your Information^
 >> "transaction.duration.us": [1073]     -> artinya : Durasi Transaksi selama 1.073 milidetik   <br/> <br/>
