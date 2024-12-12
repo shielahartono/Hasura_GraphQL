@@ -230,3 +230,109 @@ Setelah itu, tampilannya seperti berikut ini : <br/>
 Lalu kita click "Copy Value"  <br/>
 ![WhatsApp Image 2024-12-10 at 21 52 13_9392190f](https://github.com/user-attachments/assets/8d6c7eca-8395-4cc8-8100-aaaf8c030f51)
 
+
+12. Kemudian kita analisa Log yang sudah kita lakukan "Copy Value" tadi :
+
+```
+{
+  "@timestamp": [
+    "2024-12-10T14:27:41.541Z"
+  ],
+  "agent.name": [
+    "otlp"
+  ],
+  "agent.version": [
+    "unknown"
+  ],
+  "ecs.version": [
+    "1.12.0"
+  ],
+  "event.ingested": [
+    "2024-12-10T14:32:36.808Z"
+  ],
+  "event.outcome": [
+    "success"
+  ],
+  "labels.enduser_role": [
+    "admin"
+  ],
+  "labels.graphql_operation_name": [
+    "MyQuery"
+  ],
+  "labels.http_response_content_length": [
+    "24"
+  ],
+  "labels.request_id": [
+    "d0eab577-5388-4436-9edb-8695ebb2c970"
+  ],
+  "labels.session_variables": [
+    "{\"x-hasura-role\":\"admin\"}"
+  ],
+  "observer.ephemeral_id": [
+    "f1168f81-ff63-485a-a3de-7bad197ee4f4"
+  ],
+  "observer.hostname": [
+    "worker1.k8s.alldataint.com"
+  ],
+  "observer.id": [
+    "4fa9447e-2492-4e9b-af43-0977fa67cb28"
+  ],
+  "observer.type": [
+    "apm-server"
+  ],
+  "observer.version": [
+    "7.17.18"
+  ],
+  "observer.version_major": [
+    7
+  ],
+  "processor.event": [
+    "transaction"
+  ],
+  "processor.name": [
+    "transaction"
+  ],
+  "service.framework.name": [
+    "hasura"
+  ],
+  "service.framework.version": [
+    "v2.42.0"
+  ],
+  "service.language.name": [
+    "unknown"
+  ],
+  "service.name": [
+    "hasura"
+  ],
+  "timestamp.us": [
+    1733840861541105
+  ],
+  "trace.id": [
+    "27148b955db232089406bbf2a8ce0196"
+  ],
+  "transaction.duration.us": [
+    1073
+  ],
+  "transaction.id": [
+    "d38652ae50be0b52"
+  ],
+  "transaction.name": [
+    "/v1/graphql"
+  ],
+  "transaction.name.text": [
+    "/v1/graphql"
+  ],
+  "transaction.result": [
+    "Success"
+  ],
+  "transaction.sampled": [
+    true
+  ],
+  "transaction.type": [
+    "custom"
+  ],
+  "_id": "d3L8sJMB2LTZdF1KegbI",
+  "_index": "apm-7.17.18-transaction-000001",
+  "_score": null
+}
+```
