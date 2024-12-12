@@ -60,3 +60,9 @@ http://10.100.13.24:4318/v1/logs
 10. Pilih "Update"  <br/>
 ![WhatsApp Image 2024-12-10 at 23 47 19_2be3c0d5](https://github.com/user-attachments/assets/a9a7f72d-c602-4c8e-b1d1-818c9aa51244)
 ![WhatsApp Image 2024-12-10 at 23 47 19_e70fd47e](https://github.com/user-attachments/assets/56e767c2-f79b-46b2-94a7-2b4cd4c09791)
+
+
+-----
+-----
+# B) Tutorial Setting di Hasura Rancher & Hit di Postman 500 kali
+
