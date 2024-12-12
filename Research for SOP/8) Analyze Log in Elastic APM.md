@@ -164,3 +164,17 @@ untuk masuk halaman Elastic APM, kita  masukkan Username & Password untuk Elasti
 
 # C) Analisa Log pada Web "Elastic APM"
 
+1. Tampilan APM saat kita membuka menggunakan URL Berikut ini :  <br/>
+http://10.100.13.25:5601/app/apm/services
+
+![WhatsApp Image 2024-12-10 at 20 56 00_ebd32a27](https://github.com/user-attachments/assets/44dc24ea-ea9a-4738-8445-992fb88529ea)
+
+2. Kemudian pilih ini : <br/>
+![WhatsApp Image 2024-12-10 at 20 56 57_6ede799d](https://github.com/user-attachments/assets/a11cc6f1-4e4d-4751-b617-b8b5c330d721)
+
+![WhatsApp Image 2024-12-10 at 20 56 58_23b7375f](https://github.com/user-attachments/assets/95af26a3-043b-4901-8528-17162ada58de)
+
+3. Kemudian Berikut ini tampilannya : <br/>
+![WhatsApp Image 2024-12-10 at 20 58 43_472b7157](https://github.com/user-attachments/assets/355ccec1-9ef2-496f-9a6f-89d7971622d8)
+
+4. 
