@@ -207,6 +207,23 @@ Versi Zooom :   <br/>
 ![WhatsApp Image 2024-12-10 at 21 09 03_f942f897](https://github.com/user-attachments/assets/420f3845-4447-4161-8af9-1af6b898920a)
 ![WhatsApp Image 2024-12-10 at 21 09 03_3dc195b4](https://github.com/user-attachments/assets/0d151c32-89f3-4977-8ab1-1406bc2df5a1)
 
+<...lakukan analisa>
 
 
+8. Pilih Investigate  <br/>
 
+![WhatsApp Image 2024-12-10 at 21 16 58_b723d7a5](https://github.com/user-attachments/assets/88df7da3-10f4-485f-a2a7-0be876bff305)
+![WhatsApp Image 2024-12-10 at 21 16 58_c69d3ea1](https://github.com/user-attachments/assets/738219b2-8241-4b75-9774-1e341f3b96a3)
+
+
+9. kemudian Pilih "View Transactions in Discover"   <br/>
+![image](https://github.com/user-attachments/assets/46a99b63-1991-4449-b668-70eb0a936e7b)
+
+Setelah itu, tampilannya seperti berikut ini : <br/>
+![WhatsApp Image 2024-12-10 at 21 48 53_a2c5711a](https://github.com/user-attachments/assets/d27faf1c-8b03-490b-984f-9cc258c1d017)
+
+10. Kemudian Perbesar bagian ini :  <br/>
+![WhatsApp Image 2024-12-10 at 21 50 44_3b6dffcf](https://github.com/user-attachments/assets/667ef829-5884-47d9-9175-231874e11afa)
+![WhatsApp Image 2024-12-10 at 21 50 44_b7bdb8a2](https://github.com/user-attachments/assets/368170aa-7f07-4295-b1ce-d432c3b56164)
+
+11. 
