@@ -159,3 +159,8 @@ untuk masuk halaman Elastic APM, kita  masukkan Username & Password untuk Elasti
 
 ![WhatsApp Image 2024-12-10 at 23 17 21_87ecf99a](https://github.com/user-attachments/assets/388f64f7-c091-4f63-a06e-8f35a49ba063)
 
+-------
+-------
+
+# C) Analisa Log pada Web "Elastic APM"
+
