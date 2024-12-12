@@ -669,7 +669,7 @@ Jadi, APM Server yang bertanggung jawab untuk mencatat waktu saat data transaksi
 ### **Kesimpulan:**
 Transaksi ini merekam operasi GraphQL yang terjadi pada aplikasi **Hasura**, yang berlangsung dengan durasi  **1.073 milidetik**. Transaksi ini berhasil tanpa error dan melibatkan pengguna dengan peran **admin**.
 
->> ^For your Information^
+>> ^For your Information^  <br/>
 >> "transaction.duration.us": [1073]     -> artinya : Durasi Transaksi selama 1.073 milidetik   <br/> <br/>
 >> 
 >> "labels.enduser_role": ["admin"]	 -> artinya : Transaksi ini melibatkan User dengan Role "admin"
