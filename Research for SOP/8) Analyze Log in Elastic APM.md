@@ -139,3 +139,15 @@ kita masukkan 500 untuk Hit sebanyak 500 kali  <br/>
 
 11. kemudian Pilih "Tombol Orange" untuk menjalankan Hit    <br/>
 (ada di Pojok kanan bagian bawah)
+
+
+12. Kemudian akan muncul Tampilan seperti ini  <br/>
+![WhatsApp Image 2024-12-10 at 23 06 14_5d77c8c8](https://github.com/user-attachments/assets/e1786756-61e6-42dd-bf78-efbbcc1ab76c)
+
+Berikut ini Tampilan jika kita sudah berhasil Hit di Postman :  <br/>
+![WhatsApp Image 2024-12-10 at 23 08 23_aedf43eb](https://github.com/user-attachments/assets/b875bfa8-75f3-47df-9bec-f901bc28035e)
+
+dapat kita lihat pada bagian kanan, status nya "200 OK" yang berarti semuanya berjalan dengan baik :  <br/>
+![WhatsApp Image 2024-12-10 at 23 09 23_d252f919](https://github.com/user-attachments/assets/7e6a75b3-8866-4f82-be01-2b4eac562342)
+
+
