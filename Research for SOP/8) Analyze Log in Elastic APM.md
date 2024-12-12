@@ -302,8 +302,7 @@ Chart **Failed Transaction Rate** digunakan untuk memonitor persentase transaksi
 4. **Sumbu Horizontal (Waktu)**:
    - Menampilkan waktu dalam interval menit, memperlihatkan kapan transaksi gagal terjadi.
 
-5. **Blok Area Bayangan di Akhir**:
-   - Indikator bahwa data tidak tersedia (atau belum terkumpul) untuk waktu setelah 20:56:00.
+
 
 
 
