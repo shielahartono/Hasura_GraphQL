@@ -12,5 +12,17 @@
 ![WhatsApp Image 2024-12-10 at 23 23 35_118e6581](https://github.com/user-attachments/assets/96e81bb5-37a8-4139-a980-911cd792fdcf)
 
 
-3. Pilih "Service Discovery"
+3. Pilih "Service Discovery"  <br/>
 ![WhatsApp Image 2024-12-10 at 23 27 38_0b472612](https://github.com/user-attachments/assets/62ff10ce-31b4-45da-9733-9f955883435b)
+
+
+4. Pilih "Services" <br/>
+![WhatsApp Image 2024-12-10 at 23 28 01_8e7a56d5](https://github.com/user-attachments/assets/71c79d6c-a465-4be6-8996-ac0337deaeff)
+
+
+5. Click Value pada bagian "Target" . <br/>
+   
+kemudian ini akan mengarahkan kita ke "Hasura Console" <br/>
+![WhatsApp Image 2024-12-10 at 23 33 17_8042e43d](https://github.com/user-attachments/assets/86daab14-2d70-416f-b8bb-205227eb188e)
+<br/>
+![WhatsApp Image 2024-12-10 at 23 28 34_8f9fbd87](https://github.com/user-attachments/assets/5e7910fe-d915-493b-9a23-e36e4eebf478)
