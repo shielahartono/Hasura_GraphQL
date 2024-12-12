@@ -177,4 +177,32 @@ http://10.100.13.25:5601/app/apm/services
 3. Kemudian Berikut ini tampilannya : <br/>
 ![WhatsApp Image 2024-12-10 at 20 58 43_472b7157](https://github.com/user-attachments/assets/355ccec1-9ef2-496f-9a6f-89d7971622d8)
 
-4. 
+
+kemudian kita scroll kebawah
+
+4. Latency & Throughput <br/>
+![WhatsApp Image 2024-12-10 at 21 00 52_bdadfef9](https://github.com/user-attachments/assets/e15c1dce-153c-4f20-b5ac-5d270a3460af)
+
+<...lakukan analisa>
+
+5. Failed Transaction Rate  <br/>
+![WhatsApp Image 2024-12-10 at 21 01 41_6e22c6c9](https://github.com/user-attachments/assets/74e3ab39-aa09-40cd-aac9-0e80cf2415eb)
+
+<...lakukan analisa>
+
+6. Trace Samples  <br/>
+![WhatsApp Image 2024-12-10 at 21 03 39_69c45b17](https://github.com/user-attachments/assets/8c4afa1d-8a36-44e2-8283-e3ec414a6fa4)
+
+Versi Zooom :   <br/>
+![WhatsApp Image 2024-12-10 at 21 03 39_e1903e11](https://github.com/user-attachments/assets/18aaa347-650b-4c26-a5ef-3cb240a499e9)
+
+<...lakukan analisa>
+
+7. Pilih Tab yang ada di Sebelahnya, yaitu Tab Metadata  <br/>
+![WhatsApp Image 2024-12-10 at 21 09 01_f3607140](https://github.com/user-attachments/assets/edb494bb-aac0-4dbf-8a6a-b33c02e050b8)
+![WhatsApp Image 2024-12-10 at 21 09 01_ccb440f4](https://github.com/user-attachments/assets/7ea0d156-e37f-43ff-8647-0394e88a73d5)
+
+![WhatsApp Image 2024-12-10 at 21 09 02_498631da](https://github.com/user-attachments/assets/fdf066db-eb5e-4a23-804d-f7d8a2b9b6b4)
+
+
+
