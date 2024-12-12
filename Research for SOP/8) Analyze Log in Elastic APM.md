@@ -90,3 +90,19 @@ dengan menambahkan
 
 ![WhatsApp Image 2024-12-10 at 22 38 05_2c4c99a3](https://github.com/user-attachments/assets/4ae242ba-afa8-4497-98aa-86b74b48ac83)
 
+
+5. Kemudian pada bagian "Body" di Postman, kita masukkan Query darI Hasura Console  <br/>
+(masukkan Query nya dengan cara Copy & Paste)  <br/>
+(Hasura Console = Hasura yang ada di Rancher)  <br/>
+
+![WhatsApp Image 2024-12-10 at 22 42 46_8f372fc7](https://github.com/user-attachments/assets/c373b703-c999-4e89-b4f2-130920e8541a)
+
+- Berikut ini adalah tampilan  "Body" pada Postman yang sudah diberikan Query :
+![WhatsApp Image 2024-12-10 at 22 45 03_7e936b17](https://github.com/user-attachments/assets/5fd8ac46-9c1f-43cf-ab70-e761ebc33504)
+
+- sebelummya, kita perlu Copy Query ini dari Hasura Console, kemudian Paste ke Postman pada bagian "Body"
+![WhatsApp Image 2024-12-10 at 22 52 08_491a7221](https://github.com/user-attachments/assets/a928a113-5f39-4016-929d-30d6569e0b61)
+![WhatsApp Image 2024-12-10 at 22 52 08_01ded351](https://github.com/user-attachments/assets/2aef9a55-33dc-4cfc-89b3-789d9e2ef06f)
+
+
+
