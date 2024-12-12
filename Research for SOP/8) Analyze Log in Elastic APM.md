@@ -384,8 +384,6 @@ Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaks
      - **100% of trace**: Persentase cakupan trace yang telah tercatat untuk transaksi tersebut.
 
 
----
-
 ### Cara Membaca Chart:
 1. **Identifikasi Distribusi Latensi**:
    Pada Grafik diatas, dapat kita ketahui, bahwa :
@@ -397,15 +395,12 @@ Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaks
    - Anda dapat menggunakan nilai ini untuk menetapkan ambang batas performa sistem.
 
 
-
----
-
 ### Kesimpulan:
 - Grafik ini menunjukkan bahwa mayoritas transaksi memiliki latensi rendah dan performa sistem umumnya baik.
 - Transaksi dengan latensi tinggi (lebih dari 6 ms) sangat jarang.
 - Untuk memastikan kinerja optimal, Anda dapat fokus pada analisis transaksi dengan latensi di atas garis **95p**.
   (Maksudnya kita perlu fokus pada transaksi dengan latensi yang lebih tinggi dari garis 95p (persentil ke-95).)
-
+<br/><br/><br/>
 
 7. Pilih Tab yang ada di Sebelahnya, yaitu Tab Metadata  <br/>
 ![WhatsApp Image 2024-12-10 at 21 09 01_f3607140](https://github.com/user-attachments/assets/edb494bb-aac0-4dbf-8a6a-b33c02e050b8)
