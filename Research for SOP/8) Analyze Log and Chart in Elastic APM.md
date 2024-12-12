@@ -1,4 +1,4 @@
-# Analyze Log in Elastic APM 
+# Analyze Log & Chart in Elastic APM 
 
 ---
 ---
