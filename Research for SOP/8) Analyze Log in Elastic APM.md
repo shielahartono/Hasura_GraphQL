@@ -126,3 +126,16 @@ dengan menambahkan
 
 ![WhatsApp Image 2024-12-10 at 22 58 56_856874c6](https://github.com/user-attachments/assets/15a9c368-4906-4ac5-a46d-7ddc10c0a0b0)
 
+
+10. Pada bagian "Iteration" masukkan angka sesuai jumlah berapa banyak kita ingin lakukan "Hit". <br/>
+Misalnya: <br/>
+kita masukkan 500 untuk Hit sebanyak 500 kali  <br/>
+![WhatsApp Image 2024-12-10 at 23 03 42_7262a10d](https://github.com/user-attachments/assets/2b3115da-49cd-4856-abc8-415faf681ea0)
+
+![WhatsApp Image 2024-12-10 at 23 02 01_54bf8cae](https://github.com/user-attachments/assets/eb765daf-fbec-4f91-beb8-ff9291b0df96)
+
+![WhatsApp Image 2024-12-10 at 23 04 02_adddecf3](https://github.com/user-attachments/assets/113c5017-52a2-4284-8d5b-c16d62b1c2a0)
+
+
+11. kemudian Pilih "Tombol Orange" untuk menjalankan Hit    <br/>
+(ada di Pojok kanan bagian bawah)
