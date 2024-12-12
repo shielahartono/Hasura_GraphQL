@@ -354,13 +354,58 @@ Tidak ada garis oranye di waktu lain, yang menunjukkan tidak ada transaksi gagal
 
 
 
-6. Trace Samples  <br/>
+6. Latency Distribution :   <br/>
 ![WhatsApp Image 2024-12-10 at 21 03 39_69c45b17](https://github.com/user-attachments/assets/8c4afa1d-8a36-44e2-8283-e3ec414a6fa4)
 
 Versi Zooom :   <br/>
 ![WhatsApp Image 2024-12-10 at 21 03 39_e1903e11](https://github.com/user-attachments/assets/18aaa347-650b-4c26-a5ef-3cb240a499e9)
 
-<...lakukan analisa>
+## (1) Chart untuk "Latency Distribution"
+Chart tersebut menampilkan **Latency Distribution** dari 500 transaksi dalam sistem. Berikut penjelasannya:
+
+1. **Latency Distribution**:
+   - Grafik ini menunjukkan distribusi latensi atau waktu yang diperlukan untuk menyelesaikan transaksi.
+   - **Sumbu X (Latency)**:
+     - Menampilkan latensi dalam mikrodetik (µs) hingga milidetik (ms), dari nilai terkecil hingga terbesar.
+   - **Sumbu Y (Transactions)**:
+     - Menunjukkan jumlah transaksi pada setiap rentang latensi.
+   - **Titik Puncak Histogram**:
+     - Menunjukkan nilai latensi yang paling sering terjadi (moda).
+   - **Garis Hijau "95p"**:
+     - Ini adalah persentil ke-95, yang berarti 95% transaksi memiliki latensi **lebih rendah** dari nilai ini. 
+     - Dengan kata lain, hanya 5% transaksi yang memiliki latensi **lebih tinggi** dari nilai ini.
+
+2. **Trace Sample**:
+   - Informasi tambahan mengenai salah satu transaksi dari total 500 transaksi:
+     - **8 minutes ago**: Waktu transaksi terakhir yang diproses (8 menit yang lalu).
+     - **1.2 ms**: Durasi atau latensi transaksi yang sedang ditampilkan.
+     - **100% of trace**: Persentase cakupan trace yang telah tercatat untuk transaksi tersebut.
+
+3. **Interaktivitas**:
+   - Anda dapat **"Click and drag to select a range"** untuk menyaring transaksi berdasarkan rentang latensi tertentu. Misalnya, Anda dapat mempelajari transaksi yang memiliki latensi tinggi.
+
+---
+
+### Cara Membaca Chart:
+1. **Identifikasi Distribusi Latensi**:
+   - Sebagian besar transaksi berada di bagian awal grafik, di sekitar **1 ms hingga 2 ms**, yang menunjukkan sistem memproses transaksi dengan cepat.
+   - Hanya sedikit transaksi yang memiliki latensi tinggi (di atas 6 ms), seperti terlihat pada histogram yang menurun tajam di sisi kanan.
+
+2. **Perhatikan Garis "95p"**:
+   - Garis hijau menunjukkan batas **95%** transaksi, yang berarti hanya 5% transaksi yang lebih lambat dari latensi ini.
+   - Anda dapat menggunakan nilai ini untuk menetapkan ambang batas performa sistem.
+
+3. **Analisis Transaksi Individual**:
+   - Bagian **Trace Sample** memungkinkan Anda meninjau detail transaksi individual, termasuk waktu dan durasi latensi.
+
+---
+
+### Kesimpulan:
+- Grafik ini menunjukkan bahwa mayoritas transaksi memiliki latensi rendah dan performa sistem umumnya baik.
+- Transaksi dengan latensi tinggi (lebih dari 6 ms) sangat jarang.
+- Untuk memastikan kinerja optimal, Anda dapat fokus pada analisis transaksi dengan latensi di atas garis **95p**.
+
+
 
 7. Pilih Tab yang ada di Sebelahnya, yaitu Tab Metadata  <br/>
 ![WhatsApp Image 2024-12-10 at 21 09 01_f3607140](https://github.com/user-attachments/assets/edb494bb-aac0-4dbf-8a6a-b33c02e050b8)
