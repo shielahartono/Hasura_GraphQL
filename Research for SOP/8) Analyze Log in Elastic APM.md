@@ -196,6 +196,49 @@ Grafik membantu memahami intensitas Request yang diterima. <br/>
 
 
 
+### **Cara Membaca Grafik**
+1. **Sumbu X (Horizontal):**  
+   Menunjukkan waktu (jam dan menit). Dalam grafik ini, datanya mencakup rentang waktu singkat sekitar pukul **20:40 hingga 20:50**.
+
+2. **Sumbu Y (Vertikal):**  
+   Menunjukkan jumlah transaksi per menit (**tpm**). Nilainya berkisar dari **0 hingga 400 tpm**.
+
+3. **Garis Hijau Tua (Throughput):**  
+   Mewakili jumlah transaksi per menit yang diproses pada waktu tertentu.  
+   - Grafik ini menunjukkan adanya puncak throughput sekitar pukul **20:50**, yang berarti aplikasi memproses **hampir 400 transaksi per menit** pada waktu itu.
+
+4. **Garis Hijau Muda (Day Before):**  
+   Mewakili throughput pada waktu yang sama **hari sebelumnya** (jika ada data pembanding untuk hari sebelumnya).  <br/>
+Pada grafik ini, garis tersebut tidak terlihat jelas, kemungkinan karena throughput hari sebelumnya sangat kecil atau tidak ada data pembanding.
+
+
+
+### **Pola yang Ditunjukkan**
+- Ada lonjakan tajam throughput di sekitar pukul **20:50**, yang kemudian cepat turun kembali mendekati **0 tpm**.
+- Hal ini menunjukkan bahwa aplikasi memproses transaksi dalam jumlah besar pada satu waktu tertentu, kemudian aktivitas menurun drastis.
+
+
+
+### Grafik ini digunakan untuk:
+
+   
+1. **Menganalisis Pola Penggunaan:**  
+   Memahami kapan lonjakan aktivitas terjadi (misalnya, pada waktu tertentu atau selama event khusus).
+
+2. **Mengidentifikasi Anomali:**  
+   Jika throughput tiba-tiba melonjak tinggi atau terlalu rendah dibandingkan biasanya, bisa jadi tanda adanya masalah atau perubahan pola penggunaan.
+
+
+- **Jika terjadi Lonjakan Tidak Normal:**  
+  - Cek apakah ada kejadian yang menyebabkan Load (beban) tidak terduga 
+  - Optimalkan aplikasi untuk menangani lonjakan throughput.
+
+
+## (2) Chart "Latency" pada Elastic APM (App):
+![image](https://github.com/user-attachments/assets/d930bbbc-f408-4542-bc90-1c18c630e693)
+
+
+
 5. Failed Transaction Rate  <br/>
 ![WhatsApp Image 2024-12-10 at 21 01 41_6e22c6c9](https://github.com/user-attachments/assets/74e3ab39-aa09-40cd-aac9-0e80cf2415eb)
 
