@@ -114,3 +114,9 @@ dengan menambahkan
 
 ![WhatsApp Image 2024-12-10 at 22 53 58_36e9fb16](https://github.com/user-attachments/assets/d3e4bc80-6c79-456f-a582-403b968e9b4f)
 
+
+8. Pada Postman, Pilih "titik tiga " (pada sebelah kiri)   <br/>
+![WhatsApp Image 2024-12-10 at 22 56 31_3afe6f3d](https://github.com/user-attachments/assets/7c2bc229-dda0-4d5b-97f3-5ab8003667ab)
+
+![WhatsApp Image 2024-12-10 at 22 56 31_46d3f346](https://github.com/user-attachments/assets/69eb4ece-eacb-4eaf-ac7b-c449b9280946)
+
