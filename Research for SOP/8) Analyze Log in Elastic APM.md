@@ -252,13 +252,6 @@ Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaks
 2. **Sumbu Y (Vertikal):**
    Menunjukkan latensi rata-rata dalam milidetik (**ms**) pada waktu tertentu, dengan skala dari **0 ms hingga 1.0 ms**.
 
-3. **Garis Biru Tua (Average):**
-   Menunjukkan rata-rata waktu yang diperlukan untuk menyelesaikan satu transaksi selama periode waktu tertentu.  
-   - Pada grafik ini, rata-rata latensi stabil di sekitar **1.0 ms** di rentang waktu tertentu.
-
-4. **Garis Biru Muda (Day Before):**
-   Mewakili latensi pada waktu yang sama **hari sebelumnya**. Garis ini tidak terlihat, yang kemungkinan menunjukkan tidak ada data pembanding atau latensi hari sebelumnya sangat kecil.
-
 
 
 ### **Pola yang Ditunjukkan**
