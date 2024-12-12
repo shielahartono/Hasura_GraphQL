@@ -285,7 +285,50 @@ Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaks
 5. Failed Transaction Rate  <br/>
 ![WhatsApp Image 2024-12-10 at 21 01 41_6e22c6c9](https://github.com/user-attachments/assets/74e3ab39-aa09-40cd-aac9-0e80cf2415eb)
 
-<...lakukan analisa>
+
+Chart **Failed Transaction Rate** digunakan untuk memonitor persentase transaksi yang gagal dalam sistem kita.
+
+### Penjelasan Elemen Chart:
+1. **Failed Transaction Rate (Avg.)**: 
+   - Garis (atau bar) berwarna **oranye** mewakili rata-rata persentase transaksi yang gagal pada waktu tertentu.
+
+2. **Day Before**:
+   - Garis tambahan (jika ada) menunjukkan data pembanding, yaitu persentase transaksi gagal **pada hari sebelumnya**.
+
+3. **Sumbu Vertikal (0% - 100%)**:
+   - Menunjukkan tingkat kegagalan transaksi dalam persentase. 
+   - 0% berarti tidak ada transaksi yang gagal, sedangkan 100% berarti semua transaksi dalam periode tersebut gagal.
+
+4. **Sumbu Horizontal (Waktu)**:
+   - Menampilkan waktu dalam interval menit, memperlihatkan kapan transaksi gagal terjadi.
+
+5. **Blok Area Bayangan di Akhir**:
+   - Indikator bahwa data tidak tersedia (atau belum terkumpul) untuk waktu setelah 20:56:00.
+
+
+
+### Cara Membaca Chart:
+1. **Lihat Waktu Terjadinya Kegagalan**:
+   - Dari chart ini, kegagalan hanya tercatat pada **20:50:00**.
+   - Setelah itu, tidak ada laporan kegagalan hingga 20:56:00 (area kosong).
+
+2. **Evaluasi Skala Kegagalan**:
+   - Persentase kegagalan (Failed Transaction Rate) pada 20:50:00 terlihat sangat rendah, mendekati **0%** (hampir tidak signifikan).
+   - Tidak ada kegagalan besar atau lonjakan berarti pada periode lainnya.
+
+3. **Bandingkan dengan Hari Sebelumnya**:
+   - Karena tidak terlihat garis pembanding untuk **Day Before**, artinya data ini hanya berlaku untuk hari ini.
+
+
+
+### Interpretasi Data:
+- **Sistem Anda Stabil**:
+   - Hampir seluruh transaksi berjalan dengan lancar. Hanya ada kegagalan kecil pada 20:50:00.
+- **Tidak Ada Masalah Besar**:
+   - Grafik ini menunjukkan performa sistem cukup baik, dengan tingkat kegagalan mendekati nol sepanjang waktu yang ditampilkan.
+
+
+
 
 6. Trace Samples  <br/>
 ![WhatsApp Image 2024-12-10 at 21 03 39_69c45b17](https://github.com/user-attachments/assets/8c4afa1d-8a36-44e2-8283-e3ec414a6fa4)
