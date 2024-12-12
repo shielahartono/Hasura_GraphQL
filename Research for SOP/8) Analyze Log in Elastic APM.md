@@ -259,7 +259,7 @@ Garis biru tua ini menunjukkan bahwa latensi rata-rata aplikasi berada di sekita
 ![image](https://github.com/user-attachments/assets/08b66afe-8d8e-494b-b5de-de481b066b9f)
 
 4. **Warna Abu-abu**
-- Rentang Waktu dengan Data Belum Final (Partial Data):
+- Rentang Waktu dengan Data Belum Final (Partial Data): <br/>
 Area abu-abu sering menunjukkan bahwa data untuk waktu tersebut belum sepenuhnya terkumpul atau diproses, sehingga belum tersedia metrik final untuk latensi. Ini terjadi jika data dikumpulkan dalam interval tertentu dan waktu akhir grafik mencakup periode yang sedang berlangsung. <br/>
 ![image](https://github.com/user-attachments/assets/d43490e5-e3c8-4029-8a24-dd311ec95cfc)
 
