@@ -226,4 +226,7 @@ Setelah itu, tampilannya seperti berikut ini : <br/>
 ![WhatsApp Image 2024-12-10 at 21 50 44_3b6dffcf](https://github.com/user-attachments/assets/667ef829-5884-47d9-9175-231874e11afa)
 ![WhatsApp Image 2024-12-10 at 21 50 44_b7bdb8a2](https://github.com/user-attachments/assets/368170aa-7f07-4295-b1ce-d432c3b56164)
 
-11. 
+11. Kemudian akan muncul Log seperti ini, <br/>
+Lalu kita click "Copy Value"  <br/>
+![WhatsApp Image 2024-12-10 at 21 52 13_9392190f](https://github.com/user-attachments/assets/8d6c7eca-8395-4cc8-8100-aaaf8c030f51)
+
