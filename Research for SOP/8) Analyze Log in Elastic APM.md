@@ -252,6 +252,16 @@ Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaks
 2. **Sumbu Y (Vertikal):**
    Menunjukkan latensi rata-rata dalam milidetik (**ms**) pada waktu tertentu, dengan skala dari **0 ms hingga 1.0 ms**.
 
+3. **Garis Biru Tua**
+nilai Latency pada gambar di atas ditunjukkan oleh garis biru tua. Garis tersebut merepresentasikan latensi rata-rata (Average Latency) pada waktu tertentu dalam rentang yang ditampilkan di sumbu X (horizontal).
+
+Garis biru tua ini menunjukkan bahwa latensi rata-rata aplikasi berada di sekitar 1.0 ms selama rentang waktu yang diukur (sekitar pukul 20:50). Karena garisnya datar dan stabil, ini mengindikasikan bahwa latensi rata-rata tidak mengalami fluktuasi signifikan selama periode tersebut.
+![image](https://github.com/user-attachments/assets/08b66afe-8d8e-494b-b5de-de481b066b9f)
+
+4. **Warna Abu-abu**
+- Rentang Waktu dengan Data Belum Final (Partial Data):
+Area abu-abu sering menunjukkan bahwa data untuk waktu tersebut belum sepenuhnya terkumpul atau diproses, sehingga belum tersedia metrik final untuk latensi. Ini terjadi jika data dikumpulkan dalam interval tertentu dan waktu akhir grafik mencakup periode yang sedang berlangsung.
+![image](https://github.com/user-attachments/assets/d43490e5-e3c8-4029-8a24-dd311ec95cfc)
 
 
 ### **Pola yang Ditunjukkan**
