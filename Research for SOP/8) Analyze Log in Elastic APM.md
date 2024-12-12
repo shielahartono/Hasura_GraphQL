@@ -231,7 +231,8 @@ Lalu kita click "Copy Value"  <br/>
 ![WhatsApp Image 2024-12-10 at 21 52 13_9392190f](https://github.com/user-attachments/assets/8d6c7eca-8395-4cc8-8100-aaaf8c030f51)
 
 
-12. Kemudian kita analisa Log yang sudah kita lakukan "Copy Value" tadi :
+12. Kemudian kita analisa Log yang sudah kita lakukan "Copy Value" tadi. <br/>
+ini merupakan Log dari "Elastic APM" :
 
 ```
 {
@@ -336,3 +337,5 @@ Lalu kita click "Copy Value"  <br/>
   "_score": null
 }
 ```
+
+<...lakukan analisa>
