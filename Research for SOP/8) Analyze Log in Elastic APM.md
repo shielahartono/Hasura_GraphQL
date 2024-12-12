@@ -26,3 +26,19 @@ kemudian ini akan mengarahkan kita ke "Hasura Console" <br/>
 ![WhatsApp Image 2024-12-10 at 23 33 17_8042e43d](https://github.com/user-attachments/assets/86daab14-2d70-416f-b8bb-205227eb188e)
 <br/>
 ![WhatsApp Image 2024-12-10 at 23 28 34_8f9fbd87](https://github.com/user-attachments/assets/5e7910fe-d915-493b-9a23-e36e4eebf478)
+
+
+6. Berikut ini Tampilan "Hasura Console"  <br/>
+![WhatsApp Image 2024-12-10 at 23 34 03_63277967](https://github.com/user-attachments/assets/f5aeeb9c-f9bb-4312-a96d-1846d062facf)
+
+7. Pilih "Settings" pada bagian kanan atas <br/>
+![WhatsApp Image 2024-12-10 at 23 35 50_ae0acf18](https://github.com/user-attachments/assets/59e45dc8-af47-47ec-8fe1-b12387b57890)
+
+
+8. Pilih "Open Telemetry Exporter" <br/>
+![WhatsApp Image 2024-12-10 at 23 37 30_2f3ee44a](https://github.com/user-attachments/assets/1702537f-7dac-41b5-a886-b851fe8b5917)
+<br/>
+![WhatsApp Image 2024-12-10 at 23 36 29_8328416b](https://github.com/user-attachments/assets/bbf0d142-36f4-4218-a319-cc07a4d45c96)
+
+
+
