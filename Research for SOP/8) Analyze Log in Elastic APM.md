@@ -41,4 +41,18 @@ kemudian ini akan mengarahkan kita ke "Hasura Console" <br/>
 ![WhatsApp Image 2024-12-10 at 23 36 29_8328416b](https://github.com/user-attachments/assets/bbf0d142-36f4-4218-a319-cc07a4d45c96)
 
 
+9. kita ganti dengan Endpoint 10.100.13.24  
+<br/>
+yakni menjadi seperti ini :  <br/>
+
+- Traces Endpoint : 
+http://10.100.13.24:4318/v1/traces
+
+- Metrics Endpoint :
+http://10.100.13.24:4318/v1/metrics
+
+- Logs Endpoint :
+http://10.100.13.24:4318/v1/logs
+
+![WhatsApp Image 2024-12-10 at 23 46 15_82d7c292](https://github.com/user-attachments/assets/18f1ea74-0f0c-4ceb-8619-f53c4af9c766)
 
