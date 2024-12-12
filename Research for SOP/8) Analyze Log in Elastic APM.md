@@ -260,8 +260,7 @@ Latency adalah waktu rata-rata yang diperlukan untuk menyelesaikan satu transaks
 
 
 
-### **Mengapa Penting?**
-Grafik latensi digunakan untuk:
+### Grafik latensi digunakan untuk:
 1. **Monitoring Kinerja Aplikasi:**  
    Memastikan aplikasi memproses permintaan dengan cepat.
    
