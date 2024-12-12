@@ -37,7 +37,7 @@ kemudian ini akan mengarahkan kita ke "Hasura Console" <br/>
 
 8. Pilih "Open Telemetry Exporter" <br/>
 ![WhatsApp Image 2024-12-10 at 23 37 30_2f3ee44a](https://github.com/user-attachments/assets/1702537f-7dac-41b5-a886-b851fe8b5917)
-<br/>
+
 ![WhatsApp Image 2024-12-10 at 23 36 29_8328416b](https://github.com/user-attachments/assets/bbf0d142-36f4-4218-a319-cc07a4d45c96)
 
 
