@@ -1,4 +1,4 @@
-# Connect SQL Server to Hasura V2
+![image](https://github.com/user-attachments/assets/90c89b4e-d504-4942-a7b2-787f20612d79)# Connect SQL Server to Hasura V2
 
 Kita ingin menghubungkan "SQL Server" ke Hasura Version 2.  <br/>   <br/>
 
@@ -53,6 +53,46 @@ Buka Aplikasi "SQL Server" pada VM Mas Muji.
 
 Connect ke VPN, kemudian buka Rancher. <br/>
 Setelah itu kita buka "Hasura Console" pada Rancheer <br/>
+
+![image](https://github.com/user-attachments/assets/c2e41d9e-12a0-4e79-addd-38141f2d9351)
+
+### 1) Pilih Tab "Data"
+![image](https://github.com/user-attachments/assets/697202fd-17f7-4f64-a11b-aae0a49ca44a)  <br/>
+![image](https://github.com/user-attachments/assets/89bf6d52-df2a-48a9-9855-5f1567323bfd)   <br/>
+
+### 2) Pilih "Connect Database"
+![image](https://github.com/user-attachments/assets/76be21e4-4ed4-43c7-bd48-0cddc01926e7)  <br/>
+![image](https://github.com/user-attachments/assets/754559a9-887b-4730-a292-9637c447ab4a)
+
+
+### 3) Pilih "MS SQL Server"
+![image](https://github.com/user-attachments/assets/cf5420b6-1779-4a67-ab81-f48bba90c2a4)  <br/>
+![image](https://github.com/user-attachments/assets/9b9d50ee-b0f1-4968-83cc-15234f20a7ff)
+
+
+### 4) Pilih "Connect Existing Database"
+![image](https://github.com/user-attachments/assets/9f8a48fc-8755-450e-9585-23722fd2eb72)
+
+
+### 5) Masukkan "Database Name"
+![image](https://github.com/user-attachments/assets/9c2f4b32-6625-4b88-8d85-3e618d1bac9b)
+![image](https://github.com/user-attachments/assets/11815879-51f7-4c3c-b288-6de239d189f2)
+
+### 6) Pilih "Database URL" pada bagian "Connect Database via"
+![image](https://github.com/user-attachments/assets/4af6da3d-892b-443d-ab07-51c89e374134)
+
+### 7) Masukkan "Database URL" untuk connect ke SQL Server padam VM Mas Muji (pada Server lain tempat "SQL Server" berada)
+![image](https://github.com/user-attachments/assets/ee61569d-bd02-4ac8-9b43-9ad842ba9b56)
+Berikut ini adalah "Database URL" yang kita masukkan 
+```
+Driver={ODBC Driver 18 for SQL Server};Server=10.100.13.167,1433;Database=tempdb;Uid=sql_admin;Pwd=password;Encrypt=optional
+```
+Note :
+bagian "pwd" (untuk Password) diatas, tidak kami tuliskan Password asli yang digunakan. <br/>
+Password asli tidak bisa kami tuliskan disini berhubung ini adalah Github untuk Public. <br/>
+bagian "pwd" dapat kita tuliskan dengan Password yang kita gunakan untuk Login "SQL Server" di VM Mas Muji (atau di Server lainnya tempat "SQL Server" berada) <br/>
+
+
 
 
 
