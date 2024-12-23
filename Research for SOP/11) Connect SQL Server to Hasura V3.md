@@ -203,6 +203,115 @@ Kemudian nanti akan terbuka "Hasura Console" (untuk versi V3)
 
 ![WhatsApp Image 2024-12-23 at 09 47 39_8ccf83c7](https://github.com/user-attachments/assets/de072af1-0b55-4935-a8fc-773f931e2fe8)
 
+------
+## B. Connect "SQL Server" ke Hasura V3
+
+### 1) Buka Powershell
+
+### 2) Ketik `wsl` kemudian tekan Enter
+`wsl`
+![image](https://github.com/user-attachments/assets/17f28ec6-75cb-46e3-a167-113e1253f457)   <br/>
+
+Note :  <br/>
+`wsl` harus sudah  di-install pada Powershell
+
+### 3) jalankan Command untuk "Install DDN CLI"
+```
+curl -L https://graphql-engine-cdn.hasura.io/ddn/cli/v4/get.sh | bash
+```
+
+### 4) Jalankan Command `ddn doctor`
+```
+ddn doctor
+```
+![image](https://github.com/user-attachments/assets/3049fbc5-b6e5-4665-b64d-661c1639caad)
+
+
+
+### 5) Jalankan Command `ddn auth login`
+```
+ddn auth login
+```
+![image](https://github.com/user-attachments/assets/10d781fb-c977-4f18-b584-9f1ca1449740)
+
+- `ddn auth login` merupakan authentikasi untuk login ke ddn cli
+
+Nanti akan muncul Browser yang meminta kita untuk Login, setelah itu, akan muncul tampilan pada Browser seperti ini :  <br/>
+![image](https://github.com/user-attachments/assets/e7a8f7d4-9e43-461a-87bf-c3b188cc4144)
+
+
+### 6) Jalankan Command `ddn supergraph init mysupergraph` dan `cd mysupergraph`
+```
+ddn supergraph init mysupergraph
+cd mysupergraph
+```
+Lalu nanti pilih "PostgreSQL"
+![image](https://github.com/user-attachments/assets/947e7ef6-2a1e-4600-b433-f7b4bf3351d6)
+
+
+
+### 7) Jalankan Command `ddn connector init my_connector -i`
+```
+ddn connector init my_connector -i
+```
+
+
+
+### 8) Jalankan Command `ddn connector introspect my_connector`
+```
+ddn connector introspect my_connector
+```
+![image](https://github.com/user-attachments/assets/469f92c4-7cb8-4939-873f-f00cf3343faa)
+
+Nanti akan diminta untuk kita masukkan "Database URI" untuk SQL Server,  <br/>
+berikut ini Database URI nya : <br/>
+```
+Server=10.100.13.167;Database=sql_admin_db;User Id=sql_admin;Password=password;TrustServerCertificate=true;
+```
+note : Password diatas tidak menggunakan Password asli yang kita gunakan 
+
+
+
+### 9) Jalankan Command untuk "Add Resources"
+```
+ddn model add my_connector '*'
+ddn command add my_connector '*'
+ddn relationship add my_connector '*'
+```
+![image](https://github.com/user-attachments/assets/e6a747c6-c199-4502-bc8e-eceaa8cab989)
+![image](https://github.com/user-attachments/assets/25f97416-f681-4ded-97d1-c2278a7eb0d6)
+![image](https://github.com/user-attachments/assets/a3686f12-842b-4610-92eb-0eef3a5864be)
+
+
+### 10) Jalankan command `ddn supergraph build local`
+```
+ddn supergraph build local
+```
+![image](https://github.com/user-attachments/assets/07048c2b-2857-42b5-8e63-9640a1f4282d)
+
+
+
+### 11) Jalankan Command `ddn run docker-start`
+```
+ddn run docker-start
+```
+Note : jika command ini tidak berhenti dalam waktu yang cukup lama, maka kita buka Terminal Powershell baru untuk menjalankan Command berikutnya
+
+![image](https://github.com/user-attachments/assets/35db4ba6-99b8-429f-a351-10963664c669)
+
+
+
+
+### 11) Jalankan Command `ddn console --local`
+```
+ddn console --local
+```
+![image](https://github.com/user-attachments/assets/7c673c7e-3447-410f-9e13-0daa3d31256a)
+
+Kemudian nanti akan terbuka "Hasura Console" (untuk versi V3)
+![WhatsApp Image 2024-12-23 at 09 47 38_2f61f491](https://github.com/user-attachments/assets/01a992e6-5689-424f-b2a3-2eebbce7d5b2)
+
+![WhatsApp Image 2024-12-23 at 09 47 39_8ccf83c7](https://github.com/user-attachments/assets/de072af1-0b55-4935-a8fc-773f931e2fe8)
 
 
 ------------------
