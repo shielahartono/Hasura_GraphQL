@@ -95,13 +95,20 @@ bagian "pwd" dapat kita tuliskan dengan Password yang kita gunakan untuk Login "
 
 ### 8) Pilih "Connect Database"
 Pilih "Connect Database" pada bagian bawah  <br/>
-![image](https://github.com/user-attachments/assets/f0fa1b78-1167-4ea3-8be0-9fcd58d3827d)
+![image](https://github.com/user-attachments/assets/f0fa1b78-1167-4ea3-8be0-9fcd58d3827d)   <br/>
 
 
 
 
+------
+## D) Hit Query pada "Hasura Console"
 
+Setelah, "SQL Server" berhasil dihubungkan ke Hasura V2 (Version 2), <br/>
+lalu kita coba Hit Query pada "Hasura Console". <br/>
+![image](https://github.com/user-attachments/assets/039b9643-ec07-4090-b7c4-7283632216f0)
+<br/>
+Click tombol "Play" :
+![image](https://github.com/user-attachments/assets/54830360-ea77-43b6-b04b-383dc05eeba4)
 
-
-
+![image](https://github.com/user-attachments/assets/4a1000c9-5e9f-472f-b179-3cf3c6e9d33a)
 
