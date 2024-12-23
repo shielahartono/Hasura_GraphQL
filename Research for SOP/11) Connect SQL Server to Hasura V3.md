@@ -67,6 +67,7 @@ Jika memiliki konteks spesifik (misalnya, platform atau sistem tertentu di mana 
 ddn supergraph init mysupergraph
 cd mysupergraph
 ```
+Lalu nanti pilih "PostgreSQL"
 ![image](https://github.com/user-attachments/assets/947e7ef6-2a1e-4600-b433-f7b4bf3351d6)
 
 
@@ -125,6 +126,50 @@ Setelah konektor berhasil diatur, konfigurasi akan otomatis disimpan dalam proye
 ```
 ddn connector introspect my_connector
 ```
+![image](https://github.com/user-attachments/assets/469f92c4-7cb8-4939-873f-f00cf3343faa)
+
+`ddn connector introspect my_connector` dalam konteks Hasura Data Delivery Network (DDN) digunakan untuk memeriksa atau mengintrospeksi connector tertentu yang sudah diatur. Proses ini memungkinkan Anda untuk memahami skema, tabel, atau sumber data yang terkait dengan konektor tersebut.
+
+### 9) Jalankan Command untuk "Add Resources"
+```
+ddn model add my_connector '*'
+ddn command add my_connector '*'
+ddn relationship add my_connector '*'
+```
+![image](https://github.com/user-attachments/assets/e6a747c6-c199-4502-bc8e-eceaa8cab989)
+![image](https://github.com/user-attachments/assets/25f97416-f681-4ded-97d1-c2278a7eb0d6)
+![image](https://github.com/user-attachments/assets/a3686f12-842b-4610-92eb-0eef3a5864be)
+
+Command tersebut untuk menambahkan resources Model, Command, dan Relationship.
+
+connector_sql adalah fitur yang membuat DDN bisa terhubung ke database SQL.
+Dengan connector_sql , DDN bisa membaca, menulis, atau mengambil data dari database SQL.
+
+
+1) ddn model add connector_sql '*'  		
+-> menambahkan Model bernama connector_sql
+-> command ini penting untuk memberitahu DDN bahwa ia harus bisa terhubung ke database SQL. 
+Tanpa perintah ini, DDN tidak akan tahu cara membaca data dari database SQL.
+
+
+2) ddn command add connector_sql '*'		
+-> menambahkan Command yang berkaitan dengan connector_sql
+-> Command ini digunakan untuk menambahkan semua perintah yang diperlukan oleh model connector_sql. 
+yang mana, ini memberikan kemampuan kepada connector_sql untuk menjalankan berbagai tugas atau operasi di database SQL.
+-> Tanpa command "ddn command add connector_sql '*'"  ,  Model hanya bisa "melihat" database, tapi tidak bisa membaca atau mengubah isinya.
+
+-> Contoh :
+Dengan command ini, Model bisa membaca data, menambah data baru, atau menghapus data lama.
+
+3) ddn relationship add connector_sql '*'		
+-> menambahkan Relationship untuk connector_sql
+-> Command ini digunakan untuk menambahkan semua hubungan (relationship) yang diperlukan oleh model connector_sql agar bisa berinteraksi dengan model lain dalam sistem DDN.
+-> Command ini membuat connector_sql bisa berbagi data atau berkomunikasi dengan model-model lain di dalam DDN.
+-> Tanpa Relationship ini, connector_sql hanya bisa bekerja sendiri. Misalnya, dia bisa mengambil data dari database SQL, tapi tidak bisa memberikan data itu ke model lain yang membutuhkannya.
+-> Relationship ini penting agar data yang diambil dari database SQL bisa diproses, digunakan, atau disebarkan ke seluruh sistem. 
+Tanpa Realtionship ini, data tidak akan  berguna untuk model lain.
+
+
 
 ------------------
 ------------------
