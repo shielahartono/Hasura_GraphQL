@@ -52,7 +52,7 @@ Buka Aplikasi "SQL Server" pada VM Mas Muji.
 ## C. Buka "Hasura Console" (untuk Hasura V2) Pada Rancher
 
 Connect ke VPN, kemudian buka Rancher. <br/>
-Setalah itu kita buka "Hasura Console" pada Rancheer <br/>
+Setelah itu kita buka "Hasura Console" pada Rancheer <br/>
 
 
 
