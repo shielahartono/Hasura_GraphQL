@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/90c89b4e-d504-4942-a7b2-787f20612d79)# Connect SQL Server to Hasura V2
+# Connect SQL Server to Hasura V2
 
 Kita ingin menghubungkan "SQL Server" ke Hasura Version 2.  <br/>   <br/>
 
