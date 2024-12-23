@@ -48,8 +48,11 @@ Buka Aplikasi "SQL Server" pada VM Mas Muji.
 ### 4) "INSERT DATA" (Masukkan Data) ke Table yang tadi sudah kita buat 
 ![image](https://github.com/user-attachments/assets/d4de8bfb-0ede-4ac6-8bc8-75d67431741b)
 
+--------
+## C. Buka "Hasura Console" (untuk Hasura V2) Pada Rancher
 
-
+Connect ke VPN, kemudian buka Rancher. <br/>
+Setalah itu kita buka "Hasura Console" pada Rancheer <br/>
 
 
 
