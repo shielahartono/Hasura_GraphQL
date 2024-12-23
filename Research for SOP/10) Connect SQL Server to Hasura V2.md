@@ -93,6 +93,12 @@ Password asli tidak bisa kami tuliskan disini berhubung ini adalah Github untuk 
 bagian "pwd" dapat kita tuliskan dengan Password yang kita gunakan untuk Login "SQL Server" di VM Mas Muji (atau di Server lainnya tempat "SQL Server" berada) <br/>
 
 
+### 8) Pilih "Connect Database"
+Pilih "Connect Database" pada bagian bawah  <br/>
+![image](https://github.com/user-attachments/assets/f0fa1b78-1167-4ea3-8be0-9fcd58d3827d)
+
+
+
 
 
 
