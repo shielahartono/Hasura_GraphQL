@@ -41,6 +41,14 @@ Buka Aplikasi "SQL Server" pada VM Mas Muji.
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/b3fb5424-dabb-466e-9a98-85cb5ef1eee2" />     <br/>
 <img width="68" alt="image" src="https://github.com/user-attachments/assets/fdb09537-cc24-4e6a-b575-78e79bcf50b7" />    <br/>
 
+### 3) "CREATE TABLE" (buat Table) pada Database yang sudah kita buat
+![image](https://github.com/user-attachments/assets/840a5dbd-e682-4571-9fd8-8628ec1f9223)
+
+
+### 4) "INSERT DATA" (Masukkan Data) ke Table yang tadi sudah kita buat 
+![image](https://github.com/user-attachments/assets/d4de8bfb-0ede-4ac6-8bc8-75d67431741b)
+
+
 
 
 
