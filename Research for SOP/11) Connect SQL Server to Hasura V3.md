@@ -24,12 +24,21 @@ curl -L https://graphql-engine-cdn.hasura.io/ddn/cli/v4/get.sh | bash
 ```
 
 ### 4) Jalankan Command `ddn doctor`
-`ddn doctor`
+```
+ddn doctor
+```
 ![image](https://github.com/user-attachments/assets/3049fbc5-b6e5-4665-b64d-661c1639caad)
 
 `ddn doctor` untuk memeriksa apakah dependensi (Docker dan Docker Compose) DDN CLI telah diinstal, apakah versinya diperlukan, dan apakah sedang berjalan.
 
-### 5) 
+### 5) Jalankan Command `ddn auth login`
+```
+ddn auth login
+```
+![image](https://github.com/user-attachments/assets/10d781fb-c977-4f18-b584-9f1ca1449740)
+
+- `ddn auth login` merupakan authentikasi untuk login ke ddn cli
+
 
 
 ------------------
