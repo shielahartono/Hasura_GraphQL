@@ -12,3 +12,8 @@ Domain owners (or data owners, or API producers) should be able to seamlessly co
 
 - Para pemilik domain sering kali tidak ingin menambahkan lapisan API tambahan (misalnya GraphQL) untuk menghubungkan data mereka dengan supergraph.
 - Mereka khawatir tentang kompleksitas baru, beban operasional tambahan, serta pemeliharaan sistem yang lebih rumit. Ini adalah reaksi alami karena menambah lapisan API baru berarti pekerjaan ekstra untuk membangun, mengoperasikan, dan menjaga sistem tersebut.
+
+
+## 2) Supergraph Reference Architecture:
+
+Reference architecture adalah panduan atau pola arsitektur yang digunakan untuk membangun supergraph. Ini akan memberikan pedoman teknis dan terbaik untuk menghubungkan domain ke supergraph dengan cara yang minim hambatan dan lebih mudah diterima oleh pemilik domain.
