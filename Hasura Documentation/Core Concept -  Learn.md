@@ -1,5 +1,9 @@
->> Reference Link :
->> https://hasura.io/docs/3.0/basics/core-concepts
+# 1) Watch Video 1 : Hasura in 100 Seconds
+https://www.youtube.com/watch?v=xiZ61BkMKo8
+
+
+---------------------------
+---------------------------
 
 # Core Concepts
 
@@ -2458,6 +2462,17 @@ Dengan Actions, kita dapat mendefinisikan Custom GraphQL Query atau Mutations ya
 >> {2} **Custom Business Logic** <br/>
 >> <br/>
 
+----------------------------
+----------------------------
+----------------------------
 
+# 2) Watch Video 2 : Hasura in 3 Minutes (in Pictures!)
+https://www.youtube.com/watch?v=9QZL8YNNgvc
+
+# 3) Watch Video 3 : From Monolith to Supergraph: How to Tame Microservice Complexity and Chaos
+https://www.youtube.com/watch?v=bTbkdUdsUUE
+
+# 4) Watch Video 4 : Introducing Hasura Data Delivery Network
+https://www.youtube.com/watch?v=Beqz7Ju0vTg
 
 
