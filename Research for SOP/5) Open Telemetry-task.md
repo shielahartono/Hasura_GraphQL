@@ -1,4 +1,4 @@
-# Dokumentasi Tugas Open Telemetry
+# Dokumentasi Open Telemetry - Task
 
 
 ## (A) Connect ke Server yang dipakai 
